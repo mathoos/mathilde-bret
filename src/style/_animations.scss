@@ -1,0 +1,22 @@
+@keyframes scaleUp {
+    100%{
+        transform : scale(.7);
+        opacity : .5;
+    }
+}
+
+
+
+@keyframes infiniteRotation {
+    100%{
+        transform : rotate(360deg)
+    }
+}
+
+
+@keyframes slideTop{
+    to{
+        transform : translateY(0);
+        opacity : 1;
+    }
+}

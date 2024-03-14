@@ -13,13 +13,13 @@ const Header = () => {
                 <div className="header_hero-title">
                     <h1>Mathilde, <br/>
                         <span>
-                            développeuse <span className="bouton bouton_noir">front-end</span> <br/> 
+                            développeuse <span className="bouton bouton_title">front-end</span> <br/> 
                             passionnée à la recherche <br/> 
-                            d'un <span className="bouton bouton_noir">job</span> .
+                            d'un <span className="bouton bouton_title">job</span> .
                         </span>
                     </h1>
-                    <div className="header_hero-title--available">
-                        <div className="bullet"></div>
+                    <div className="header_hero-title--subtitle">
+                        <div className="header_hero-title--subtitle--bullet"></div>
                         <p>Available for new projects !</p>
                     </div>
                 </div>

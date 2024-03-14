@@ -7,9 +7,14 @@
     border-style: solid;
     background-color: transparent;
     font-weight : $light;
+
     @media screen and (max-width : 990px) {
         padding : 1vh 5vw;
         font-size : 4vw;
+    }
+
+    &_title{
+        padding : 1vh 2vw 0.5vh 2vw;
     }
 
     &_nav{

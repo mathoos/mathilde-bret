@@ -1,0 +1,201 @@
+@import "../style.scss";
+
+.projects{
+    display : flex;
+    flex-direction: column;
+    gap : 5vh;
+    padding : 15vh 10.4vw 30vh 10.4vw; 
+    @media screen and (max-width : 990px) {
+        padding : 10vh 30px;
+    } 
+
+    &_title{
+        position : relative;
+        display : flex;
+        justify-content: space-between;
+
+        h2{
+            width : 41.6vw;
+            font-size : 3.5vw;
+            @media screen and (max-width : 990px) {
+                font-size : 7vw;
+                width : 100%;
+            }
+        }
+
+        &-eyes{
+            width : 10.9vw;
+            height : auto;
+            padding-top : 4.6vh;
+            @media screen and (max-width : 990px) {
+                position : absolute;
+                right : 5vw;
+                bottom : -20vw;
+                width : 20vw;
+            }
+
+            img{
+                width : 100%;
+                height : auto;
+            }
+        }
+    }
+
+    &_container{
+        position : relative;
+        display : flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width : 100%;
+
+        &-bloc{
+            position : sticky;
+            top : 0;
+            display : flex;
+            justify-content: center;
+            align-items: flex-end;
+            width : 100%;
+            height : 100vh;
+            transform : rotate(1.5deg);
+            padding-bottom : 7vh;
+            @media screen and (max-width : 990px) {
+                align-items: center;
+                padding-bottom : 0;
+            }
+ 
+            &--content{
+                display : flex;
+                align-items: flex-end;
+                width : 100%;
+                height : 75vh;      
+                @media screen and (max-width : 990px) {
+                    flex-direction: column;
+                    border-radius : 30px;
+                    background-color: $noir
+                }
+
+                &-left{
+                    display : flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width : 38.437vw;
+                    height : 100%;
+                    border-radius : 50px 50px 0 50px;
+                    background-color: $noir;
+                    padding : 2.5vw 5vw;
+                    @media screen and (max-width : 990px) {
+                        gap : 5vh;
+                        width : 100%;
+                        border-radius : 0;
+                        padding : 0;
+                        border-radius : 0 30px 0 0;
+                    }
+
+                    .description{
+                        display : flex;
+                        flex-direction: column;
+                        gap : 5vh;
+                        @media screen and (max-width : 990px) {
+                            gap : 0;                     
+                        }
+
+                        h3{
+                            font-weight : $black;
+                            font-size : 4vw;
+                            color : $noir;
+                            @media screen and (max-width : 990px) {
+                                transform : translateY(-30px);
+                                border-radius : 30px 30px 0 0;
+                                padding : 30px;
+                                width : fit-content;
+                                background-color: $noir;
+                            }
+                        }
+
+                        p{
+                            font-weight : $light;
+                            line-height : 1.5;
+                            font-family : "roc-grotesk";
+                            color : $blanc;
+                            @media screen and (max-width : 990px) {
+                                font-size : 4vw;
+                                padding : 0 30px;
+                            }
+                        }
+                    }
+
+                    .perks{
+                        display : flex;
+                        flex-wrap: wrap;
+                        gap : 1vw;
+                        @media screen and (max-width : 990px) {
+                            gap : 2vw;
+                            padding : 0 30px;
+                        }
+
+                        .bouton{
+                            @media screen and (max-width : 990px) {
+                                flex-grow: 1;
+
+                                &:last-child{
+                                    flex-grow: initial
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &-right{
+                    display : flex;
+                    justify-content: center;
+                    align-items: center;
+                    width : calc(100% - 38.437vw); 
+                    height : 65vh;
+                    border-radius : 0 50px 50px 0;
+                    background-color: $noir;
+                    padding : 2vw;
+                    @media screen and (max-width : 990px) {
+                        width : 100%;
+                        height : 30vh;
+                        border-radius : 0 0 30px 30px;
+                        padding : 5vh 30px 30px 30px;
+                    }
+
+                    .mockup{
+                        width : 100%;
+                        height : 100%;
+                        border-radius : 30px;
+                        overflow : hidden;
+
+                        img{
+                            width : 100%;
+                            height : 100%;
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(even){
+                .projects_container-bloc--content-left, .projects_container-bloc--content-right{
+                    background-color: $violet;        
+                }
+
+                .projects_container-bloc--content, h3{
+                    @media screen and (max-width : 990px) {
+                        background-color: $violet;
+                    }
+                }
+            }
+
+            &:nth-child(2){
+                padding-bottom : 6vh;
+                transform : rotate(-2deg);
+            }
+            &:nth-child(3){
+                padding-bottom : 4vh;
+                transform : rotate(1deg);
+            }
+        }
+    }
+}

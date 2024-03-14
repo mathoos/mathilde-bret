@@ -1,0 +1,51 @@
+.bouton{
+    padding : 1.3vh 2vw .9vh 2vw;
+    width : fit-content;
+    border-radius : 100vmax;
+    border-width: 1px;
+    border-style: solid;
+    background-color: transparent;
+    font-weight : $light;
+    font-size : 1.2vw;
+    @media screen and (max-width : 990px) {
+        padding : 1vh 5vw;
+        font-size : 4vw;
+    }
+
+    &_noir{
+        color : var(--noir);
+        border-color : var(--noir);
+        
+        &:hover{
+            background-color: var(--noir);
+            border-color : transparent;
+            color : var(--blanc);
+        }
+    }
+
+    &_violet{
+        color : $violet;
+        border-color : $violet;
+
+        &:hover{
+            background-color: $violet;
+            border-color : transparent;
+            color : $blanc;
+        }
+    } 
+
+    &_blanc{
+        color : $blanc;
+        border-color : $blanc;
+
+        &:hover{
+            background-color: $blanc;
+            border-color : transparent;
+            color : $noir;
+        }
+    } 
+
+    &_link{
+        border : none;
+    }
+}

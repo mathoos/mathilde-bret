@@ -1,0 +1,56 @@
+h1{
+    width : 100%;
+    font-size : 6vw;
+    font-weight : $bold;
+    color : var(--noir);
+    line-height : 1.5;
+    @media screen and (max-width : 990px) {
+        font-size : 10vw;
+    }
+
+    span{
+        display : inline-block;
+        font-size : 2.3vw;
+        font-weight : $light;
+        color : var(--noir);
+        font-family : "roc-grotesk";
+        @media screen and (max-width : 990px) {
+           font-size : 6vw;
+           padding-top : 1vh;
+        }
+
+        &.bouton{
+            display : inline-block;
+            padding : .2vh 2vw 0 2vw;
+            @media screen and (max-width : 990px) {
+                padding : 0 4vw;
+            }
+        }
+    }
+}
+
+h2{
+    font-weight : $bold;
+    font-size : 2vw;
+    text-transform: uppercase;
+    color : var(--noir);
+
+    @media screen and (max-width : 990px) {
+        font-size : 7vw;
+    }
+
+    span{
+        color : inherit;
+    }
+}
+
+h3{
+    font-weight : $medium;
+    font-size : 1.2vw;
+    text-transform: uppercase;
+    color : var(--noir);
+
+    @media screen and (max-width : 990px) {
+        font-size : 4vw;
+    } 
+}

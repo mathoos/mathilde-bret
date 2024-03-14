@@ -1,25 +1,46 @@
 .bouton{
-    padding : 1.3vh 2vw .9vh 2vw;
     width : fit-content;
+    height : fit-content;
+    padding : 1.3vh 2vw 0.65vh 2vw;  
     border-radius : 100vmax;
     border-width: 1px;
     border-style: solid;
     background-color: transparent;
     font-weight : $light;
-    font-size : 1.2vw;
     @media screen and (max-width : 990px) {
         padding : 1vh 5vw;
         font-size : 4vw;
     }
 
+    &_nav{
+        font-weight : $medium;
+        color : $violet;
+        text-transform: uppercase;
+        border : none;
+        transition : .3s ease;
+
+        @media screen and (max-width : 990px) {
+            display : none;
+        }
+
+        &.active {
+            background-color: $noir;
+            color : $blanc;
+        }
+
+        &:hover:not(.active){
+            color : $noir;
+        }
+    }
+
     &_noir{
-        color : var(--noir);
-        border-color : var(--noir);
+        color : $noir;
+        border-color : $noir;
         
         &:hover{
-            background-color: var(--noir);
+            background-color: $noir;
             border-color : transparent;
-            color : var(--blanc);
+            color : $blanc;
         }
     }
 
@@ -44,8 +65,4 @@
             color : $noir;
         }
     } 
-
-    &_link{
-        border : none;
-    }
 }

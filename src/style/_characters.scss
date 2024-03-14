@@ -2,7 +2,6 @@ h1{
     width : 100%;
     font-size : 6vw;
     font-weight : $bold;
-    color : var(--noir);
     line-height : 1.5;
     @media screen and (max-width : 990px) {
         font-size : 10vw;
@@ -12,7 +11,6 @@ h1{
         display : inline-block;
         font-size : 2.3vw;
         font-weight : $light;
-        color : var(--noir);
         font-family : "roc-grotesk";
         @media screen and (max-width : 990px) {
            font-size : 6vw;
@@ -33,7 +31,6 @@ h2{
     font-weight : $bold;
     font-size : 2vw;
     text-transform: uppercase;
-    color : var(--noir);
 
     @media screen and (max-width : 990px) {
         font-size : 7vw;
@@ -48,9 +45,15 @@ h3{
     font-weight : $medium;
     font-size : 1.2vw;
     text-transform: uppercase;
-    color : var(--noir);
 
     @media screen and (max-width : 990px) {
         font-size : 4vw;
     } 
+}
+
+a{
+    text-decoration: none;
+    color : inherit;
+    padding : 0;
+    margin : 0;
 }

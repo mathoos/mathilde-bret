@@ -7,6 +7,7 @@
     border-style: solid;
     background-color: transparent;
     font-weight : $light;
+    transition : .3s ease;
 
     @media screen and (max-width : 990px) {
         padding : 1vh 5vw;
@@ -75,4 +76,15 @@
             color : $noir;
         }
     } 
+
+    &_bgNoir{
+        color : $blanc;
+        border-color : $noir;
+        background-color: $noir;
+        
+        &:hover{
+            background-color: transparent;
+            color : $noir;
+        }
+    }
 }

@@ -1,9 +1,9 @@
 h1{
     position : relative;
-    width : 100%;
     font-size : 6vw;
     font-weight : $bold;
     line-height : 1.5;
+    width : 100%;
     @media screen and (max-width : 990px) {
         font-size : 12vw;
     }
@@ -23,7 +23,8 @@ h1{
 
 h2{
     font-weight : $bold;
-    font-size : 2vw;
+    font-size : 3vw;
+    line-height : 1;
     text-transform: uppercase;
 
     @media screen and (max-width : 990px) {

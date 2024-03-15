@@ -1,13 +1,24 @@
+import { useEffect } from 'react';
+import { add100Vh } from '../functions/add100vh';
+import { openMenu } from '../functions/openMenu';
 import Nav from '../components/Nav';
+import Menu from '../components/Menu';
 import Mathilde from "../img/img-mathilde.png";
 import './Header.scss';
 
 const Header = () => {
 
+    useEffect(() => {
+        add100Vh();
+        openMenu();
+    }, []);
+
 
     return (
         <header className="header heightJs">
             <Nav/>
+            <Menu/>
+
 
             <div className="header_hero">
                 <div className="header_hero-title">

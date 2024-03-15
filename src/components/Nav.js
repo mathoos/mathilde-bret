@@ -14,6 +14,14 @@ const Nav = () => {
             <a href="#skills" className="bouton bouton_nav">Skills</a>
             <a href="#projects" className="bouton bouton_nav">Projects</a>
             <a href="#contact" className="bouton bouton_nav">Contact</a>
+
+            
+
+            <button className="nav_menu">
+                <div className="nav_menu-barre"></div>
+                <div className="nav_menu-barre"></div>
+                <div className="nav_menu-barre"></div>
+            </button>
         </nav>   
     )
 }

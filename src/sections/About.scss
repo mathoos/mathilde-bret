@@ -25,7 +25,6 @@
         flex-direction: column;
         padding : 0 5vw;
         width : 100%;
-        border : 1px solid orange;
 
         &-presentation{
             position : relative;
@@ -128,7 +127,12 @@
 
                 .about_container-presentation--img{
                     width : 25vw;
+                    height : 20vw;
                     margin-top : 15vh;
+
+                    .img{
+                        object-fit: cover;
+                    }
 
                     &::after{
                         background-color: transparent;
@@ -156,23 +160,24 @@
         .dropdown{
             display : flex;
             flex-direction: column;
-            gap : 15px;
+            gap : 3vh;
             background-color: $noir;
             border-radius : 30px;
             padding : 3.5vw;
             width : 40vw;
             margin-top : -5vh;
+
             @media screen and (max-width : 990px) {
                 padding : 30px;
             }
 
             &_bloc{
- 
+
                 &-title{
                     display : flex;
                     justify-content: space-between;
                     align-items: center;
-                    padding-bottom : 7.5px;
+                    
                     cursor : pointer;
 
                     h3{
@@ -206,49 +211,49 @@
                             left : 50%;
                             transform : translateX(-50%);
                             transition : .3s ease;
-                        }
-
-                        &.active{
-                            &::after{
-                                background-color: transparent;
-                                transform : translateX(-50%) rotate(90deg);
-                            }
-                        }
+                        } 
                     }
                 }
 
                 &-txt{
                     display : flex;
                     align-items: center;
-                    height : 0;           
                     overflow : hidden;
-                    transition : 1s ease;           
+                    padding : 1.5vh 0;
+                    border-bottom : 1px solid $blanc;
+                             
 
                     p{
                         color : $blanc;
                         font-weight : $light;
-                        font-family : "roc-grotesk";
-                        font-size : 1.2vw;
-                        transform : translateY(-100%);
+                        font-family : $font;
+                        line-height : 1.5;
+                        margin-top : -100%;
                         transition : 1s ease-in-out;
                         @media screen and (max-width : 990px) {
                             font-size : 4vw;
                         }
+                    } 
+                }
+
+                &.active{
+                    .dropdown_bloc-title{
+                        .more{
+                            &::after{
+                                background-color: transparent;
+                                transform : translateX(-50%) rotate(90deg);
+                            }
+                        }
                     }
 
-                    &.active{
-                        height : 9.5vh;   
-                        @media screen and (max-width : 990px) {
-                            height : 12vh;
-                        }                   
+                    .dropdown_bloc-txt{
 
                         p{
-                            transform : translateY(0);
-                        }
+                            margin-top : 0;
+                        }  
                     }
                 }
             }
-        }
-        
+        }  
     }
 }

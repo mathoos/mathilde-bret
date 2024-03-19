@@ -1,12 +1,21 @@
+import React, { useState } from 'react';
 import MathildeBureau from "../img/about.jpg";
 import Bureau from "../img/skills-img5.jpg";
+import Bureau2 from "../img/skills-img.jpg";
+import Bureau3 from "../img/skills-img3.jpg";
 import Pastille from "../img/pastille.svg";
-import Planner from "../img/dropdown.jpg";
-import Arrow from "../img/arrow.svg";
+import Arrow from "../img/arrow-2.svg";
 import './About.scss';
 
 const About = () => {
 
+    const [activeIndex, setActiveIndex] = useState(0);
+    const [activeImageIndex, setActiveImageIndex] = useState(0);
+
+    const handleTitleClick = (index) => {
+        setActiveIndex(index === activeIndex ? null : index);
+        setActiveImageIndex(index);
+    };
 
     return (
         <section className="about" id="about">
@@ -51,42 +60,24 @@ const About = () => {
                         <img src={Arrow} alt="Flèche"/>
                     </div>
                     <figure className="about_container-presentation--img">
-                        <img src={Bureau} className="img" alt="Photographie de Mathilde"/>
+                        {activeImageIndex === 0 && <img src={Bureau} className="img" alt="Photographie de Mathilde"/>}
+                        {activeImageIndex === 1 && <img src={Bureau2} className="img" alt="Photographie de Mathilde"/>}
+                        {activeImageIndex === 2 && <img src={Bureau3} className="img" alt="Photographie de Mathilde"/>}
                     </figure>
                 </div>
         
-
-
                 <div className="dropdown">
-                    <div className="dropdown_bloc">
-                        <div className="dropdown_bloc-title">
-                            <h3>How old are you ?</h3>
-                            <div className="more"></div>
+                    {data.map((item, index) => (
+                        <div className={index === activeIndex ? "dropdown_bloc active" : "dropdown_bloc"} key={index}>
+                            <div className="dropdown_bloc-title" onClick={() => handleTitleClick(index)}>
+                                <h3>{item.title}</h3>
+                                <div className="more"></div>
+                            </div>
+                            <div className="dropdown_bloc-txt">
+                                <p>{item.text}</p>
+                            </div>
                         </div>
-                        <div className="dropdown_bloc-txt">
-                            <p>My extensive experience in front-end development empowers my design process to push user experience and interactions to the next level.  </p>
-                        </div>
-                    </div>
-                    <hr/>
-                    <div className="dropdown_bloc">
-                        <div className="dropdown_bloc-title">
-                            <h3>How old are you ?</h3>
-                            <div className="more"></div>
-                        </div>
-                        <div className="dropdown_bloc-txt">
-                            <p>My extensive experience in front-end development empowers my design process to push user experience and interactions to the next level.  </p>
-                        </div>
-                    </div>
-                    <hr/>
-                    <div className="dropdown_bloc">
-                        <div className="dropdown_bloc-title">
-                            <h3>How old are you ?</h3>
-                            <div className="more active"></div>
-                        </div>
-                        <div className="dropdown_bloc-txt active">
-                            <p>My extensive experience in front-end development empowers my design process to push user experience and interactions to the next level.  </p>
-                        </div>
-                    </div>
+                    ))}
                 </div> 
               
             </div> 
@@ -94,5 +85,20 @@ const About = () => {
         </section>
     ) 
 }
+
+const data = [
+    {
+        title: "How old are you ?",
+        text: "My extensive experience in front-end development empowers my design process to push user experience and interactions to the next level."
+    },
+    {
+        title: "Another question?",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vestibulum mauris eget felis eleifend, ut congue lectus rhoncus."
+    },
+    {
+        title: "Quel est mon parcours ?",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vestibulum mauris eget felis eleifend, ut congue lectus rhoncus."
+    },
+];
 
 export default About;

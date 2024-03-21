@@ -49,7 +49,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="about_container-presentation">   
+                {/* <div className="about_container-presentation">   
                     <div className="about_container-presentation--txt">
                         <p>
                             I’m Mathilde, an award winning french designer working worldwide and pushing 
@@ -57,6 +57,7 @@ const About = () => {
                             j’aime découvrir et apprendre de nouveaux 
                             langages.
                         </p>
+                        <p className="bold">J'espère qu'on se reverra bientôt</p>
                         <img src={Arrow} alt="Flèche"/>
                     </div>
                     <figure className="about_container-presentation--img">
@@ -78,7 +79,7 @@ const About = () => {
                             </div>
                         </div>
                     ))}
-                </div> 
+                </div>  */}
               
             </div> 
 

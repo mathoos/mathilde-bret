@@ -11,11 +11,14 @@
     color : $noir;
 }
 
+body{
+    overflow-x : hidden;
+}
+
 body,html {
     box-sizing: border-box;  
     scroll-behavior: smooth;
     background-color: $blanc;
-    overflow-x : hidden;
 }
 
 html.lenis {

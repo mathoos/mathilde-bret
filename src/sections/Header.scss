@@ -3,10 +3,10 @@
 .header{
     display : flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     width : 100%;
     height: 100vh;
-    padding : 0 10vw 9vh 10vw;
+    padding : 0 15vw;
 
     @media screen and (max-width : 990px) {
         padding : 15vh 30px 5vh 30px;
@@ -15,7 +15,9 @@
 
     &_hero{
         display : flex;
+        flex-direction: column;
         justify-content: space-between;
+        gap : 10vh;
         width : 100%;
 
         @media screen and (max-width : 990px) {
@@ -28,9 +30,6 @@
         &-title{
             display : flex;
             flex-direction: column;
-            justify-content: space-between;
-            width : 35.5vw;
-            padding-top : 6.5vh;
 
             @media screen and (max-width : 990px) {
                 position : absolute;
@@ -39,103 +38,61 @@
                 padding : 0;
             }
 
-            &--subtitle{
-                display : flex;
-                gap : 1vw;
-                @media screen and (max-width : 990px) {
-                    align-items: center;
-                    gap : 2.5vw;
-                }
-
-                &--bullet{
-                    width : 1vw;
-                    height : 1vw;
-                    background-color: $violet;
-                    border-radius : 100vmax;
-                    animation : scaleUp infinite 1s linear alternate-reverse;
-                    @media screen and (max-width : 990px) {
-                        width : 5vw;
-                        height : 5vw;
-                    }
-                }
-
-                p{
-                    font-weight : $light;
-                    text-transform : uppercase;
-                    @media screen and (max-width : 990px) {
-                        font-size : 3.5vw;
-                    }
-                }
-            }
-        }
-
-        &-img{
-            display : flex;
-            justify-content: flex-end;
-            align-items: flex-end;
-            width : 33vw;
-            height : 63vh;
-            background-color: $violet;
-            border : 2px solid $noir;
-            border-radius : 50px;
-
-            @media screen and (max-width : 990px) {
+            h1{
+                font-size : 6vw;
+                font-weight : $bold;
+                line-height : 1;
                 width : 100%;
-                height : 40vh;
-                margin-bottom : 10vh;
-            }
-
-
-            img{
-                width : auto;
-                height : 77vh;
-                border-radius : 0 0 30px 0;
+                
                 @media screen and (max-width : 990px) {
-                    width : auto;
-                    height : 50vh;
-                    object-fit: contain;
-                    object-position: bottom;
+                    font-size : 12vw;
+                }
+            }
+
+            p{
+                font-family : $font;
+                font-size : 2.3vw;
+                font-weight : $light;
+        
+                @media screen and (max-width : 990px) {
+                   font-size : 6vw;
                 }
             }
         }
-    }
 
-    &_rs{
-        position : fixed;
-        display : flex;
-        flex-direction: column;
-        gap : 1.3vh;
-        right : 2vw;
-        top : 35.1vh;
-        z-index : 100;
-        @media screen and (max-width : 990px) {
-            display : none;
-        }
-
-        &-icon{
+        &-rs{
             display : flex;
-            justify-content: center;
-            align-items: center;
-            width : 2.6vw;
-            height : 2.6vw;
-            border-radius : 100vmax;
-            border : 1.5px solid $noir;
-            transition : .3s ease;
-
-            svg{
-                width : 1.3vw;
-                height : auto;
-                fill : $noir;
-                transition : .3s ease;
+            gap : 1vw;
+            z-index : 100;
+            @media screen and (max-width : 990px) {
+                display : none;
             }
-
-            &:hover{
-                background-color: $noir;
-
+    
+            &--icon{
+                display : flex;
+                justify-content: center;
+                align-items: center;
+                width : 2.6vw;
+                height : 2.6vw;
+                border-radius : 100vmax;
+                border : 1.5px solid $noir;
+                transition : .3s ease;
+    
                 svg{
-                    fill : $blanc;
+                    width : 1.3vw;
+                    height : auto;
+                    fill : $noir;
+                    transition : .3s ease;
+                }
+    
+                &:hover{
+                    background-color: $noir;
+    
+                    svg{
+                        fill : $blanc;
+                    }
                 }
             }
         }
-    }
+    }  
 }

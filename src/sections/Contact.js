@@ -1,32 +1,32 @@
-import Internet from "../img/internet.svg";
-import './Contact.scss';
+// import Internet from "../img/internet.svg";
+// import './Contact.scss';
 
-const Contact = () => {
+// const Contact = () => {
 
 
-    return (
-        <footer className="footer" id="contact">
-            <div className="footer_title">
-                <h2>
-                    <span>Let's get</span>
-                    <span>in touch</span>
-                </h2>
-                <figure className="footer_title-img">
-                    <img src={Internet}/>
-                </figure>
-            </div>
-            <div className="footer_links">
-                <a href="" className="bouton bouton_blanc">Email</a>
-                <a href="" className="bouton bouton_blanc">Phone</a>
-                <a href="" className="bouton bouton_blanc">LinkedIn</a>
-                <a href="" className="bouton bouton_blanc">GitHub</a>
-            </div>
-            <div className="footer_copyright">
-                <p>© 2023 edition</p>
-                <a href="">Privacy policy</a>
-            </div>
-        </footer>
-    ) 
-}
+//     return (
+//         <footer className="footer" id="contact">
+//             <div className="footer_title">
+//                 <h2>
+//                     <span>Let's get</span>
+//                     <span>in touch</span>
+//                 </h2>
+//                 <figure className="footer_title-img">
+//                     <img src={Internet}/>
+//                 </figure>
+//             </div>
+//             <div className="footer_links">
+//                 <a href="" className="bouton bouton_blanc">Email</a>
+//                 <a href="" className="bouton bouton_blanc">Phone</a>
+//                 <a href="" className="bouton bouton_blanc">LinkedIn</a>
+//                 <a href="" className="bouton bouton_blanc">GitHub</a>
+//             </div>
+//             <div className="footer_copyright">
+//                 <p>© 2023 edition</p>
+//                 <a href="">Privacy policy</a>
+//             </div>
+//         </footer>
+//     ) 
+// }
 
-export default Contact;
+// export default Contact;

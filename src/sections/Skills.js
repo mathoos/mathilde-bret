@@ -77,13 +77,13 @@ const Skills = () => {
                 <div className="need_container">
                     <div className="need_container-bloc">
                         <figure className="need_container-bloc--icon">
-                            <img src={IconConcept}/>
+                            <img src={IconConcept} alt="Concept"/>
                         </figure>
                         <h3>Concept</h3>
                     </div>
                     <div className="need_container-bloc">
                         <figure className="need_container-bloc--icon">
-                            <img src={IconArtDirection}/>
+                            <img src={IconArtDirection} alt="Art direction"/>
                         </figure>
                         <h3>Art <br/> Direction</h3>
                     </div>
@@ -101,19 +101,19 @@ const Skills = () => {
                     </div>
                     <div className="need_container-bloc">
                         <figure className="need_container-bloc--icon">
-                            <img src={IconUxUi}/>
+                            <img src={IconUxUi} alt="UX UI"/>
                         </figure>
                         <h3>UX-UI <br/> Design</h3>
                     </div>
                     <div className="need_container-bloc">
                         <figure className="need_container-bloc--icon">
-                            <img src={IconWebdesign}/>
+                            <img src={IconWebdesign} alt="Webdesign"/>
                         </figure>
                         <h3>Webdesign</h3>
                     </div>
                     <div className="need_container-bloc">
                          <figure className="need_container-bloc--icon">
-                            <img src={IconSmile}/>
+                            <img src={IconSmile} alt="Smile"/>
                         </figure> 
                     </div>
                 </div>

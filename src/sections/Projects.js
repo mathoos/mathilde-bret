@@ -11,7 +11,7 @@ const Projects = () => {
             <div className="projects_title">
                 <h2>Check out some projects&nbsp;!</h2>
                 <figure className="projects_title-eyes">
-                    <img src={Eyes}/>
+                    <img src={Eyes} alt="Yeux"/>
                 </figure>
             </div>
             <div className="projects_container">
@@ -39,7 +39,7 @@ const Projects = () => {
                         </div>
                         <div className="projects_container-bloc--content-right">
                             <figure className="mockup">
-                                <img src={TemplateSite}/>
+                                <img src={TemplateSite} alt="Template de site"/>
                             </figure>
                         </div>
                     </div>
@@ -67,7 +67,7 @@ const Projects = () => {
                         </div>
                         <div className="projects_container-bloc--content-right">
                             <figure className="mockup">
-                                <img src={TemplateSite}/>
+                                <img src={TemplateSite} alt="Template de site"/>
                             </figure>
                         </div>
                     </div>
@@ -95,7 +95,7 @@ const Projects = () => {
                         </div>
                         <div className="projects_container-bloc--content-right">
                             <figure className="mockup">
-                                <img src={TemplateSite}/>
+                                <img src={TemplateSite} alt="Template de site"/>
                             </figure>
                         </div>
                     </div>

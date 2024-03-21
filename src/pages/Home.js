@@ -2,7 +2,7 @@ import Header from '../sections/Header';
 import About from '../sections/About';
 import Skills from '../sections/Skills';
 import Projects from '../sections/Projects';
-import Contact from '../sections/Contact';
+// import Contact from '../sections/Contact';
 import './Home.scss';
 
 
@@ -14,7 +14,7 @@ function Home() {
             <About/>
             <Skills/>
             <Projects/>
-            <Contact/>
+            {/* <Contact/> */}
         </div>   
     )
 }

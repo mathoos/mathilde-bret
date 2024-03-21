@@ -70,7 +70,7 @@ const About = () => {
                     {data.map((item, index) => (
                         <div className={index === activeIndex ? "dropdown_bloc active" : "dropdown_bloc"} key={index}>
                             <div className="dropdown_bloc-title" onClick={() => handleTitleClick(index)}>
-                                <h3>{item.title}</h3>
+                                <p>{item.title}</p>
                                 <div className="more"></div>
                             </div>
                             <div className="dropdown_bloc-txt">

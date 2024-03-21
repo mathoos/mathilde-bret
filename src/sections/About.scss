@@ -175,12 +175,18 @@
                 &-title{
                     display : flex;
                     justify-content: space-between;
-                    align-items: center;
-                    
+                    align-items: center;              
                     cursor : pointer;
 
-                    h3{
+                    p{
                         color : $blanc;
+                        font-weight : $medium;
+                        font-size : 1.2vw;
+                        text-transform: uppercase;
+
+                        @media screen and (max-width : 990px) {
+                            font-size : 4vw;
+                        } 
                     }
 
                     .more{

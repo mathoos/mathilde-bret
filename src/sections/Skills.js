@@ -1,6 +1,4 @@
-import Work1 from "../img/skills-img2.jpg";
-import Work2 from "../img/skills-img3.jpg";
-import Arrow from "../img/arrow.svg";
+import Doigt from "../img/finger.png";
 import IconConcept from "../img/icon-concept.svg";
 import IconArtDirection from "../img/icon-art-direction.svg";
 import IconUxUi from "../img/icon-ux-ui.svg";
@@ -15,37 +13,36 @@ const Skills = () => {
     return (
         <section className="skills" id="skills">
 
-            <div className="one">
-                <div className="one_title">
-                    <h2>I have few skills in my pocket</h2>
-                </div>
-                <div className="one_container">
-                    <div className="one_container-blocSkills">
-                        <p>Html</p>
-                        <hr/>
-                        <p>Scss</p>
-                        <hr/>
-                        <p>Javascript</p>
-                        <hr/>
-                        <p>Php</p>
-                        <hr/>
-                        <p>React</p>
-                        <hr/>
-                        <p>Next</p>
-                        <hr/>
-                    </div>
-                    <figure className="one_container-blocImgs">
-                        <img src={Work1} className="img1"/>
-                        <img src={Work2} className="img2"/>
-                        <div className="text">
-                            <p>
-                                I’m Mathilde, an award winning french designer working worldwide. I’m 
-                                Mathilde, an award winning french designer working worldwide web&nbsp;!
-                            </p>
+            <div className="skills_title">
+                <h2>I have few skills <br/> in my pocket</h2>
+            </div>
+
+            <div className="skills_container">
+                <div className="skills_container-blocs">
+                    <div className="bloc">
+                        <h3>Frontend</h3>
+                        <div className="bloc_btn">
+                            <p className="bouton bouton_noir">Html</p>
+                            <p className="bouton bouton_noir">Scss</p>
+                            <p className="bouton bouton_noir">Javascript</p>
+                            <p className="bouton bouton_noir">React</p>
+                            <p className="bouton bouton_noir">Redux</p>
+                            <p className="bouton bouton_noir">Next</p>
+                            <p className="bouton bouton_noir">Php</p>
                         </div>
-                        <img src={Arrow} className="img3"/>
-                    </figure>
+                    </div>
+                    <div className="bloc">
+                        <h3>Backend</h3>
+                        <div className="bloc_btn">
+                            <p className="bouton bouton_noir">Node.js</p>
+                            <p className="bouton bouton_noir">MongoDB</p>
+                            <p className="bouton bouton_noir">Express</p>
+                        </div>
+                    </div>
                 </div>
+                <figure className="skills_container-img">
+                    <img src={Doigt} alt="Emoji pointe du doigt"></img>
+                </figure>
             </div>
         
             <div className="need">

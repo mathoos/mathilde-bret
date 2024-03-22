@@ -4,7 +4,7 @@ import Bureau from "../img/skills-img5.jpg";
 import Bureau2 from "../img/skills-img.jpg";
 import Bureau3 from "../img/skills-img3.jpg";
 import Pastille from "../img/pastille.svg";
-import Arrow from "../img/arrow-2.svg";
+import Arrow from "../img/arrow-3.svg";
 import './About.scss';
 
 const About = () => {
@@ -49,40 +49,30 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="about_container-presentation">   
-                    <div className="about_container-presentation--txt">
-                        <p>
-                            I’m Mathilde, an award winning french designer working worldwide and pushing 
-                            boundaries of conceptual and innovative digital design. Toujours impliquée dans mes missions, 
-                            j’aime découvrir et apprendre de nouveaux 
-                            langages.
-                        </p>
-                        <p className="bold">J'espère qu'on se reverra bientôt</p>
-                        <img src={Arrow} alt="Flèche"/>
-                    </div>
-                    <figure className="about_container-presentation--img">
-                        {activeImageIndex === 0 && <img src={Bureau} className="img" alt="Photographie de Mathilde"/>}
-                        {activeImageIndex === 1 && <img src={Bureau2} className="img" alt="Photographie de Mathilde"/>}
-                        {activeImageIndex === 2 && <img src={Bureau3} className="img" alt="Photographie de Mathilde"/>}
+                <div className="about_container-dropdown">   
+                    <div className="dropdown">
+                        {data.map((item, index) => (
+                            <div className={index === activeIndex ? "dropdown_bloc active" : "dropdown_bloc"} key={index}>
+                                <div className="dropdown_bloc-title" onClick={() => handleTitleClick(index)}>
+                                    <p>{item.title}</p>
+                                    <div className="more"></div>
+                                </div>
+                                <div className="dropdown_bloc-txt">
+                                    <p>{item.text}</p>
+                                </div>
+                                <hr/>
+                            </div>
+                            
+                        ))}
+                    </div> 
+                    <figure className="about_container-dropdown--img">
+                        {activeImageIndex === 0 && <img src={Bureau} alt="Photographie de Mathilde"/>}
+                        {activeImageIndex === 1 && <img src={Bureau2} alt="Photographie de Mathilde"/>}
+                        {activeImageIndex === 2 && <img src={Bureau3} alt="Photographie de Mathilde"/>}
+                        <img src={Arrow} className="arrow" alt="Flèche"/>
                     </figure>
                 </div>
-        
-                <div className="dropdown">
-                    {data.map((item, index) => (
-                        <div className={index === activeIndex ? "dropdown_bloc active" : "dropdown_bloc"} key={index}>
-                            <div className="dropdown_bloc-title" onClick={() => handleTitleClick(index)}>
-                                <p>{item.title}</p>
-                                <div className="more"></div>
-                            </div>
-                            <div className="dropdown_bloc-txt">
-                                <p>{item.text}</p>
-                            </div>
-                        </div>
-                    ))}
-                </div> 
-              
             </div> 
-
         </section>
     ) 
 }
@@ -98,7 +88,7 @@ const data = [
     },
     {
         title: "Quel est mon parcours ?",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vestibulum mauris eget felis eleifend, ut congue lectus rhoncus."
+        text: "My extensive experience in front-end development empowers my design process to push user experience and interactions to the next level.  My extensive experience in front-end development empowers my design process to push user experience and interactions to the next level."
     },
 ];
 

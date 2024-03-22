@@ -49,7 +49,7 @@ const About = () => {
                     </div>
                 </div>
 
-                {/* <div className="about_container-presentation">   
+                <div className="about_container-presentation">   
                     <div className="about_container-presentation--txt">
                         <p>
                             I’m Mathilde, an award winning french designer working worldwide and pushing 
@@ -79,7 +79,7 @@ const About = () => {
                             </div>
                         </div>
                     ))}
-                </div>  */}
+                </div> 
               
             </div> 
 

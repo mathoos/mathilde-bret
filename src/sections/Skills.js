@@ -106,6 +106,8 @@ const Skills = () => {
                     </div>
                 </div>
             </div>
+
+            <div className="skills_black"></div>
         </section> 
     ) 
 }

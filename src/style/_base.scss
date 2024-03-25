@@ -4,11 +4,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
-    font-family : $font-wide;
-    font-weight : $regular;
+    font-family : $font;
     font-size : 1.1vw;
-    line-height : 1;
     color : $noir;
+    @include font;
 }
 
 body{

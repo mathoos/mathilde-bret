@@ -86,21 +86,21 @@ const Skills = () => {
                     <div className="bloc">
                         <p className="bloc-title">Need a site ?</p>
                         <div className="bloc-subtitle">
-                            <p className="bloc-subtitle--1">Say no more <span>(...)</span></p>
+                            <p className="bloc-subtitle--1">Say no more...</p>
                             <p className="bloc-subtitle--2">I can handle it !</p>
                         </div>
                     </div>
                     <div className="bloc">
                         <p className="bloc-title">Need a site ?</p>
                         <div className="bloc-subtitle">
-                            <p className="bloc-subtitle--1">Say no more <span>(...)</span></p>
+                            <p className="bloc-subtitle--1">Say no more...</p>
                             <p className="bloc-subtitle--2">I can handle it !</p>
                         </div>
                     </div>
                     <div className="bloc">
                         <p className="bloc-title">Need a site ?</p>
                         <div className="bloc-subtitle">
-                            <p className="bloc-subtitle--1">Say no more <span>(...)</span></p>
+                            <p className="bloc-subtitle--1">Say no more...</p>
                             <p className="bloc-subtitle--2">I can handle it !</p>
                         </div>
                     </div>

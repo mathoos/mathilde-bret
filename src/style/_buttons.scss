@@ -6,8 +6,8 @@
     border-width: 1px;
     border-style: solid;
     background-color: transparent;
-    font-weight : $light;
     transition : .3s ease;
+    @include font-button;
 
     @media screen and (max-width : 990px) {
         padding : 1vh 5vw;
@@ -24,10 +24,10 @@
     }
 
     &_nav{
-        font-weight : $medium;
         color : $violet;
         text-transform: uppercase;
         border : none;
+        @include font-button-nav;
         transition : .3s ease;     
 
         &.active {

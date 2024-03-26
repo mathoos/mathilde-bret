@@ -60,8 +60,10 @@
                 }
 
                 p{
-                    font-weight : $light;
                     text-transform : uppercase;
+                    font-variation-settings:
+                    "wdth" 125,
+                    "wght" $light;
                     @media screen and (max-width : 990px) {
                         font-size : 3.5vw;
                     }

@@ -103,9 +103,9 @@
                 }
     
                 p{
-                    font-family : $font;
-                    font-weight : $light;
                     line-height : 1.5;
+                    @include font-p;
+
                     @media screen and (max-width : 990px) {
                         font-size : 4vw;
                     }
@@ -152,9 +152,11 @@
     
                         p{
                             color : $blanc;
-                            font-weight : $medium;
                             font-size : 1.2vw;
                             text-transform: uppercase;
+                            font-variation-settings:
+                            "wdth" 125,
+                            "wght" $semibold;
     
                             @media screen and (max-width : 990px) {
                                 font-size : 4vw;
@@ -200,11 +202,11 @@
     
                         p{
                             color : $blanc;
-                            font-weight : $light;
-                            font-family : $font;
                             line-height : 1.5;
+                            @include font-p;
                             margin-top : -100%;
                             transition : 1s ease-in-out;
+                            
                             @media screen and (max-width : 990px) {
                                 font-size : 4vw;
                             }

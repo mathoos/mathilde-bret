@@ -18,8 +18,51 @@ $heavy : 900;
 // width : 62 - 125
 // italic : 0 -1
 
-@mixin font {
+
+@mixin font-base {
     font-variation-settings:
-        "wdth" 100,
+        "wdth" 125,
         "wght" $light;
+}
+
+@mixin font-button {
+    font-variation-settings:
+        "wdth" 125,
+        "wght" $thin;
+}
+
+@mixin font-button-nav {
+    font-variation-settings:
+        "wdth" 125,
+        "wght" $regular
+}
+
+@mixin font-p {
+    font-variation-settings:
+        "wdth" 110,
+        "wght" $light;
+}
+
+@mixin font-h1 {
+    font-variation-settings:
+        "wdth" 125,
+        "wght" $heavy;
+}
+
+@mixin font-h1-subtitle {
+    font-variation-settings:
+        "wdth" 125,
+        "wght" $thin;
+}
+
+@mixin font-h2 {
+    font-variation-settings:
+        "wdth" 125,
+        "wght" $black;
+}
+
+@mixin font-h3 {
+    font-variation-settings:
+        "wdth" 125,
+        "wght" $semibold;
 }

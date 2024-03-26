@@ -53,7 +53,7 @@
     }
 
     &_domain{
-        padding : 0 10vw;
+        padding : 0 10vw 30vh 10vw;
         @media screen and (max-width : 990px) {                   
             gap : 30px;
         }
@@ -100,10 +100,7 @@
                 }
     
                 h3{
-                    font-weight : $medium;
                     font-size : 1.5vw;
-                    line-height : 1;
-                    color : $noir;
                     text-transform: uppercase;
                     @media screen and (max-width : 990px) {
                         font-size : 6vw;
@@ -114,8 +111,7 @@
                     align-items: center;
                     justify-content: center;
                     padding : 0 5vw;
-                    width : 39vw;
-                    
+                    width : 39vw;              
                     background-color : $noir;
                     border : none;
                     @media screen and (max-width : 990px) {
@@ -124,9 +120,7 @@
                     }
                     
                     p{
-                        font-size : 1.2vw;
                         line-height : 1.5;
-                        font-weight : $light;
                         color : $blanc;
                         @media screen and (max-width : 990px) {
                             font-size : 4vw;
@@ -145,17 +139,22 @@
     
                     p{
                         color : $violet;
-                        font-weight : $heavy;
                         text-transform : uppercase;
+
                         &:nth-of-type(1){
-                            font-size : 4vw;   
+                            font-size : 5vw;  
+                            font-variation-settings:
+                                "wdth" 125,
+                                "wght" $heavy; 
                             @media screen and (max-width : 990px) {
                                 font-size : 10vw;
                             }
                         }
                         &:nth-of-type(2){
                             font-size : 2vw;  
-                            font-family : "roc-grotesk-wide";
+                            font-variation-settings:
+                                "wdth" 125,
+                                "wght" $light; 
                             @media screen and (max-width : 990px) {
                                 font-size : 4vw;
                                 line-height : 1.2;
@@ -199,7 +198,7 @@
 
     &_sticky{
         width : 100%;
-        padding : 0 10vw;
+        padding : 0 10vw 30vh 10vw;
 
         &-container{
             position : relative;
@@ -229,8 +228,8 @@
                     font-size : 15vw;
                     line-height : .8;
                     color : $violet;
-                    font-weight: $heavy;
                     text-transform: uppercase;
+                    @include font-h1;
     
                     @media screen and (max-width : 990px) {
                         font-size : 18vw;
@@ -251,17 +250,11 @@
     
                     p{
                         font-size : 4vw;
-                        color : $noir;
-                        font-weight: $medium;
                         text-transform: uppercase;
+                        @include font-button-nav;
+                        font-style : italic;
                         @media screen and (max-width : 990px) {
                             font-size : 6vw;
-                        }
-    
-                        &:nth-of-type(1){
-                           span{
-                                font-style: italic;
-                           }
                         }
     
                         &:nth-of-type(2){

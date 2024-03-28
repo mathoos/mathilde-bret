@@ -87,4 +87,15 @@
             color : $noir;
         }
     }
+
+    &_bgBlanc{
+        color : $noir;
+        border-color : $noir;
+        background-color: $blanc;
+        
+        &:hover{
+            background-color: transparent;
+            color : $noir;
+        }
+    }
 }

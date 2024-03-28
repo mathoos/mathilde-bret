@@ -1,21 +1,110 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import MathildeBureau from "../img/about.jpg";
 import Bureau from "../img/skills-img5.jpg";
 import Bureau2 from "../img/skills-img.jpg";
 import Bureau3 from "../img/skills-img3.jpg";
 import Pastille from "../img/pastille.svg";
+import RollingStones from "../img/rolling-stones-tshirt.jpg";
 import Arrow from "../img/arrow-3.svg";
+import ArrowWhite from "../img/arrow-white.svg";
+import TraitsWhite from "../img/traits-white.svg";
+import AppareilPhoto from "../img/appareil-photo.png";
 import './About.scss';
 
 const About = () => {
 
-    const [activeIndex, setActiveIndex] = useState(0);
-    const [activeImageIndex, setActiveImageIndex] = useState(0);
+    // const [activeIndex, setActiveIndex] = useState(0);
+    // const [activeImageIndex, setActiveImageIndex] = useState(0);
 
-    const handleTitleClick = (index) => {
-        setActiveIndex(index === activeIndex ? null : index);
-        setActiveImageIndex(index);
-    };
+    // const handleTitleClick = (index) => {
+    //     setActiveIndex(index === activeIndex ? null : index);
+    //     setActiveImageIndex(index);
+    // };
+
+    
+
+    useEffect(() => {
+        
+        const handleScroll = () => {
+
+            const aboutSticky = document.querySelector('.about_sticky-container');
+            const aboutStickyOffsetBoundingBox = aboutSticky.getBoundingClientRect();
+            const aboutStickyOffset = aboutStickyOffsetBoundingBox.top + window.scrollY;
+            
+            const containerDeux = document.querySelector('.about_sticky-container.deux');
+            const containerDeuxBoundingBox = containerDeux.getBoundingClientRect();
+            const containerDeuxOffset = containerDeuxBoundingBox.top + window.scrollY;
+
+            const containerTrois = document.querySelector('.about_sticky-container.trois');
+            const containerTroisBoundingBox = containerTrois.getBoundingClientRect();
+            const containerTroisOffset = containerTroisBoundingBox.top + window.scrollY;
+
+            const scrollTop = window.scrollY;
+
+            const apparition2 = document.querySelectorAll(".apparition2");
+            const apparition3 = document.querySelectorAll(".apparition3");
+
+            const txt1 = document.querySelector(".txt1");
+            const txt2 = document.querySelector(".txt2");
+            const txt3 = document.querySelector(".txt3");
+
+            const blocTitle = document.querySelector(".bloc_txt-title");
+            const h4Elements = document.querySelectorAll('.bloc_txt-title--bloc h4');
+            let height; // Déclarer la variable height en dehors de la boucle forEach
+
+            h4Elements.forEach((element, index) => {
+                height = element.getBoundingClientRect().height; // Affecter la valeur height à la variable globale
+                console.log(`La hauteur de l'élément h4 ${index + 1} est : ${height}px`);
+            });
+
+            blocTitle.style.height = `${height}px`
+
+            const blocTxt = document.querySelector(".bloc_txt-title--bloc");
+
+            if (aboutStickyOffset === scrollTop) {
+
+            }
+    
+            if (containerDeuxOffset === scrollTop) {
+                apparition2.forEach((apparition) => {
+                    apparition.classList.add("active")
+                });
+                blocTxt.style.transform = `translateY(-${height}px)`;
+                txt1.classList.remove("active")
+                txt2.classList.add("active")
+            }
+
+            if (containerDeuxOffset > scrollTop) {
+                apparition2.forEach((apparition) => {
+                    apparition.classList.remove("active")
+                });
+                blocTxt.style.transform = `translateY(0)`;
+                txt2.classList.remove("active")
+                txt1.classList.add("active")
+            }
+
+            if (containerTroisOffset === scrollTop) {
+                apparition3.forEach((apparition) => {
+                    apparition.classList.add("active")
+                })
+                blocTxt.style.transform = `translateY(-${height*2}px)`;
+                txt2.classList.remove("active")
+                txt3.classList.add("active")
+            }
+            if(containerTroisOffset > scrollTop){
+                apparition3.forEach((apparition) => {
+                    apparition.classList.remove("active")
+                })
+                txt3.classList.remove("active")
+            }
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+    
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (
         <section className="about" id="about">
@@ -49,7 +138,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="about_container-dropdown">   
+                {/* <div className="about_container-dropdown">   
                     <div className="dropdown">
                         {data.map((item, index) => (
                             <div className={index === activeIndex ? "dropdown_bloc active" : "dropdown_bloc"} key={index}>
@@ -71,8 +160,79 @@ const About = () => {
                         {activeImageIndex === 2 && <img src={Bureau3} alt="Photographie de Mathilde"/>}
                         <img src={Arrow} className="arrow" alt="Flèche"/>
                     </figure>
-                </div>
+                </div> */}
             </div> 
+
+
+
+            <div className="about_sticky">
+                <div className="about_sticky-container">
+                    <div className="about_sticky-container-bloc">
+                        <div className="bloc">
+                            <div className="bloc_txt">
+
+                                <div className="bloc_txt-title">
+                                    <div className="bloc_txt-title--bloc">
+                                        <h4>Quel est mon parcours ?</h4>
+                                        <h4>Salut à tous</h4>
+                                        <h4>Troisième bloc</h4>
+                                    </div>  
+                                </div>
+
+                                <div className="bloc_txt-txt">
+                                    <p className="txt1 active">
+                                        My extensive experience in front-end development empowers my design process to push 
+                                        user experience and interactions to the next level. My extensive experience in front-end 
+                                        development empowers my design process to push user experience and  interactions  to 
+                                        the next level.<br/><br/>  
+
+                                        My extensive experience in front-end development empowers my design process to push 
+                                        user experience and interactions to the next level.  
+                                    </p>
+                                    <p className="txt2">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                        incididunt ut labore et dolore magna aliqua.<br/><br/>   
+
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+                                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                    <p className="txt3">
+                                        Le passage classique «Lorem ipsum dolor sit amet…» est attribué à un remixage du 
+                                        texte du philosophe romain Cicéron 45 de C. De Finibus Bonorum et Malorum («Sur 
+                                        les extrêmes du Bien et du Mal»). Plus précisément, on pense que le passage provient 
+                                        des sections 1.10.32 à 33 de son texte, dont la partie la plus notable est extraite 
+                                        ci-dessous.<br/><br/> 
+
+                                        “Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
+                                        adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et 
+                                        dolore magnam aliquam quaerat voluptatem.”
+                                    </p>
+                                </div>
+ 
+                                <img src={ArrowWhite} className="bloc_txt-arrow" alt="Flèche"/>
+                            </div>
+                            <figure className="bloc_img">
+                                <img src={RollingStones} className="bloc_img-principal" alt="Rolling Stones"/>
+                                <img src={TraitsWhite} className="bloc_img-traits" alt="Traits"/>
+                                <img src={AppareilPhoto} className="bloc_img-appareil apparition2" alt="Canon 800D"/>
+                                <p className="bouton apparition2">Créative</p>
+                                <p className="bouton bouton_2 apparition3">Coolos</p>
+                            </figure>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                <div className="about_sticky-container deux"></div>
+                <div className="about_sticky-container trois"></div>
+                <div className="about_sticky-container quatre"></div>
+            </div>
+
+
+
+
         </section>
     ) 
 }

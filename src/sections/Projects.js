@@ -1,5 +1,5 @@
 import Eyes from "../img/eyes.svg";
-import TemplateSite from "../img/template-site.gif";
+import TemplateSite from "../img/plomberie_mockup.gif";
 
 import './Projects.scss';
 
@@ -39,7 +39,7 @@ const Projects = () => {
                             </div>
                             <div className="projects_container-bloc--content-right">
                                 <figure className="mockup">
-                                    <img src={TemplateSite} alt="Template de site"/>
+                                    <img src={item.template} alt="Template de site"/>
                                 </figure>
                             </div>
                         </div>
@@ -55,31 +55,36 @@ const data = [
         title: "Ekanim",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vestibulum mauris eget felis eleifend, ut congue lectus rhoncus.",
         button: ["Html", "Scss", "jQuery"],
-        annotation: "Site vitrine | melting.k"
+        annotation: "Site vitrine | melting.k",
+        template: TemplateSite
     },
     {
         title: "Plomberie Joan Bret",
         text: "Réalisation de la maquette du site sur Figma et intégration avec React. Mise en place d'une API REST pour permettre au client d'ajouter ses propres photos, de les modifier et les supprimer. Déploiement du site statique et du serveur sur la plateforme Render.",
         button: ["React", "Scss", "Node", "Express", "MongoDB", "Figma", "Render"],
-        annotation: "Projet de formation | stage"
+        annotation: "Site vitrine | stage",
+        template: TemplateSite
     },
     {
         title: "API CRUD",
         text: "Création d'une API CRUD avec diverses routes afin de permettre à l'utilisateur de créer, visualiser, modifier et supprimer des objets à mettre en vente. Connexion à une base de données NoSQL, MongoDB, pour rendre l'API entièrement dynamique et les données pleinement persistantes. Ajout d'un système d'authentification pour protéger l'API, et intégration d'une gestion de fichiers utilisateur pour permettre aux utilisateurs de télécharger des images.",
         button: ["Angular", "Node", "Express", "MongoDB", "Bcrypt", "multer"],
-        annotation: "Projet de formation | OpenClassrooms"
+        annotation: "Projet de formation | OpenClassrooms",
+        template: TemplateSite
     },
     {
         title: "Bank",
         text: "Intégration de l'interface utilisateur de l'application bancaire avec React. Utilisation de Redux pour gérer les données et maintenir un état global cohérent. Appels à l'API REST pour connecter le front et le back pour assurer une communication fluide entre le client et le serveur. Utilisation de Swagger pour documenter les API afin d'assurer la clarté et la maintenabilité de l'interface de programmation. ",
         button: ["React", "Redux", "Css", "API", "Swagger"],
-        annotation: "Projet de formation | OpenClassrooms"
+        annotation: "Projet de formation | OpenClassrooms",
+        template: TemplateSite
     },
     {
         title: "Bullet Journal",
         text: "Création d'un système de gestion de projet avec React. Mise en place d'un store avec Redux afin de permettre la création, la modification et la suppression de notes. Utilisation de la librairie date-fns pour ranger les notes en fonction de la date souhaitée.",
         button: ["React", "Redux", "Scss", "date-fns"],
-        annotation: "Projet personnel | non abouti"
+        annotation: "Projet personnel | en construction",
+        template: TemplateSite
     }
 ];
 

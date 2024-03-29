@@ -3,7 +3,7 @@ import { add100Vh } from '../functions/add100vh';
 import { openMenu } from '../functions/openMenu';
 import Nav from '../components/Nav';
 import Menu from '../components/Menu';
-import Mathilde from "../img/img-mathilde.png";
+import Mathilde from "../img/header-transparence.png";
 import './Header.scss';
 
 const Header = () => {

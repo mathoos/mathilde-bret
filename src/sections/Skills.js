@@ -4,6 +4,7 @@ import IconArtDirection from "../img/icon-art-direction.svg";
 import IconUxUi from "../img/icon-ux-ui.svg";
 import IconWebdesign from "../img/icon-webdesign.svg";
 import IconSmile from "../img/icon-smile.svg";
+import { Parallax } from "react-scroll-parallax";
 
 import './Skills.scss';
 
@@ -29,10 +30,11 @@ const Skills = () => {
                     <p>Express</p>
                     <p>Mongodb</p>
                 </div>
-
-                <figure className="skills_container-img">
-                    <img src={Doigt} alt="Emoji pointe du doigt"></img>
-                </figure>
+                <Parallax translateY={['0px', '550px']} rotate={['5deg', '-20deg']}>
+                    <figure className="skills_container-img">
+                        <img src={Doigt} alt="Emoji pointe du doigt"></img>
+                    </figure>
+                </Parallax>
             </div>
 
             <div className="skills_domain">
@@ -81,7 +83,7 @@ const Skills = () => {
                 </div>  
             </div>
 
-            <div className="skills_sticky">
+            {/* <div className="skills_sticky">
                 <div className="skills_sticky-container">
                     <div className="bloc">
                         <p className="bloc-title">Need a site ?</p>
@@ -107,7 +109,7 @@ const Skills = () => {
                 </div>
             </div>
 
-            <div className="skills_black"></div>
+            <div className="skills_black"></div> */}
         </section> 
     ) 
 }

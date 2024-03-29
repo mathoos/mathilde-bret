@@ -110,7 +110,7 @@ const About = () => {
         <section className="about" id="about">
 
             <div className="about_title">
-                <h2>à la recherche d’une nouvelle opportunité.</h2>
+                <h2>à la recherche d’une <br/> nouvelle opportunité.</h2>
             </div>
 
             <div className="about_container">
@@ -118,6 +118,7 @@ const About = () => {
                 <div className="about_container-presentation">
                     <figure className="about_container-presentation--img">
                         <img src={MathildeBureau} className="img" alt="Photographie de Mathilde"/>
+                        <div className="noisy"></div>
                         <img src={Pastille} className="pastille" alt="Pastille"/>
                         <button className="bouton bouton_bgNoir">Tech friendly</button>
                     </figure>

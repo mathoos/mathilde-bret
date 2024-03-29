@@ -20,14 +20,14 @@
 
     &_container{
         display : flex;
-        gap : 8vw;
+        gap : 10vw;
         padding : 0 0 0 10vw;
 
         &-list{
             width : 50vw;
 
             p{
-                font-size : 1.7vw;
+                font-size : 1.5vw;
                 border-bottom : 2px solid $noir;
                 padding : 1.5vw 0;
                 text-transform : uppercase;
@@ -45,7 +45,8 @@
             img{
                 width : 100%;
                 height : auto;
-                transform : rotate(-5deg) translateY(-2rem)
+                transform : rotate(-5deg) translateY(-2rem);
+                
             }
         }
 
@@ -108,15 +109,30 @@
                 }
     
                 &:nth-of-type(3){
+                    position : relative;
                     align-items: center;
                     justify-content: center;
                     padding : 0 5vw;
                     width : 39vw;              
                     background-color : $noir;
                     border : none;
+                    overflow : hidden;
                     @media screen and (max-width : 990px) {
                         width : 100%;
                         padding : 30px;
+                    }
+
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        top: -100%;
+                        left: -50%;
+                        width: 300%;
+                        height: 300%;
+                        animation: grain 10s steps(10) infinite;
+                        background-image: url("../img/noise-effect2.png");
+                        opacity: .25;
+                        z-index : 2;
                     }
                     
                     p{
@@ -129,12 +145,27 @@
                 }
     
                 &:nth-of-type(4){
+                    position : relative;
                     justify-content: center;
                     align-items: center;
                     background-color: $noir;
                     border : none;
+                    overflow : hidden;
                     @media screen and (max-width : 990px) {
                         order : 6;
+                    }
+
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        top: -100%;
+                        left: -50%;
+                        width: 300%;
+                        height: 300%;
+                        animation: grain 10s steps(10) infinite;
+                        background-image: url("../img/noise-effect2.png");
+                        opacity: .25;
+                        z-index : 2;
                     }
     
                     p{
@@ -189,10 +220,6 @@
                 }
             }
         }
-
-
-        
-
     }
 
 

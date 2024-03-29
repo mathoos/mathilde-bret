@@ -14,7 +14,6 @@
 
     &_title{
         text-align: right;
-        width : 60vw;
         padding : 0 10vw;
         @media screen and (max-width : 990px) {
             width : 100%;
@@ -50,6 +49,29 @@
                 @media screen and (max-width : 990px) {
                     align-self: flex-end;
                     width : calc(100% - 30px)
+                }
+
+                .noisy{
+                    position : absolute;
+                    top : 0;
+                    left : 0;
+                    width : 100%;
+                    height : 100%;
+                    overflow : hidden;
+                    z-index : 5;
+
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        top: -100%;
+                        left: -50%;
+                        width: 300%;
+                        height: 300%;
+                        animation: grain 10s steps(10) infinite;
+                        background-image: url("../img/noise-effect2.png");
+                        opacity: .25;
+                        z-index : 2;
+                    }
                 }
     
                 &::after{
@@ -306,14 +328,29 @@
             }
 
             &-bloc{
+                position : relative;
                 display : flex;
                 justify-content: center;
                 align-items: center;
                 width : 100%;
                 height : 100%;
                 background-color: $noir;
-                border-radius : 100px;
+                border-radius : 50px;
                 padding : 0 15vw 0 10vw;
+                overflow : hidden;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    top: -100%;
+                    left: -50%;
+                    width: 300%;
+                    height: 300%;
+                    animation: grain 10s steps(10) infinite;
+                    background-image: url("../img/noise-effect2.png");
+                    opacity: .1;
+                    z-index : 2;
+                }
 
                 .bloc{
                     display : flex;
@@ -377,8 +414,9 @@
                         max-width : 27vw;
                         height : auto;
                         transform : rotate(-3deg);
-
+                        
                         &-principal{
+                            position : relative;
                             width : 100%;
                             height : auto;
                             border-radius : 30px;
@@ -398,7 +436,12 @@
                             right : -8vw;
                             width : 22vw;
                             height : auto;
-                            transform : rotate(3deg)
+
+                            &.active{
+                                transform : rotate(3deg);
+                                transition : transform .3s ease;
+                            }
+                            
                         }
 
                         .bouton{
@@ -423,6 +466,7 @@
 
                     .apparition2, .apparition3{
                         opacity : 0;
+
                         &.active{
                             opacity : 1;
                         }

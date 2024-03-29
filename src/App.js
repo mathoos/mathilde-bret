@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
-import { ReactLenis, useLenis } from '@studio-freight/react-lenis'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { ReactLenis, useLenis } from '@studio-freight/react-lenis';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { ParallaxProvider } from "react-scroll-parallax";
 import Home from './pages/Home';
 
 function App() {
@@ -49,14 +50,16 @@ function App() {
         };
     }, [lenis]);
 
-  return (
-        <ReactLenis root> 
-            <Router>
-                <Routes>      
-                    <Route path="/" element={<Home/>}/>
-                </Routes>
-            </Router>
-        </ReactLenis> 
+    return (
+        <ParallaxProvider>
+            <ReactLenis root> 
+                <Router>
+                    <Routes>      
+                        <Route path="/" element={<Home/>}/>
+                    </Routes>
+                </Router>
+            </ReactLenis> 
+        </ParallaxProvider>
     );
 }
 

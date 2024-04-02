@@ -129,20 +129,18 @@ const About = () => {
                     </figure>
                     <div className="about_container-presentation--txt">
                         <p>
-                            Hello, moi c'est Mathilde, développeuse frontend passionnée actuellement à la recherche 
-                            d'une opportunité dans le monde du développement web. 
+                            Développeuse front-end passionnée, j'associe mes compétences en développement web et 
+                            en webdesign pour créer des interfaces utilisateurs ergonomiques visuellement attractives.
                         </p>
                         <p>
-                            En agence de  communication, j'ai pu acquérir des compétences . 
-                            Entourée d'une équipe de communication, j'ai pu m'imprégner de l'ambiance de confection d'un site web. De la conception graphique, à la rédaction, en passant par la stratégie marketing. 
-                            Toujours impliquée dans mes missions, j’aime découvrir et apprendre de nouveaux 
-                            langages, de nouvelles façons de concevoir des sites web.<br/>
-                            I’m Mathilde, an award winning french designer working worldwide and pushing boundaries 
-                            of conceptual and innovative digital design.
+                            En agence de communication, j'ai évolué au contact d'équipes multidisciplinaire, entretenant 
+                            une perpétuelle collaboration créative dans la conception de nouveaux produits digitaux. 
+                            Stimulée dans ce bouillon d'idées innovantes, j'ai élargi mes compétences et participé à 
+                            rendre chaque projet un peu plus unique.
                         </p>
                         <p>
-                            Si mon profil t'intéresse, tu peux télécharger mon CV, ou bien continuer 
-                            I’m Mathilde, an award winning french designer working worldwide and pushing boundaries of conceptual and innovative digital design.
+                            Minutieuse, je tente de donner vie à chaque site internet avec l'ambition d'offrir une 
+                            expérience fluide et immersive, tout en apportant une réelle valeur ajoutée.
                         </p>
                     </div>
                 </div>
@@ -182,21 +180,23 @@ const About = () => {
 
                                 <div className="bloc_txt-title">
                                     <div className="bloc_txt-title--bloc">
-                                        <h4>Quel est mon parcours ?</h4>
-                                        <h4>Salut à tous</h4>
-                                        <h4>Troisième bloc</h4>
+                                        <h4>Adaptation et curiosité</h4>
+                                        <h4>Créativité et inspiration</h4>
+                                        <h4>Une vie d'étude</h4>
                                     </div>  
                                 </div>
 
                                 <div className="bloc_txt-txt">
                                     <p className="txt1 active">
-                                        My extensive experience in front-end development empowers my design process to push 
-                                        user experience and interactions to the next level. My extensive experience in front-end 
-                                        development empowers my design process to push user experience and  interactions  to 
-                                        the next level.<br/><br/>  
+                                        De nature curieuse et autonome, j'aime découvrir et apprendre de nouveaux langages 
+                                        afin de pouvoir sélectionner au mieux les outils qui répondront au besoin spécifique 
+                                        d'un projet.<br/><br/> 
+                                        Dans l'intention de faciliter les échanges et la coopération au sein de l'équipe de 
+                                        développement, et  pour mieux appréhender le métier dans sa globalité, je m'initie 
+                                        également au développement full-stack.<br/><br/> 
 
-                                        My extensive experience in front-end development empowers my design process to push 
-                                        user experience and interactions to the next level.  
+                                        Je sais m'adapter et suivre les avancées technologiques qui sont en perpétuelles 
+                                        évolutions, afin d'empêcher tout projet de devenir obsolète.   
                                     </p>
                                     <p className="txt2">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 

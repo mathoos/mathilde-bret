@@ -11,6 +11,9 @@ import TraitsWhite from "../img/traits-white.svg";
 import AppareilPhoto from "../img/appareil-photo.png";
 import './About.scss';
 
+import { Reveal } from "react-awesome-reveal";
+import {rotateRight} from "../functions/keyframes";
+
 const About = () => {
 
     // const [activeIndex, setActiveIndex] = useState(0);
@@ -117,23 +120,28 @@ const About = () => {
 
                 <div className="about_container-presentation">
                     <figure className="about_container-presentation--img">
-                        <img src={MathildeBureau} className="img" alt="Photographie de Mathilde"/>
+                        <Reveal keyframes={rotateRight} className="reveal">
+                            <img src={MathildeBureau} className="img" alt="Photographie de Mathilde"/>
+                        </Reveal>
                         <div className="noisy"></div>
                         <img src={Pastille} className="pastille" alt="Pastille"/>
                         <button className="bouton bouton_bgNoir">Tech friendly</button>
                     </figure>
                     <div className="about_container-presentation--txt">
                         <p>
-                            I’m Mathilde, an award winning french designer working worldwide and pushing 
-                            boundaries of conceptual and innovative digital design.
+                            Hello, moi c'est Mathilde, développeuse frontend passionnée actuellement à la recherche 
+                            d'une opportunité dans le monde du développement web. 
                         </p>
                         <p>
+                            En agence de  communication, j'ai pu acquérir des compétences . 
+                            Entourée d'une équipe de communication, j'ai pu m'imprégner de l'ambiance de confection d'un site web. De la conception graphique, à la rédaction, en passant par la stratégie marketing. 
                             Toujours impliquée dans mes missions, j’aime découvrir et apprendre de nouveaux 
                             langages, de nouvelles façons de concevoir des sites web.<br/>
                             I’m Mathilde, an award winning french designer working worldwide and pushing boundaries 
                             of conceptual and innovative digital design.
                         </p>
                         <p>
+                            Si mon profil t'intéresse, tu peux télécharger mon CV, ou bien continuer 
                             I’m Mathilde, an award winning french designer working worldwide and pushing boundaries of conceptual and innovative digital design.
                         </p>
                     </div>

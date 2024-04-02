@@ -31,7 +31,7 @@ const Header = () => {
                     </h1>
                     <div className="header_hero-title--subtitle">
                         <div className="header_hero-title--subtitle--bullet"></div>
-                        <p>Available for new projects !</p>
+                        <p>Basée à Toulouse</p>
                     </div>
                 </div>
                 <figure className="header_hero-img">

@@ -31,13 +31,14 @@
         h2{
             display : flex;
             flex-direction: column;
-            color : $blanc;
-            font-size : 7.5vw;
-            font-weight : $heavy;
-            color : $blanc;
 
             span{
+                color : $blanc;
+                font-size : 7.5vw;
+                color : $blanc;
                 line-height : .9;
+                @include font-h1;
+
                 &:nth-of-type(2){
                     align-self: flex-end;;
                 }   

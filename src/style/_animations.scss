@@ -21,6 +21,24 @@
     }
 }
 
+@keyframes fontBold{
+    0%{
+        font-variation-settings:
+        "wdth" 125,
+        "wght" $thin;
+    }
+    50%{
+        font-variation-settings:
+        "wdth" 125,
+        "wght" $heavy;
+    }
+    100%{
+        font-variation-settings:
+        "wdth" 125,
+        "wght" $thin;
+    }
+}
+
 
 @keyframes grain {
     0%, 100% { transform:translate(0, 0) }

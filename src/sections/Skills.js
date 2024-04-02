@@ -30,7 +30,7 @@ const Skills = () => {
                     <p>Express</p>
                     <p>Mongodb</p>
                 </div>
-                <Parallax translateY={['0px', '550px']} rotate={['5deg', '-20deg']}>
+                <Parallax translateY={['0px', '450px']} rotate={['5deg', '-20deg']}>
                     <figure className="skills_container-img">
                         <img src={Doigt} alt="Emoji pointe du doigt"></img>
                     </figure>
@@ -43,18 +43,18 @@ const Skills = () => {
                         <figure className="bloc-icon">
                             <img src={IconConcept} alt="Concept"/>
                         </figure>
-                        <h3>Concept</h3>
+                        <h3>Web <br/> design</h3>
                     </div>
                     <div className="bloc">
                         <figure className="bloc-icon">
                             <img src={IconArtDirection} alt="Art direction"/>
                         </figure>
-                        <h3>Art <br/> Direction</h3>
+                        <h3>UX-UI <br/> Design</h3>
                     </div>
                     <div className="bloc txt">
                         <p>
-                            WITH OVER A DECADE OF EXPERTISE, I CONNECT DESIGN,  EXPERIMENTATION   TECHNOLOGY TO DRIVE 
-                            PROJECTS TO THEIR GREATEST POTENTIAL
+                            De nature curieuse et créative, j'aime élargir mes compétences autour du développement web, 
+                            afin de devenir entièrement autonome et évoluer dans un univers où la maîtrise ne m'est pas inconnue.
                         </p>
                     </div>
                     <div className="bloc">
@@ -67,13 +67,13 @@ const Skills = () => {
                         <figure className="bloc-icon">
                             <img src={IconUxUi} alt="UX UI"/>
                         </figure>
-                        <h3>UX-UI <br/> Design</h3>
+                        <h3>Méthode <br/> SCRUM</h3>
                     </div>
                     <div className="bloc">
                         <figure className="bloc-icon">
                             <img src={IconWebdesign} alt="Webdesign"/>
                         </figure>
-                        <h3>Webdesign</h3>
+                        <h3>SEO</h3>
                     </div>
                     {/* <div className="bloc">
                         <figure className="bloc-icon">

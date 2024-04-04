@@ -8,7 +8,7 @@ const Contact = () => {
         <footer className="footer" id="contact">
             <div className="footer_title">
                 <h2>
-                    <span>Let's get</span>
+                    <span>Let's get in</span>
                     <span>in touch</span>
                 </h2>
                 <figure className="footer_title-img">

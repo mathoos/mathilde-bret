@@ -6,7 +6,7 @@ h1{
     @include font-h1;
 
     @media screen and (max-width : 990px) {
-        font-size : 12vw;
+        font-size : 13vw;
     }
 
     span{
@@ -16,7 +16,8 @@ h1{
         @include font-h1-subtitle;
 
         @media screen and (max-width : 990px) {
-           font-size : 6vw;
+           font-size : 5.5vw;
+           line-height : 1.4;
         }
     }
 }
@@ -29,10 +30,6 @@ h2{
 
     @media screen and (max-width : 990px) {
         font-size : 7vw;
-    }
-
-    span{
-        color : inherit;
     }
 }
 
@@ -50,6 +47,9 @@ h4{
     color : $blanc;
     text-transform: uppercase;
     @include font-h3;
+    @media screen and (max-width : 990px) {
+        font-size : 4.3vw;
+    }
 }
 
 a{

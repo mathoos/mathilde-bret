@@ -12,18 +12,18 @@ const Contact = () => {
                     <span>in touch</span>
                 </h2>
                 <figure className="footer_title-img">
-                    <img src={Internet}/>
+                    <img src={Internet} alt="Globe avec flèche"/>
                 </figure>
             </div>
             <div className="footer_links">
-                <a href="" className="bouton bouton_blanc">Email</a>
-                <a href="" className="bouton bouton_blanc">Phone</a>
-                <a href="" className="bouton bouton_blanc">LinkedIn</a>
-                <a href="" className="bouton bouton_blanc">GitHub</a>
+                <a href="mailto:bretmathilde@orange.fr" className="bouton bouton_blanc">Email</a>
+                <a href="tel:0663273524" className="bouton bouton_blanc">Téléphone</a>
+                <a href="https://www.linkedin.com/in/mathildebret/" className="bouton bouton_blanc" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a href="https://github.com/mathoos" className="bouton bouton_blanc" target="_blank" rel="noreferrer">GitHub</a>
             </div>
             <div className="footer_copyright">
-                <p>© 2023 edition</p>
-                <a href="">Privacy policy</a>
+                <p>Édition 2024</p>
+                <p>Designé & développé avec amour</p>
             </div>
         </footer>
     ) 

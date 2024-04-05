@@ -15,7 +15,7 @@ const Skills = () => {
         <section className="skills" id="skills">
 
             <div className="skills_title">
-                <h2>I have few skills <br/> in my pocket</h2>
+                <h2>J'ai plus d'une corde <br/> à mon arc</h2>
             </div>
 
             <div className="skills_container">
@@ -53,8 +53,8 @@ const Skills = () => {
                     </div>
                     <div className="bloc txt">
                         <p>
-                            De nature curieuse et créative, j'aime élargir mes compétences autour du développement web, 
-                            afin de devenir entièrement autonome et évoluer dans un univers où la maîtrise ne m'est pas inconnue.
+                            Au cours de mes études et expériences, j'ai élargi mes compétences autour du 
+                            développement web, en équipe ou de manière autonomie. 
                         </p>
                     </div>
                     <div className="bloc">
@@ -73,7 +73,7 @@ const Skills = () => {
                         <figure className="bloc-icon">
                             <img src={IconWebdesign} alt="Webdesign"/>
                         </figure>
-                        <h3>SEO</h3>
+                        <h3>Optimisation <br/> SEO</h3>
                     </div>
                     {/* <div className="bloc">
                         <figure className="bloc-icon">

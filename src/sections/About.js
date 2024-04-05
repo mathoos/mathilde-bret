@@ -7,7 +7,7 @@ import AppareilPhoto from "../img/appareil-photo.png";
 import './About.scss';
 
 import { Reveal } from "react-awesome-reveal";
-import {rotateRight , bottomAnimation} from "../functions/keyframes";
+import {scaleAnimation , bottomAnimation } from "../functions/keyframes";
 
 const About = () => {
 
@@ -119,9 +119,7 @@ const About = () => {
 
                 <div className="about_container-presentation">
                     <figure className="about_container-presentation--img">
-                        <Reveal keyframes={rotateRight} className="reveal">
-                            <img src={MathildeBureau} className="img" alt="Photographie de Mathilde"/>
-                        </Reveal>
+                        <img src={MathildeBureau} className="img" alt="Photographie de Mathilde"/>
                         <div className="noisy"></div>
                         <img src={Pastille} className="pastille" alt="Pastille"/>
                         <button className="bouton bouton_bgNoir hidden-mobile">Tech friendly</button>

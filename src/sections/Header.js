@@ -35,6 +35,7 @@ const Header = () => {
                     </div>
                 </div>
                 <figure className="header_hero-img">
+                    <div className="noisy"></div>
                     <img src={Mathilde} alt="Mathilde Bret"/>
                 </figure>
             </div>

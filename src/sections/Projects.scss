@@ -15,7 +15,6 @@
         justify-content: space-between;
 
         h2{
-            width : 41.6vw;
             font-size : 3.5vw;
             @media screen and (max-width : 990px) {
                 font-size : 7vw;
@@ -74,8 +73,10 @@
                     border-radius : 30px;
                     background-color: $noir
                 }
+                
 
                 &-left{
+                    position : relative;
                     display : flex;
                     flex-direction: column;
                     justify-content: space-between;
@@ -84,12 +85,26 @@
                     border-radius : 50px 50px 0 50px;
                     background-color: $noir;
                     padding : 2.5vw 2.5vw 2.5vw 5vw;
+                    overflow : hidden;
                     @media screen and (max-width : 990px) {
                         gap : 5vh;
                         width : 100%;
                         border-radius : 0;
                         padding : 0;
                         border-radius : 0 30px 0 0;
+                    }
+
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        top: -100%;
+                        left: -50%;
+                        width: 300%;
+                        height: 300%;
+                        animation: grain 10s steps(10) infinite;
+                        background-image: url("../img/noise-effect2.png");
+                        opacity: .1;
+                        z-index : 2;
                     }
 
                     .description{
@@ -147,6 +162,7 @@
                         }
 
                         .bouton{
+                            z-index : 5;
                             @media screen and (max-width : 990px) {
                                 flex-grow: 1;
 
@@ -159,6 +175,7 @@
                 }
 
                 &-right{
+                    position : relative;
                     display : flex;
                     justify-content: center;
                     align-items: center;
@@ -167,6 +184,7 @@
                     border-radius : 0 50px 50px 0;
                     background-color: $noir;
                     padding : 2vw;
+                    overflow : hidden;
                     @media screen and (max-width : 990px) {
                         width : 100%;
                         height : 30vh;
@@ -174,14 +192,27 @@
                         padding : 5vh 30px 30px 30px;
                     }
 
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        top: -100%;
+                        left: -50%;
+                        width: 300%;
+                        height: 300%;
+                        animation: grain 10s steps(10) infinite;
+                        background-image: url("../img/noise-effect2.png");
+                        opacity: .1;
+                        z-index : 2;
+                    }
+
                     .mockup{
+                        position : relative;
                         display : flex;
                         justify-content: center;
                         align-items: center;
                         width : 100%;
                         height : 100%;
                         border-radius : 30px;
-                        //background-color: $noir;
                         overflow : hidden;
 
                         img{
@@ -189,7 +220,15 @@
                             height : 100%;
                             object-fit: cover;
                         }
-                    }
+
+                        .bouton{
+                            position : absolute;
+                            bottom : 1vw;
+                            right : 1vw;
+                            cursor : pointer;
+                            z-index : 5;
+                        }
+                    }  
                 }
             }
 

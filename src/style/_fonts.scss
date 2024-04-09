@@ -34,7 +34,7 @@ $heavy : 900;
 @mixin font-button-nav {
     font-variation-settings:
         "wdth" 125,
-        "wght" $regular
+        "wght" $medium
 }
 
 @mixin font-p {

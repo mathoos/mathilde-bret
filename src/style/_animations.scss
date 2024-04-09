@@ -1,3 +1,18 @@
+@keyframes fontWeight {
+    from {
+        font-variation-settings:
+        "wdth" 125,
+        "wght" $thin;
+    }
+    to {
+        font-variation-settings:
+        "wdth" 125,
+        "wght" $heavy;
+    }
+}
+
+
+
 @keyframes drawPath {
     from {
         stroke-dashoffset: 1000; 

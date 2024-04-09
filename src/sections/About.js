@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import MathildeBureau from "../img/about.jpg";
+import MathildeBureau from "../img/moi/coding.jpg";
 import Pastille from "../img/pastille.svg";
 import RollingStones from "../img/rolling-stones-tshirt.jpg";
-import RollingStones2 from "../img/dropdown.jpg";
+import RollingStones2 from "../img/moi/basilique_2.jpg";
 import AppareilPhoto from "../img/appareil-photo.png";
 import './About.scss';
 

@@ -4,7 +4,7 @@
     display : flex;
     flex-direction: column;
     align-items: flex-end;
-    gap : 20vh;
+    gap : 30vh;
     padding : 40vh 0;
 
     @media screen and (max-width : 990px) {
@@ -36,6 +36,7 @@
             position : relative;
             display : flex;
             justify-content: space-between;
+            gap : 10vw;
             width : 100%;
             padding : 0 5vw;
 
@@ -113,8 +114,6 @@
                     z-index : -1;
                 }
 
-                
-
                 .pastille{
                     position : absolute;
                     bottom : -20vh;
@@ -136,26 +135,24 @@
                         height : auto;
                     }
 
-                    .img{
+                    &_txt, &_arrow{
                         position : absolute;
-                        // top : 0;
-                        // left : 0;
                         width : 100%;
                         height : 100%;
                     }
-                }
-    
-                
+
+                    &_txt{
+                        animation : infiniteRotation 20s linear infinite;
+                    }
+                } 
             }
     
             &--txt{
                 display : flex;
                 flex-direction: column;
                 gap : 8vh;
-                width : 28vw;
                 @media screen and (max-width : 990px) {
                     gap : 5vh;
-                    width : 100%;
                 }
     
                 p{
@@ -254,6 +251,7 @@
                         &-title{
                             position : relative;
                             overflow : hidden;
+                            border : 1px solid red;
 
                             &--bloc{
                                 display : flex;

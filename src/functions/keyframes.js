@@ -1,9 +1,8 @@
 import { keyframes } from "@emotion/react";
 
-export const rotateLeftAbout = keyframes`
+export const rotateLeft = keyframes`
     from {
-        transform : rotate(-5deg) translateY(-25px) translateX(-25px);
-        transform: rotate(-5deg)
+        transform : rotate(-7deg) translateY(-25px) translateX(-25px);
     }
 
     to {
@@ -23,7 +22,7 @@ export const rotateRight = keyframes`
 
 export const scaleAnimation = keyframes`
     from {
-        transform: scale(1.2)
+        transform: scale(1.15)
     }
 
     to {

@@ -1,13 +1,16 @@
 import React, { useEffect } from 'react';
 import MathildeBureau from "../img/moi/coding.jpg";
-import Pastille from "../img/pastille.svg";
+import PastilleGlobe from "../img/pastille_globe.svg";
+import PastilleTxt from "../img/pastille_txt.svg";
+import PastilleArrow from "../img/pastille_txt.svg";
 import RollingStones from "../img/rolling-stones-tshirt.jpg";
 import RollingStones2 from "../img/moi/basilique_2.jpg";
 import AppareilPhoto from "../img/appareil-photo.png";
+import { Parallax } from "react-scroll-parallax";
 import './About.scss';
 
 import { Reveal } from "react-awesome-reveal";
-import {scaleAnimation , bottomAnimation } from "../functions/keyframes";
+import {scaleAnimation, rotateRight , rotateLeft, bottomAnimation } from "../functions/keyframes";
 
 const About = () => {
 
@@ -108,6 +111,8 @@ const About = () => {
         };
     }, []);
 
+    
+
     return (
         <section className="about" id="about">
 
@@ -116,14 +121,32 @@ const About = () => {
             </div>
 
             <div className="about_container">
-
                 <div className="about_container-presentation">
-                    <figure className="about_container-presentation--img">
-                        <img src={MathildeBureau} className="img" alt="Photographie de Mathilde"/>
-                        <div className="noisy"></div>
-                        <img src={Pastille} className="pastille" alt="Pastille"/>
-                        <button className="bouton bouton_bgNoir hidden-mobile">Tech friendly</button>
-                    </figure>
+                    <div className="about_container-presentation--img">   
+                        
+                        <figure className="image"> 
+                            <Reveal keyframes={scaleAnimation}>      
+                                <img src={MathildeBureau} alt="Mains qui pianotent sur un clavier d'ordinateur qui affiche du code"/>
+                            </Reveal>
+                            <div className="noisy"></div>
+                            <button className="bouton bouton_bgNoir hidden-mobile">Tech friendly</button>
+                        </figure>
+                        
+                        <Reveal keyframes={rotateLeft} className="reveal-volet">
+                            <div className="volet"></div>
+                        </Reveal> 
+
+                        <figure className="pastille">
+                            <img src={PastilleArrow} alt="Pastille"/> 
+                            {/* <Parallax rotate={['10deg', '-10deg']} className="img">
+                                
+                            </Parallax> */}
+                            
+                        </figure>
+
+                        
+                        
+                    </div>
                     <div className="about_container-presentation--txt">
                         <p>
                             Développeuse front-end passionnée, j'associe mes compétences en développement web et 
@@ -142,8 +165,6 @@ const About = () => {
                     </div>
                 </div>
             </div> 
-
-
 
             <div className="about_sticky">
                 <div className="about_sticky-container">
@@ -195,8 +216,8 @@ const About = () => {
                                         communication, maîtrise élémentaire de la suite Adobe et Figma, création de webdesign, 
                                         optimisation SEO, intégration de sites web.<br/><br/>
 
-                                        <span className="hidden-mobile">Mon expérience me permet de collaborer activement dans une équipe de 
-                                            communication !</span>
+                                        Mon expérience me permet de collaborer activement dans une équipe de 
+                                        communication !
                                     </p>
                                 </div>
  

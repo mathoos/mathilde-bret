@@ -1,17 +1,42 @@
-@keyframes fontWeight {
-    from {
-        font-variation-settings:
-        "wdth" 125,
-        "wght" $thin;
-    }
+
+
+
+// Apparition sur les côtés
+
+@keyframes slideSide{
     to {
-        font-variation-settings:
-        "wdth" 125,
-        "wght" $heavy;
+        opacity : 1;
+        transform : translateX(0);
     }
 }
 
 
+@keyframes slideUp{
+    to {
+        opacity : 1;
+        transform : translateY(0);
+    }
+}
+
+
+@keyframes slideNav{
+    to{
+        transform : translateX(-50%) translateY(0);       
+    }
+}
+
+
+// Animation rotation
+
+@keyframes rotateImg{
+    to{
+        transform : rotate(0);    
+    }
+}
+
+
+
+// Animation path svg
 
 @keyframes drawPath {
     from {
@@ -23,6 +48,8 @@
 }
 
 
+// Animation bullet dans le header
+
 @keyframes scaleUp {
     100%{
         transform : scale(.7);
@@ -31,6 +58,7 @@
 }
 
 
+// Animation rotation
 
 @keyframes infiniteRotation {
     100%{
@@ -39,12 +67,7 @@
 }
 
 
-@keyframes slideTop{
-    to{
-        transform : translateY(0);
-        opacity : 1;
-    }
-}
+// Animation variable font
 
 @keyframes fontBold{
     0%{
@@ -64,6 +87,8 @@
     }
 }
 
+
+// Animation fond grain
 
 @keyframes grain {
     0%, 100% { transform:translate(0, 0) }

@@ -28,9 +28,10 @@
         gap : 20vh;
         width : 100%;
         padding : 0 10vw;
-        overflow : hidden;
+        
         @media screen and (max-width : 990px) {
             padding : 0 30px;
+            overflow : hidden;
         }
 
         &-presentation{

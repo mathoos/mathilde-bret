@@ -17,7 +17,7 @@ const Skills = () => {
         <section className="skills" id="skills">
 
             <div className="skills_title">
-                <h2>J'ai plus d'une corde <br/> à mon arc</h2>
+                <h2>J'ai plus d'une corde <br className="hidden-mobile"/> à mon arc</h2>
             </div>
 
             <div className="skills_container">

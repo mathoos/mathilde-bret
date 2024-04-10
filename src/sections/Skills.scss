@@ -5,11 +5,9 @@
     flex-direction: column;
     gap : 10vh;
     overflow : hidden;
-    border : 1px solid red;
-    
-
     @media screen and (max-width : 990px) {
-        padding : 10vh 0;
+        gap : 0;
+        padding : 20vh 0;
     }
 
     &_title{
@@ -17,6 +15,7 @@
         @media screen and (max-width : 990px) {
             width : 100%;
             padding : 0 30px;
+            margin-bottom : 10vh;
         }
     } 
 
@@ -24,15 +23,28 @@
         display : flex;
         gap : 10vw;
         padding : 0 0 0 10vw;
+        @media screen and (max-width : 990px) {
+            gap : 0;
+            padding : 0 30px;
+            margin-bottom : 5vh;
+        }
 
         &-list{
             width : 50vw;
+            @media screen and (max-width : 990px) {
+                width : 100%;
+            }
 
             p{
                 font-size : 1.5vw;
                 border-bottom : 2px solid $noir;
                 padding : 1.5vw 0;
                 text-transform : uppercase;
+                @media screen and (max-width : 990px) {
+                    width : 100%;
+                    font-size : 5vw;
+                    padding : 3vw 0;
+                }
 
                 &:nth-of-type(8){
                     border-bottom : none;
@@ -43,6 +55,9 @@
         &-img{     
             width : 10vw;
             height : auto;
+            @media screen and (max-width : 990px) {
+                display : none;
+            }
 
             img{
                 width : 100%;
@@ -50,15 +65,15 @@
                 transform : rotate(-5deg) translateY(-2rem);
                 
             }
-        }
-
-        
+        } 
     }
 
     &_domain{
         padding : 0 10vw 30vh 10vw;
         @media screen and (max-width : 990px) {                   
             gap : 30px;
+            padding : 0 30px;
+            border : 1px solid green;
         }
 
         &-container{
@@ -66,6 +81,10 @@
             justify-content: row;
             flex-wrap: wrap;
             gap : 1.5vw;
+            @media screen and (max-width : 990px) {                   
+                flex-direction: column;
+                gap : 5vh;
+            }
 
             .bloc{
                 display : flex;

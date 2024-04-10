@@ -74,7 +74,7 @@ const Skills = () => {
                         </div>
                     </Reveal>
                     <Reveal keyframes={scaleInvert} delay="20">
-                        <div className="bloc">
+                        <div className="bloc methode">
                             <figure className="bloc-icon">
                                 <img src={IconUxUi} alt="UX UI"/>
                             </figure>
@@ -82,7 +82,7 @@ const Skills = () => {
                         </div>
                     </Reveal>
                     <Reveal keyframes={scaleInvert} delay="40">
-                        <div className="bloc">
+                        <div className="bloc optimisation">
                             <figure className="bloc-icon">
                                 <img src={IconWebdesign} alt="Webdesign"/>
                             </figure>

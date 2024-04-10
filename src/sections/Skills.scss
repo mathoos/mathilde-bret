@@ -73,7 +73,6 @@
         @media screen and (max-width : 990px) {                   
             gap : 30px;
             padding : 0 30px;
-            border : 1px solid green;
         }
 
         &-container{
@@ -99,7 +98,7 @@
                 @media screen and (max-width : 990px) {
                     gap : 8vh;
                     width : 100%;
-                    min-width : 100%;
+                    min-width :100%;
                     min-height : 30vh;
                     padding : 30px;
                 }
@@ -137,7 +136,9 @@
                     overflow : hidden;
                     @media screen and (max-width : 990px) {
                         width : 100%;
-                        padding : 30px;
+                        height : fit-content;
+                        min-height : fit-content;
+                        padding : 10vw 30px;
                     }
                     
                     p{
@@ -146,6 +147,7 @@
                         text-transform: uppercase;
                         @media screen and (max-width : 990px) {
                             font-size : 4vw;
+                            text-transform: none;
                         }
                     }
                 }

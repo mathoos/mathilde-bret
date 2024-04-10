@@ -3,7 +3,7 @@ import { add100Vh } from '../functions/add100vh';
 import { openMenu } from '../functions/openMenu';
 import Nav from '../components/Nav';
 import Menu from '../components/Menu';
-import Mathilde from "../img/moi/moi_7-compressed.png";
+import Mathilde from "../img/moi/moi_6.png";
 import './Header.scss';
 
 const Header = () => {
@@ -16,7 +16,7 @@ const Header = () => {
 
     return (
         <header className="header heightJs">
-            <Nav/>
+            <Nav/> 
             <Menu/>
 
 

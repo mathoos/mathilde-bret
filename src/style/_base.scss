@@ -10,10 +10,6 @@
     @include font-base;
 }
 
-body{
-    overflow-x : hidden;
-}
-
 body,html {
     box-sizing: border-box;  
     scroll-behavior: smooth;
@@ -60,8 +56,7 @@ hr{
 
 
 .hidden-mobile{
-
-    // @media screen and (max-width : 990px) {
-    //     display : none;
-    //  }
+    @media screen and (max-width : 990px) {
+        display : none;
+     }
 }

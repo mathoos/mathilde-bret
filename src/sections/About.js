@@ -195,24 +195,20 @@ const About = () => {
                                     <div className="bloc_txt-content">
                                         <h4>Éternelle étudiante</h4>
                                         <p>
-                                            Diplômée d'une licence en Communication & Médias, titulaire d'un titre de Webdesigner, 
-                                            et ayant récemment achevé mon contrat d'alternance en agence de communication en tant que développeuse d'application JavaScript React, mon parcours 
-                                            m'a permis d'acquérir une multitude de compétences qui se complètent à la 
-                                            perfection !<br/><br/>
+                                            Diplômée d'une licence en Communication & Médias et titulaire d'un titre de Webdesigner, 
+                                            j'ai récemment achevé mon contrat d'alternance en agence de communication en tant que développeuse front-end. 
+                                            Mon parcours m'a permis d'acquérir une multitude de compétences qui se complètent 
+                                            à la perfection !<br/><br/>
 
                                             Interview d'artistes et rédaction d'articles, participation à des cellules de 
                                             communication, maîtrise élémentaire de la suite Adobe et Figma, création de webdesign, 
                                             optimisation SEO, intégration de sites web.<br/><br/>
 
                                             Mon expérience me permet de collaborer activement dans une équipe de 
-                                            communication !
+                                            communication.
                                         </p>
                                     </div>
-                                
                                 </div>
- 
-                                
-                                
                             </div>
                             <figure className="bloc_img">
                                 <img src={RollingStones} className="bloc_img-principal" alt="Rolling Stones"/>

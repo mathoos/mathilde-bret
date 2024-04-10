@@ -30,6 +30,16 @@ export const scaleAnimation = keyframes`
     }
 `;
 
+export const scaleInvert = keyframes`
+    from {
+        transform: scale(.85)
+    }
+
+    to {
+        transform: scale(1)
+    }
+`;
+
 export const bottomAnimation = keyframes`
     from {
         transform : translateY(50%);

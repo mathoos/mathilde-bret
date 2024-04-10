@@ -5,6 +5,8 @@ import IconUxUi from "../img/icon-ux-ui.svg";
 import IconWebdesign from "../img/icon-webdesign.svg";
 import IconSmile from "../img/icon-smile.svg";
 import { Parallax } from "react-scroll-parallax";
+import { Reveal } from "react-awesome-reveal";
+import {scaleInvert } from "../functions/keyframes";
 
 import './Skills.scss';
 
@@ -39,42 +41,54 @@ const Skills = () => {
 
             <div className="skills_domain">
                 <div className="skills_domain-container">
-                    <div className="bloc">
-                        <figure className="bloc-icon">
-                            <img src={IconConcept} alt="Concept"/>
-                        </figure>
-                        <h3>Web <br/> design</h3>
-                    </div>
-                    <div className="bloc">
-                        <figure className="bloc-icon">
-                            <img src={IconArtDirection} alt="Art direction"/>
-                        </figure>
-                        <h3>UX-UI <br/> Design</h3>
-                    </div>
-                    <div className="bloc txt">
-                        <p>
-                            Au cours de mes études et expériences, j'ai élargi mes compétences autour du 
-                            développement web, en équipe ou de manière autonomie. 
-                        </p>
-                    </div>
-                    <div className="bloc">
-                        <div>
-                            <p>50+</p>
-                            <p>Projets réalisés</p>
-                        </div>       
-                    </div>
-                    <div className="bloc">
-                        <figure className="bloc-icon">
-                            <img src={IconUxUi} alt="UX UI"/>
-                        </figure>
-                        <h3>Méthode <br/> SCRUM</h3>
-                    </div>
-                    <div className="bloc">
-                        <figure className="bloc-icon">
-                            <img src={IconWebdesign} alt="Webdesign"/>
-                        </figure>
-                        <h3>Optimisation <br/> SEO</h3>
-                    </div>
+                    <Reveal keyframes={scaleInvert}>
+                        <div className="bloc">
+                            <figure className="bloc-icon">
+                                <img src={IconConcept} alt="Concept"/>
+                            </figure>
+                            <h3>Web <br/> design</h3>
+                        </div>
+                    </Reveal>
+                    <Reveal keyframes={scaleInvert} delay="20">
+                        <div className="bloc">
+                            <figure className="bloc-icon">
+                                <img src={IconArtDirection} alt="Art direction"/>
+                            </figure>
+                            <h3>UX-UI <br/> Design</h3>
+                        </div>
+                    </Reveal>
+                    <Reveal keyframes={scaleInvert} delay="40">
+                        <div className="bloc txt">
+                            <p>
+                                Au cours de mes études et expériences, j'ai élargi mes compétences autour du 
+                                développement web, en équipe ou de manière autonomie. 
+                            </p>
+                        </div>
+                    </Reveal>
+                    <Reveal keyframes={scaleInvert}>
+                        <div className="bloc projet">
+                            <div>
+                                <p>50+</p>
+                                <p>Projets réalisés</p>
+                            </div>       
+                        </div>
+                    </Reveal>
+                    <Reveal keyframes={scaleInvert} delay="20">
+                        <div className="bloc">
+                            <figure className="bloc-icon">
+                                <img src={IconUxUi} alt="UX UI"/>
+                            </figure>
+                            <h3>Méthode <br/> SCRUM</h3>
+                        </div>
+                    </Reveal>
+                    <Reveal keyframes={scaleInvert} delay="40">
+                        <div className="bloc">
+                            <figure className="bloc-icon">
+                                <img src={IconWebdesign} alt="Webdesign"/>
+                            </figure>
+                            <h3>Optimisation <br/> SEO</h3>
+                        </div>
+                    </Reveal>
                     {/* <div className="bloc">
                         <figure className="bloc-icon">
                             <img src={IconSmile} alt="Smile"/>

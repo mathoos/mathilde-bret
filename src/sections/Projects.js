@@ -29,8 +29,7 @@ const Projects = () => {
                                             {item.text}
                                         </p>
                                         <p className="annotation">{item.annotation}</p>
-                                    </div>
-                                    
+                                    </div>   
                                 </div>
                                 <div className="perks">
                                     {item.button && item.button.map((button, buttonIndex) => (

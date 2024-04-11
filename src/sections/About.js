@@ -10,7 +10,7 @@ import { Parallax } from "react-scroll-parallax";
 import './About.scss';
 
 import { Reveal } from "react-awesome-reveal";
-import {scaleAnimation, rotateRightVolet, bottomAnimation } from "../functions/keyframes";
+import {scaleAnimation, rotateRightVolet } from "../functions/keyframes";
 
 const About = () => {
 
@@ -35,10 +35,11 @@ const About = () => {
     
             blocContentElements.forEach((element) => {
                 element.style.height = `${maxHeight}px`;
+                console.log(`Chaque élément fait ${maxHeight}px`)
             });
     
             blocTxt.style.height = `${maxHeight}px`;
-            console.log(`${maxHeight}px`)
+            console.log(`Le bloc fait ${maxHeight}px`)
         };
     
         window.onload = adjustHeights;

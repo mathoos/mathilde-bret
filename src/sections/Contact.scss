@@ -11,6 +11,11 @@
     background-color: $noir;
     padding : 0 10vw 5vh 10vw;
     overflow : hidden;
+    @media screen and (max-width : 990px) {
+        justify-content: space-between;
+        gap : 15vh;
+        padding : 10vh 30px 5vh 30px;
+    }
 
     &::after {
         position: absolute;
@@ -41,7 +46,12 @@
 
                 &:nth-of-type(2){
                     align-self: flex-end;
-                }   
+                }  
+                
+                @media screen and (max-width : 990px) {
+                    font-size : 10vw;
+                    line-height : 1;
+                }
             }
         }
 
@@ -49,10 +59,17 @@
             position : absolute;
             top : 80%;
             left : 25vw;
+            @media screen and (max-width : 990px) {
+                top : 15vw;
+                left : 4vw;
+            }
 
             img{
                 width : 4.4vw;
                 height : auto;
+                @media screen and (max-width : 990px) {
+                    width : 11vw;
+                }
             }
         }
     }
@@ -63,13 +80,18 @@
         gap : 2vw;
 
         @media screen and (max-width : 990px) {
-            flex-wrap: wrap;
+            flex-direction: column;
+            gap : 2.5vh;
         }
 
         .bouton{
             text-transform: uppercase;
             font-weight : $light;
             z-index : 3;
+            @media screen and (max-width : 990px) {
+                width : 100%;
+                text-align : center;
+            }
         }
     }
 
@@ -82,6 +104,9 @@
             font-size : .8vw;
             font-weight : $light;
             text-transform: uppercase;
+            @media screen and (max-width : 990px) {
+                font-size : 2vw;
+            }
         }
     }
 }

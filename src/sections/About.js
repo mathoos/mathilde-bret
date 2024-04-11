@@ -22,14 +22,10 @@ const About = () => {
 
         let maxHeight = 0;
 
-        blocContentElements.forEach((element) => {
+        blocContentElements.forEach((element, index) => {
             const height = element.getBoundingClientRect().height;
             maxHeight = Math.max(maxHeight, height);
-        });
-
-        console.log(`${maxHeight}px`)
-
-        blocContentElements.forEach((element) => {
+            console.log(`Height of .bloc_txt ${index + 1}: ${height}px`);    
             element.style.height = `${maxHeight}px`;
         });
 

@@ -10,45 +10,35 @@ import { Parallax } from "react-scroll-parallax";
 import './About.scss';
 
 import { Reveal } from "react-awesome-reveal";
-import {scaleAnimation, rotateRightVolet } from "../functions/keyframes";
+import {scaleAnimation, rotateRightVolet, bottomAnimation } from "../functions/keyframes";
 
 const About = () => {
 
     useEffect(() => {
 
-        const calculateMaxHeight = () => {
-            const blocContentElements = document.querySelectorAll(".bloc_txt-content");
-            let maxHeight = 0;
-    
-            blocContentElements.forEach((element) => {
-                const height = element.getBoundingClientRect().height;
-                maxHeight = Math.max(maxHeight, height);
-            });
-    
-            return maxHeight;
-        };
-    
-        const adjustHeights = () => {
-            const blocContentElements = document.querySelectorAll(".bloc_txt-content");
-            const blocTxt = document.querySelector(".bloc_txt");
-            const maxHeight = calculateMaxHeight();
-    
-            blocContentElements.forEach((element) => {
-                element.style.height = `${maxHeight}px`;
-                console.log(`Chaque élément fait ${maxHeight}px`)
-            });
-    
-            blocTxt.style.height = `${maxHeight}px`;
-            console.log(`Le bloc fait ${maxHeight}px`)
-        };
-    
-        window.onload = adjustHeights;
+        const blocContentElements = document.querySelectorAll(".bloc_txt-content");
+        const blocTxt = document.querySelector(".bloc_txt");
+        const camembert = document.querySelector(".camembert");
+
+        let maxHeight = 0;
+
+        blocContentElements.forEach((element) => {
+            const height = element.getBoundingClientRect().height;
+            maxHeight = Math.max(maxHeight, height);
+        });
+
+        console.log(`${maxHeight}px`)
+
+        blocContentElements.forEach((element) => {
+            element.style.height = `${maxHeight}px`;
+        });
+
+        blocTxt.style.height = `${maxHeight}px`;
 
         
         const handleScroll = () => {
-            const camembert = document.querySelector(".camembert");
+
             const svgElement = document.querySelector('.bloc_img-arrow');
-            const maxHeight = calculateMaxHeight();
 
             if (svgElement) {
                 const svgOffset = svgElement.getBoundingClientRect().top;
@@ -109,7 +99,6 @@ const About = () => {
     
         return () => {
             window.removeEventListener('scroll', handleScroll);
-            window.onload = null;
         };
     }, []);
 
@@ -180,7 +169,6 @@ const About = () => {
                                             De nature curieuse et autonome, j'aime découvrir et apprendre de nouveaux langages 
                                             afin de pouvoir sélectionner au mieux les outils qui répondront au besoin spécifique 
                                             d'un projet.<br/><br/> 
-                                            
                                             Dans l'intention de faciliter les échanges et la coopération au sein de l'équipe de 
                                             développement, et  pour mieux appréhender le métier dans sa globalité, je m'initie 
                                             également au développement full-stack.<br/><br/> 

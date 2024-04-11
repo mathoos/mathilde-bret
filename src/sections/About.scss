@@ -246,7 +246,6 @@
                         max-width : 35vw;
                         overflow : hidden;
                         margin-top : 5vh;
-                        border : 1px solid red;
                         
                         @media screen and (max-width : 990px) {
                             width : 100%;
@@ -255,7 +254,7 @@
                         }
 
                         .camembert{
-                            transition : .5s linear;
+                            transition : .7s linear;
                         }
 
 

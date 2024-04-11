@@ -16,29 +16,38 @@ const About = () => {
 
     useEffect(() => {
 
-        const blocContentElements = document.querySelectorAll(".bloc_txt-content");
-        const blocTxt = document.querySelector(".bloc_txt");
-        const camembert = document.querySelector(".camembert");
-
-        let maxHeight = 0;
-
-        blocContentElements.forEach((element) => {
-            const height = element.getBoundingClientRect().height;
-            maxHeight = Math.max(maxHeight, height);
-        });
-
-        console.log(`${maxHeight}px`)
-
-        blocContentElements.forEach((element) => {
-            element.style.height = `${maxHeight}px`;
-        });
-
-        blocTxt.style.height = `${maxHeight}px`;
+        const calculateMaxHeight = () => {
+            const blocContentElements = document.querySelectorAll(".bloc_txt-content");
+            let maxHeight = 0;
+    
+            blocContentElements.forEach((element) => {
+                const height = element.getBoundingClientRect().height;
+                maxHeight = Math.max(maxHeight, height);
+            });
+    
+            return maxHeight;
+        };
+    
+        const adjustHeights = () => {
+            const blocContentElements = document.querySelectorAll(".bloc_txt-content");
+            const blocTxt = document.querySelector(".bloc_txt");
+            const maxHeight = calculateMaxHeight();
+    
+            blocContentElements.forEach((element) => {
+                element.style.height = `${maxHeight}px`;
+            });
+    
+            blocTxt.style.height = `${maxHeight}px`;
+            console.log(`${maxHeight}px`)
+        };
+    
+        window.onload = adjustHeights;
 
         
         const handleScroll = () => {
-
+            const camembert = document.querySelector(".camembert");
             const svgElement = document.querySelector('.bloc_img-arrow');
+            const maxHeight = calculateMaxHeight();
 
             if (svgElement) {
                 const svgOffset = svgElement.getBoundingClientRect().top;
@@ -99,6 +108,7 @@ const About = () => {
     
         return () => {
             window.removeEventListener('scroll', handleScroll);
+            window.onload = null;
         };
     }, []);
 

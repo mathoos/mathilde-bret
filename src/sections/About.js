@@ -26,6 +26,9 @@ const About = () => {
             const height = element.getBoundingClientRect().height;
             maxHeight = Math.max(maxHeight, height);
             console.log(`Height of .bloc_txt ${index + 1}: ${height}px`);    
+        });
+
+        blocContentElements.forEach((element) => {   
             element.style.height = `${maxHeight}px`;
         });
 

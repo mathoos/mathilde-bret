@@ -167,15 +167,14 @@ const About = () => {
                                         <p>
                                             Diplômée d'une licence en Communication & Médias et titulaire d'un titre de Webdesigner, 
                                             j'ai récemment achevé mon contrat d'alternance en agence de communication en tant que développeuse front-end. 
-                                            Mon parcours m'a permis d'acquérir une multitude de compétences qui se complètent 
-                                            à la perfection !<br/><br/>
+                                            <br/><br/>
 
                                             Interview d'artistes et rédaction d'articles, participation à des cellules de 
                                             communication, maîtrise élémentaire de la suite Adobe et Figma, création de webdesign, 
                                             optimisation SEO, intégration de sites web.<br/><br/>
 
-                                            Mon expérience me permet de collaborer activement dans une équipe de 
-                                            communication.
+                                            J'ai acquis au cours de mon expérience une multitude de compétences qui se complètent, 
+                                            ce qui me permet de collaborer activement dans une équipe de communication.
                                         </p>
                                     </div>
                                     <div className="bloc_txt-content">

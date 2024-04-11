@@ -251,7 +251,8 @@
                         @media screen and (max-width : 990px) {
                             width : 100%;
                             max-width : 100%;
-                            margin-top : 0;
+                            margin-top : 2.5vh;
+                            height : 55vh;
                         }
 
                         .camembert{
@@ -265,7 +266,8 @@
                             gap : 5vh;
                             height : 60vh;
                             @media screen and (max-width : 990px) {
-                                gap : 2.5vh;
+                                gap : 3vh;
+                                height : 55vh;
                             }
 
                             p{
@@ -399,7 +401,7 @@
                                 right : unset;
                                 left : 0;
                                 bottom : unset;
-                                top : -10vw;
+                                top : -15vw;
                                 width : 35vw;
                                 transform : rotate(50deg);
                             }

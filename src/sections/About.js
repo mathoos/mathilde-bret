@@ -28,11 +28,11 @@ const About = () => {
             console.log(`Height of .bloc_txt ${index + 1}: ${height}px`);    
         });
 
-        blocContentElements.forEach((element) => {   
-            element.style.height = `${maxHeight}px`;
-        });
+        // blocContentElements.forEach((element) => {   
+        //     element.style.height = `${maxHeight}px`;
+        // });
 
-        blocTxt.style.height = `${maxHeight}px`;
+        // blocTxt.style.height = `${maxHeight}px`;
 
         
         const handleScroll = () => {
@@ -163,11 +163,28 @@ const About = () => {
                             <div className="bloc_txt">
                                 <div className="camembert">
                                     <div className="bloc_txt-content">
+                                        <h4>Éternelle étudiante</h4>
+                                        <p>
+                                            Diplômée d'une licence en Communication & Médias et titulaire d'un titre de Webdesigner, 
+                                            j'ai récemment achevé mon contrat d'alternance en agence de communication en tant que développeuse front-end. 
+                                            Mon parcours m'a permis d'acquérir une multitude de compétences qui se complètent 
+                                            à la perfection !<br/><br/>
+
+                                            Interview d'artistes et rédaction d'articles, participation à des cellules de 
+                                            communication, maîtrise élémentaire de la suite Adobe et Figma, création de webdesign, 
+                                            optimisation SEO, intégration de sites web.<br/><br/>
+
+                                            Mon expérience me permet de collaborer activement dans une équipe de 
+                                            communication.
+                                        </p>
+                                    </div>
+                                    <div className="bloc_txt-content">
                                         <h4>Adaptation et curiosité</h4>
                                         <p>
                                             De nature curieuse et autonome, j'aime découvrir et apprendre de nouveaux langages 
                                             afin de pouvoir sélectionner au mieux les outils qui répondront au besoin spécifique 
                                             d'un projet.<br/><br/> 
+                                            
                                             Dans l'intention de faciliter les échanges et la coopération au sein de l'équipe de 
                                             développement, et  pour mieux appréhender le métier dans sa globalité, je m'initie 
                                             également au développement full-stack.<br/><br/> 
@@ -191,22 +208,7 @@ const About = () => {
                                             unique, immersive et intuitive.
                                         </p>
                                     </div>
-                                    <div className="bloc_txt-content">
-                                        <h4>Éternelle étudiante</h4>
-                                        <p>
-                                            Diplômée d'une licence en Communication & Médias et titulaire d'un titre de Webdesigner, 
-                                            j'ai récemment achevé mon contrat d'alternance en agence de communication en tant que développeuse front-end. 
-                                            Mon parcours m'a permis d'acquérir une multitude de compétences qui se complètent 
-                                            à la perfection !<br/><br/>
-
-                                            Interview d'artistes et rédaction d'articles, participation à des cellules de 
-                                            communication, maîtrise élémentaire de la suite Adobe et Figma, création de webdesign, 
-                                            optimisation SEO, intégration de sites web.<br/><br/>
-
-                                            Mon expérience me permet de collaborer activement dans une équipe de 
-                                            communication.
-                                        </p>
-                                    </div>
+                                    
                                 </div>
                             </div>
                             <figure className="bloc_img">

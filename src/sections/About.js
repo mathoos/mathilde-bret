@@ -180,6 +180,7 @@ const About = () => {
                                             De nature curieuse et autonome, j'aime découvrir et apprendre de nouveaux langages 
                                             afin de pouvoir sélectionner au mieux les outils qui répondront au besoin spécifique 
                                             d'un projet.<br/><br/> 
+                                            
                                             Dans l'intention de faciliter les échanges et la coopération au sein de l'équipe de 
                                             développement, et  pour mieux appréhender le métier dans sa globalité, je m'initie 
                                             également au développement full-stack.<br/><br/> 

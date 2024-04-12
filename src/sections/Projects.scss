@@ -61,6 +61,7 @@
             padding-bottom : 7vh;
             @media screen and (max-width : 990px) {
                 height: var(--heightJs);
+                padding-bottom : 2.5vh;
             }
  
             &--content{
@@ -70,9 +71,10 @@
                 height : 75vh;      
                 @media screen and (max-width : 990px) {
                     flex-direction: column;
+                    justify-content: space-between;
                     border-radius : 30px;
                     background-color: $noir;
-                    height : fit-content;
+                    height : 85vh;
                 }
                 
 

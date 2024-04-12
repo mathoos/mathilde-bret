@@ -27,20 +27,26 @@ function App() {
     const [progress, setProgress] = useState(0);
 
     useEffect(() => {
-        const timer = setInterval(() => {
+        const updateProgress = () => {
             setProgress(prevProgress => {
-                if (prevProgress < 5) {
-                    return prevProgress + 1; 
-                } 
-                else {
-                    setLoading(false); 
-                    clearInterval(timer);
-                    return prevProgress;
-                }
-            });
-        }, 300);
 
-        return () => clearInterval(timer);
+                const randomDelay = Math.random() * 1500 + 500; 
+                const nextProgress = prevProgress + 1;
+
+                if (nextProgress >= 5) {
+                    setTimeout(() => {
+                        setLoading(false);
+                    }, randomDelay);
+                    return 5;
+                }
+
+                setTimeout(updateProgress, randomDelay);
+                return nextProgress;
+            });
+        };
+
+        updateProgress();
+        return () => clearTimeout();
     }, []);
 
     useEffect(() => {

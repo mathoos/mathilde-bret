@@ -162,10 +162,9 @@
                 height : 100%;
                 @media screen and (max-width : 990px) {
                     align-items: flex-start;
-                    margin : 5vw;
+                    margin : 2.5vw;
                 }
                 
-
                 &-content{
                     background-color: $blanc;
                     border : 2px solid $noir;
@@ -174,7 +173,8 @@
                     height : 2.5vw;
                     padding : .5vw;
                     @media screen and (max-width : 990px) {
-                        height : 5vw;
+                        height : 7vw;
+                        padding : 1.5vw;
                     }
 
                     .border{
@@ -184,6 +184,9 @@
                         height : 100%;
                         border-radius : 100vmax;
                         overflow : hidden;
+                        @media screen and (max-width : 990px) {
+                            gap : 1vw;
+                        }
                         
 
                         .trait{

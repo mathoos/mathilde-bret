@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { add100Vh } from '../functions/add100vh';
 import { openMenu } from '../functions/openMenu';
 import Nav from '../components/Nav';
@@ -6,7 +6,9 @@ import Menu from '../components/Menu';
 import Mathilde from "../img/moi/moi_6.png";
 import './Header.scss';
 
-const Header = () => {
+const Header = ({ progress }) => {
+
+
 
     useEffect(() => {
         add100Vh();
@@ -19,8 +21,8 @@ const Header = () => {
             <Nav/> 
             <Menu/>
 
-
             <div className="header_hero">
+
                 <div className="header_hero-container">
                     <div className="header_hero-container--title">
                         <h1>Mathilde, <br/>
@@ -37,10 +39,29 @@ const Header = () => {
                         <p>Basée à Toulouse</p>
                     </div>
                 </div>
+
+                <div className="header_hero-loading">     
+                    <div className="loading_container">
+                        <div className="loading_container-content">
+                        <div className="border">
+                                {[...Array(5)].map((_, index) => ( 
+                                    <div
+                                        key={index}
+                                        className={`trait ${progress > index ? 'loading_done' : ''}`}
+                                    ></div>
+                                ))}
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
                 <figure className="header_hero-img">
                     <div className="noisy"></div>
                     <img src={Mathilde} alt="Mathilde Bret"/>
                 </figure>
+        
+                
             </div>
 
             <div className="header_rs">
@@ -66,6 +87,7 @@ const Header = () => {
                     </div>
                 </a>
             </div>
+
         </header>
     ) 
 }

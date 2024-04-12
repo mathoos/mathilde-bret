@@ -1,4 +1,17 @@
+// Animation header
 
+@keyframes headerImg{
+    to {
+        width : 33vw;
+        height : 63vh;
+    }
+}
+
+@keyframes headerImgMobile{
+    to {
+        height : 40vh;
+    }
+}
 
 
 // Apparition sur les côtés

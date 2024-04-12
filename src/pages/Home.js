@@ -6,11 +6,11 @@ import Contact from '../sections/Contact';
 import './Home.scss';
 
 
-function Home() {
+function Home({ progress }) { 
 
     return (
         <div>
-            <Header/>
+            <Header progress={progress} />
             <About/>
             <Skills/>
             <Projects/>

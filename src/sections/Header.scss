@@ -5,24 +5,28 @@
     justify-content: center;
     align-items: flex-end;
     width : 100%;
+    min-height : 100vh;
     height: 100vh;
+    height: var(--heightJs);
     padding : 0 10vw 9vh 10vw;
     overflow : hidden;
 
     @media screen and (max-width : 990px) {
         padding : 12vh 30px 5vh 30px;
         height: var(--heightJs);
+        height : 100vh;
     }
 
     &_hero{
+        position : relative;
         display : flex;
         justify-content: space-between;
         width : 100%;
 
         @media screen and (max-width : 990px) {
-            position : relative;
             flex-direction: column;
             justify-content: flex-end;
+            min-height : 100%;
             height : 100%;
         }
 
@@ -32,9 +36,9 @@
             justify-content: space-between;
             width : 35.5vw;
             padding-top : 6.5vh;
+            z-index : 5;
 
             @media screen and (max-width : 990px) {
-                position : absolute;
                 width : 100%;
                 height : 100%;
                 padding : 0;
@@ -47,7 +51,13 @@
             &--subtitle{
                 display : flex;
                 gap : 1vw;
+                transform : translateY(100%);
+                opacity : 0;
+                
                 @media screen and (max-width : 990px) {
+                    position : absolute;
+                    bottom : 0;
+                    left : 0;
                     align-items: center;
                     gap : 2.5vw;
                 }
@@ -83,9 +93,6 @@
             align-items: flex-end;
             width : 33vw;
             height : 63vh;
-            background-color: $violet;
-            border : 2px solid $noir;
-            border-radius : 50px;
 
             @media screen and (max-width : 990px) {
                 width : 100%;
@@ -93,29 +100,31 @@
                 margin-bottom : 7vh;
             }
 
-            .noisy{
-                position : absolute;
-                top : 0;
-                left : 0;
-                width : 100%;
-                height : 100%;
-                overflow : hidden;
-                border-radius : 50px;
-                z-index : 5;
+            // .noisy{
+            //     position : absolute;
+            //     top : 0;
+            //     left : 0;
+            //     width : 100%;
+            //     height : 100%;
+            //     overflow : hidden;
+            //     background-color: $violet;
+            //     border : 2px solid $noir;
+            //     border-radius : 50px;
+            //     z-index : 5;
 
-                &::after {
-                    position: absolute;
-                    content: "";
-                    top: -100%;
-                    left: -50%;
-                    width: 300%;
-                    height: 300%;
-                    animation: grain 10s steps(10) infinite;
-                    background-image: url("../img/noise-effect2.png");
-                    opacity: .25;
-                    z-index : 2;
-                }
-            }
+            //     &::after {
+            //         position: absolute;
+            //         content: "";
+            //         top: -100%;
+            //         left: -50%;
+            //         width: 300%;
+            //         height: 300%;
+            //         animation: grain 10s steps(10) infinite;
+            //         background-image: url("../img/noise-effect2.png");
+            //         opacity: .25;
+            //         z-index : 2;
+            //     }
+            // }
 
             img{
                 width : auto;
@@ -128,6 +137,85 @@
                     object-fit: contain;
                     object-position: bottom;
                 }
+            }
+        }
+
+        &-loading{
+            position : absolute;
+            bottom : 0;
+            right : 0;
+            background-color: $violet;
+            border : 2px solid $noir;
+            border-radius : 50px;
+            width : 100%;
+            height : 73vh;
+            overflow : hidden;
+            @media screen and (max-width : 990px) {
+                height : calc(100% - 7vh);
+                margin-bottom : 7vh;
+            }
+
+            .loading_container{
+                display : flex;
+                align-items: flex-end;
+                padding : 2.5vw;
+                width : 50vw;
+                height : 100%;
+                @media screen and (max-width : 990px) {
+                    align-items: flex-start;
+                    margin : 5vw;
+                }
+                
+
+                &-content{
+                    background-color: $blanc;
+                    border : 2px solid $noir;
+                    border-radius : 100vmax;
+                    width : fit-content;
+                    height : 2.5vw;
+                    padding : .5vw;
+                    @media screen and (max-width : 990px) {
+                        height : 5vw;
+                    }
+
+                    .border{
+                        display : flex;
+                        gap : .3vw;
+                        width : 100%;
+                        height : 100%;
+                        border-radius : 100vmax;
+                        overflow : hidden;
+                        
+
+                        .trait{
+                            width : 1.5vw;
+                            height : 100%;
+                            background-color: transparent;
+                            border-radius : 2.5px;
+                            transition: .3s ease;
+                            @media screen and (max-width : 990px) {
+                                width : 5vw;
+                            }
+    
+                            &.loading_done{
+                                background-color: $noir;
+                            }
+                        }
+                    }  
+                }
+            }
+
+            &::after{
+                position: absolute;
+                content: "";
+                top: -100%;
+                left: -50%;
+                width: 300%;
+                height: 300%;
+                animation: grain 10s steps(10) infinite;
+                background-image: url("../img/noise-effect2.png");
+                opacity: .25;
+                z-index : 2;
             }
         }
     }
@@ -144,17 +232,9 @@
             display : none;
         }
 
-
         &-icon{           
             opacity : 0;
             transform : translateX(100%);
-            
-
-            @for $i from 1 through $elements {
-                &:nth-child(#{$i}) {
-                    animation: slideSide .4s ease (.3s + $i * .1s) forwards;   
-                }
-            }
 
             &--bulle{
                 display : flex;

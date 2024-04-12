@@ -5,8 +5,7 @@ h1{
     line-height : 1.5;
     @include font-h1;
     opacity : 0;
-    transform : translateY(100%);
-    animation : slideUp 1.2s ease forwards;
+    transform : translateX(-100%);
 
     @media screen and (max-width : 990px) {
         font-size : 13vw;

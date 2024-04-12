@@ -10,11 +10,68 @@
     @include font-base;
 }
 
-body,html {
-    box-sizing: border-box;  
+html, body {
     scroll-behavior: smooth;
     background-color: $blanc;
+    width : 100%;
 }
+
+html{
+
+    &.loading{
+        height : 100vh;
+        overflow-y: overlay;
+
+        body{
+            height : 100vh;
+            overflow-y: overlay;
+        } 
+    }
+
+    &.loading-done{
+
+        .header_hero-container--subtitle{
+            animation : slideUp .5s ease 1s forwards;
+        }
+
+        .header_hero-container--title{
+            h1{
+                animation : slideSide 1.2s ease .7s forwards;
+            }
+        }
+
+        .header_rs-icon{
+            @for $i from 1 through $elements {
+                &:nth-child(#{$i}) {
+                    animation: slideSide .4s ease ($i * .2s) forwards;   
+                }
+            }
+        }
+
+        .nav{
+            animation : slideNav 1s ease .1s forwards;
+        }
+
+        .header_hero-loading{
+            animation : headerImg 1s ease .7s forwards;
+            @media screen and (max-width : 990px) {
+                animation : headerImgMobile 1s ease .7s forwards;
+            }
+           
+            .loading_container{
+                opacity : 0;
+            }
+        }
+
+        body{
+            height : auto;
+            overflow : visible;
+        } 
+    }
+
+    
+}
+
 
 html.lenis {
     height: auto;

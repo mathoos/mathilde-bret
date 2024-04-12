@@ -17,7 +17,7 @@ const Projects = () => {
             </div>
             <div className="projects_container">
                 {data.map((item, index) => (
-                    <div className="projects_container-bloc" key={index}>
+                    <div className="projects_container-bloc heightJs" key={index}>
                         <div className="projects_container-bloc--content">
                             <div className="projects_container-bloc--content-left">
                                 <div className="description">

@@ -38,7 +38,7 @@ function App() {
                     return prevProgress;
                 }
             });
-        }, 400);
+        }, 300);
 
         return () => clearInterval(timer);
     }, []);

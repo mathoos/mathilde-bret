@@ -4,7 +4,7 @@ import './Menu.scss';
 const OpenMenu = () => {
 
     return (
-        <section className="menu">
+        <section className="menu heightJs">
 
             <div className="menu_container">
                 <a href="#about" className="bouton bouton_bgBlanc">About</a>

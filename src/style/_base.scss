@@ -21,10 +21,16 @@ html{
     &.loading{
         height : 100vh;
         overflow-y: overlay;
+        @media screen and (max-width : 990px) {
+            overflow : hidden;
+        }
 
         body{
             height : 100vh;
             overflow-y: overlay;
+            @media screen and (max-width : 990px) {
+                overflow : hidden;
+            }
         } 
     }
 

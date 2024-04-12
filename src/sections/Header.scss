@@ -7,14 +7,13 @@
     width : 100%;
     min-height : 100vh;
     height: 100vh;
-    height: var(--heightJs);
     padding : 0 10vw 9vh 10vw;
     overflow : hidden;
 
     @media screen and (max-width : 990px) {
         padding : 12vh 30px 5vh 30px;
+        min-height : var(--heightJs);
         height: var(--heightJs);
-        height : 100vh;
     }
 
     &_hero{

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { add100Vh } from '../functions/add100vh';
 import { openMenu } from '../functions/openMenu';
 import Nav from '../components/Nav';
@@ -7,8 +7,6 @@ import Mathilde from "../img/moi/moi_6.png";
 import './Header.scss';
 
 const Header = ({ progress }) => {
-
-
 
     useEffect(() => {
         add100Vh();

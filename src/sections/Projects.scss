@@ -16,9 +16,7 @@
         justify-content: space-between;
 
         h2{
-            font-size : 3.5vw;
             @media screen and (max-width : 990px) {
-                font-size : 7vw;
                 width : 100%;
             }
         }

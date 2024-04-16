@@ -1,5 +1,6 @@
 
 import Doigt from "../img/finger-pixel.svg";
+import IconGenerale from "../img/icon-generale.svg";
 import IconConcept from "../img/icon-concept.svg";
 import IconArtDirection from "../img/icon-art-direction.svg";
 import IconUxUi from "../img/icon-ux-ui.svg";
@@ -45,7 +46,7 @@ const Skills = () => {
 
                     <div className="bloc">
                         <figure className="bloc-icon">
-                            <img src={IconConcept} alt="Concept"/>
+                            <img src={IconGenerale} alt="Concept"/>
                         </figure>
                         <h3>Web <br/> design</h3>
                     </div>
@@ -53,7 +54,7 @@ const Skills = () => {
                 
                     <div className="bloc">
                         <figure className="bloc-icon">
-                            <img src={IconArtDirection} alt="Art direction"/>
+                            <img src={IconGenerale} alt="Art direction"/>
                         </figure>
                         <h3>UX-UI <br/> Design</h3>
                     </div>
@@ -77,7 +78,7 @@ const Skills = () => {
                 
                     <div className="bloc methode">
                         <figure className="bloc-icon">
-                            <img src={IconUxUi} alt="UX UI"/>
+                            <img src={IconGenerale} alt="UX UI"/>
                         </figure>
                         <h3>Méthode <br/> SCRUM</h3>
                     </div>
@@ -85,7 +86,7 @@ const Skills = () => {
         
                     <div className="bloc optimisation">
                         <figure className="bloc-icon">
-                            <img src={IconWebdesign} alt="Webdesign"/>
+                            <img src={IconGenerale} alt="Webdesign"/>
                         </figure>
                         <h3>Optimisation <br/> SEO</h3>
                     </div>

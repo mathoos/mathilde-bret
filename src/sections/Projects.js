@@ -1,8 +1,9 @@
 import Eyes from "../img/eyes.svg";
 import TemplatePlomberie from "../img/projects/plomberie-project2.jpg";
 import TemplateEkanim from "../img/projects/ekanim-project.jpg";
-import TemplateGroupePPI from "../img/projects/groupeppi-fullpage.png";
 import TemplateSainteecileViolins from "../img/projects/saintececile-project3.jpg";
+import TemplateArgentBank from "../img/projects/ArgentBank-project.jpg";
+import TemplateBulletJournal from "../img/projects/bullet-project2.jpg";
 
 import './Projects.scss';
 
@@ -81,11 +82,11 @@ const data = [
         link: "https://www.sainte-cecile-violins.com/"
     },
     {
-        title: "Bank",
+        title: "Argent Bank",
         text: "Intégration de l'interface utilisateur de l'application bancaire avec React. Utilisation de Redux pour gérer les données et maintenir un état global cohérent. Appels à l'API REST pour connecter le front et le back pour assurer une communication fluide entre le client et le serveur. Utilisation de Swagger pour documenter les API afin d'assurer la clarté et la maintenabilité de l'interface de programmation. ",
         button: ["React", "Redux", "Css", "API", "Swagger"],
         annotation: "Projet de formation | OpenClassrooms",
-        template: TemplateGroupePPI,
+        template: TemplateArgentBank,
         link: "https://github.com/mathoos/Project-10-Bank-API"
     },
     {
@@ -93,7 +94,7 @@ const data = [
         text: "Création d'un système de gestion de projet avec React. Mise en place d'un store avec Redux afin de permettre la création, la modification et la suppression de notes. Utilisation de la librairie date-fns pour ranger les notes en fonction de la date souhaitée.",
         button: ["React", "Redux", "Scss", "date-fns"],
         annotation: "Projet personnel | en construction",
-        template: TemplatePlomberie,
+        template: TemplateBulletJournal,
         link: "https://github.com/mathoos/bullet-journal"
     }
 ];

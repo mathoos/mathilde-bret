@@ -1,6 +1,8 @@
 import Eyes from "../img/eyes.svg";
-import TemplatePlomberie from "../img/plomberie_mockup.gif";
-import TemplateEkanim from "../img/ekanim-fullpage.png";
+import TemplatePlomberie from "../img/projects/plomberie-project2.jpg";
+import TemplateEkanim from "../img/projects/ekanim-project.jpg";
+import TemplateGroupePPI from "../img/projects/groupeppi-fullpage.png";
+import TemplateSainteecileViolins from "../img/projects/saintececile-project3.jpg";
 
 import './Projects.scss';
 
@@ -64,26 +66,26 @@ const data = [
     },
     {
         title: "Plomberie Joan Bret",
-        text: "Réalisation de la maquette du site sur Figma et intégration avec React. Mise en place d'une API REST pour permettre au client d'ajouter ses propres photos, de les modifier et les supprimer. Déploiement du site statique et du serveur sur la plateforme Render.",
-        button: ["React", "Scss", "Node", "Express", "MongoDB", "Figma", "Render"],
+        text: "Réalisation de la maquette du site sur Figma et intégration avec React. Mise en place d'une API REST avec diverses routes pour permettre au client d'ajouter son propre contenu. Connexion à une base de données MongoDB pour rendre les données persistantes et ajout d'un système d'authentification pour protéger l'API. Déploiement du site statique et du serveur sur la plateforme Render.",
+        button: ["Figma", "React", "Scss", "Node", "Express", "MongoDB", "Render"],
         annotation: "Site vitrine | stage",
         template: TemplatePlomberie,
         link: "https://www.plomberiejoanbret.fr/"
     },
     {
-        title: "API CRUD",
-        text: "Création d'une API CRUD avec diverses routes afin de permettre à l'utilisateur de créer, visualiser, modifier et supprimer des objets à mettre en vente. Connexion à une base de données NoSQL, MongoDB, pour rendre l'API dynamique et les données persistantes. Ajout d'un système d'authentification pour protéger l'API, et intégration d'une gestion de fichiers pour permettre aux utilisateurs de télécharger des images.",
-        button: ["Angular", "Node", "Express", "MongoDB", "Bcrypt", "multer"],
-        annotation: "Projet de formation | OpenClassrooms",
-        template: TemplatePlomberie,
-        link: "https://github.com/mathoos/go-fullstack"
+        title: "Sainte Cécile Violins",
+        text: "Site onepage d'une entreprise de création de violions intégré à partir de la maquette Adobe XD. Utilisation de fichiers JSON pour stocker des données et création de scripts PHP pour afficher le contenu dynamiquement. Déploiement du site avec Docker.",
+        button: ["Html", "Scss", "Php", "JavaScript", "Docker"],
+        annotation: "Site vitrine | melting.k",
+        template: TemplateSainteecileViolins,
+        link: "https://www.sainte-cecile-violins.com/"
     },
     {
         title: "Bank",
         text: "Intégration de l'interface utilisateur de l'application bancaire avec React. Utilisation de Redux pour gérer les données et maintenir un état global cohérent. Appels à l'API REST pour connecter le front et le back pour assurer une communication fluide entre le client et le serveur. Utilisation de Swagger pour documenter les API afin d'assurer la clarté et la maintenabilité de l'interface de programmation. ",
         button: ["React", "Redux", "Css", "API", "Swagger"],
         annotation: "Projet de formation | OpenClassrooms",
-        template: TemplatePlomberie,
+        template: TemplateGroupePPI,
         link: "https://github.com/mathoos/Project-10-Bank-API"
     },
     {

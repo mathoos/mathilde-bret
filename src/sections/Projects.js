@@ -13,7 +13,7 @@ const Projects = () => {
     return (
         <section className="projects" id="projects">
             <div className="projects_title">
-                <h2>Sélection de <br/> quelques projets&nbsp;!</h2>
+                <h2>Sélection de <br className="hidden-mobile"/> quelques projets&nbsp;!</h2>
                 <figure className="projects_title-eyes">
                     <img src={Eyes} alt="Yeux"/>
                 </figure>

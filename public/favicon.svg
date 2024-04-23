@@ -1,13 +1,13 @@
-<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0_1034_105" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="128" height="128">
-<rect width="128" height="128" fill="#D9D9D9"/>
+<svg width="115" height="115" viewBox="0 0 115 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_1034_105" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="115" height="115">
+<rect x="20.7656" width="96" height="96" transform="rotate(12.4918 20.7656 0)" fill="#D9D9D9"/>
 </mask>
 <g mask="url(#mask0_1034_105)">
-<circle cx="63.8951" cy="63.8942" r="62.5074" transform="rotate(-26.9745 63.8951 63.8942)" fill="#FEECC1"/>
-<circle cx="63.8951" cy="63.8942" r="62.5074" transform="rotate(-26.9745 63.8951 63.8942)" stroke="#2E2D30" stroke-width="2"/>
-<circle cx="63.8951" cy="63.8942" r="62.5074" transform="rotate(-26.9745 63.8951 63.8942)" stroke="#2E2D30" stroke-width="2"/>
-<path d="M31.8022 57.0432C31.134 55.7304 29.3221 55.1348 27.6611 55.9802C26.0002 56.8255 25.4154 58.641 26.0836 59.9538C26.7518 61.2666 28.5637 61.8622 30.2246 61.0168C31.8856 60.1714 32.4703 58.356 31.8022 57.0432Z" fill="#2E2D30" stroke="#2E2D30" stroke-width="2"/>
-<circle cx="3.82575" cy="3.82575" r="3.82575" transform="matrix(0.891208 -0.453594 -0.453594 -0.891208 73.9883 39.8706)" fill="#2E2D30"/>
-<path d="M28.8066 86.0439V86.0439C57.8877 93.2482 88.0069 78.8992 100.735 51.777L102.179 48.7001" stroke="#2E2D30" stroke-width="2"/>
+<circle cx="57.1851" cy="57.1509" r="46.1305" transform="rotate(-14.4827 57.1851 57.1509)" fill="#FEECC1"/>
+<circle cx="57.1851" cy="57.1509" r="46.1305" transform="rotate(-14.4827 57.1851 57.1509)" stroke="#2E2D30" stroke-width="3"/>
+<circle cx="57.1851" cy="57.1509" r="46.1305" transform="rotate(-14.4827 57.1851 57.1509)" stroke="#2E2D30" stroke-width="3"/>
+<path d="M35.3038 47.766C35.018 46.6597 33.6953 45.7991 32.125 46.2047C30.5546 46.6103 29.8142 48.0038 30.0999 49.1101C30.3857 50.2164 31.7084 51.077 33.2787 50.6714C34.8491 50.2658 35.5895 48.8722 35.3038 47.766Z" fill="#2E2D30" stroke="#2E2D30" stroke-width="3"/>
+<circle cx="3.83185" cy="3.83185" r="3.83185" transform="matrix(0.968223 -0.250088 -0.250088 -0.968223 68.0215 43.3022)" fill="#2E2D30"/>
+<path d="M27.9004 67.6787V67.6787C48.0262 77.6716 72.4085 72.0508 86.1283 54.2554L87.6848 52.2366" stroke="#2E2D30" stroke-width="3"/>
 </g>
 </svg>

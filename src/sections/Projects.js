@@ -3,7 +3,7 @@ import TemplatePlomberie from "../img/projects/plomberie-project2.jpg";
 import TemplateEkanim from "../img/projects/ekanim-project.jpg";
 import TemplateSainteecileViolins from "../img/projects/saintececile-project3.jpg";
 import TemplateArgentBank from "../img/projects/ArgentBank-project.jpg";
-import TemplateBulletJournal from "../img/projects/bullet-project2.jpg";
+import TemplateBulletJournal from "../img/projects/taskManager2-project.jpg";
 
 import './Projects.scss';
 
@@ -90,12 +90,12 @@ const data = [
         link: "https://github.com/mathoos/Project-10-Bank-API"
     },
     {
-        title: "Bullet Journal",
-        text: "Création d'un système de gestion de projet avec React. Mise en place d'un store avec Redux afin de permettre la création, la modification et la suppression de notes. Utilisation de la librairie date-fns pour ranger les notes en fonction de la date souhaitée.",
-        button: ["React", "Redux", "Scss", "date-fns"],
+        title: "Task manager",
+        text: "Création d'un système de gestion de projet avec React. Mise en place d'un slice Redux avec des actions pour ajouter ou supprimer une note, et d'un reducer qui manipule l'état des notes en fonction des actions. Création d'un store Redux pour gérer l'état global de l'application et stockage des données dans le navigateur avec LocalStorage.",
+        button: ["React", "Scss", "Redux", "Redux Toolkit", "LocalStorage"],
         annotation: "Projet personnel | en construction",
         template: TemplateBulletJournal,
-        link: "https://github.com/mathoos/bullet-journal"
+        link: "https://task-manager-journal.onrender.com/"
     }
 ];
 

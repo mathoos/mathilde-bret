@@ -1,9 +1,9 @@
 import Eyes from "../img/eyes.svg";
-import TemplatePlomberie from "../img/projects/plomberie-project2.jpg";
+import TemplatePlomberie from "../img/projects/plomberie-project.jpg";
 import TemplateEkanim from "../img/projects/ekanim-project.jpg";
 import TemplateSainteecileViolins from "../img/projects/saintececile-project3.jpg";
 import TemplateArgentBank from "../img/projects/ArgentBank-project.jpg";
-import TemplateBulletJournal from "../img/projects/taskManager2-project.jpg";
+import TemplateBulletJournal from "../img/projects/taskManager3-project.jpg";
 
 import './Projects.scss';
 

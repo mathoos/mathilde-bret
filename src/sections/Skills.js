@@ -45,17 +45,13 @@ const Skills = () => {
                 <div className="skills_domain-container">
 
                     <div className="bloc">
-                        <figure className="bloc-icon">
-                            <img src={IconGenerale} alt="Concept"/>
-                        </figure>
+                        <div className="bloc-icon"></div>
                         <h3>Web <br/> design</h3>
                     </div>
     
                 
                     <div className="bloc">
-                        <figure className="bloc-icon">
-                            <img src={IconGenerale} alt="Art direction"/>
-                        </figure>
+                        <div className="bloc-icon"></div>
                         <h3>UX-UI <br/> Design</h3>
                     </div>
                 
@@ -77,55 +73,18 @@ const Skills = () => {
                 
                 
                     <div className="bloc methode">
-                        <figure className="bloc-icon">
-                            <img src={IconGenerale} alt="UX UI"/>
-                        </figure>
+                        <div className="bloc-icon"></div>
                         <h3>Méthode <br/> SCRUM</h3>
                     </div>
         
         
                     <div className="bloc optimisation">
-                        <figure className="bloc-icon">
-                            <img src={IconGenerale} alt="Webdesign"/>
-                        </figure>
+                        <div className="bloc-icon"></div>
                         <h3>Optimisation <br/> SEO</h3>
                     </div>
                    
-                    {/* <div className="bloc">
-                        <figure className="bloc-icon">
-                            <img src={IconSmile} alt="Smile"/>
-                        </figure> 
-                    </div> */}
                 </div>  
             </div>
-
-            {/* <div className="skills_sticky">
-                <div className="skills_sticky-container">
-                    <div className="bloc">
-                        <p className="bloc-title">Need a site ?</p>
-                        <div className="bloc-subtitle">
-                            <p className="bloc-subtitle--1">Say no more...</p>
-                            <p className="bloc-subtitle--2">I can handle it !</p>
-                        </div>
-                    </div>
-                    <div className="bloc">
-                        <p className="bloc-title">Need a site ?</p>
-                        <div className="bloc-subtitle">
-                            <p className="bloc-subtitle--1">Say no more...</p>
-                            <p className="bloc-subtitle--2">I can handle it !</p>
-                        </div>
-                    </div>
-                    <div className="bloc">
-                        <p className="bloc-title">Need a site ?</p>
-                        <div className="bloc-subtitle">
-                            <p className="bloc-subtitle--1">Say no more...</p>
-                            <p className="bloc-subtitle--2">I can handle it !</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div className="skills_black"></div> */}
         </section> 
     ) 
 }

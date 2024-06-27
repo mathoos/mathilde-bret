@@ -58,7 +58,6 @@ const Header = ({ progress }) => {
                     <img src={Mathilde} alt="Mathilde Bret"/>
                 </figure>
         
-                
             </div>
 
             <div className="header_rs">

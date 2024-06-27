@@ -17,8 +17,9 @@
         text-align: right;
         padding : 0 10vw;
         @media screen and (max-width : 990px) {
+            text-align: left;
             width : 100%;
-            padding : 0 30px 0 0;
+            padding : 0 30px;
         }
     } 
 
@@ -44,7 +45,7 @@
 
             @media screen and (max-width : 990px) {
                 flex-direction: column;
-                gap : 10vh;
+                gap : 0;
                 padding : 0;
             }
 
@@ -130,7 +131,7 @@
                     right : -7vw;  
                     display : flex;
                     justify-content: center;
-                    align-items: center;                
+                    align-items: center;              
 
                     @media screen and (max-width : 990px) { 
                         bottom : -17vw;

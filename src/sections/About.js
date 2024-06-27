@@ -101,14 +101,14 @@ const About = () => {
 
             <div className="about_container">
                 <div className="about_container-presentation">
-                    <div className="about_container-presentation--img">   
+                    <div className="about_container-presentation--img hidden-mobile">   
                         
                         <figure className="image"> 
                             <Reveal keyframes={scaleAnimation} delay={100}>      
                                 <img src={MathildeBureau} alt="Mains qui pianotent sur un clavier d'ordinateur qui affiche du code"/>
                             </Reveal>
                             <div className="noisy"></div>
-                            <button className="bouton bouton_bgNoir hidden-mobile">Tech friendly</button>
+                            <button className="bouton bouton_bgNoir">Tech friendly</button>
                         </figure>
                         
                         <Reveal keyframes={rotateRightVolet} delay={300} triggerOnce={true} className="reveal-volet">
@@ -121,16 +121,26 @@ const About = () => {
                             <Parallax rotate={['-30deg', '15deg']} className="pastille_arrow">
                                 <img src={PastilleArrow}  alt="Pastille"/> 
                             </Parallax>
-                        </figure>
-
-                        
-                        
+                        </figure> 
                     </div>
                     <div className="about_container-presentation--txt">
                         <p>
                             Développeuse front-end passionnée, j'associe mes compétences en développement web et 
                             en webdesign pour créer des interfaces utilisateurs ergonomiques visuellement attractives.
                         </p>
+                        <div className="about_container-presentation--img hidden-pc">   
+                        
+                            <figure className="image"> 
+                                <Reveal keyframes={scaleAnimation} delay={100}>      
+                                    <img src={MathildeBureau} alt="Mains qui pianotent sur un clavier d'ordinateur qui affiche du code"/>
+                                </Reveal>
+                                <div className="noisy"></div>
+                            </figure>
+                        
+                            <Reveal keyframes={rotateRightVolet} delay={300} triggerOnce={true} className="reveal-volet">
+                                <div className="volet"></div>
+                            </Reveal> 
+                        </div>
                         <p>
                             En agence de communication, j'ai évolué au contact d'équipes multidisciplinaire, entretenant 
                             une perpétuelle collaboration créative dans la conception de nouveaux produits digitaux. 

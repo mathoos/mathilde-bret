@@ -67,7 +67,7 @@ const data = [
     },
     {
         title: "Plomberie Joan Bret",
-        text: "Réalisation de la maquette du site sur Figma et intégration avec React. Mise en place d'une API REST avec diverses routes pour permettre au client d'ajouter son propre contenu. Connexion à une base de données MongoDB pour rendre les données persistantes et ajout d'un système d'authentification pour protéger l'API. Déploiement du site statique et du serveur sur la plateforme Render.",
+        text: "Réalisation de la maquette sur Figma et intégration avec React. Mise en place d'une API REST avec diverses routes pour permettre au client d'ajouter son propre contenu. Connexion à une base de données MongoDB et ajout d'un système d'authentification pour protéger l'API. Déploiement du site statique et du serveur sur la plateforme Render.",
         button: ["Figma", "React", "Scss", "Node", "Express", "MongoDB", "Render"],
         annotation: "Site vitrine | stage",
         template: TemplatePlomberie,

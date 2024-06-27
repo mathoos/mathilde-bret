@@ -7,7 +7,9 @@
     font-family : $font;
     font-size : 1.1vw;
     color : $noir;
-    @include font-base;
+    font-variation-settings:
+        "wdth" 125,
+        "wght" $light;
 }
 
 html, body {

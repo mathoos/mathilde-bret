@@ -58,7 +58,7 @@
             transform : rotate(1.5deg);
             padding-bottom : 7vh;
             @media screen and (max-width : 990px) {
-                padding-bottom : 2.5vh;
+                padding-bottom : 5vh;
             }
  
             &--content{
@@ -71,7 +71,7 @@
                     justify-content: space-between;
                     border-radius : 30px;
                     background-color: $noir;
-                    height : 85vh;
+                    height : 80vh;
                 }
                 
 
@@ -106,7 +106,9 @@
                         h3{
                             font-size : 3.5vw;
                             color : $blanc;
-                            @include font-h1;
+                            font-variation-settings:
+                                "wdth" 125,
+                                "wght" $heavy;
 
                             @media screen and (max-width : 990px) {
                                 display : flex;
@@ -135,7 +137,12 @@
                             p{
                                 line-height : 1.5;
                                 color : $blanc;
-                                @include font-p;
+
+                                &.text{
+                                    @media screen and (max-width : 990px) {
+                                        font-size : 3vw;
+                                    }
+                                }
 
                                 &.annotation{
                                     font-size : 1vw;

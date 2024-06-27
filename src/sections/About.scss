@@ -167,7 +167,6 @@
     
                 p{
                     line-height : 1.5;
-                    @include font-p;
 
                     @media screen and (max-width : 990px) {
                         font-size : 4vw;
@@ -369,7 +368,9 @@
                             border-color : $noir;
                             background-color: $blanc;
                             color : $noir;
-                            @include font-button-nav;
+                            font-variation-settings:
+                                "wdth" 125,
+                                "wght" $medium;
                             transition : opacity 0ms linear .6s;
                             @media screen and (max-width : 990px) {
                                 top : 30vw;

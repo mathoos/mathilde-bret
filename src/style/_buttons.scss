@@ -8,7 +8,9 @@
     border-style: solid;
     background-color: transparent;
     transition : .3s ease;
-    @include font-button;
+    font-variation-settings:
+        "wdth" 125,
+        "wght" $thin;
 
     @media screen and (max-width : 990px) {
         padding : 1vh 5vw;
@@ -28,7 +30,9 @@
         color : $violet;
         text-transform: uppercase;
         border : none;
-        @include font-button-nav;
+        font-variation-settings:
+            "wdth" 125,
+            "wght" $medium;
         transition : .3s ease;     
 
         &.active {

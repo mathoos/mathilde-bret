@@ -83,7 +83,7 @@ const data = [
     },
     {
         title: "Argent Bank",
-        text: "Intégration de l'interface utilisateur de l'application bancaire avec React. Utilisation de Redux pour gérer les données et maintenir un état global cohérent. Appels à l'API REST pour connecter le front et le back pour assurer une communication fluide entre le client et le serveur. Utilisation de Swagger pour documenter les API afin d'assurer la clarté et la maintenabilité de l'interface de programmation. ",
+        text: "Intégration de l'interface utilisateur de l'application bancaire avec React. Utilisation de Redux pour gérer les données et maintenir un état global cohérent. Appels à l'API REST pour connecter le front et le back. Utilisation de Swagger pour documenter les API afin d'assurer la clarté et la maintenabilité de l'interface de programmation. ",
         button: ["React", "Redux", "Css", "API", "Swagger"],
         annotation: "Projet de formation | OpenClassrooms",
         template: TemplateArgentBank,

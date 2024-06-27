@@ -108,7 +108,8 @@
                     height : 2vw;
                     border : 2px solid $noir;
                     background-color: $blanc;
-                    border-radius : 25px;
+                    border-radius : 15px;
+                    margin-top : -1vw;
                     margin-left : -1vw;
                     @media screen and (max-width : 990px) {
                         width : 5.5vw;
@@ -218,7 +219,9 @@
                     line-height : .8;
                     color : $violet;
                     text-transform: uppercase;
-                    @include font-h1;
+                    font-variation-settings:
+                        "wdth" 125,
+                        "wght" $heavy;
     
                     @media screen and (max-width : 990px) {
                         font-size : 18vw;
@@ -240,7 +243,9 @@
                     p{
                         font-size : 4vw;
                         text-transform: uppercase;
-                        @include font-button-nav;
+                        font-variation-settings:
+                            "wdth" 125,
+                            "wght" $medium;
                         font-style : italic;
                         @media screen and (max-width : 990px) {
                             font-size : 6vw;

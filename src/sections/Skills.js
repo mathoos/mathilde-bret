@@ -1,14 +1,6 @@
 
 import Doigt from "../img/finger-pixel.svg";
-import IconGenerale from "../img/icon-generale.svg";
-import IconConcept from "../img/icon-concept.svg";
-import IconArtDirection from "../img/icon-art-direction.svg";
-import IconUxUi from "../img/icon-ux-ui.svg";
-import IconWebdesign from "../img/icon-webdesign.svg";
-import IconSmile from "../img/icon-smile.svg";
 import { Parallax } from "react-scroll-parallax";
-import { Reveal } from "react-awesome-reveal";
-import {scaleInvert } from "../functions/keyframes";
 
 import './Skills.scss';
 

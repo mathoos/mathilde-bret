@@ -42,7 +42,9 @@
                 font-size : 7.5vw;
                 color : $blanc;
                 line-height : .9;
-                @include font-h1;
+                font-variation-settings:
+                    "wdth" 125,
+                    "wght" $heavy;
 
                 &:nth-of-type(2){
                     align-self: flex-end;

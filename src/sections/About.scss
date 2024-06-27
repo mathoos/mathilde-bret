@@ -306,7 +306,6 @@
                             }
 
                             &.apparition3{
-                                position : absolute;
                                 top : 0;
                                 left : 0;
                                 width : 100%;
@@ -323,12 +322,23 @@
                             }
                         }
 
+                        &-secondaire{
+                            left : 2.5vw;
+                            bottom : 1vw;
+                            width : 95%;
+                            height : auto;
+                            border-radius : 30px;
+                            transform : rotate(2.5deg);
+                            object-fit: cover;
+                        }
+
                         &-traits{
                             position : absolute;
                             top : -5vw;
                             right : .5vw;
                             width : 10vw;
                             height : auto;
+                            z-index : 5;
 
                             path{
                                 stroke-dasharray: 1000; 
@@ -346,7 +356,6 @@
                         }
 
                         &-appareil{
-                            position : absolute;
                             bottom : -3vw;
                             right : -8vw;
                             width : 22vw;
@@ -426,6 +435,7 @@
                     }
 
                     .apparition2, .apparition3{
+                        position : absolute;
                         opacity : 0;
 
                         &.active{

@@ -4,6 +4,7 @@ import PastilleGlobe from "../img/pastille_globe.svg";
 import PastilleTxt from "../img/pastille_txt.svg";
 import PastilleArrow from "../img/pastille_arrow.svg";
 import RollingStones from "../img/rolling-stones-tshirt.jpg";
+import HarleyDavidson from "../img/harley-davidson.jpg";
 import AppareilPhoto from "../img/appareil-photo.png";
 import { Parallax } from "react-scroll-parallax";
 import './About.scss';
@@ -216,6 +217,7 @@ const About = () => {
                                     <path d="M92.9015 132.422C109.171 106.664 132.83 85.197 153.404 63.2157" stroke="#FFFBFB" strokeWidth="5" strokeLinecap="round"/>
                                     <path d="M127.402 193.664C139.301 189.079 159.559 190.287 171.31 189.056C198.118 186.249 224.913 183.389 251.751 180.926" stroke="#FFFBFB" strokeWidth="5" strokeLinecap="round"/>
                                 </svg>
+                                <img src={HarleyDavidson} className="bloc_img-secondaire apparition2" alt="Rolling Stones"/>
                                 <img src={AppareilPhoto} className="bloc_img-appareil apparition3" alt="Canon 800D"/>
                                 <p className="bouton apparition3">Créative</p>
                                 <p className="bouton bouton_2 apparition2">Sérieuse</p>

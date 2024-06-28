@@ -104,11 +104,11 @@
                 }
     
                 &-icon{
-                    width : 2.3vw;
+                    width : 2vw;
                     height : 2vw;
                     border : 2px solid $noir;
                     background-color: $blanc;
-                    border-radius : 15px;
+                    border-radius : 13px;
                     margin-top : -1vw;
                     margin-left : -1vw;
                     @media screen and (max-width : 990px) {
@@ -279,10 +279,4 @@
             }
         }
     } 
-
-    &_black{
-        width : 100%;
-        height : 150vh;
-        background-color: $noir;
-    }
 }

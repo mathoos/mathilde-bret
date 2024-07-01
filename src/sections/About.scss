@@ -24,7 +24,7 @@
         @media screen and (max-width : 990px) {
             flex-direction: column;
             gap : 0;
-            padding : 0 30px;
+            padding : 0 10vw;;
         }
 
         &-img{
@@ -146,7 +146,7 @@
             h2{
                 font-size : 2.2vw;
                 @media screen and (max-width : 990px) {
-                    font-size : 7vw;
+                    font-size : 6.7vw;
                 }
             }
 
@@ -201,6 +201,7 @@
                 overflow : hidden;
                 @media screen and (max-width : 990px) {
                     padding : 5vh 10vw; 
+                    border-radius : 30px;
                 }
 
                 &::after {
@@ -233,12 +234,14 @@
                         overflow : hidden;
                         margin-top : 5vh;
                         height : 60vh;
+                        border : 1px solid red;
                         
                         @media screen and (max-width : 990px) {
                             width : 100%;
                             max-width : 100%;
                             margin-top : 2.5vh;
                             height : 55vh;
+                            margin-top : 0;
                         }
 
                         .container-txts{
@@ -270,6 +273,7 @@
                         position : relative;
                         max-width : 27vw;
                         height : auto;
+                        
                         @media screen and (max-width : 990px) {
                             display : flex;
                             justify-content: flex-end;
@@ -285,6 +289,7 @@
                             border-radius : 30px;
                             transform : rotate(-3deg);
                             object-fit: cover;
+                            border : 2px solid $noir;
                             @media screen and (max-width : 990px) {
                                 width : 100%;
                                 height : 100%;
@@ -316,6 +321,8 @@
                             border-radius : 30px;
                             transform : rotate(2.5deg);
                             object-fit: cover;
+                            border : 2px solid $noir;
+                            
                         }
 
                         &-traits{

@@ -20,6 +20,9 @@
     &_title{
         padding : 1vh 2.3vw;
         line-height : 1;
+        font-variation-settings:
+        "wdth" 125,
+        "wght" $thin;
         @media screen and (max-width : 990px) {
             font-size : 5.5vw;
             padding : .7vh 6vw;
@@ -33,7 +36,7 @@
         border : none;
         font-variation-settings:
             "wdth" 125,
-            "wght" $medium;
+            "wght" $semibold;
         transition : .3s ease;     
 
         &.active {

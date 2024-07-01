@@ -200,7 +200,8 @@
                 padding : 0 15vw 0 10vw;
                 overflow : hidden;
                 @media screen and (max-width : 990px) {
-                    padding : 0 10vw; 
+                    align-items: flex-start;
+                    padding : 10vw; 
                     border-radius : 30px;
                 }
 
@@ -321,6 +322,8 @@
                             border : 2px solid $noir;
                             @media screen and (max-width : 990px) {
                                 height : 100%;
+                                bottom : 15vw;
+                                left : 8vw;
                             }
                             
                         }
@@ -356,9 +359,9 @@
                             transform : rotate(5deg);
                             transition : opacity 0ms linear .2s;
                             @media screen and (max-width : 990px) {
-                                width : 50vw;
-                                bottom : -10vw;
-                                right : -10vw;
+                                width : 60vw;
+                                bottom : -15vw;
+                                right : -15vw;
                             }
                         }
 

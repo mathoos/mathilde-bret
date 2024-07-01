@@ -96,65 +96,55 @@ const About = () => {
     return (
         <section className="about" id="about">
 
-            <div className="about_title">
-                <h2>À la recherche d'une <br className="hidden-mobile"/> nouvelle opportunité.</h2>
-            </div>
 
-            <div className="about_container">
-                <div className="about_container-presentation">
-                    <div className="about_container-presentation--img hidden-mobile">   
-                        
-                        <figure className="image"> 
-                            <Reveal keyframes={scaleAnimation} delay={100}>      
-                                <img src={MathildeBureau} alt="Mains qui pianotent sur un clavier d'ordinateur qui affiche du code"/>
-                            </Reveal>
-                            <div className="noisy"></div>
-                            <button className="bouton bouton_bgNoir">Tech friendly</button>
-                        </figure>
-                        
-                        <Reveal keyframes={rotateRightVolet} delay={300} triggerOnce={true} className="reveal-volet">
-                            <div className="volet"></div>
-                        </Reveal> 
+            <div className="about_presentation">
 
-                        <figure className="pastille">
-                            <img src={PastilleGlobe} className="pastille_globe" alt="Pastille"/> 
-                            <img src={PastilleTxt} className="pastille_txt" alt="Pastille"/>       
-                            <Parallax rotate={['-30deg', '15deg']} className="pastille_arrow">
-                                <img src={PastilleArrow}  alt="Pastille"/> 
-                            </Parallax>
-                        </figure> 
-                    </div>
-                    <div className="about_container-presentation--txt">
-                        <p>
-                            Développeuse front-end passionnée, j'associe mes compétences en développement web et 
-                            en webdesign pour créer des interfaces utilisateurs ergonomiques visuellement attractives.
-                        </p>
-                        <div className="about_container-presentation--img hidden-pc">   
-                        
-                            <figure className="image"> 
-                                <Reveal keyframes={scaleAnimation} delay={100}>      
-                                    <img src={MathildeBureau} alt="Mains qui pianotent sur un clavier d'ordinateur qui affiche du code"/>
-                                </Reveal>
-                                <div className="noisy"></div>
-                            </figure>
-                        
-                            <Reveal keyframes={rotateRightVolet} delay={300} triggerOnce={true} className="reveal-volet">
-                                <div className="volet"></div>
-                            </Reveal> 
-                        </div>
-                        <p>
-                            En agence de communication, j'ai évolué au contact d'équipes multidisciplinaire, entretenant 
-                            une perpétuelle collaboration créative dans la conception de nouveaux produits digitaux. 
-                            Stimulée dans ce bouillon d'idées innovantes, j'ai élargi mes compétences et participé à 
-                            rendre chaque projet un peu plus unique.
-                        </p>
-                        <p>
-                            Minutieuse, je tente de donner vie à chaque site internet avec l'ambition d'offrir une 
-                            expérience fluide et immersive, tout en apportant une réelle valeur ajoutée.
-                        </p>
-                    </div>
+                <div className="about_presentation-img hidden-mobile">   
+                    
+                                  
+                    <figure className="about_presentation-img--image">  
+                        <img src={MathildeBureau} alt="Mains qui pianotent sur un clavier d'ordinateur qui affiche du code"/>
+                        <div className="noisyEffect"></div>
+                        <div className="shadow"></div> 
+                    </figure>
+                       
+                    <button className="bouton bouton_bgBlanc">Tech friendly</button>
+                
+                    
+
+                    <figure className="about_presentation-img--pastille">
+                        <img src={PastilleGlobe} className="about_presentation-img--pastille--globe" alt="Pastille"/> 
+                        <img src={PastilleTxt} className="about_presentation-img--pastille--txt" alt="Pastille"/>       
+                        <Parallax rotate={['-30deg', '15deg']} className="about_presentation-img--pastille--arrow">
+                            <img src={PastilleArrow}  alt="Pastille"/> 
+                        </Parallax>
+                    </figure> 
                 </div>
-            </div> 
+
+                <div className="about_presentation-txt">
+                    <h2>À la recherche d'une <br className="hidden-mobile"/> nouvelle opportunité.</h2>
+                    <p>
+                        Développeuse front-end passionnée, j'associe mes compétences en développement web et 
+                        en webdesign pour créer des interfaces utilisateurs ergonomiques visuellement attractives.
+                    </p>
+                    <figure className="about_presentation-img--image hidden-pc">  
+                        <img src={MathildeBureau} alt="Mains qui pianotent sur un clavier d'ordinateur qui affiche du code"/>
+                        <div className="noisyEffect"></div>
+                        <div className="shadow"></div> 
+                    </figure>
+                    <p>
+                        En agence de communication, j'ai évolué au contact d'équipes multidisciplinaire, entretenant 
+                        une perpétuelle collaboration créative dans la conception de nouveaux produits digitaux. 
+                        Stimulée dans ce bouillon d'idées innovantes, j'ai élargi mes compétences et participé à 
+                        rendre chaque projet un peu plus unique.
+                    </p>
+                    <p>
+                        Minutieuse, je tente de donner vie à chaque site internet avec l'ambition d'offrir une 
+                        expérience fluide et immersive, tout en apportant une réelle valeur ajoutée.
+                    </p>
+                </div>
+            </div>
+          
 
             <div className="about_sticky">
                 <div className="about_sticky-container">

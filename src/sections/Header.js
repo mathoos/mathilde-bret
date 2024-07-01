@@ -23,7 +23,7 @@ const Header = ({ progress }) => {
 
                 <div className="header_hero-container">
                     <div className="header_hero-container--title">
-                        <h1>Mathilde, <br/>
+                        <h1>Mathilde<br/>
                             <span>
                                 développeuse <span className="bouton bouton_title">front-end</span> <br/> 
                                 passionnée à la recherche <br/> 

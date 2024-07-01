@@ -4,7 +4,7 @@
     text-align : center;
     padding : 1.3vh 2vw;  
     border-radius : 100vmax;
-    border-width: 1px;
+    border-width: 2px;
     border-style: solid;
     background-color: transparent;
     transition : .3s ease;
@@ -18,11 +18,12 @@
     }
 
     &_title{
-        padding : 1vh 2vw;
+        padding : 1vh 2.3vw;
         line-height : 1;
         @media screen and (max-width : 990px) {
             font-size : 5.5vw;
-            padding : .7vh 5vw;
+            padding : .7vh 6vw;
+            border-width : 1px;
         }
     }
 

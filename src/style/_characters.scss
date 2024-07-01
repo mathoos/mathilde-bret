@@ -1,7 +1,7 @@
 h1{
     position : relative;
     width : 100%;
-    font-size : 6vw;
+    font-size : 7vw;
     line-height : 1.5;
     font-variation-settings:
         "wdth" 125,
@@ -10,7 +10,7 @@ h1{
     transform : translateX(-100%);
 
     @media screen and (max-width : 990px) {
-        font-size : 13vw;
+        font-size : 15vw;
     }
 
     span{

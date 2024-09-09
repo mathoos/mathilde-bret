@@ -102,7 +102,7 @@ const About = () => {
                 <div className="about_presentation-title">
                     <h2>
                         À la <br className="hidden-mobile"/> recherche <br className="hidden-mobile"/>
-                        d'une nouvelle <br className="hidden-mobile"/> opportunité.
+                        d'une nouvelle <br className="hidden-mobile"/> opportunité .
                     </h2>
 
                     {/* <figure className="about_presentation-title--pastille">

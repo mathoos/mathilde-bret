@@ -11,26 +11,41 @@ const Skills = () => {
         <section className="skills" id="skills">
 
             <div className="skills_title">
-                <h2>J'ai plus d'une corde <br className="hidden-mobile"/> à mon arc</h2>
+                <h2>Mes <br className="hidden-mobile"/> compétences .</h2>
             </div>
 
             <div className="skills_container">
 
-                <div className="skills_container-list">
-                    <p>Html</p>
-                    <p>Css | Scss</p>
-                    <p>Javascript</p>
-                    <p>Php</p>
-                    <p>React | next | Angular</p>
-                    <p>Node</p>
-                    <p>Express</p>
-                    <p>Mongodb</p>
+                <div className="skills_container-bloc">
+                    <p className="title">[ Front-End ]</p>
+                    <p className="text">J'aime contribuer au développement technique et <br/>créatif d'interfaces utilisateur.</p>
+                    <div className="skills_container-bloc--list">
+                        <p className="bouton">Html</p>
+                        <p className="bouton">Css | Scss</p>
+                        <p className="bouton">Javavscript</p>
+                        <p className="bouton">React</p>
+                        <p className="bouton">Angular</p>
+                        <p className="bouton">Next</p>
+                        <p className="bouton">Php</p>
+                        <p className="bouton">Jest</p>
+                    </div>
                 </div>
-                <Parallax translateY={['0px', '450px']} >
+
+                <div className="skills_container-bloc">
+                    <p className="title">[ Back-End ]</p>
+                    <p className="text">Je sais connecter des API restful en React avec mongoDB et Express.</p>
+                    <div className="skills_container-bloc--list">
+                        <p className="bouton">Node</p>
+                        <p className="bouton">Express</p>
+                        <p className="bouton">MongoDB</p>
+                    </div>
+                </div>
+
+                {/* <Parallax translateY={['0px', '450px']} >
                     <figure className="skills_container-img">
                         <img src={Doigt} alt="Emoji pointe du doigt"></img>
                     </figure>
-                </Parallax>
+                </Parallax> */}
             </div>
 
             <div className="skills_domain">

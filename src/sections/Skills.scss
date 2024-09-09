@@ -3,7 +3,6 @@
 .skills{
     display : flex;
     flex-direction: column;
-    gap : 10vh;
     overflow : hidden;
     @media screen and (max-width : 990px) {
         gap : 0;
@@ -12,6 +11,7 @@
 
     &_title{
         padding : 0 10vw;
+        margin-bottom : 40vh;
         @media screen and (max-width : 990px) {
             width : 100%;
             padding : 0 30px;
@@ -21,12 +21,44 @@
 
     &_container{
         display : flex;
-        gap : 10vw;
-        padding : 0 0 0 10vw;
+        flex-direction: column;
+        gap : 10vh;
+        padding : 0 10vw;
+        margin-bottom : 10vh;
         @media screen and (max-width : 990px) {
             gap : 0;
             padding : 0 30px;
             margin-bottom : 5vw;
+        }
+
+        &-bloc{
+            display : flex;
+            flex-direction: column;
+            width : 35vw;
+
+            &:nth-of-type(2){
+                align-self: flex-end;
+            }
+
+            .title{
+                margin-bottom : 5vh;
+            }
+
+            .text{
+                margin-bottom : 2.5vh;
+            }
+
+            &--list{
+                display : flex;
+                flex-wrap: wrap;
+                gap : 1vw;
+
+                .bouton{
+                    font-size : 1vw;
+                    text-transform : uppercase;
+                    padding : 1vh 1.5vw;  
+                }
+            }
         }
 
         &-list{

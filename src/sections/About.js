@@ -99,7 +99,51 @@ const About = () => {
 
             <div className="about_presentation">
 
-                <div className="about_presentation-img hidden-mobile">   
+                <div className="about_presentation-title">
+                    <h2>
+                        À la <br className="hidden-mobile"/> recherche <br className="hidden-mobile"/>
+                        d'une nouvelle <br className="hidden-mobile"/> opportunité.
+                    </h2>
+                    {/* <figure className="about_presentation-title--pastille">
+                        <img src={PastilleGlobe} className="about_presentation-title--pastille--globe" alt="Pastille"/> 
+                        <img src={PastilleTxt} className="about_presentation-title--pastille--txt" alt="Pastille"/>       
+                        <Parallax rotate={['-30deg', '15deg']} className="about_presentation-title--pastille--arrow">
+                            <img src={PastilleArrow}  alt="Pastille"/> 
+                        </Parallax>
+                    </figure>  */}
+                </div>
+
+                <div className="about_presentation-content">
+
+                    <figure className="about_presentation-content--img">  
+                        <img src={MathildeBureau} alt="Mains qui pianotent sur un clavier d'ordinateur qui affiche du code"/>
+                        <div className="noisyEffect"></div>
+                        <div className="shadow"></div> 
+                    </figure>
+
+                    <div className="about_presentation-content--txt">
+                        <p className="title"> [ About ] </p>
+
+                        <p>
+                            Développeuse front-end passionnée, j'associe mes compétences en développement web et en 
+                            webdesign pour créer de jolies interfaces ergonomiques et attractives.
+                        </p>
+                        <p>
+                            En agence de communication, j'ai travaillé sur l'intégration et la refactorisation de plusieurs 
+                            sites internet, entourée d'une équipe de développeurs,  graphistes, et chefs de projets.<br/>
+                            Stimulée dans un bouillon d'idées innovantes, j'ai élargi mes compétences et participé à 
+                            rendre chaque projet un peu plus unique.
+                        </p>
+                        <p>
+                            Minutieuse, je tente de donner vie à chaque site internet avec l'ambition d'offrir une 
+                            expérience fluide et immersive, tout en apportant une réelle valeur ajoutée.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+                {/* <div className="about_presentation-img hidden-mobile">   
                     
                                   
                     <figure className="about_presentation-img--image">  
@@ -119,10 +163,11 @@ const About = () => {
                             <img src={PastilleArrow}  alt="Pastille"/> 
                         </Parallax>
                     </figure> 
+
                 </div>
 
                 <div className="about_presentation-txt">
-                    <h2>À la recherche d'une <br className="hidden-mobile"/> nouvelle opportunité.</h2>
+
                     <p>
                         Développeuse front-end passionnée, j'associe mes compétences en développement web et 
                         en webdesign pour créer des interfaces utilisateurs ergonomiques visuellement attractives.
@@ -142,8 +187,8 @@ const About = () => {
                         Minutieuse, je tente de donner vie à chaque site internet avec l'ambition d'offrir une 
                         expérience fluide et immersive, tout en apportant une réelle valeur ajoutée.
                     </p>
-                </div>
-            </div>
+                </div> */}
+           
           
 
             <div className="about_sticky">

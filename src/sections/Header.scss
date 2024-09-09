@@ -131,7 +131,7 @@
                 margin-bottom : 7vh;
             }
 
-            .loading_container{
+            .loading{
                 display : flex;
                 align-items: flex-end;
                 padding : 2.5vw;
@@ -141,47 +141,67 @@
                     align-items: flex-start;
                     margin : 5vw;
                 }
-                
-                &-content{
-                    background-color: $blanc;
-                    border : 2px solid $noir;
-                    border-radius : 100vmax;
-                    width : fit-content;
-                    height : 2.5vw;
-                    padding : .5vw;
-                    @media screen and (max-width : 990px) {
-                        height : 7vw;
-                        padding : 1.5vw;
+
+                &_container{
+                    display : flex;
+                    flex-direction: column;
+                    gap : 1vw;
+
+                    &-title{
+                        padding-left : 2px;
+                        p{
+                            font-size : 1vw;
+                            line-height : 1;
+                            color : $noir;
+                            text-transform: uppercase;
+                            font-variation-settings:
+                                "wdth" 125,
+                                "wght" $light;
+                        }
                     }
-
-                    .border{
-                        display : flex;
-                        gap : .3vw;
-                        width : 100%;
-                        height : 100%;
-                        border-radius : 100vmax;
-                        overflow : hidden;
+                    
+                    &-content{
+                        background-color: $blanc;
+                        border : 2px solid $noir;
+                        border-radius : 6px;
+                        width : fit-content;
+                        height : 2vw;
+                        padding : .45vw;
                         @media screen and (max-width : 990px) {
-                            gap : 1vw;
+                            height : 7vw;
+                            padding : 1.5vw;
                         }
-                        
-
-                        .trait{
-                            width : 1.5vw;
-                            height : 100%;
-                            background-color: transparent;
-                            border-radius : 2.5px;
-                            transition: .3s ease;
-                            @media screen and (max-width : 990px) {
-                                width : 5vw;
-                            }
     
-                            &.loading_done{
-                                background-color: $noir;
+                        .border{
+                            display : flex;
+                            gap : .3vw;
+                            width : 100%;
+                            height : 100%;
+                            overflow : hidden;
+                            @media screen and (max-width : 990px) {
+                                gap : 1vw;
                             }
-                        }
-                    }  
+                            
+    
+                            .trait{
+                                width : 1.4vw;
+                                height : 100%;
+                                background-color: transparent;
+                                border-radius : 2.5px;
+                                transition: .3s ease;
+                                @media screen and (max-width : 990px) {
+                                    width : 5vw;
+                                }
+        
+                                &.loading_done{
+                                    background-color: $noir;
+                                }
+                            }
+                        }  
+                    }
                 }
+
+                
             }
 
             &::after{

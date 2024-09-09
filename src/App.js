@@ -30,14 +30,14 @@ function App() {
         const updateProgress = () => {
             setProgress(prevProgress => {
 
-                const randomDelay = Math.random() * 500 + 500; 
+                const randomDelay = Math.random() * 700 + 400; 
                 const nextProgress = prevProgress + 1;
 
-                if (nextProgress >= 5) {
+                if (nextProgress >= 7) {
                     setTimeout(() => {
                         setLoading(false);
                     }, randomDelay);
-                    return 5;
+                    return 7;
                 }
 
                 setTimeout(updateProgress, randomDelay);

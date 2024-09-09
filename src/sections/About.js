@@ -4,7 +4,7 @@ import PastilleGlobe from "../img/pastille_globe.svg";
 import PastilleTxt from "../img/pastille_txt.svg";
 import PastilleArrow from "../img/pastille_arrow.svg";
 import RollingStones from "../img/rolling-stones-tshirt.jpg";
-import HarleyDavidson from "../img/harley-davidson.jpg";
+import HarleyDavidson from "../img/lessons-2.jpg";
 import AppareilPhoto from "../img/appareil-photo.png";
 import { Parallax } from "react-scroll-parallax";
 import './About.scss';

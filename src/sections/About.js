@@ -104,6 +104,7 @@ const About = () => {
                         À la <br className="hidden-mobile"/> recherche <br className="hidden-mobile"/>
                         d'une nouvelle <br className="hidden-mobile"/> opportunité.
                     </h2>
+                    
                     {/* <figure className="about_presentation-title--pastille">
                         <img src={PastilleGlobe} className="about_presentation-title--pastille--globe" alt="Pastille"/> 
                         <img src={PastilleTxt} className="about_presentation-title--pastille--txt" alt="Pastille"/>       
@@ -142,54 +143,6 @@ const About = () => {
 
                 </div>
             </div>
-
-                {/* <div className="about_presentation-img hidden-mobile">   
-                    
-                                  
-                    <figure className="about_presentation-img--image">  
-                        <img src={MathildeBureau} alt="Mains qui pianotent sur un clavier d'ordinateur qui affiche du code"/>
-                        <div className="noisyEffect"></div>
-                        <div className="shadow"></div> 
-                    </figure>
-                       
-                    <button className="bouton bouton_bgBlanc">Tech friendly</button>
-                
-                    
-
-                    <figure className="about_presentation-img--pastille">
-                        <img src={PastilleGlobe} className="about_presentation-img--pastille--globe" alt="Pastille"/> 
-                        <img src={PastilleTxt} className="about_presentation-img--pastille--txt" alt="Pastille"/>       
-                        <Parallax rotate={['-30deg', '15deg']} className="about_presentation-img--pastille--arrow">
-                            <img src={PastilleArrow}  alt="Pastille"/> 
-                        </Parallax>
-                    </figure> 
-
-                </div>
-
-                <div className="about_presentation-txt">
-
-                    <p>
-                        Développeuse front-end passionnée, j'associe mes compétences en développement web et 
-                        en webdesign pour créer des interfaces utilisateurs ergonomiques visuellement attractives.
-                    </p>
-                    <figure className="about_presentation-img--image hidden-pc">  
-                        <img src={MathildeBureau} alt="Mains qui pianotent sur un clavier d'ordinateur qui affiche du code"/>
-                        <div className="noisyEffect"></div>
-                        <div className="shadow"></div> 
-                    </figure>
-                    <p>
-                        En agence de communication, j'ai évolué au contact d'équipes multidisciplinaire, entretenant 
-                        une perpétuelle collaboration créative dans la conception de nouveaux produits digitaux. 
-                        Stimulée dans ce bouillon d'idées innovantes, j'ai élargi mes compétences et participé à 
-                        rendre chaque projet un peu plus unique.
-                    </p>
-                    <p>
-                        Minutieuse, je tente de donner vie à chaque site internet avec l'ambition d'offrir une 
-                        expérience fluide et immersive, tout en apportant une réelle valeur ajoutée.
-                    </p>
-                </div> */}
-           
-          
 
             <div className="about_sticky">
                 <div className="about_sticky-container">

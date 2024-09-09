@@ -3,8 +3,8 @@ import MathildeBureau from "../img/moi/coding.jpg";
 import PastilleGlobe from "../img/pastille_globe.svg";
 import PastilleTxt from "../img/pastille_txt.svg";
 import PastilleArrow from "../img/pastille_arrow.svg";
-import RollingStones from "../img/rolling-stones-tshirt.jpg";
-import HarleyDavidson from "../img/lessons-2.jpg";
+import RollingStones from "../img/lessons-2.jpg";
+import HarleyDavidson from "../img/rolling-stones-tshirt.jpg";
 import AppareilPhoto from "../img/appareil-photo.png";
 import { Parallax } from "react-scroll-parallax";
 import './About.scss';
@@ -104,7 +104,7 @@ const About = () => {
                         À la <br className="hidden-mobile"/> recherche <br className="hidden-mobile"/>
                         d'une nouvelle <br className="hidden-mobile"/> opportunité.
                     </h2>
-                    
+
                     {/* <figure className="about_presentation-title--pastille">
                         <img src={PastilleGlobe} className="about_presentation-title--pastille--globe" alt="Pastille"/> 
                         <img src={PastilleTxt} className="about_presentation-title--pastille--txt" alt="Pastille"/>       
@@ -151,22 +151,24 @@ const About = () => {
                             <div className="bloc_txt">
                                 <div className="container-txts">
                                     <div className="bloc_txt-content">
-                                        <h4>Éternelle étudiante</h4>
+                                        <h4>Mon parcours d'étudiante .</h4>
                                         <p>
-                                            Diplômée d'une licence en Communication & Médias et titulaire d'un titre de Webdesigner, 
-                                            j'ai récemment achevé mon contrat d'alternance en agence de communication en tant que développeuse front-end. 
+                                            Diplômée d'une licence en Communication & Médias et titulaire d'un titre de 
+                                            Webdesigner, j'ai récemment achevé mon contrat d'alternance en agence de 
+                                            communication en tant que développeuse front-end.
                                             <br/><br/>
 
-                                            Interview d'artistes et rédaction d'articles, participation à des cellules de 
-                                            communication, maîtrise élémentaire de la suite Adobe et Figma, création de webdesign, 
-                                            optimisation SEO et intégration de sites web.<br/><br/>
+                                            Interview d'artistes et rédaction d'articles, maîtrise élémentaire de la suite 
+                                            Adobe et Figma, création de webdesign, optimisation SEO et intégration de 
+                                            sites web.<br/><br/>
 
-                                            J'ai acquis au cours de mon expérience une multitude de compétences qui se complètent, 
-                                            ce qui me permet de collaborer activement dans une équipe de communication.
+                                            J'ai acquis au cours de mon expérience une multitude de compétences qui 
+                                            se complètent, ce qui me permet de collaborer activement dans une équipe 
+                                            de communication.
                                         </p>
                                     </div>
                                     <div className="bloc_txt-content">
-                                        <h4>Adaptation et curiosité</h4>
+                                        <h4>Adaptation & curiosité .</h4>
                                         <p>
                                             De nature curieuse et autonome, j'aime découvrir et apprendre de nouveaux langages 
                                             afin de pouvoir sélectionner au mieux les outils qui répondront au besoin spécifique 
@@ -181,11 +183,11 @@ const About = () => {
                                         </p>
                                     </div>
                                     <div className="bloc_txt-content">
-                                        <h4>Créativité et inspiration</h4>
+                                        <h4>Créativité & inspiration .</h4>
                                         <p>
                                             Âme créative,  j'ai toujours eu le besoin de m'exprimer autrement qu'à travers 
                                             les mots. Musique, photographie, collages, dessin… J'aime penser que mon implication 
-                                            dans toute forme d'art accroît l'imagination et l'innovation'.<br/><br/> 
+                                            dans toute forme d'art accroît l'imagination et l'innovation.<br/><br/> 
                                             
                                             Observatrice et attentive, je me complais à contempler le monde qui m'entoure, 
                                             véritable source d'inspiration inépuisable au quotidien.<br/><br/>

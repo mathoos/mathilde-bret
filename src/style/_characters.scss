@@ -51,15 +51,15 @@ h3{
 }
 
 h4{
-    font-size : 1.5vw;
-    line-height : 1.5;
+    font-size : 3vw;
+    line-height : 1.1;
     color : $blanc;
     text-transform: uppercase;
     font-variation-settings:
         "wdth" 125,
-        "wght" $bold;
+        "wght" $heavy;
     @media screen and (max-width : 990px) {
-        font-size : 4.3vw;
+        font-size : 7vw;
     }
 }
 

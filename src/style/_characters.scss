@@ -82,4 +82,8 @@ a{
     color : inherit;
     padding : 0;
     margin : 0;
+
+    &:hover{
+        cursor : url(../img/icons/cursor-pointer-icon.svg), auto;
+    }
 }

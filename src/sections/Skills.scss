@@ -190,7 +190,7 @@
 
                 &:hover:not(.txt, .projet){
                     background-color: $noir;
-                    cursor : pointer;
+                    cursor : url(../img/icons/cursor-pointer-icon.svg), auto;
 
                     .bloc-icon{
                         svg{

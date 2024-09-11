@@ -57,11 +57,11 @@ const Skills = () => {
                     <div className="bloc">
                         <figure className="bloc-icon">
                             <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="9.71289" y="9.5" width="45" height="45"  stroke-width="5"/>
-                                <rect x="46.5" y="2.5" width="15" height="15" stroke-width="5"/>
-                                <rect x="46.5" y="46.5" width="15" height="15" stroke-width="5"/>
-                                <rect x="2.5" y="46.5" width="15" height="15" stroke-width="5"/>
-                                <rect x="2.5" y="2.5" width="15" height="15" stroke-width="5"/>
+                                <rect x="9.71289" y="9.5" width="45" height="45"  strokeWidth="5"/>
+                                <rect x="46.5" y="2.5" width="15" height="15" strokeWidth="5"/>
+                                <rect x="46.5" y="46.5" width="15" height="15" strokeWidth="5"/>
+                                <rect x="2.5" y="46.5" width="15" height="15" strokeWidth="5"/>
+                                <rect x="2.5" y="2.5" width="15" height="15" strokeWidth="5"/>
                             </svg>
                         </figure>
                         <div className="bloc-content">
@@ -83,9 +83,9 @@ const Skills = () => {
                     <div className="bloc">
                         <figure className="bloc-icon">
                             <svg width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3 30.4707L30.4708 44.2061L58 30.4707" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M3 44.2061L30.4708 57.9415L58 44.2061" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 17.2745L30.4983 30.4708L58 17.2745L30.4983 3L3 17.2745Z" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3 30.4707L30.4708 44.2061L58 30.4707" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"/>
+                                <path d="M3 44.2061L30.4708 57.9415L58 44.2061" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"/>
+                                <path fillRule="evenodd" clipRule="evenodd" d="M3 17.2745L30.4983 30.4708L58 17.2745L30.4983 3L3 17.2745Z" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"/>
                             </svg>
                         </figure>
                         <div className="bloc-content">
@@ -123,11 +123,11 @@ const Skills = () => {
                     <div className="bloc methode">
                         <figure className="bloc-icon">
                             <svg width="102" height="64" viewBox="0 0 102 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M11 54L40 20.5L62 41L96.5 8.5" stroke-width="5"/>
-                                <path d="M89 2.5H86.5V5V13V15.5H89H97H99.5V13V5V2.5H97H89Z" stroke-width="5"/>
-                                <rect x="33.5" y="15.5" width="13" height="13" stroke-width="5"/>
-                                <path d="M58.5 35H56V37.5V45.5V48H58.5H66.5H69V45.5V37.5V35H66.5H58.5Z" stroke-width="5"/>
-                                <rect x="2.5" y="48.5" width="13" height="13" stroke-width="5"/>
+                                <path d="M11 54L40 20.5L62 41L96.5 8.5" strokeWidth="5"/>
+                                <path d="M89 2.5H86.5V5V13V15.5H89H97H99.5V13V5V2.5H97H89Z" strokeWidth="5"/>
+                                <rect x="33.5" y="15.5" width="13" height="13" strokeWidth="5"/>
+                                <path d="M58.5 35H56V37.5V45.5V48H58.5H66.5H69V45.5V37.5V35H66.5H58.5Z" strokeWidth="5"/>
+                                <rect x="2.5" y="48.5" width="13" height="13" strokeWidth="5"/>
                             </svg>
                         </figure>
                         <div className="bloc-content">
@@ -149,14 +149,14 @@ const Skills = () => {
                     <div className="bloc optimisation">
                         <figure className="bloc-icon">
                             <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <line x1="47.5" y1="29" x2="47.5" y2="45" stroke-width="5"/>
-                                <rect x="20.5" y="2.5" width="14" height="14" stroke-width="5"/>
-                                <rect x="22.5" y="42.5" width="10" height="10" stroke-width="5"/>
-                                <rect x="2.5" y="42.5" width="10" height="10" stroke-width="5"/>
-                                <rect x="42.5" y="42.5" width="10" height="10" stroke-width="5"/>
-                                <line x1="27.5" y1="14" x2="27.5" y2="45" stroke-width="5"/>
-                                <line x1="7.5" y1="29" x2="7.5" y2="40" stroke-width="5"/>
-                                <line x1="5" y1="26.5" x2="50" y2="26.5" stroke-width="5"/>
+                                <line x1="47.5" y1="29" x2="47.5" y2="45" strokeWidth="5"/>
+                                <rect x="20.5" y="2.5" width="14" height="14" strokeWidth="5"/>
+                                <rect x="22.5" y="42.5" width="10" height="10" strokeWidth="5"/>
+                                <rect x="2.5" y="42.5" width="10" height="10" strokeWidth="5"/>
+                                <rect x="42.5" y="42.5" width="10" height="10" strokeWidth="5"/>
+                                <line x1="27.5" y1="14" x2="27.5" y2="45" strokeWidth="5"/>
+                                <line x1="7.5" y1="29" x2="7.5" y2="40" strokeWidth="5"/>
+                                <line x1="5" y1="26.5" x2="50" y2="26.5" strokeWidth="5"/>
                             </svg>
                         </figure>
                         <div className="bloc-content">

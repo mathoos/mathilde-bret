@@ -257,6 +257,7 @@
             }
            
             &:hover{       
+                cursor : url(../img/icons/cursor-pointer-icon.svg), auto;
                 .header_rs-icon--bulle{
                     background-color: $noir;
                     border-color : transparent;

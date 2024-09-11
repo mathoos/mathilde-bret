@@ -9,13 +9,9 @@ import AppareilPhoto from "../img/appareil-photo.png";
 import { Parallax } from "react-scroll-parallax";
 import './About.scss';
 
-import { Reveal } from "react-awesome-reveal";
-import {scaleAnimation, rotateRightVolet } from "../functions/keyframes";
-
 const About = () => {
 
     useEffect(() => {
-
         const blocContentElements = document.querySelectorAll(".bloc_txt-content");
         const containerTxt = document.querySelector(".container-txts");
 
@@ -89,6 +85,7 @@ const About = () => {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
+        
     }, []);
 
     
@@ -100,7 +97,7 @@ const About = () => {
             <div className="about_presentation">
 
                 <div className="about_presentation-title">
-                    <h2>
+                    <h2 className="anim-letters">
                         À la <br className="hidden-mobile"/> recherche <br className="hidden-mobile"/>
                         d'une nouvelle <br className="hidden-mobile"/> opportunité .
                     </h2>

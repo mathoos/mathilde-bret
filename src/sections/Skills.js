@@ -4,6 +4,8 @@ import seo from "../img/icons/seo-icon.svg";
 import scrum from "../img/icons/scrum-icon.svg";
 import Doigt from "../img/finger-pixel.svg";
 import { Parallax } from "react-scroll-parallax";
+import { Reveal } from "react-awesome-reveal";
+import { bottomAnimation } from "../functions/keyframes";
 
 import './Skills.scss';
 
@@ -66,7 +68,10 @@ const Skills = () => {
                         </figure>
                         <div className="bloc-content">
                             <div className="bloc-content--title">
+                                <Reveal keyframes={bottomAnimation}>
                                 <h3>Web <br/> design</h3>
+                                </Reveal>
+                                
                             </div>
                             <div className="bloc-content--list">
                                 <div>

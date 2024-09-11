@@ -125,7 +125,8 @@
                 min-width : 18.5vw; 
                 width : 18.5vw;
                 min-height : 42vh;
-                transition : .3s ease;
+                transition : transform .3s ease, background-color 0s ease;
+                will-change : transform;
                
                 @media screen and (max-width : 990px) {
                     gap : 8vh;
@@ -145,7 +146,7 @@
                         height : 100%;
                         fill : $blanc;
                         stroke : $violet;
-                        transition : .3s ease;
+                        transition : 0 ease;
                     }
 
                     @media screen and (max-width : 990px) {
@@ -180,7 +181,8 @@
                     &--list{
                         div{
                             margin-bottom : -100%;
-                            transition : 1s ease;
+                            transition : 1.2s ease;
+
                             p{
                                 font-size : .9vw;
                             }
@@ -191,23 +193,24 @@
                 &:hover:not(.txt, .projet){
                     background-color: $noir;
                     cursor : url(../img/icons/cursor-pointer-icon.svg), auto;
+                    transform : scale(1.1);
 
                     .bloc-icon{
                         svg{
                             stroke : $blanc;
                             fill : $noir;
-
-                            mask{
-                                fill : red;
-                            }
                         }
                     }
 
                     .bloc-content{
+                        transform : scale(.9);
+                        transform-origin: left;
+
                         &--list{
+
                             div{
                                 margin-bottom : 0;
-                                transition : .5s ease;
+                                transition : .3s ease;
 
                                 p{
                                     color : $blanc;
@@ -217,7 +220,6 @@
 
                         &--title{
                             height: auto;
-                            transition : .3s ease;
 
                             h3{
                                 color : $blanc;

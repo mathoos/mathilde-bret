@@ -14,7 +14,7 @@ const Skills = () => {
         <section className="skills" id="skills">
 
             <div className="skills_title">
-                <h2>Mes <br className="hidden-mobile"/> compétences .</h2>
+                <h2>J'ai plus <br className="hidden-mobile"/> d'une corde <br className="hidden-mobile"/> à mon arc .</h2>
             </div>
 
             <div className="skills_container">

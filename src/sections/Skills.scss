@@ -1,9 +1,6 @@
 @import "../style.scss";
 
 .skills{
-    display : flex;
-    flex-direction: column;
-    gap : 15vh;
     overflow : hidden;
     @media screen and (max-width : 990px) {
         gap : 0;
@@ -12,7 +9,7 @@
 
     &_title{
         padding : 0 10vw;
-        margin-bottom : 20vh;
+        margin-bottom : 30vh;
         @media screen and (max-width : 990px) {
             width : 100%;
             padding : 0 30px;
@@ -23,8 +20,9 @@
     &_container{
         display : flex;
         flex-direction: column;
-        gap : 5vh;
+        gap : 10vh;
         padding : 0 10vw;
+        margin-bottom : 10vh;
         @media screen and (max-width : 990px) {
             gap : 0;
             padding : 0 30px;

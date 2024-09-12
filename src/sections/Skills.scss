@@ -13,7 +13,7 @@
         @media screen and (max-width : 990px) {
             width : 100%;
             padding : 0 30px;
-            margin-bottom : 10vh;
+            margin-bottom : 20vh;
         }
     } 
 
@@ -24,22 +24,34 @@
         padding : 0 10vw;
         margin-bottom : 10vh;
         @media screen and (max-width : 990px) {
-            gap : 0;
+            gap : 10vh;
             padding : 0 30px;
-            margin-bottom : 5vw;
         }
 
         &-bloc{
             display : flex;
             flex-direction: column;
             width : 35vw;
+            @media screen and (max-width : 990px) {
+                width : 100%;
+            }
 
             &:nth-of-type(2){
                 align-self: flex-end;
+                @media screen and (max-width : 990px) {
+                    text-align: right;
+
+                    .skills_container-bloc--list{
+                        justify-content: flex-end;
+                    }
+                }
             }
 
             .title{
                 margin-bottom : 5vh;
+                @media screen and (max-width : 990px) {
+                    margin-bottom : 2.5vh;
+                }
             }
 
             .text{
@@ -50,11 +62,18 @@
                 display : flex;
                 flex-wrap: wrap;
                 gap : 1vw;
+                @media screen and (max-width : 990px) {
+                    gap : 2vw;
+                }
 
                 .bouton{
                     font-size : 1vw;
                     text-transform : uppercase;
                     padding : 1vh 1.5vw;  
+                    @media screen and (max-width : 990px) {
+                        padding : 1vh 5vw;
+                        font-size : 4vw;
+                    }
                 }
             }
         }

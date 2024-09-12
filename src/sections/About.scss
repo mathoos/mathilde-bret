@@ -175,25 +175,9 @@
     
                 p{
                     font-size : 1.2vw;
-                    line-height : 1.6;
                     width : calc(100% - 5vw);
-                    font-variation-settings:
-                            "wdth" 125,
-                            "wght" $thin;
-                    
 
-                    &.title{
-                        color : $violet;
-                        text-transform : uppercase;
-                        font-variation-settings:
-                            "wdth" 125,
-                            "wght" $light;    
-                    }
-
-                    
-    
                     @media screen and (max-width : 990px) {
-                        font-size : 4vw;
                         width : 100%;
                     }
                 }
@@ -205,6 +189,9 @@
     &_sticky{
         position : relative;
         width : 100%;
+        @media screen and (max-width : 990px) {
+            display : none;
+        }
 
         &-container{
             position : sticky;

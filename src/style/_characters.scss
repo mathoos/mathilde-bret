@@ -64,13 +64,25 @@ h4{
     }
 }
 
+
 p{
-    &.title{
-        color : $violet;
-        text-transform : uppercase;
-        font-variation-settings:
-            "wdth" 125,
-            "wght" $light;    
+    font-size : 1.1vw;
+    line-height : 1.5;
+    color : $noir;
+    font-variation-settings:
+        "wdth" 125,
+        "wght" $light;
+
+        &.title{
+            color : $violet;
+            text-transform : uppercase;
+            font-variation-settings:
+                "wdth" 125,
+                "wght" $bold;    
+        }
+
+    @media screen and (max-width : 990px) {
+        font-size : 4vw !important;
     }
 }
 

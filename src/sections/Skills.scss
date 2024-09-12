@@ -151,7 +151,7 @@
                     gap : 8vh;
                     width : 100%;
                     min-width : 100%;
-                    min-height : 30vh;
+                    min-height : 40vh;
                     padding : 30px;
                 }
     
@@ -169,9 +169,8 @@
                     }
 
                     @media screen and (max-width : 990px) {
-                        width : 5.5vw;
-                        height : 5vw;
-                        margin-left : 0;
+                        width : 10vw;
+                        height : 10vw;
                     }
                 }
 
@@ -192,7 +191,7 @@
                                 "wght" $heavy;
 
                             @media screen and (max-width : 990px) {
-                                font-size : 6vw;
+                                font-size : 8vw;
                             }
                         } 
                     }
@@ -201,6 +200,9 @@
                         div{
                             margin-bottom : -100%;
                             transition : 1.2s ease;
+                            @media screen and (max-width : 990px) {
+                                margin-bottom : 0;
+                            }
 
                             p{
                                 font-size : .9vw;
@@ -213,6 +215,9 @@
                     background-color: $noir;
                     cursor : url(../img/icons/cursor-pointer-icon.svg), auto;
                     transform : scale(1.1);
+                    @media screen and (max-width : 990px) {
+                        transform : none;
+                    }
 
                     .bloc-icon{
                         svg{
@@ -224,9 +229,11 @@
                     .bloc-content{
                         transform : scale(.9);
                         transform-origin: left;
+                        @media screen and (max-width : 990px) {
+                            transform : none;
+                        }
 
                         &--list{
-
                             div{
                                 margin-bottom : 0;
                                 transition : .3s ease;
@@ -272,6 +279,9 @@
                     border : none;
                     padding : 0;
                     overflow : hidden;
+                    @media screen and (max-width : 990px) {
+                        display : none;
+                    }
     
                     p{
                         color : $violet;

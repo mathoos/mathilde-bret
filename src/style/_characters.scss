@@ -42,13 +42,16 @@ h2{
 }
 
 h3{
-    font-size : 3vw;
+    font-size : 3.5vw;
     line-height : 1;
     color : $noir;
     text-transform: uppercase;
     font-variation-settings:
         "wdth" 125,
-        "wght" $semibold;
+        "wght" $heavy;
+        @media screen and (max-width : 990px) {
+            font-size : 8vw;
+        }
 }
 
 h4{

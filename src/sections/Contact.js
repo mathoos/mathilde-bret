@@ -1,4 +1,7 @@
 import Internet from "../img/internet.svg";
+import Globe from "../img/footer_globe.svg";
+import Arrow from "../img/footer_arrow.svg";
+import { Parallax } from "react-scroll-parallax";
 import './Contact.scss';
 
 const Contact = () => {
@@ -12,9 +15,11 @@ const Contact = () => {
                     <span>Let's get</span>
                     <span>in touch</span>
                 </h2>
+
                 <figure className="footer_title-img">
-                    <img src={Internet} alt="Globe avec flèche"/>
-                </figure>
+                    <img src={Globe} alt="Globe"/>     
+                    <img src={Arrow} className="arrow" alt="Flèche"/> 
+                </figure> 
             </div>
             <div className="footer_links">
                 <a href="mailto:bretmathilde@orange.fr" className="bouton bouton_blanc">Email</a>

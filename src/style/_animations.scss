@@ -62,6 +62,16 @@
     }
 }
 
+@keyframes rightRotation {
+    0%{
+        transform : rotate(-60deg)
+    }
+
+    100%{
+        transform : rotate(15deg)
+    }
+}
+
 
 // Animation variable font
 

@@ -26,6 +26,9 @@
         &-title{
             position : relative;
             padding : 0 10vw;
+            @media screen and (max-width : 990px) {
+                padding : 0 0 0 10vw;
+            }
 
             &--pastille{
                 position : absolute;

@@ -26,8 +26,9 @@ const Skills = () => {
                     <p className="text">J'aime contribuer au développement technique et <br className="hidden-mobile"/>créatif d'interfaces utilisateur.</p>
                     <div className="skills_container-bloc--list">
                         <p className="bouton">Html</p>
-                        <p className="bouton">Css | Scss</p>
-                        <p className="bouton">Javavscript</p>
+                        <p className="bouton">Css</p>
+                        <p className="bouton">Scss</p>
+                        <p className="bouton">Javascript</p>
                         <p className="bouton">React</p>
                         <p className="bouton">Angular</p>
                         <p className="bouton">Next</p>

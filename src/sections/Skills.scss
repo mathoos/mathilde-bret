@@ -64,6 +64,7 @@
                 gap : 1vw;
                 @media screen and (max-width : 990px) {
                     gap : 2vw;
+                    flex-grow : 1;
                 }
 
                 .bouton{
@@ -71,8 +72,13 @@
                     text-transform : uppercase;
                     padding : 1vh 1.5vw;  
                     @media screen and (max-width : 990px) {
-                        padding : 1vh 5vw;
-                        font-size : 4vw;
+                        padding : .5vh 5vw;
+                        font-size : 3.5vw !important;
+                        flex-grow : 1;
+                    }
+
+                    &:last-of-type{
+                        flex-grow : 0;
                     }
                 }
             }

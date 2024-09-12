@@ -71,9 +71,6 @@ p{
         font-variation-settings:
             "wdth" 125,
             "wght" $light;    
-        @media screen and (max-width : 990px) {
-            text-align: end;
-        } 
     }
 }
 

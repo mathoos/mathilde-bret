@@ -99,7 +99,7 @@ const About = () => {
                 <div className="about_presentation-title">
                     <h2 className="anim-letters">
                         À la <br className="hidden-mobile"/> recherche <br className="hidden-mobile"/>
-                        d'une nouvelle <br className="hidden-mobile"/> opportunité .
+                        d'une nouvelle <br className="hidden-mobile"/> opportunité&nbsp;.
                     </h2>
 
                     {/* <figure className="about_presentation-title--pastille">
@@ -113,11 +113,13 @@ const About = () => {
 
                 <div className="about_presentation-content">
 
-                    <figure className="about_presentation-content--img">  
-                        <img src={MathildeBureau} alt="Mains qui pianotent sur un clavier d'ordinateur qui affiche du code"/>
-                        <div className="noisyEffect"></div>
+                    <div className="about_presentation-content--img">  
+                        <figure className="img">
+                            <img src={MathildeBureau} alt="Mains qui pianotent sur un clavier d'ordinateur qui affiche du code"/>
+                            <div className="noisyEffect"></div>
+                        </figure>
                         <div className="shadow"></div> 
-                    </figure>
+                    </div>
 
                     <div className="about_presentation-content--txt">
                         <p className="title"> [ About ] </p>
@@ -148,7 +150,7 @@ const About = () => {
                             <div className="bloc_txt">
                                 <div className="container-txts">
                                     <div className="bloc_txt-content">
-                                        <h4>Mon parcours d'étudiante .</h4>
+                                        <h4>Mon parcours d'étudiante&nbsp;.</h4>
                                         <p>
                                             Diplômée d'une licence en Communication & Médias et titulaire d'un titre de 
                                             Webdesigner, j'ai récemment achevé mon contrat d'alternance en agence de 
@@ -165,7 +167,7 @@ const About = () => {
                                         </p>
                                     </div>
                                     <div className="bloc_txt-content">
-                                        <h4>Adaptation & curiosité .</h4>
+                                        <h4>Adaptation & curiosité&nbsp;.</h4>
                                         <p>
                                             De nature curieuse et autonome, j'aime découvrir et apprendre de nouveaux langages 
                                             afin de pouvoir sélectionner au mieux les outils qui répondront au besoin spécifique 
@@ -180,7 +182,7 @@ const About = () => {
                                         </p>
                                     </div>
                                     <div className="bloc_txt-content">
-                                        <h4>Créativité & inspiration .</h4>
+                                        <h4>Créativité & inspiration&nbsp;.</h4>
                                         <p>
                                             Âme créative,  j'ai toujours eu le besoin de m'exprimer autrement qu'à travers 
                                             les mots. Musique, photographie, collages, dessin… J'aime penser que mon implication 

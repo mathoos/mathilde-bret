@@ -58,6 +58,7 @@
             height : 100vh;
             transform : rotate(1.5deg);
             padding-bottom : 7vh;
+            
             @media screen and (max-width : 990px) {
                 align-items: center;
                 transform : none;
@@ -69,7 +70,7 @@
                 display : flex;
                 align-items: flex-end;
                 width : 100%;
-                height : 75vh;      
+                height : 75vh;     
                 @media screen and (max-width : 990px) {
                     flex-direction: column;
                     justify-content: space-between;
@@ -94,7 +95,7 @@
                         justify-content: flex-start;
                         gap : 2.5vh;
                         width : 100%;
-                        height : fit-content;
+                        height : 100%;
                         border-radius : 0;
                         padding : 0;
                         border-radius : 0 30px 0 0;
@@ -127,36 +128,16 @@
                         }
 
                         &_txt{
-                            display : flex;
-                            flex-direction: column;
-                            gap : 4vh;
                             @media screen and (max-width : 990px) {
-                                gap : 2.5vh;
                                 padding-top : 2.5vw;
                             }
 
-                            p{
+                            .text{
                                 color : $blanc;
                                 @media screen and (max-width : 990px) {
+                                    //font-size : 3.5vw !important;
                                     padding : 0 30px;
                                 }
-
-                                &.text{
-                                    @media screen and (max-width : 990px) {
-                                        font-size : 3.5vw !important;
-                                    }
-                                }
-
-                                &.annotation{
-                                    font-size : 1vw;
-                                    font-style : italic;
-
-                                    @media screen and (max-width : 990px) {
-                                        font-size : 3.5vw !important;
-                                    }
-                                }
-                                
-                                
                             }
                         }   
                     }
@@ -176,7 +157,7 @@
                             cursor : url(../img/icons/cursor-icon.svg), auto;
                             text-transform : uppercase;
                             @media screen and (max-width : 990px) {
-                                font-size : 3vw !important;
+                                font-size : 2.8vw !important;
                                 flex-grow: 1;
                                 padding : .5vh 5vw;
 
@@ -197,6 +178,7 @@
                     border-radius : 0 50px 50px 0;
                     background-color: $noir;
                     padding : 2vw;
+                    overflow : hidden;
 
                     @media screen and (max-width : 990px) {
                         width : 100%;

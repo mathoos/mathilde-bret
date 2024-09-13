@@ -31,7 +31,6 @@ const Projects = () => {
                                         <p className="text">
                                             {item.text}
                                         </p>
-                                        <p className="annotation">{item.annotation}</p>
                                     </div>   
                                 </div>
                                 <div className="perks">
@@ -74,7 +73,7 @@ const data = [
         link: "https://www.plomberiejoanbret.fr/"
     },
     {
-        title: "Sainte Cécile Violins",
+        title: "Sainte Cécile",
         text: "Site onepage d'une entreprise de création de violions intégré à partir de la maquette Adobe XD. Utilisation de fichiers JSON pour stocker des données et création de scripts PHP pour afficher le contenu dynamiquement. Déploiement du site avec Docker.",
         button: ["Html", "Scss", "Php", "JavaScript", "Docker"],
         annotation: "Site vitrine | melting.k",

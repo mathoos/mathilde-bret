@@ -12,79 +12,125 @@ import './About.scss';
 const About = () => {
 
     useEffect(() => {
+
         const blocContentElements = document.querySelectorAll(".bloc_txt-content");
         const containerTxt = document.querySelector(".container-txts");
 
-        let height = 0;
-
-        blocContentElements.forEach((element, index) => {
-            height = element.getBoundingClientRect().height;
-        });
-      
-        const handleScroll = () => {
-
-            const svgElement = document.querySelector('.bloc_img-arrow');
-
-            if (svgElement) {
-                const svgOffset = svgElement.getBoundingClientRect().top;
-                const svgBottom = svgElement.getBoundingClientRect().bottom;
-                const offsetMargin = 200; 
-                const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+        if (!window.matchMedia("(max-width: 990px)").matches) {
+            
+            let height = 0;
     
-                if (svgOffset < windowHeight - offsetMargin && svgBottom > 0) {
-                    svgElement.classList.add('in-viewport');
-                } 
-                else {
-                    svgElement.classList.remove('in-viewport');
+            blocContentElements.forEach((element, index) => {
+                height = element.getBoundingClientRect().height;
+            });
+          
+            const handleScroll = () => {
+    
+                const svgElement = document.querySelector('.bloc_img-arrow');
+    
+                if (svgElement) {
+                    const svgOffset = svgElement.getBoundingClientRect().top;
+                    const svgBottom = svgElement.getBoundingClientRect().bottom;
+                    const offsetMargin = 200; 
+                    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+        
+                    if (svgOffset < windowHeight - offsetMargin && svgBottom > 0) {
+                        svgElement.classList.add('in-viewport');
+                    } 
+                    else {
+                        svgElement.classList.remove('in-viewport');
+                    }
                 }
-            }
-
-            const containerDeux = document.querySelector('.about_sticky-container.deux');
-            const containerDeuxBoundingBox = containerDeux.getBoundingClientRect();
-            const containerDeuxOffset = containerDeuxBoundingBox.top + window.scrollY;
-
-            const containerTrois = document.querySelector('.about_sticky-container.trois');
-            const containerTroisBoundingBox = containerTrois.getBoundingClientRect();
-            const containerTroisOffset = containerTroisBoundingBox.top + window.scrollY;
-
-            const scrollTop = window.scrollY;
-
-            const apparition2 = document.querySelectorAll(".apparition2");
-            const apparition3 = document.querySelectorAll(".apparition3");
-
-            if (containerDeuxOffset === scrollTop) {
-                apparition2.forEach((apparition) => {
-                    apparition.classList.add("active");
-                });
-                containerTxt.style.transform = `translateY(-${height}px)`;
-            }
-
-            if (containerDeuxOffset > scrollTop) {
-                apparition2.forEach((apparition) => {
-                    apparition.classList.remove("active");
-                });
-                containerTxt.style.transform = `translateY(0)`;
-            }
-
-            if (containerTroisOffset === scrollTop) {
-                apparition3.forEach((apparition) => {
-                    apparition.classList.add("active");
-                });
-                containerTxt.style.transform = `translateY(-${height * 2}px)`;
-            }
-
-            if(containerTroisOffset > scrollTop){
-                apparition3.forEach((apparition) => {
-                    apparition.classList.remove("active")
-                })
-            }
-        };
     
-        window.addEventListener('scroll', handleScroll);
+                const containerDeux = document.querySelector('.about_sticky-container.deux');
+                const containerDeuxBoundingBox = containerDeux.getBoundingClientRect();
+                const containerDeuxOffset = containerDeuxBoundingBox.top + window.scrollY;
     
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
+                const containerTrois = document.querySelector('.about_sticky-container.trois');
+                const containerTroisBoundingBox = containerTrois.getBoundingClientRect();
+                const containerTroisOffset = containerTroisBoundingBox.top + window.scrollY;
+    
+                const scrollTop = window.scrollY;
+    
+                const apparition2 = document.querySelectorAll(".apparition2");
+                const apparition3 = document.querySelectorAll(".apparition3");
+    
+                if (containerDeuxOffset === scrollTop) {
+                    apparition2.forEach((apparition) => {
+                        apparition.classList.add("active");
+                    });
+                    containerTxt.style.transform = `translateY(-${height}px)`;
+                }
+    
+                if (containerDeuxOffset > scrollTop) {
+                    apparition2.forEach((apparition) => {
+                        apparition.classList.remove("active");
+                    });
+                    containerTxt.style.transform = `translateY(0)`;
+                }
+    
+                if (containerTroisOffset === scrollTop) {
+                    apparition3.forEach((apparition) => {
+                        apparition.classList.add("active");
+                    });
+                    containerTxt.style.transform = `translateY(-${height * 2}px)`;
+                }
+    
+                if(containerTroisOffset > scrollTop){
+                    apparition3.forEach((apparition) => {
+                        apparition.classList.remove("active")
+                    })
+                }
+            };
+        
+            window.addEventListener('scroll', handleScroll);
+        
+            return () => {
+                window.removeEventListener('scroll', handleScroll);
+            };
+        }
+
+        if (window.matchMedia("(max-width: 990px)").matches) {
+
+            const blocContentElements = document.querySelectorAll(".bloc_txt-content");
+        
+            blocContentElements.forEach((bloc, index) => {
+        
+                const h4Element = bloc.querySelector("h4");
+                const h4Height = h4Element.offsetHeight;
+        
+                // Si c'est le premier bloc, on l'ouvre automatiquement
+                if (index === 0) {
+                    bloc.classList.add("expanded");
+                    bloc.style.height = bloc.scrollHeight + "px"; // On définit la hauteur à la taille du contenu total
+                } else {
+                    bloc.style.height = h4Height + "px"; // Les autres blocs sont fermés par défaut
+                }
+        
+                bloc.addEventListener("click", () => {
+        
+                    // Ferme tous les autres blocs ouverts
+                    blocContentElements.forEach((otherBloc) => {
+                        if (otherBloc !== bloc && otherBloc.classList.contains("expanded")) {
+                            const otherH4Element = otherBloc.querySelector("h4");
+                            const otherH4Height = otherH4Element.offsetHeight;
+        
+                            otherBloc.style.height = otherH4Height + "px";
+                            otherBloc.classList.remove("expanded");
+                        }
+                    });
+        
+                    // Ouvre ou ferme le bloc cliqué
+                    if (bloc.classList.contains("expanded")) {
+                        bloc.style.height = h4Height + "px";
+                    } else {
+                        bloc.style.height = bloc.scrollHeight + "px";
+                    }
+                    bloc.classList.toggle("expanded");
+                });
+            });
+        }
+        
         
     }, []);
 
@@ -165,6 +211,9 @@ const About = () => {
                                             se complètent, ce qui me permet de collaborer activement dans une équipe 
                                             de communication.
                                         </p>
+                                        <figure className="hidden-pc">
+                                            <img src={RollingStones} className="" alt="Rolling Stones"/>
+                                        </figure>
                                     </div>
                                     <div className="bloc_txt-content">
                                         <h4>Adaptation & curiosité&nbsp;.</h4>

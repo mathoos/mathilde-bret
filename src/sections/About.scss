@@ -200,17 +200,27 @@
             padding-top : 6.5vh;
             @media screen and (max-width : 990px) {
                 position : relative;
+                min-height : 100vh;
                 height : auto;
             }
 
             &.deux{
-                
+                @media screen and (max-width : 990px) {
+                    display : none;
+                }
             }
 
             &.trois{
+                @media screen and (max-width : 990px) {
+                    display : none;
+                }
+                
             }
 
             &.quatre{
+                @media screen and (max-width : 990px) {
+                    display : none;
+                }
             }
 
             &-bloc{
@@ -283,12 +293,14 @@
                             
                             @media screen and (max-width : 990px) {
                                 overflow : hidden;
-                                border : 1px solid yellow;
+                                height : 10vh;
+                                background-color: yellow;
                                 transition : .6s ease;
-                            }
 
-                            &.expanded{
-                                height : 100vh;
+                                &.expanded{
+                                    height : 100vh;
+                                    background-color: pink;
+                                }
                             }
 
                             h4{

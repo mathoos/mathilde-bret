@@ -94,44 +94,12 @@ const About = () => {
 
             const blocContentElements = document.querySelectorAll(".bloc_txt-content");
         
-            blocContentElements.forEach((bloc, index) => {
-        
-                const h4Element = bloc.querySelector("h4");
-                const h4Height = h4Element.offsetHeight;
-        
-                // Si c'est le premier bloc, on l'ouvre automatiquement
-                if (index === 0) {
-                    bloc.classList.add("expanded");
-                    bloc.style.height = bloc.scrollHeight + "px"; // On définit la hauteur à la taille du contenu total
-                } else {
-                    bloc.style.height = h4Height + "px"; // Les autres blocs sont fermés par défaut
-                }
-        
+            blocContentElements.forEach((bloc) => {
                 bloc.addEventListener("click", () => {
-        
-                    // Ferme tous les autres blocs ouverts
-                    blocContentElements.forEach((otherBloc) => {
-                        if (otherBloc !== bloc && otherBloc.classList.contains("expanded")) {
-                            const otherH4Element = otherBloc.querySelector("h4");
-                            const otherH4Height = otherH4Element.offsetHeight;
-        
-                            otherBloc.style.height = otherH4Height + "px";
-                            otherBloc.classList.remove("expanded");
-                        }
-                    });
-        
-                    // Ouvre ou ferme le bloc cliqué
-                    if (bloc.classList.contains("expanded")) {
-                        bloc.style.height = h4Height + "px";
-                    } else {
-                        bloc.style.height = bloc.scrollHeight + "px";
-                    }
                     bloc.classList.toggle("expanded");
                 });
             });
         }
-        
-        
     }, []);
 
     

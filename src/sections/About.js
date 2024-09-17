@@ -213,7 +213,7 @@ const About = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="bloc_txt-content">
+                                    <div className="bloc_txt-content expanded">
                                         <div className="bloc_txt-content--title">
                                             <h4>Créativité & inspiration&nbsp;.</h4>
                                             <div className="open"></div>

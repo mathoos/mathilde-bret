@@ -200,8 +200,8 @@
             padding-top : 6.5vh;
             @media screen and (max-width : 990px) {
                 position : relative;
-                min-height : 100vh;
                 height : auto;
+                padding-top : 0;
             }
 
             &.deux{

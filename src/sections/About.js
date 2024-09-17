@@ -92,14 +92,15 @@ const About = () => {
 
         if (window.matchMedia("(max-width: 990px)").matches) {
 
-            const blocContentElements = document.querySelectorAll(".bloc_txt-content");
-        
             blocContentElements.forEach((bloc) => {
+        
                 bloc.addEventListener("click", () => {
+                    console.log("kikou");
                     bloc.classList.toggle("expanded");
                 });
             });
         }
+
     }, []);
 
     
@@ -164,56 +165,76 @@ const About = () => {
                             <div className="bloc_txt">
                                 <div className="container-txts">
                                     <div className="bloc_txt-content">
-                                        <h4>Mon parcours d'étudiante&nbsp;.</h4>
-                                        <p>
-                                            Diplômée d'une licence en Communication & Médias et titulaire d'un titre de 
-                                            Webdesigner, j'ai récemment achevé mon contrat d'alternance en agence de 
-                                            communication en tant que développeuse front-end.
-                                            <br/><br/>
+                                        <div className="bloc_txt-content--title">
+                                            <h4>Mon parcours d'étudiante&nbsp;.</h4>
+                                            <div className="open"></div>
+                                        </div>
+                                        <div className="bloc_txt-content--txt">
+                                            <div>
+                                                <p>
+                                                    Diplômée d'une licence en Communication & Médias et titulaire d'un titre de 
+                                                    Webdesigner, j'ai récemment achevé mon contrat d'alternance en agence de 
+                                                    communication en tant que développeuse front-end.
+                                                    <br/><br/>
 
-                                            Interview d'artistes et rédaction d'articles, maîtrise élémentaire de la suite 
-                                            Adobe et Figma, création de webdesign, optimisation SEO et intégration de 
-                                            sites web.<br/><br/>
+                                                    Interview d'artistes et rédaction d'articles, maîtrise élémentaire de la suite 
+                                                    Adobe et Figma, création de webdesign, optimisation SEO et intégration de 
+                                                    sites web.<br/><br/>
 
-                                            J'ai acquis au cours de mon expérience une multitude de compétences qui 
-                                            se complètent, ce qui me permet de collaborer activement dans une équipe 
-                                            de communication.
-                                        </p>
-                                        <figure className="hidden-pc">
-                                            <img src={RollingStones} className="" alt="Rolling Stones"/>
-                                        </figure>
+                                                    J'ai acquis au cours de mon expérience une multitude de compétences qui 
+                                                    se complètent, ce qui me permet de collaborer activement dans une équipe 
+                                                    de communication.
+                                                </p>
+                                                {/* <figure className="hidden-pc">
+                                                    <img src={RollingStones} className="" alt="Rolling Stones"/>
+                                                </figure> */}
+                                            </div>
+                                        </div>
                                     </div>
                                     <div className="bloc_txt-content">
-                                        <h4>Adaptation & curiosité&nbsp;.</h4>
-                                        <p>
-                                            De nature curieuse et autonome, j'aime découvrir et apprendre de nouveaux langages 
-                                            afin de pouvoir sélectionner au mieux les outils qui répondront au besoin spécifique 
-                                            d'un projet.<br/><br/> 
-                                            
-                                            Dans l'intention de faciliter les échanges et la coopération au sein de l'équipe de 
-                                            développement, et  pour mieux appréhender le métier dans sa globalité, je m'initie 
-                                            également au développement full-stack.<br/><br/> 
+                                        <div className="bloc_txt-content--title">
+                                            <h4>Adaptation & curiosité&nbsp;.</h4>
+                                            <div className="open"></div>
+                                        </div>
+                                        <div className="bloc_txt-content--txt">
+                                            <div>
+                                                <p>
+                                                    De nature curieuse et autonome, j'aime découvrir et apprendre de nouveaux langages 
+                                                    afin de pouvoir sélectionner au mieux les outils qui répondront au besoin spécifique 
+                                                    d'un projet.<br/><br/> 
+                                                    
+                                                    Dans l'intention de faciliter les échanges et la coopération au sein de l'équipe de 
+                                                    développement, et  pour mieux appréhender le métier dans sa globalité, je m'initie 
+                                                    également au développement full-stack.<br/><br/> 
 
-                                            Je sais m'adapter et suivre les avancées technologiques qui sont en perpétuelle 
-                                            évolution, afin d'empêcher tout projet de devenir obsolète.   
-                                        </p>
+                                                    Je sais m'adapter et suivre les avancées technologiques qui sont en perpétuelle 
+                                                    évolution, afin d'empêcher tout projet de devenir obsolète.   
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div className="bloc_txt-content">
-                                        <h4>Créativité & inspiration&nbsp;.</h4>
-                                        <p>
-                                            Âme créative,  j'ai toujours eu le besoin de m'exprimer autrement qu'à travers 
-                                            les mots. Musique, photographie, collages, dessin… J'aime penser que mon implication 
-                                            dans toute forme d'art accroît l'imagination et l'innovation.<br/><br/> 
-                                            
-                                            Observatrice et attentive, je me complais à contempler le monde qui m'entoure, 
-                                            véritable source d'inspiration inépuisable au quotidien.<br/><br/>
-                                            
-                                            Aujourd'hui, c'est dans la création de site internet que je m'exprime ; attentive 
-                                            au moindre détail, je donne le meilleur pour offrir à l'utilisateur une expérience 
-                                            unique, immersive et intuitive.
-                                        </p>
+                                        <div className="bloc_txt-content--title">
+                                            <h4>Créativité & inspiration&nbsp;.</h4>
+                                            <div className="open"></div>
+                                        </div>
+                                        <div className="bloc_txt-content--txt">
+                                            <div>
+                                                <p>
+                                                    Âme créative,  j'ai toujours eu le besoin de m'exprimer autrement qu'à travers 
+                                                    les mots. Musique, photographie, collages, dessin… J'aime penser que mon implication 
+                                                    dans toute forme d'art accroît l'imagination et l'innovation.<br/><br/> 
+                                                    
+                                                    Observatrice et attentive, je me complais à contempler le monde qui m'entoure, 
+                                                    véritable source d'inspiration inépuisable au quotidien.<br/><br/>
+                                                    
+                                                    Aujourd'hui, c'est dans la création de site internet que je m'exprime ; attentive 
+                                                    au moindre détail, je donne le meilleur pour offrir à l'utilisateur une expérience 
+                                                    unique, immersive et intuitive.
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    
                                 </div>
                             </div>
                             <figure className="bloc_img">
@@ -234,14 +255,12 @@ const About = () => {
                             </figure>
                            
                         </div>
-                        
                     </div>
                 </div>
                 <div className="about_sticky-container deux"></div>
                 <div className="about_sticky-container trois"></div>
                 <div className="about_sticky-container quatre"></div>
             </div>
-
         </section>
     ) 
 }

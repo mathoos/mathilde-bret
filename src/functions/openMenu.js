@@ -7,6 +7,7 @@ export function openMenu(){
 
     menuLink.forEach((link) => {
         link.addEventListener("click", () => {
+            console.log("bonjour")
             btnMenu.classList.remove("active");
             menu.classList.remove("active");
             html.classList.remove("no-scroll");

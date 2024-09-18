@@ -185,9 +185,9 @@ const About = () => {
                                                     se complètent, ce qui me permet de collaborer activement dans une équipe 
                                                     de communication.
                                                 </p>
-                                                {/* <figure className="hidden-pc">
-                                                    <img src={RollingStones} className="" alt="Rolling Stones"/>
-                                                </figure> */}
+                                                <figure className="hidden-pc">
+                                                    <img src={RollingStones} alt="Rolling Stones"/>
+                                                </figure>
                                             </div>
                                         </div>
                                     </div>
@@ -210,6 +210,9 @@ const About = () => {
                                                     Je sais m'adapter et suivre les avancées technologiques qui sont en perpétuelle 
                                                     évolution, afin d'empêcher tout projet de devenir obsolète.   
                                                 </p>
+                                                <figure className="hidden-pc">
+                                                <img src={HarleyDavidson} alt="Rolling Stones"/>
+                                                </figure>
                                             </div>
                                         </div>
                                     </div>
@@ -232,6 +235,9 @@ const About = () => {
                                                     au moindre détail, je donne le meilleur pour offrir à l'utilisateur une expérience 
                                                     unique, immersive et intuitive.
                                                 </p>
+                                                <figure className="hidden-pc">
+                                                <img src={AppareilPhoto} alt="Canon 800D"/>
+                                                </figure>
                                             </div>
                                         </div>
                                     </div>

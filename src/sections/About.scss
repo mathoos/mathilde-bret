@@ -308,8 +308,17 @@
 
                                 &:last-of-type{
                                     @media screen and (max-width : 990px) {
-                                        .bloc_txt-content--title{
-                                            //padding : 20vw 10vw 25vw 10vw;  
+                                        .bloc_txt-content--txt{
+                                            div{
+                                                figure{
+                                                    img{
+                                                        width : 65vw;
+                                                        margin-right : -20vw;
+                                                        margin-bottom : -15vw;
+                                                        border : none;
+                                                    }
+                                                }
+                                            }
                                         }
                                     } 
                                 }
@@ -317,11 +326,6 @@
                                 &:not(:last-of-type){
                                     .bloc_txt-content--txt{
                                         div{
-                                            p{
-                                                @media screen and (max-width : 990px) {
-                                                    padding-bottom : 30vw;
-                                                }
-                                            }
                                         }
                                     }
                                 }
@@ -382,8 +386,15 @@
     
                                 &--txt{
                                     div{
-                                        margin-bottom : calc(-100% - (10vw * 4));
-                                        transition : .6s ease;
+                                        
+                                        @media screen and (max-width : 990px) {
+                                            display : flex;
+                                            flex-direction: column;
+                                            gap : 5vh;
+                                            padding : 0 10vw;
+                                            margin-bottom : -200%;
+                                            transition : .6s ease;
+                                        }
 
                                         p{
                                             color : $blanc;
@@ -391,18 +402,21 @@
                                             font-variation-settings:
                                                 "wdth" 125,
                                                 "wght" $thin;
-                                            @media screen and (max-width : 990px) {
-                                                padding : 0 10vw 20vw 10vw;
-                                            }
                                         }
             
                                         figure{
-                                            img{
-                                                width : 50vw;
-                                                height : 50vw;
-                                                object-fit: cover;
-                                                border-radius : 30px;
-                                            }
+                                            @media screen and (max-width : 990px) {
+                                                display : flex;
+                                                justify-content: flex-end;
+                                                
+                                                img{
+                                                    width : 50vw;
+                                                    height : auto;
+                                                    object-fit: cover;
+                                                    border-radius : 30px;
+                                                    border : 2px solid $blanc;
+                                                }
+                                            } 
                                         }
                                     } 
                                 }

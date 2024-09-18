@@ -7,6 +7,8 @@ import RollingStones from "../img/lessons-2.jpg";
 import HarleyDavidson from "../img/rolling-stones-tshirt.jpg";
 import AppareilPhoto from "../img/appareil-photo.png";
 import { Parallax } from "react-scroll-parallax";
+import { Reveal } from "react-awesome-reveal";
+import { bottomAnimation } from "../functions/keyframes";
 import './About.scss';
 
 const About = () => {
@@ -107,23 +109,15 @@ const About = () => {
 
     return (
         <section className="about" id="about">
-
-
             <div className="about_presentation">
 
                 <div className="about_presentation-title">
-                    <h2 className="anim-letters">
-                        À la <br className="hidden-mobile"/> recherche <br className="hidden-mobile"/>
-                        d'une nouvelle <br className="hidden-mobile"/> opportunité&nbsp;.
-                    </h2>
-
-                    {/* <figure className="about_presentation-title--pastille">
-                        <img src={PastilleGlobe} className="about_presentation-title--pastille--globe" alt="Pastille"/> 
-                        <img src={PastilleTxt} className="about_presentation-title--pastille--txt" alt="Pastille"/>       
-                        <Parallax rotate={['-30deg', '15deg']} className="about_presentation-title--pastille--arrow">
-                            <img src={PastilleArrow}  alt="Pastille"/> 
-                        </Parallax>
-                    </figure>  */}
+                    <Reveal keyframes={bottomAnimation}>
+                        <h2>
+                            À la <br className="hidden-mobile"/> recherche <br className="hidden-mobile"/>
+                            d'une nouvelle <br className="hidden-mobile"/> opportunité&nbsp;.
+                        </h2>
+                    </Reveal>
                 </div>
 
                 <div className="about_presentation-content">

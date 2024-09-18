@@ -69,10 +69,7 @@ const Skills = () => {
                         </figure>
                         <div className="bloc-content">
                             <div className="bloc-content--title">
-                                <Reveal keyframes={bottomAnimation}>
                                 <h3>Web <br/> design</h3>
-                                </Reveal>
-                                
                             </div>
                             <div className="bloc-content--list">
                                 <div>

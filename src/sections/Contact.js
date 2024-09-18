@@ -17,8 +17,10 @@ const Contact = () => {
                 </h2>
 
                 <figure className="footer_title-img">
-                    <img src={Globe} alt="Globe"/>     
-                    <img src={Arrow} className="arrow" alt="Flèche"/> 
+                    <img src={Globe} alt="Globe"/>   
+                    <Parallax rotate={['-30deg', '10deg']}>
+                        <img src={Arrow} alt="Flèche"/> 
+                    </Parallax>  
                 </figure> 
             </div>
             <div className="footer_links">

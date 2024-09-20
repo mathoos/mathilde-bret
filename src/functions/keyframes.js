@@ -42,7 +42,7 @@ export const scaleInvert = keyframes`
 
 export const bottomAnimation = keyframes`
     from {
-        transform : translateY(50%);
+        transform : translateY(100%);
         opacity : 0;
     }
 

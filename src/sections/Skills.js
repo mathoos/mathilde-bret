@@ -75,7 +75,7 @@ const Skills = () => {
                             <div className="bloc-content--txt">
                                 <p>
                                     Au cours de mes études et expériences, j'ai élargi mes compétences autour du 
-                                    développement web, en équipe ou de manière autonomie. 
+                                    développement web, en équipe ou de manière autonome. 
                                 </p>
                             </div>
                             <div className="bloc-content--btn">

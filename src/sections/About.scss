@@ -427,13 +427,14 @@
                             left : 0;
                             width : 3.9vw;
                             height : auto;
-                            animation : infiniteRotation 10s linear infinite;
+                            animation : infiniteRotation 5s linear infinite;
 
                             &.star-2{
                                 top : 0;
                                 bottom : unset;
                                 right : 0;
                                 left : unset;
+                                animation-direction: reverse;
                             }
                         }
 
@@ -444,9 +445,9 @@
                             left : -5vw;
                             transform : rotate(12deg);
                             text-transform: uppercase;
-                            background-color: $blanc;
-                            color : $noir;
-                            border : 3px solid $noir;
+                            background-color: $violet;
+                            color : $blanc;
+                            border : 3px solid $blanc;
                             font-variation-settings:
                                 "wdth" 125,
                                 "wght" $medium;

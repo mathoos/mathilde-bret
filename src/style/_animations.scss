@@ -62,6 +62,18 @@
     }
 }
 
+
+@keyframes smoothRotation {
+    0%{
+        transform : rotate(15deg)
+    }
+
+    100%{
+        transform : rotate(2.5deg)
+    }
+}
+
+
 @keyframes rightRotation {
     0%{
         transform : rotate(-60deg)

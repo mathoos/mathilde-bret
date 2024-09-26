@@ -3,7 +3,8 @@ import workflow from "../img/icons/workflow-icon.svg";
 import seo from "../img/icons/seo-icon.svg";
 import scrum from "../img/icons/scrum-icon.svg";
 import Doigt from "../img/finger-pixel.svg";
-import Pastille from "../img/pastille-frontend.svg";
+import PastilleTxt from "../img/pastille-frontend-text.svg";
+import PastilleImg from "../img/pastille-frontend-img.svg";
 import { Parallax } from "react-scroll-parallax";
 import { Reveal } from "react-awesome-reveal";
 import { bottomAnimation } from "../functions/keyframes";
@@ -138,7 +139,8 @@ const Skills = () => {
                         </div>
                     </div>
                     <figure className="pastille">
-                        <img src={Pastille} alt="Pastille frontend developer"/>
+                        <img src={PastilleTxt} className="txt" alt="Pastille frontend developer"/>
+                        <img src={PastilleImg}  className="img" alt="Pastille frontend developer"/>
                     </figure>
                 </div>  
             </div>

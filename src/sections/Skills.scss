@@ -277,8 +277,15 @@
                     right : -1vw;
                     width : 14vw;
                     height : auto;
-                    transform : rotate(10deg);
                     z-index : 2;
+
+                    &.txt{
+                        animation : infiniteRotation 15s linear infinite forwards;
+                    }
+
+                    &.img{
+                        transform : rotate(10deg);
+                    }
                 }
             }
         }

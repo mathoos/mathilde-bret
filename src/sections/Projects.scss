@@ -156,8 +156,10 @@
                         .bouton{
                             z-index : 5;
                             cursor : url(../img/icons/cursor-icon.svg), auto;
-                            text-transform : uppercase;
+                            //text-transform : uppercase;
                             background-color: transparent;
+                            padding : 1vh 2vw;
+                            font-size : 1.1vw;
                             &:hover{
                                 color : $blanc;
                                 border-color : $blanc;

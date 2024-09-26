@@ -7,9 +7,8 @@ import RollingStones from "../img/lessons-2.jpg";
 import HarleyDavidson from "../img/rolling-stones-tshirt.jpg";
 import AppareilPhoto from "../img/appareil-photo.png";
 import RubberWeb from "../img/rubber-web.svg";
-import RubberWebEyes from "../img/rubber-web-eyes.svg";
-import RubberWebStarOne from "../img/rubber-web-star-one.svg";
-import RubberWebStarTwo from "../img/rubber-web-star-two.svg";
+import RubberHappy from "../img/rubber-happy.svg";
+import RubberSunglasses from "../img/rubber-sunglasses.svg";
 import Star from "../img/star.svg";
 import { Parallax } from "react-scroll-parallax";
 import { Reveal } from "react-awesome-reveal";
@@ -244,8 +243,10 @@ const About = () => {
                             </div>
                             <figure className="bloc_img">
                                 <img src={RubberWeb} className="bloc_img-rubber" alt="Rubber Hose Web"/>
-                                <img src={Star} className="bloc_img-elements" alt="Rubber Hose Web"/>
-                                <img src={Star} className="bloc_img-elements star-2" alt="Rubber Hose Web"/>
+                                <img src={RubberHappy} className="bloc_img-eyes apparition2" alt="Rubber Hose Web"/>
+                                <img src={RubberSunglasses} className="bloc_img-eyes apparition3" alt="Rubber Hose Web"/>
+                                <img src={Star} className="bloc_img-star" alt="Rubber Hose Web"/>
+                                <img src={Star} className="bloc_img-star star-2" alt="Rubber Hose Web"/>
                                 <p className="bouton bouton_2 apparition2">Sérieuse</p>
                                 <p className="bouton apparition3">Créative</p>
                             </figure>  

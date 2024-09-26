@@ -266,6 +266,21 @@
                     }
                 }
             }
+
+            .pastille{
+                position : relative;
+                flex : 1;
+
+                img{
+                    position : absolute;
+                    top : -6vw;
+                    right : -1vw;
+                    width : 14vw;
+                    height : auto;
+                    transform : rotate(10deg);
+                    z-index : 2;
+                }
+            }
         }
     }
 }

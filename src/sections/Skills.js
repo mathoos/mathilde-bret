@@ -3,7 +3,7 @@ import workflow from "../img/icons/workflow-icon.svg";
 import seo from "../img/icons/seo-icon.svg";
 import scrum from "../img/icons/scrum-icon.svg";
 import Doigt from "../img/finger-pixel.svg";
-import Pouce from "../img/pouce-en-lair.png";
+import Pastille from "../img/pastille-frontend.svg";
 import { Parallax } from "react-scroll-parallax";
 import { Reveal } from "react-awesome-reveal";
 import { bottomAnimation } from "../functions/keyframes";
@@ -82,13 +82,11 @@ const Skills = () => {
                                 <p className="bouton bouton_title bouton_bgBlanc">Html</p>
                                 <p className="bouton bouton_title bouton_bgBlanc">Scss</p>
                                 <p className="bouton bouton_title bouton_bgBlanc">Javascript</p>
+                                <p className="bouton bouton_title bouton_bgBlanc">Php</p>
                                 <p className="bouton bouton_title bouton_bgBlanc">React</p>
                                 <p className="bouton bouton_title bouton_bgBlanc">MongoDB</p>
                                 <p className="bouton bouton_title bouton_bgBlanc">Express</p>
                             </div>
-                            <figure className="bloc-content--img">
-                                <img src={Pouce} alt="Pouce en l'air"/>
-                            </figure>
                         </div>
                     </div>     
             
@@ -139,6 +137,9 @@ const Skills = () => {
                             </div>
                         </div>
                     </div>
+                    <figure className="pastille">
+                        <img src={Pastille} alt="Pastille frontend developer"/>
+                    </figure>
                 </div>  
             </div>
         </section> 

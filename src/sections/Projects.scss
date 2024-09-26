@@ -84,7 +84,8 @@
                 &-left{
                     display : flex;
                     flex-direction: column;
-                    justify-content: space-between;
+                    gap : 5vh;
+                    //justify-content: space-between;
                     width : 41vw;
                     height : 100%;
                     border-radius : 50px 50px 0 50px;
@@ -104,7 +105,7 @@
                     .description{
                         display : flex;
                         flex-direction: column;
-                        gap : 5vh;
+                        gap : 7vh;
                         @media screen and (max-width : 990px) {
                             gap : 0;                     
                         }
@@ -156,6 +157,11 @@
                             z-index : 5;
                             cursor : url(../img/icons/cursor-icon.svg), auto;
                             text-transform : uppercase;
+                            background-color: transparent;
+                            &:hover{
+                                color : $blanc;
+                                border-color : $blanc;
+                            }
                             @media screen and (max-width : 990px) {
                                 font-size : 2.8vw !important;
                                 flex-grow: 1;
@@ -206,11 +212,8 @@
 
                         &_bouton{
                             position : absolute;
-                            bottom : -2px;
-                            right : -2px;
-                            width : 12vw;
-                            height : 7vh;
-                            background-color: $noir;
+                            bottom : 1vw;
+                            right : 1vw;
                             border-radius : 30px 0 0 0;
                             z-index : 10;
                             transition : .5s ease;
@@ -223,13 +226,19 @@
                                 padding : 1.3vh 5vw;  
                             }
 
-                            p{
+                            .bouton{
                                 display : flex;
                                 justify-content: center;
                                 align-items: center;
                                 width : 100%;
                                 height : 100%;
+                                background-color: $noir;
+                                border-color : $blanc;
                                 color : $blanc;
+                                font-variation-settings:
+                                    "wdth" 125,
+                                    "wght" $regular;
+                                text-transform : uppercase;
                                 @media screen and (max-width : 990px) {
                                     font-size : 5vw;
                                 }
@@ -238,10 +247,9 @@
 
                         &:hover{
                             .mockup_bouton{
-                                height : 20vh;
-                                @media screen and (max-width : 990px) {
-                                    width : fit-content;
-                                    height : fit-content;
+                                .bouton{
+                                    background-color: $blanc;
+                                    color : $noir;
                                 }
                             } 
                         }
@@ -254,9 +262,20 @@
                     background-color: $violet;         
                 }
 
-                .projects_container-bloc--content-right .mockup_bouton{
-                    background-color: $violet;
-                    color : $blanc;
+                .mockup{
+                    .mockup_bouton{
+                        .bouton{
+                            background-color: $violet;
+                        }
+                    }
+                    &:hover{
+                        .mockup_bouton{
+                            .bouton{
+                                background-color: $blanc;
+                                color : $violet;
+                            }
+                        } 
+                    }
                 }
 
                 .projects_container-bloc--content, h3{

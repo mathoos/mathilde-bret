@@ -43,7 +43,7 @@ const Projects = () => {
                                 <a href={item.link} target="_blank" rel="noreferrer" className="mockup">
                                     <img src={item.template} alt="Template de site"/>
                                     <div className="mockup_bouton">
-                                        <p>Voir le site</p>
+                                        <p className="bouton">Voir le site</p>
                                     </div>
                                 </a>
                             </div>

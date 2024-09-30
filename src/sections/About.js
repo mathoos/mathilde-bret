@@ -15,11 +15,9 @@ const About = () => {
 
     useEffect(() => {
 
-        const blocContentElements = document.querySelectorAll(".bloc_txt-content");
         const containerTxt = document.querySelector(".container-txts");
+        const blocContentElements = document.querySelectorAll(".bloc_txt-content");
 
-  
-            
             let height = 0;
     
             blocContentElements.forEach((element, index) => {
@@ -27,23 +25,7 @@ const About = () => {
             });
           
             const handleScroll = () => {
-    
-                const svgElement = document.querySelector('.bloc_img-arrow');
-    
-                if (svgElement) {
-                    const svgOffset = svgElement.getBoundingClientRect().top;
-                    const svgBottom = svgElement.getBoundingClientRect().bottom;
-                    const offsetMargin = 200; 
-                    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-        
-                    if (svgOffset < windowHeight - offsetMargin && svgBottom > 0) {
-                        svgElement.classList.add('in-viewport');
-                    } 
-                    else {
-                        svgElement.classList.remove('in-viewport');
-                    }
-                }
-    
+
                 const containerDeux = document.querySelector('.about_sticky-container.deux');
                 const containerDeuxBoundingBox = containerDeux.getBoundingClientRect();
                 const containerDeuxOffset = containerDeuxBoundingBox.top + window.scrollY;
@@ -151,7 +133,6 @@ const About = () => {
                                     <div className="bloc_txt-content">
                                         <div className="bloc_txt-content--title">
                                             <h4>Mon parcours d'étudiante&nbsp;.</h4>
-                                        
                                         </div>
                                         <div className="bloc_txt-content--txt">
                                             <p>
@@ -173,51 +154,39 @@ const About = () => {
                                     <div className="bloc_txt-content">
                                         <div className="bloc_txt-content--title">
                                             <h4>Adaptation & curiosité&nbsp;.</h4>
-                                      
                                         </div>
                                         <div className="bloc_txt-content--txt">
-                                            
-                                                <p>
-                                                    De nature curieuse et autonome, j'aime découvrir et apprendre de nouveaux langages 
-                                                    afin de pouvoir sélectionner au mieux les outils qui répondront au besoin spécifique 
-                                                    d'un projet.<br/><br/> 
-                                                    
-                                                    Dans l'intention de faciliter les échanges et la coopération au sein de l'équipe de 
-                                                    développement, et  pour mieux appréhender le métier dans sa globalité, je m'initie 
-                                                    également au développement full-stack.<br/><br/> 
+                                            <p>
+                                                De nature curieuse et autonome, j'aime découvrir et apprendre de nouveaux langages 
+                                                afin de pouvoir sélectionner au mieux les outils qui répondront au besoin spécifique 
+                                                d'un projet.<br/><br/> 
+                                                
+                                                Dans l'intention de faciliter les échanges et la coopération au sein de l'équipe de 
+                                                développement, et  pour mieux appréhender le métier dans sa globalité, je m'initie 
+                                                également au développement full-stack.<br/><br/> 
 
-                                                    Je sais m'adapter et suivre les avancées technologiques qui sont en perpétuelle 
-                                                    évolution, afin d'empêcher tout projet de devenir obsolète.   
-                                                </p>
-                                                {/* <figure className="hidden-pc">
-                                                    <img src={HarleyDavidson} alt="Rolling Stones"/>
-                                                </figure> */}
-                                           
+                                                Je sais m'adapter et suivre les avancées technologiques qui sont en perpétuelle 
+                                                évolution, afin d'empêcher tout projet de devenir obsolète.   
+                                            </p>
                                         </div>
                                     </div>
                                     <div className="bloc_txt-content expanded">
                                         <div className="bloc_txt-content--title">
                                             <h4>Créativité & inspiration&nbsp;.</h4>
-                                         
                                         </div>
                                         <div className="bloc_txt-content--txt">
-                                         
-                                                <p>
-                                                    Âme créative,  j'ai toujours eu le besoin de m'exprimer autrement qu'à travers 
-                                                    les mots. Musique, photographie, collages, dessin… J'aime penser que mon implication 
-                                                    dans toute forme d'art accroît l'imagination et l'innovation.<br/><br/> 
-                                                    
-                                                    Observatrice et attentive, je me complais à contempler le monde qui m'entoure, 
-                                                    véritable source d'inspiration inépuisable au quotidien.<br/><br/>
-                                                    
-                                                    Aujourd'hui, c'est dans la création de site internet que je m'exprime ; attentive 
-                                                    au moindre détail, je donne le meilleur pour offrir à l'utilisateur une expérience 
-                                                    unique, immersive et intuitive.
-                                                </p>
-                                                {/* <figure className="hidden-pc">
-                                                    <img src={AppareilPhoto} alt="Canon 800D"/>
-                                                </figure> */}
-                                          
+                                            <p>
+                                                Âme créative,  j'ai toujours eu le besoin de m'exprimer autrement qu'à travers 
+                                                les mots. Musique, photographie, collages, dessin… J'aime penser que mon implication 
+                                                dans toute forme d'art accroît l'imagination et l'innovation.<br/><br/> 
+                                                
+                                                Observatrice et attentive, je me complais à contempler le monde qui m'entoure, 
+                                                véritable source d'inspiration inépuisable au quotidien.<br/><br/>
+                                                
+                                                Aujourd'hui, c'est dans la création de site internet que je m'exprime ; attentive 
+                                                au moindre détail, je donne le meilleur pour offrir à l'utilisateur une expérience 
+                                                unique, immersive et intuitive.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>

@@ -30,7 +30,7 @@ function App() {
         const updateProgress = () => {
             setProgress(prevProgress => {
 
-                const randomDelay = Math.random() * 700 + 150; 
+                const randomDelay = Math.random() * 500 + 150; 
                 const nextProgress = prevProgress + 1;
 
                 if (nextProgress >= 7) {

@@ -240,22 +240,18 @@
 
                         .container-txts{
                             transition : 1s ease;
-                            @media screen and (max-width : 990px) {
-                               
-                            }  
 
                             .bloc_txt-content{                   
                                 display : flex;
                                 flex-direction: column;
                                 gap : 5vh;
                                 height : 62vh;
+                                padding-top : 2px;
                                 
                                 @media screen and (max-width : 990px) {
                                     height : 66vh;
                                 }
 
-                               
-    
                                 &--title{
                                     @media screen and (max-width : 990px) {
                                         // display : flex;

@@ -14,9 +14,6 @@ const Projects = () => {
         <section className="projects" id="projects">
             <div className="projects_title">
                 <h2>Sélection de <br className="hidden-mobile"/> quelques projets&nbsp;!</h2>
-                <figure className="projects_title-eyes">
-                    <img src={Eyes} alt="Yeux"/>
-                </figure>
             </div>
             <div className="projects_container">
                 {data.map((item, index) => (

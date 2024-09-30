@@ -277,14 +277,10 @@
                     right : -1vw;
                     width : 14vw;
                     height : auto;
-                    z-index : 2;
+                    z-index : 5;
 
                     &.txt{
                         animation : infiniteRotation 15s linear infinite forwards;
-                    }
-
-                    &.img{
-                        animation : smoothRotation 2s ease infinite forwards alternate;
                     }
                 }
             }

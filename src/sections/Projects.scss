@@ -20,24 +20,6 @@
                 width : 100%;
             }
         }
-
-        &-eyes{
-            width : 10.9vw;
-            height : auto;
-            padding-top : 30vh;
-            @media screen and (max-width : 990px) {
-                position : absolute;
-                right : 0;
-                bottom : -15vw;
-                width : 20vw;
-                padding-top : 0;
-            }
-
-            img{
-                width : 100%;
-                height : auto;
-            }
-        }
     }
 
     &_container{

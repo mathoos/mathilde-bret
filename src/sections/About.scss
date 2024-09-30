@@ -277,7 +277,13 @@
                                         font-variation-settings:
                                             "wdth" 125,
                                             "wght" $thin;
-                                           
+                                        @media screen and (max-height : 990px) {
+                                            font-size : 3.9vw !important;
+                                        }
+
+                                        @media screen and (max-height : 700px) {
+                                            font-size : 3.5vw !important;
+                                        }      
                                     }
                                 }
                             }  
@@ -299,7 +305,7 @@
                             object-fit: contain;
                             @media screen and (max-width : 990px) {
                                position : absolute;
-                               top : -7vw;
+                               top : -10vw;
                                right : 0;
                                width : 50vw;
                                height : auto;
@@ -315,7 +321,7 @@
                             @media screen and (max-width : 990px) {
                                 left : unset;
                                 right : 0;
-                                top : -7vw;
+                                top : -10vw;
                                 width : 50vw;
                                 height : auto; 
                             }
@@ -330,6 +336,7 @@
                             animation : infiniteRotation 5s linear infinite;
                             @media screen and (max-width : 990px) {
                                 width : 10vw;
+                                bottom : -5vw;
                             }
 
                             &.star-2{
@@ -339,7 +346,7 @@
                                 left : unset;
                                 animation-direction: reverse;
                                 @media screen and (max-width : 990px) {
-                                    top : -100%;
+                                    top : -25vw;
                                 }
                             }
                         }
@@ -375,7 +382,7 @@
                                 transform : rotate(-10deg);
                                 transition : opacity 0ms linear .2s;
                                 @media screen and (max-width : 990px) {
-                                    top : -11vw;
+                                    top : -19vw;
                                     left : 25vw;
                                     right : 0;
                                 }

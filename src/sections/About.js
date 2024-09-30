@@ -1,8 +1,5 @@
 import React, { useEffect } from 'react';
 import MathildeBureau from "../img/moi/coding.jpg";
-import PastilleGlobe from "../img/pastille_globe.svg";
-import PastilleTxt from "../img/pastille_txt.svg";
-import PastilleArrow from "../img/pastille_arrow.svg";
 import RollingStones from "../img/lessons-2.jpg";
 import HarleyDavidson from "../img/rolling-stones-tshirt.jpg";
 import AppareilPhoto from "../img/appareil-photo.png";
@@ -10,7 +7,6 @@ import RubberWeb from "../img/rubber-web.svg";
 import RubberHappy from "../img/rubber-happy.svg";
 import RubberSunglasses from "../img/rubber-sunglasses.svg";
 import Star from "../img/star.svg";
-import { Parallax } from "react-scroll-parallax";
 import { Reveal } from "react-awesome-reveal";
 import { bottomAnimation } from "../functions/keyframes";
 import './About.scss';
@@ -22,7 +18,7 @@ const About = () => {
         const blocContentElements = document.querySelectorAll(".bloc_txt-content");
         const containerTxt = document.querySelector(".container-txts");
 
-        if (!window.matchMedia("(max-width: 990px)").matches) {
+  
             
             let height = 0;
     
@@ -94,18 +90,8 @@ const About = () => {
             return () => {
                 window.removeEventListener('scroll', handleScroll);
             };
-        }
+     
 
-        if (window.matchMedia("(max-width: 990px)").matches) {
-
-            blocContentElements.forEach((bloc) => {
-        
-                bloc.addEventListener("click", () => {
-                    console.log("kikou");
-                    bloc.classList.toggle("expanded");
-                });
-            });
-        }
 
     }, []);
 
@@ -165,37 +151,32 @@ const About = () => {
                                     <div className="bloc_txt-content">
                                         <div className="bloc_txt-content--title">
                                             <h4>Mon parcours d'étudiante&nbsp;.</h4>
-                                            <div className="open"></div>
+                                        
                                         </div>
                                         <div className="bloc_txt-content--txt">
-                                            <div>
-                                                <p>
-                                                    Diplômée d'une licence en Communication & Médias et titulaire d'un titre de 
-                                                    Webdesigner, j'ai récemment achevé mon contrat d'alternance en agence de 
-                                                    communication en tant que développeuse front-end.
-                                                    <br/><br/>
+                                            <p>
+                                                Diplômée d'une licence en Communication & Médias et titulaire d'un titre de 
+                                                Webdesigner, j'ai récemment achevé mon contrat d'alternance en agence de 
+                                                communication en tant que développeuse front-end.
+                                                <br/><br/>
 
-                                                    Interview d'artistes et rédaction d'articles, maîtrise élémentaire de la suite 
-                                                    Adobe et Figma, création de webdesign, optimisation SEO et intégration de 
-                                                    sites web.<br/><br/>
+                                                Interview d'artistes et rédaction d'articles, maîtrise élémentaire de la suite 
+                                                Adobe et Figma, création de webdesign, optimisation SEO et intégration de 
+                                                sites web.<br/><br/>
 
-                                                    J'ai acquis au cours de mon expérience une multitude de compétences qui 
-                                                    se complètent, ce qui me permet de collaborer activement dans une équipe 
-                                                    de communication.
-                                                </p>
-                                                <figure className="hidden-pc">
-                                                    <img src={RollingStones} alt="Rolling Stones"/>
-                                                </figure>
-                                            </div>
+                                                J'ai acquis au cours de mon expérience une multitude de compétences qui 
+                                                se complètent, ce qui me permet de collaborer activement dans une équipe 
+                                                de communication.
+                                            </p>
                                         </div>
                                     </div>
                                     <div className="bloc_txt-content">
                                         <div className="bloc_txt-content--title">
                                             <h4>Adaptation & curiosité&nbsp;.</h4>
-                                            <div className="open"></div>
+                                      
                                         </div>
                                         <div className="bloc_txt-content--txt">
-                                            <div>
+                                            
                                                 <p>
                                                     De nature curieuse et autonome, j'aime découvrir et apprendre de nouveaux langages 
                                                     afin de pouvoir sélectionner au mieux les outils qui répondront au besoin spécifique 
@@ -208,19 +189,19 @@ const About = () => {
                                                     Je sais m'adapter et suivre les avancées technologiques qui sont en perpétuelle 
                                                     évolution, afin d'empêcher tout projet de devenir obsolète.   
                                                 </p>
-                                                <figure className="hidden-pc">
-                                                <img src={HarleyDavidson} alt="Rolling Stones"/>
-                                                </figure>
-                                            </div>
+                                                {/* <figure className="hidden-pc">
+                                                    <img src={HarleyDavidson} alt="Rolling Stones"/>
+                                                </figure> */}
+                                           
                                         </div>
                                     </div>
                                     <div className="bloc_txt-content expanded">
                                         <div className="bloc_txt-content--title">
                                             <h4>Créativité & inspiration&nbsp;.</h4>
-                                            <div className="open"></div>
+                                         
                                         </div>
                                         <div className="bloc_txt-content--txt">
-                                            <div>
+                                         
                                                 <p>
                                                     Âme créative,  j'ai toujours eu le besoin de m'exprimer autrement qu'à travers 
                                                     les mots. Musique, photographie, collages, dessin… J'aime penser que mon implication 
@@ -233,10 +214,10 @@ const About = () => {
                                                     au moindre détail, je donne le meilleur pour offrir à l'utilisateur une expérience 
                                                     unique, immersive et intuitive.
                                                 </p>
-                                                <figure className="hidden-pc">
-                                                <img src={AppareilPhoto} alt="Canon 800D"/>
-                                                </figure>
-                                            </div>
+                                                {/* <figure className="hidden-pc">
+                                                    <img src={AppareilPhoto} alt="Canon 800D"/>
+                                                </figure> */}
+                                          
                                         </div>
                                     </div>
                                 </div>

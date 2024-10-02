@@ -158,6 +158,9 @@
     .sticky{
         position : relative;
         width : 100%;
+        
+
+       
 
         @media screen and (max-width : 990px) {
             display : flex;
@@ -175,6 +178,20 @@
             padding-right : 15vw;
             background-color: $noir;
             border-radius : 50px;
+            overflow : hidden;
+
+            &::after {
+                position: absolute;
+                content: "";
+                top: -100%;
+                left: -50%;
+                width: 300%;
+                height: 300%;
+                animation: grain 10s steps(10) infinite;
+                background-image: url("../img/noise-effect2.png");
+                opacity: .1;
+                z-index : 2;
+            }
  
             @media screen and (max-width : 990px) {
                 top : 80px;
@@ -184,6 +201,7 @@
 
             &-img{
                 position : relative;
+                z-index : 1;
 
                 @media screen and (max-width : 990px) {
                     width : 100%;

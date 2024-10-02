@@ -24,7 +24,7 @@ const About = () => {
     });
 
     const determineThreshold = () => {
-        return window.innerWidth < 990 ? 0.8 : 0.5; // 0.2 pour mobile, 0.4 pour desktop
+        return window.innerWidth < 990 ? 0.65 : 0.5; // 0.65 pour mobile, 0.5 pour desktop
     };
 
     useEffect(() => {

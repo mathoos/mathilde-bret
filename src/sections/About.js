@@ -151,7 +151,6 @@ const About = () => {
                 </div>
 
                 <div className="sticky_scroll">
-
                     <div className={`sticky_scroll-txt ${visibleSections.firstVisible ? 'visible' : ''}`} ref={firstParagraphRef}>
                         <h4>Mon parcours d'étudiante&nbsp;.</h4>   
                         <p>
@@ -199,7 +198,6 @@ const About = () => {
                             unique, immersive et intuitive.
                         </p>
                     </div>
-                  
                 </div>
             </div> 
 

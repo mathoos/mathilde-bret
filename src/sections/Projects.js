@@ -13,7 +13,7 @@ const Projects = () => {
     return (
         <section className="projects" id="projects">
             <div className="projects_title">
-                <h2>Sélection de <br className="hidden-mobile"/> quelques projets&nbsp;!</h2>
+                <h2>Sélection <br className="hidden-mobile"/> de quelques <br className="hidden-mobile"/> projets&nbsp;!</h2>
             </div>
             <div className="projects_container">
                 {data.map((item, index) => (

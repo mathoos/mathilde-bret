@@ -23,19 +23,11 @@ const About = () => {
         thirdVisible: false,
     });
 
-    const determineThreshold = () => {
-        return window.innerWidth < 990 ? 0.5 : 0.5; // 0.65 pour mobile, 0.5 pour desktop
-    };
-
     useEffect(() => {
-        const updateThreshold = () => {
-            observerOptions.threshold = determineThreshold();
-        };
-
         const observerOptions = {
             root: null,
             rootMargin: '0px',
-            threshold: determineThreshold() // Utilise le threshold en fonction de la taille de la fenêtre
+            threshold: .5
         };
 
         const observer = new IntersectionObserver((entries) => {
@@ -72,6 +64,7 @@ const About = () => {
                         setVisibleSections(prev => ({ ...prev, thirdVisible: true }));
                     }
                 } else {
+                    // Si l'élément quitte le viewport, on garde la section visible.
                     if (entry.target === firstParagraphRef.current) {
                         setVisibleSections(prev => ({ ...prev, firstVisible: false }));
                     } else if (entry.target === secondParagraphRef.current) {
@@ -91,13 +84,10 @@ const About = () => {
         if (currentSecondRef) observer.observe(currentSecondRef);
         if (currentThirdRef) observer.observe(currentThirdRef);
 
-        window.addEventListener('resize', updateThreshold); // Ajoute un écouteur pour redimensionner la fenêtre
-
         return () => {
             if (currentFirstRef) observer.unobserve(currentFirstRef);
             if (currentSecondRef) observer.unobserve(currentSecondRef);
             if (currentThirdRef) observer.unobserve(currentThirdRef);
-            window.removeEventListener('resize', updateThreshold); // Nettoie l'écouteur lors du démontage
         };
     }, []);
 

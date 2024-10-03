@@ -61,7 +61,7 @@
                     width : 25vw;
                     height : 100%;
                     @media screen and (max-width : 990px) {
-                        width : calc(100% - 30px)
+                        width : 100%;
                     }
                     
                     img{
@@ -158,6 +158,7 @@
                     width : calc(100% - 5vw);
 
                     @media screen and (max-width : 990px) {
+                        font-size : 4vw;
                         width : 100%;
                     }
                 }

@@ -1,7 +1,7 @@
 import PastilleTxt from "../img/pastille-frontend-text.svg";
 import PastilleImg from "../img/pastille-frontend-img.svg";
 import { Reveal } from "react-awesome-reveal";
-import { bottomAnimation } from "../functions/keyframes";
+import { bottomAnimation , opacity } from "../functions/keyframes";
 
 import './Skills.scss';
 
@@ -19,6 +19,7 @@ const Skills = () => {
 
             <div className="skills_domain">
                 <div className="skills_domain-container">
+ 
 
                     <div className="bloc">
                         <figure className="bloc-icon">
@@ -132,11 +133,15 @@ const Skills = () => {
                             </div>
                         </div>
                     </div>
-                    <figure className="pastille">
+                    
+                    {/* <figure className="pastille">
                         <img src={PastilleTxt} className="txt" alt="Pastille frontend developer"/>
                         <img src={PastilleImg} alt="Pastille frontend developer"/>
-                    </figure>
+                    </figure> */}
+
+             
                 </div>  
+                
             </div>
         </section> 
     ) 

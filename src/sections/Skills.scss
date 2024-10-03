@@ -93,7 +93,6 @@
                     display : flex;
                     flex-direction: column;
                     justify-content: flex-end;
-                    gap : 2vh;
                     height : 100%;
                     overflow : hidden;
 
@@ -114,6 +113,7 @@
                     &--list{
                         div{
                             margin-bottom : -100%;
+                            padding-top : 2vh;
                             transition : 1.2s ease;
                             @media screen and (max-width : 990px) {
                                 margin-bottom : 0;
@@ -122,6 +122,7 @@
                             p{
                                 font-size : .9vw;
                                 @media screen and (max-width : 990px) {
+                                    font-size : 4vw;
                                     margin-bottom : 0;
                                 }
                             }
@@ -171,6 +172,7 @@
                     position : relative;
                     width : 39vw;              
                     background-color : $violet;
+                    //border : none;
                     overflow : hidden;
                     @media screen and (max-width : 990px) {
                         display : none;
@@ -178,14 +180,17 @@
 
                     .bloc-content{
                         justify-content: space-between;
+                        flex : 1;
 
                         &--title{
+                            z-index : 5;
                             h3{
                                 color : $blanc;
                             }
                         }
 
                         &--txt{
+                            z-index : 5;
                             p{
                                 color : $blanc;
                             }
@@ -195,22 +200,15 @@
                             display : flex;
                             flex-wrap: wrap;
                             gap : .5vw;
+                            z-index : 5;
                             
 
                             .bouton{
                                 padding : 1vh 1.5vw;
                                 font-size : 1vw;
-                            }
-                        }
-
-                        &--img{
-                            position : absolute;
-                            bottom : -4vw;
-                            right : -4vw;
-    
-                            img{
-                                width : 15vw;
-                                height : auto;
+                                &:hover{
+                                    background-color: $blanc;
+                                }
                             }
                         }
                     } 
@@ -265,6 +263,8 @@
                         }
                     }
                 }
+
+                
             }
 
             .pastille{

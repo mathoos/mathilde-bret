@@ -1,22 +1,23 @@
 import { keyframes } from "@emotion/react";
 
-export const rotateRightVolet = keyframes`
-    from {
-        transform : rotate(0deg) translateY(0) translateX(0);
-    }
-
-    to {
-        transform : rotate(-3deg) translateY(-25px) translateX(-25px);
-    }
-`;
 
 export const rotateRight = keyframes`
     from {
-        transform: rotate(5deg)
+        transform: rotate(5deg);
     }
 
     to {
-        transform: rotate(0)
+        transform: rotate(0);
+    }
+`;
+
+export const rotateLeft = keyframes`
+    from {
+        transform : rotate(-6deg);
+    }
+
+    to {
+        transform : rotate(-3deg);
     }
 `;
 
@@ -42,7 +43,7 @@ export const scaleInvert = keyframes`
 
 export const bottomAnimation = keyframes`
     from {
-        transform : translateY(100%);
+        transform : translateY(50%);
         opacity : 0;
     }
 

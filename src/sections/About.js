@@ -5,7 +5,7 @@ import Star from "../img/star.svg";
 import RubberHappy from "../img/rubber-happy.svg"; // Nouvelle image
 import RubberSunglasses from "../img/rubber-sunglasses.svg";
 import { Reveal } from "react-awesome-reveal";
-import { bottomAnimation } from "../functions/keyframes";
+import { bottomAnimation , rotateRight , rotateLeft } from "../functions/keyframes";
 import './About.scss';
 
 const About = () => {
@@ -98,7 +98,7 @@ const About = () => {
             <div className="about_presentation">
 
                 <div className="about_presentation-title">
-                    <Reveal keyframes={bottomAnimation}>
+                    <Reveal keyframes={bottomAnimation} triggerOnce={true}>
                         <h2>
                             À la <br className="hidden-mobile"/> recherche <br className="hidden-mobile"/>
                             d'une nouvelle <br className="hidden-mobile"/> opportunité&nbsp;.
@@ -109,32 +109,38 @@ const About = () => {
                 <div className="about_presentation-content">
 
                     <div className="about_presentation-content--img">  
-                        <figure className="img">
-                            <img src={MathildeBureau} alt="Mains qui pianotent sur un clavier d'ordinateur qui affiche du code"/>
-                            <div className="noisyEffect"></div>
-                        </figure>
-                        <div className="shadow"></div> 
+                        <Reveal keyframes={rotateRight} delay={150} duration={800}>
+                            <figure className="img">
+                                <img src={MathildeBureau} alt="Mains qui pianotent sur un clavier d'ordinateur qui affiche du code"/>
+                                <div className="noisyEffect"></div>
+                            </figure>
+                        </Reveal>
+                       
+                        <div className="shadow">
+                            <Reveal className="shadowReveal" keyframes={rotateLeft} delay={150} duration={800}>
+                                <div className="shadowContainer"></div>
+                            </Reveal>
+                        </div> 
                     </div>
 
-                    <div className="about_presentation-content--txt">
-                        
-
-                        <p>
-                            Développeuse front-end passionnée, j'associe mes compétences en développement web et en 
-                            webdesign pour créer de jolies interfaces ergonomiques et attractives.
-                        </p>
-                        <p>
-                            En agence de communication, j'ai travaillé sur l'intégration et la refactorisation de plusieurs 
-                            sites internet, entourée d'une équipe de développeurs,  graphistes, et chefs de projets.<br/>
-                            Stimulée dans un bouillon d'idées innovantes, j'ai élargi mes compétences et participé à 
-                            rendre chaque projet un peu plus unique.
-                        </p>
-                        <p>
-                            Minutieuse, je tente de donner vie à chaque site internet avec l'ambition d'offrir une 
-                            expérience fluide et immersive, tout en apportant une réelle valeur ajoutée.
-                        </p>
-                    </div>
-
+                    <Reveal keyframes={bottomAnimation}>
+                        <div className="about_presentation-content--txt">
+                            <p>
+                                Développeuse front-end passionnée, j'associe mes compétences en développement web et en 
+                                webdesign pour créer de jolies interfaces ergonomiques et attractives.
+                            </p>
+                            <p>
+                                En agence de communication, j'ai travaillé sur l'intégration et la refactorisation de plusieurs 
+                                sites internet, entourée d'une équipe de développeurs,  graphistes, et chefs de projets.<br/>
+                                Stimulée dans un bouillon d'idées innovantes, j'ai élargi mes compétences et participé à 
+                                rendre chaque projet un peu plus unique.
+                            </p>
+                            <p>
+                                Minutieuse, je tente de donner vie à chaque site internet avec l'ambition d'offrir une 
+                                expérience fluide et immersive, tout en apportant une réelle valeur ajoutée.
+                            </p>
+                        </div>
+                    </Reveal>
                 </div>
             </div>
 

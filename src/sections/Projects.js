@@ -1,9 +1,11 @@
-import Eyes from "../img/eyes.svg";
+
 import TemplatePlomberie from "../img/projects/plomberie-project.jpg";
 import TemplateEkanim from "../img/projects/ekanim-project.jpg";
 import TemplateSainteecileViolins from "../img/projects/saintececile-project3.jpg";
 import TemplateArgentBank from "../img/projects/ArgentBank-project.jpg";
 import TemplateBulletJournal from "../img/projects/taskManager-project.jpg";
+import { Reveal } from "react-awesome-reveal";
+import { bottomAnimation } from "../functions/keyframes";
 
 import './Projects.scss';
 
@@ -13,7 +15,9 @@ const Projects = () => {
     return (
         <section className="projects" id="projects">
             <div className="projects_title">
-                <h2>Sélection <br className="hidden-mobile"/> de quelques <br className="hidden-mobile"/> projets&nbsp;!</h2>
+                <Reveal keyframes={bottomAnimation} triggerOnce={true}>
+                    <h2>Sélection <br className="hidden-mobile"/> de quelques <br className="hidden-mobile"/> projets&nbsp;!</h2>
+                </Reveal>
             </div>
             <div className="projects_container">
                 {data.map((item, index) => (

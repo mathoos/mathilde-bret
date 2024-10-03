@@ -12,7 +12,7 @@ const Skills = () => {
         <section className="skills" id="skills">
 
             <div className="skills_title">
-                <Reveal keyframes={bottomAnimation}>
+                <Reveal keyframes={bottomAnimation} triggerOnce={true}>
                     <h2>J'ai plus <br className="hidden-mobile"/> d'une corde <br className="hidden-mobile"/> à mon arc&nbsp;.</h2>
                 </Reveal>
             </div>

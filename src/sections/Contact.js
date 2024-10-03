@@ -1,4 +1,3 @@
-import Internet from "../img/internet.svg";
 import Globe from "../img/footer_globe.svg";
 import Arrow from "../img/footer_arrow.svg";
 import { Parallax } from "react-scroll-parallax";

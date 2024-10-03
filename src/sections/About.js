@@ -112,7 +112,8 @@ const About = () => {
                         <Reveal keyframes={rotateRight} delay={150} duration={800}>
                             <figure className="img">
                                 <img src={MathildeBureau} alt="Mains qui pianotent sur un clavier d'ordinateur qui affiche du code"/>
-                                <div className="noisyEffect"></div>
+                                <p className="bouton bouton_bgBlanc">Tech friendly</p>
+                                <div className="noisyEffect"></div>  
                             </figure>
                         </Reveal>
                        

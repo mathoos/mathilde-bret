@@ -72,6 +72,18 @@
                         border : 2px solid $noir;
                         border-radius : 30px;
                     }
+
+                    .bouton{
+                        position : absolute;
+                        bottom : 2vw;
+                        right : 2vw;
+                        //padding : 1vh 2.3vw;
+                        @media screen and (max-width : 990px) {
+                            right : 15px;
+                            bottom : 15px;
+                            padding : .7vh 6vw;
+                        }
+                    }
     
                     .noisyEffect{
                         position : absolute;
@@ -131,14 +143,6 @@
                             border : 2px solid $noir;
                         }
                     }
-                }
-            
-
-                .bouton{
-                    position : absolute;
-                    top : 2vw;
-                    left : 2vw;
-                    z-index : 10;
                 }
             }
 

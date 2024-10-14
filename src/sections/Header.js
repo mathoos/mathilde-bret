@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { add100Vh } from '../functions/add100vh';
-import { openMenu } from '../functions/openMenu';
 import Nav from '../components/Nav';
 import Menu from '../components/Menu';
 import Mathilde from "../img/moi/moi_13.png";
@@ -10,7 +9,6 @@ const Header = ({ progress }) => {
 
     useEffect(() => {
         add100Vh();
-        openMenu();
     }, []);
 
 

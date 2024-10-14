@@ -22,7 +22,7 @@
         padding : 0;
         border-radius : 0;
         border : none;
-        background-color: transparent;    
+        background-color: transparent;
     }
 
     &_menu{
@@ -60,6 +60,7 @@
             .nav_menu-barre:nth-child(1){
                 top : 50%;
                 transform : translateY(-50%) rotate(45deg) ;
+                background-color: $blanc;
             }
 
             .nav_menu-barre:nth-child(2){
@@ -68,7 +69,8 @@
 
             .nav_menu-barre:nth-child(3){
                 top : 50%;
-                transform : translateY(-50%) rotate(-45deg) ;
+                transform : translateY(-50%) rotate(-45deg);
+                background-color: $blanc;
             }
         }
 

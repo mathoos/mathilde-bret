@@ -1,18 +1,46 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PastilleTxt from "../img/pastille-frontend-text-violet.svg";
 import PastilleImg from "../img/pastille-frontend-img-violet.svg";
 import './Menu.scss';
 
 const OpenMenu = () => {
 
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    useEffect(() => {
+        const btnMenu = document.querySelector('.nav_menu');
+        
+        // Toggle classes when menu state changes
+        if (menuOpen) {
+            btnMenu.classList.add('active');
+        } 
+        else {
+            btnMenu.classList.remove('active');
+            //html.classList.add('loading');
+        }
+
+        // Add event listener to menu button
+        const toggleMenu = () => setMenuOpen(prevState => !prevState);
+        btnMenu.addEventListener('click', toggleMenu);
+
+        // Clean up event listener on unmount
+        return () => {
+            btnMenu.removeEventListener('click', toggleMenu);
+        };
+    }, [menuOpen]);
+
+    const closeMenuOnLinkClick = () => {
+        setMenuOpen(false);
+    };
+
     return (
-        <section className="menu heightJs">
+        <section className={`menu heightJs ${menuOpen ? 'active' : ''}`}>
 
             <div className="menu_container">
-                <a href="#about" className="bouton bouton_bgBlanc">About</a>
-                <a href="#skills" className="bouton bouton_bgBlanc">Skills</a>
-                <a href="#projects" className="bouton bouton_bgBlanc">Projects</a>
-                <a href="#contact" className="bouton bouton_bgBlanc">Contact</a>
+                <a href="#about" className="bouton bouton_bgBlanc" onClick={closeMenuOnLinkClick}>About</a>
+                <a href="#skills" className="bouton bouton_bgBlanc" onClick={closeMenuOnLinkClick}>Skills</a>
+                <a href="#projects" className="bouton bouton_bgBlanc" onClick={closeMenuOnLinkClick}>Projects</a>
+                <a href="#contact" className="bouton bouton_bgBlanc" onClick={closeMenuOnLinkClick}>Contact</a>
             </div>
 
             <figure className="menu_pastille">

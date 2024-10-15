@@ -5,7 +5,7 @@ import Star from "../img/star.svg";
 import RubberHappy from "../img/rubber-happy.svg"; // Nouvelle image
 import RubberSunglasses from "../img/rubber-sunglasses.svg";
 import { Reveal } from "react-awesome-reveal";
-import { bottomAnimation , rotateRight , rotateLeft } from "../functions/keyframes";
+import { bottomAnimation , bottomTitleAnimation , rotateRight , rotateLeft } from "../functions/keyframes";
 import './About.scss';
 
 const About = () => {
@@ -98,12 +98,28 @@ const About = () => {
             <div className="about_presentation">
 
                 <div className="about_presentation-title">
-                    <Reveal keyframes={bottomAnimation} triggerOnce={true}>
-                        <h2>
-                            À la <br className="hidden-mobile"/> recherche <br className="hidden-mobile"/>
-                            d'une nouvelle <br className="hidden-mobile"/> opportunité&nbsp;.
-                        </h2>
-                    </Reveal>
+                    <h2>
+                        <div className="box-title">
+                            <Reveal keyframes={bottomTitleAnimation}>
+                                <span>À la</span>
+                            </Reveal>
+                        </div>
+                        <div className="box-title">
+                            <Reveal keyframes={bottomTitleAnimation} delay={150} >
+                                <span>recherche</span>
+                            </Reveal>
+                        </div>
+                        <div className="box-title">
+                            <Reveal keyframes={bottomTitleAnimation} delay={170}>
+                                <span>d'une nouvelle</span>
+                            </Reveal>
+                        </div>
+                        <div className="box-title">
+                            <Reveal keyframes={bottomTitleAnimation} delay={190}>
+                                <span>opportunité&nbsp;.</span>
+                            </Reveal>
+                        </div>
+                    </h2>         
                 </div>
 
                 <div className="about_presentation-content">
@@ -124,24 +140,30 @@ const About = () => {
                         </div> 
                     </div>
 
-                    <Reveal keyframes={bottomAnimation}>
+                    
                         <div className="about_presentation-content--txt">
-                            <p>
-                                Développeuse front-end passionnée, j'associe mes compétences en développement web et en 
-                                webdesign pour créer de jolies interfaces ergonomiques et attractives.
-                            </p>
-                            <p>
-                                En agence de communication, j'ai travaillé sur l'intégration et la refactorisation de plusieurs 
-                                sites internet, entourée d'une équipe de développeurs,  graphistes, et chefs de projets.<br/>
-                                Stimulée dans un bouillon d'idées innovantes, j'ai élargi mes compétences et participé à 
-                                rendre chaque projet un peu plus unique.
-                            </p>
-                            <p>
-                                Minutieuse, je tente de donner vie à chaque site internet avec l'ambition d'offrir une 
-                                expérience fluide et immersive, tout en apportant une réelle valeur ajoutée.
-                            </p>
+                            <Reveal keyframes={bottomAnimation}>
+                                <p>
+                                    Développeuse front-end passionnée, j'associe mes compétences en développement web et en 
+                                    webdesign pour créer de jolies interfaces ergonomiques et attractives.
+                                </p>
+                            </Reveal>
+                            <Reveal keyframes={bottomAnimation}>
+                                <p>
+                                    En agence de communication, j'ai travaillé sur l'intégration et la refactorisation de plusieurs 
+                                    sites internet, entourée d'une équipe de développeurs,  graphistes, et chefs de projets.<br/>
+                                    Stimulée dans un bouillon d'idées innovantes, j'ai élargi mes compétences et participé à 
+                                    rendre chaque projet un peu plus unique.
+                                </p>
+                            </Reveal>
+                            <Reveal keyframes={bottomAnimation}>
+                                <p>
+                                    Minutieuse, je tente de donner vie à chaque site internet avec l'ambition d'offrir une 
+                                    expérience fluide et immersive, tout en apportant une réelle valeur ajoutée.
+                                </p>
+                            </Reveal>
                         </div>
-                    </Reveal>
+                    
                 </div>
             </div>
 

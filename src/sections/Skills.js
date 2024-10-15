@@ -1,7 +1,5 @@
-import PastilleTxt from "../img/pastille-frontend-text.svg";
-import PastilleImg from "../img/pastille-frontend-img.svg";
 import { Reveal } from "react-awesome-reveal";
-import { bottomAnimation , opacity } from "../functions/keyframes";
+import { bottomTitleAnimation } from "../functions/keyframes";
 
 import './Skills.scss';
 
@@ -12,9 +10,23 @@ const Skills = () => {
         <section className="skills" id="skills">
 
             <div className="skills_title">
-                <Reveal keyframes={bottomAnimation} triggerOnce={true}>
-                    <h2>J'ai plus <br className="hidden-mobile"/> d'une corde <br className="hidden-mobile"/> à mon arc&nbsp;.</h2>
-                </Reveal>
+                <h2>
+                    <div className="box-title">
+                        <Reveal keyframes={bottomTitleAnimation}>
+                            <span>J'ai plus</span>
+                        </Reveal>
+                    </div>
+                    <div className="box-title">
+                        <Reveal keyframes={bottomTitleAnimation} delay={150} >
+                            <span>d'une corde</span>
+                        </Reveal>
+                    </div>
+                    <div className="box-title">
+                        <Reveal keyframes={bottomTitleAnimation} delay={190}>
+                            <span>à mon arc&nbsp;.</span>
+                        </Reveal>
+                    </div>
+                </h2>
             </div>
 
             <div className="skills_domain">

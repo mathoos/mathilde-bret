@@ -38,7 +38,10 @@ h2{
     @media screen and (max-width : 990px) {
         font-size : 8vw;
     }
-    
+
+    .box-title{
+        overflow : hidden;
+    } 
 }
 
 h3{

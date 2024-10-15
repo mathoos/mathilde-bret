@@ -5,7 +5,7 @@ import TemplateSainteecileViolins from "../img/projects/saintececile-project3.jp
 import TemplateArgentBank from "../img/projects/ArgentBank-project.jpg";
 import TemplateBulletJournal from "../img/projects/taskManager-project.jpg";
 import { Reveal } from "react-awesome-reveal";
-import { bottomAnimation } from "../functions/keyframes";
+import { bottomTitleAnimation } from "../functions/keyframes";
 
 import './Projects.scss';
 
@@ -15,9 +15,23 @@ const Projects = () => {
     return (
         <section className="projects" id="projects">
             <div className="projects_title">
-                <Reveal keyframes={bottomAnimation} triggerOnce={true}>
-                    <h2>Sélection <br className="hidden-mobile"/> de quelques <br className="hidden-mobile"/> projets&nbsp;!</h2>
-                </Reveal>
+                <h2>
+                    <div className="box-title">
+                        <Reveal keyframes={bottomTitleAnimation}>
+                            <span>Sélection</span>
+                        </Reveal>
+                    </div>
+                    <div className="box-title">
+                        <Reveal keyframes={bottomTitleAnimation} delay={150} >
+                            <span>de quelques</span>
+                        </Reveal>
+                    </div>
+                    <div className="box-title">
+                        <Reveal keyframes={bottomTitleAnimation} delay={190}>
+                            <span>projets&nbsp;.</span>
+                        </Reveal>
+                    </div>
+                </h2>
             </div>
             <div className="projects_container">
                 {data.map((item, index) => (

@@ -62,6 +62,18 @@ export const bottomAnimation = keyframes`
     }
 `;
 
+export const bottomTitleAnimation = keyframes`
+    from {
+        transform : translateY(80%); 
+        opacity : 0;    
+    }
+
+    to {
+        transform : translateY(0);
+        opacity : 1;
+    }
+`;
+
 export const rightAnimation = keyframes`
     from {
         transform : translateX(50%);

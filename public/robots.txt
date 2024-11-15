@@ -1,3 +1,7 @@
-# https://www.robotstxt.org/robotstxt.html
+# robots.txt pour https://mathilde-bret.fr/
+# Plus d'infos : https://www.robotstxt.org/robotstxt.html
+
 User-agent: *
 Disallow:
+
+# Sitemap: https://mathilde-bret.fr/sitemap.xml

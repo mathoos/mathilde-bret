@@ -7,6 +7,8 @@
     font-family : $font;
 }
 
+$elements: 100; 
+
 html, body {
     scroll-behavior: smooth;
     background-color: $blanc;
@@ -33,17 +35,17 @@ html{
     }
 
     &.loading-done{
-        .header_hero-container--subtitle{
+        .hero_container-subtitle{
             animation : slideUp .5s ease 1s forwards;
         }
 
-        .header_hero-container--title{
+        .hero_container-title{
             h1{
                 animation : slideSide 1.2s ease .7s forwards;
             }
         }
 
-        .header_rs-icon{
+        .rs_icon{
             @for $i from 1 through $elements {
                 &:nth-child(#{$i}) {
                     animation: slideSide .4s ease ($i * .2s) forwards;   
@@ -55,7 +57,7 @@ html{
             animation : slideNav 1s ease .1s forwards;
         }
 
-        .header_hero-loading{
+        .hero_loading{
             animation : headerImg 1s ease .7s forwards;
             @media screen and (max-width : 990px) {
                 animation : headerImgMobile 1s ease .7s forwards;
@@ -111,7 +113,6 @@ hr{
     position : relative;
     width : 100%;
     height : 100%;
-    border : 1px solid orange;
 }
 
 

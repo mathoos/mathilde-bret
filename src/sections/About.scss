@@ -6,6 +6,9 @@
     align-items: flex-end;
     gap : 30vh;
     padding : 40vh 0;
+    border-radius : 100px 100px 0 0;
+    background-color: $primary;
+    margin-top : -10vh;
     @media screen and (max-width : 990px) {
         align-items: flex-start;
         gap : 10vh;

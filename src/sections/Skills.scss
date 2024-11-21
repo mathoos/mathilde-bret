@@ -16,11 +16,23 @@
 
 
     &_title{
+        display : flex;
+        flex-direction: column;
+        gap : 1.5vw;
         margin-bottom : 30vh;
+
         @media screen and (max-width : 990px) {
-            width : 100%;
-            padding : 0 30px;
-            margin-bottom : 10vh;
+            gap : 5vw;
+        }
+
+        p{
+            font-size : 1.7vw;
+            font-variation-settings:
+                "wdth" 125,
+                "wght" $bold;
+            @media screen and (max-width : 990px) {
+                font-size : 4.5vw;
+            }
         }
     } 
 
@@ -50,8 +62,6 @@
             min-width : 18.5vw; 
             width : 18.5vw;
             min-height : 45vh;
-            overflow : hidden;
-            z-index : 1;
             
             @media screen and (max-width : 990px) {
                 gap : 8vh;
@@ -61,18 +71,18 @@
                 padding : 30px;
             }
 
+            
+
             &:not(.txt, .projet){
                 &::after{
                     position : absolute;
                     content : "";
-                    top : 50%;
-                    left : 50%;
-                    transform : translate(-50%, -50%);
-                    width : 50%;
-                    height : 50%;
-                    background-color: $noir;
+                    bottom : -.8vw;
+                    left : .8vw;
+                    width : 100%;
+                    height : 100%;
+                    background-color: $secondary;
                     border-radius : 30px;
-                    opacity : 0;
                     z-index : -1;
                 }
             }
@@ -86,7 +96,7 @@
                     width : auto;
                     height : 100%;
                     object-position: left;
-                    stroke : $primary;
+                    stroke : $secondary;
                     transition : 0 ease;
                 }
 
@@ -119,7 +129,7 @@
 
                 &--list{
                     div{
-                        margin-bottom : -100%;
+                        //margin-bottom : -100%;
                         padding-top : 2vh;
                         transition : 1.2s ease;
                         @media screen and (max-width : 990px) {
@@ -137,49 +147,11 @@
                 }
             }
 
-            &:hover:not(.txt, .projet, .langage){
-                cursor : url(../img/icons/cursor-pointer-icon.svg), auto;
-
-                &::after{
-                    width : 105%;
-                    height : 105%;
-                    opacity : 1;
-                    transition : .5s ease;
-                }
-
-                .bloc-icon{
-                    svg{
-                        stroke : $blanc;
-                    }
-                }
-
-                .bloc-content{
-                    &--list{
-                        div{
-                            margin-bottom : 0;
-                            transition : .6s ease .2s;
-
-                            p{
-                                color : $blanc;
-                            }
-                        } 
-                    }
-
-                    &--title{
-                        height: auto;
-
-                        h3{
-                            color : $blanc;
-                        }
-                    }
-                }   
-            }
-
             &.txt{
                 position : relative;
                 width : 38.7vw;           
-                background-color : $primary;
-                //border : none;
+                background-color : $noir;
+                border : none;
                 overflow : hidden;
                 @media screen and (max-width : 990px) {
                     display : none;
@@ -199,7 +171,6 @@
                     &--txt{
                         z-index : 5;
                         p{
-                            font-size : 1vw;
                             color : $blanc;
                         }
                     }
@@ -230,23 +201,22 @@
                     height: 300%;
                     animation: grain 10s steps(10) infinite;
                     background-image: url("../img/noise-effect2.png");
-                    opacity: .25;
+                    opacity: .1;
                     z-index : 2;
                 }
             }
 
             &.projet{
-                justify-content: center;
-                align-items: center;
+                justify-content: flex-end;
                 border : none;
-                padding : 0;
-                overflow : hidden;
+                padding : 2.5vw 0;
+                background-color: transparent;
                 @media screen and (max-width : 990px) {
                     display : none;
                 }
 
                 p{
-                    color : $primary;
+                    color : $secondary;
                     text-transform : uppercase;
 
                     &:nth-of-type(1){

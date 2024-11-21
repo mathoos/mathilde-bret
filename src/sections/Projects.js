@@ -16,21 +16,7 @@ const Projects = () => {
         <section className="projects" id="projects">
             <div className="projects_title">
                 <h2>
-                    <div className="box-title">
-                        <Reveal keyframes={bottomTitleAnimation}>
-                            <span>Sélection</span>
-                        </Reveal>
-                    </div>
-                    <div className="box-title">
-                        <Reveal keyframes={bottomTitleAnimation} delay={150} >
-                            <span>de quelques</span>
-                        </Reveal>
-                    </div>
-                    <div className="box-title">
-                        <Reveal keyframes={bottomTitleAnimation} delay={190}>
-                            <span>projets&nbsp;.</span>
-                        </Reveal>
-                    </div>
+                    Sélection de quelques projets !
                 </h2>
             </div>
             <div className="projects_container">

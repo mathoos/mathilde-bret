@@ -67,15 +67,23 @@ const About = () => {
             <div className="sticky">
 
                 <div className="sticky_container">
-                    <p className="woow">WOOW</p>
+                    <p className="woow">We're a match if</p>
+                    <figure className="etoile">
+                        <img src={Etoile} alt="Etoile" />
+                    </figure>
+                    <figure className="etoile">
+                        <img src={Etoile} alt="Etoile" />
+                    </figure>
+                    <p className="bouton bouton_bgBlanc">Computer</p>
+                    <p className="bouton bouton_bgBlanc">Computer</p>
                 </div>
                 
                 <div className="sticky_container">
                     <div className="sticky_container-content">
                         <div className="txt">
                             <p>
-                                Interview d'artistes et rédaction d'articles, maîtrise élémentaire de la suite Adobe 
-                                et Figma, création de webdesign, optimisation SEO et intégration de sites web...
+                                De nature curieuse et autonome, j'aime découvrir de nouveaux langages afin de pouvoir 
+                                sélectionner au mieux les outils qui répondront au besoin spécifique d'un projet.
                             </p>
                         </div>
                     </div>
@@ -90,8 +98,7 @@ const About = () => {
                             </p>
                         </div>
                     </div>
-                </div>
-               
+                </div>   
             </div> 
             
 

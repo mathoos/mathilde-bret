@@ -27,10 +27,6 @@
                 gap : 5vw;
             }
 
-            h2{
-                color : $secondary;
-            }
-
             p{
                 font-size : 1.7vw;
                 font-variation-settings:
@@ -293,12 +289,52 @@
             }
 
             .woow{
-                font-size : 20vw;
+                font-size : 12vw;
+                line-height : 1;
                 color : $primary;
                 text-transform : uppercase;
+                text-align : center;
                 font-variation-settings:
                     "wdth" 125,
                     "wght" $heavy;
+            }
+
+            .bouton, .etoile{
+                position : absolute;
+                img{
+                    width : 100%;
+                    height : auto;
+                }
+            }
+
+            .etoile{
+                &:nth-of-type(1){
+                    width : 5.7vw;
+                    height : auto; 
+                    right : 15vw;
+                    top : 10vh;
+                }
+
+                &:nth-of-type(2){  
+                    width : 6vw;
+                    height : auto; 
+                    left : 5vw;
+                    top :  75vh;
+                }         
+            }
+
+            .bouton{
+                &:nth-of-type(2){  
+                    left : 25vw;
+                    top :  43vh;
+                    transform : rotate(-10deg);
+                }  
+                
+                &:nth-of-type(3){
+                    right : 15vw;
+                    top : 70vh;
+                    transform : rotate(10deg);
+                }
             }
 
             &-content{

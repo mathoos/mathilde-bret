@@ -13,7 +13,13 @@ const Skills = () => {
                 <h2>
                     Mes quelques compétences
                 </h2>
+                <p>
+                    Diplômée d’une licence en Communication & Médias, et titulaire d’un titre de Webdesigner, 
+                    j’ai récemment achevé mon contrat d’alternance en agence de communication en tant que développeuse 
+                    front-end.
+                </p> 
             </div>
+
 
             <div className="skills_domain">
 
@@ -66,12 +72,11 @@ const Skills = () => {
                         </div>
                         <div className="bloc-content--txt">
                             <p>
-                                De nature curieuse et autonome, j'aime découvrir et apprendre de nouveaux langages 
-                                afin de pouvoir sélectionner au mieux les outils qui répondront au besoin spécifique 
-                                d'un projet.
+                                Pour faciliter les échanges dans l'équipe de développement, et pour mieux appréhender le 
+                                métier dans sa globalité, je m'initie également au développement full-stack.
                             </p>
                         </div>
-                        <div className="bloc-content--btn">
+                        {/* <div className="bloc-content--btn">
                             <p className="bouton bouton_title bouton_bgBlanc">Html</p>
                             <p className="bouton bouton_title bouton_bgBlanc">Scss</p>
                             <p className="bouton bouton_title bouton_bgBlanc">Javascript</p>
@@ -79,7 +84,7 @@ const Skills = () => {
                             <p className="bouton bouton_title bouton_bgBlanc">React</p>
                             <p className="bouton bouton_title bouton_bgBlanc">MongoDB</p>
                             <p className="bouton bouton_title bouton_bgBlanc">Express</p>
-                        </div>
+                        </div> */}
                     </div>
                 </div>     
         

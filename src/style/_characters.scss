@@ -33,8 +33,9 @@ h1{
 }
 
 h2{
-    font-size : 5vw;
+    font-size : 6vw;
     text-transform: uppercase;
+    color : $noir;
     font-variation-settings:
         "wdth" 125,
         "wght" $heavy;
@@ -42,10 +43,6 @@ h2{
     @media screen and (max-width : 990px) {
         font-size : 8vw;
     }
-
-    .box-title{
-        overflow : hidden;
-    } 
 }
 
 h3{
@@ -76,8 +73,8 @@ h4{
 
 
 p{
-    font-size : 1.1vw;
-    line-height : 1.5;
+    font-size : 1.5vw;
+    line-height : 1.2;
     color : $noir;
     font-variation-settings:
         "wdth" 125,

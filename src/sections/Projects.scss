@@ -1,10 +1,16 @@
 @import "../style.scss";
 
 .projects{
+    position : relative;
     display : flex;
     flex-direction: column;
     gap : 30vh;
+    border-radius : 100px 100px 0 0;
+    border : 4px solid $noir;
     padding : 15vh 10.4vw 30vh 10.4vw; 
+    background-color: $blanc;
+    z-index : 13;
+    margin-top : -20vh;
     @media screen and (max-width : 990px) {
         gap : 20vh;
         padding : 10vh 30px;

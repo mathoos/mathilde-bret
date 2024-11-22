@@ -294,12 +294,16 @@
                 color : $primary;
                 text-transform : uppercase;
                 text-align : center;
+                margin-top : -5vh;
                 font-variation-settings:
                     "wdth" 125,
                     "wght" $heavy;
+                @media screen and (max-width : 990px) {
+                    margin-top : 20vh;
+                }
             }
 
-            .bouton, .etoile{
+            .bouton, .etoile, .rubber{
                 position : absolute;
                 img{
                     width : 100%;
@@ -313,6 +317,9 @@
                     height : auto; 
                     right : 15vw;
                     top : 10vh;
+                    @media screen and (max-width : 990px) {
+                        width : 15vw;
+                    }
                 }
 
                 &:nth-of-type(2){  
@@ -320,6 +327,11 @@
                     height : auto; 
                     left : 5vw;
                     top :  75vh;
+                    @media screen and (max-width : 990px) {
+                        top :  75vh;
+                        left : 30px;
+                        width : 13vw;
+                    }
                 }         
             }
 
@@ -328,12 +340,36 @@
                     left : 25vw;
                     top :  43vh;
                     transform : rotate(-10deg);
+                    @media screen and (max-width : 990px) {
+                        top :  26vh;
+                        left : 20vw;
+                        transform : rotate(-5deg);
+                    }
                 }  
                 
                 &:nth-of-type(3){
+                    display : none;
                     right : 15vw;
                     top : 70vh;
                     transform : rotate(10deg);
+                    @media screen and (max-width : 990px) {
+                        top : 60vh;
+                        right : 40vw;
+                        //display : flex;
+                    }
+                }
+            }
+
+            .rubber{
+                right : 26vw;
+                top : 65vh;
+                transform : rotate(20deg);
+                width : 8vw;
+                height : auto;
+                @media screen and (max-width : 990px) {
+                    top : 60vh;
+                    right : 13vw;
+                    width : 25vw;
                 }
             }
 
@@ -342,10 +378,12 @@
                 justify-content: space-between;
                 gap : 5vw;
                 width : 100%;
+                margin-top : 10vh;
                 @media screen and (max-width : 990px) {
                     flex-direction: column;
                     align-self: flex-start;
-                    height : calc(90vh - 50px - 10vh)
+                    height : calc(90vh - 50px - 10vh);
+                    margin-top : 0;
                 }
 
                 .txt{

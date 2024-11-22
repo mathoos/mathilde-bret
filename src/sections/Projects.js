@@ -4,8 +4,6 @@ import TemplateEkanim from "../img/projects/ekanim-project.jpg";
 import TemplateSainteecileViolins from "../img/projects/saintececile-project3.jpg";
 import TemplateArgentBank from "../img/projects/ArgentBank-project.jpg";
 import TemplateBulletJournal from "../img/projects/taskManager-project.jpg";
-import { Reveal } from "react-awesome-reveal";
-import { bottomTitleAnimation } from "../functions/keyframes";
 
 import './Projects.scss';
 
@@ -16,7 +14,7 @@ const Projects = () => {
         <section className="projects" id="projects">
             <div className="projects_title">
                 <h2>
-                    Sélection de quelques projets !
+                    Sélection de quelques projets ...
                 </h2>
             </div>
             <div className="projects_container">
@@ -66,7 +64,7 @@ const data = [
         link: "https://www.ekanim.fr/"
     },
     {
-        title: "Plomberie Joan Bret",
+        title: "Plomberie JB",
         text: "Réalisation de la maquette sur Figma et intégration avec React. Mise en place d'une API REST avec diverses routes pour permettre au client d'ajouter son propre contenu. Connexion à une base de données MongoDB et ajout d'un système d'authentification pour protéger l'API. Déploiement du site statique et du serveur sur la plateforme Render.",
         button: ["Figma", "React", "Scss", "Node", "Express", "MongoDB", "Render"],
         annotation: "Site vitrine | stage",

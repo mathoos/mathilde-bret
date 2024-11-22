@@ -7,8 +7,8 @@
     gap : 30vh;
     border-radius : 100px 100px 0 0;
     border : 4px solid $noir;
-    padding : 15vh 10.4vw 30vh 10.4vw; 
-    background-color: $blanc;
+    padding : 40vh 10vw 30vh 10vw; 
+    background-color: $gris;
     z-index : 13;
     margin-top : -20vh;
     @media screen and (max-width : 990px) {
@@ -22,6 +22,7 @@
         justify-content: space-between;
 
         h2{
+            color : $noir;
             @media screen and (max-width : 990px) {
                 width : 100%;
             }

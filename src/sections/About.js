@@ -1,6 +1,7 @@
 import React from 'react';
 import MathildeBureau from "../img/moi/coding-noir-blanc.jpg";
 import Etoile from "../img/etoile.svg";
+import Rubber from "../img/rubber_head.svg";
 
 import './About.scss';
 
@@ -76,6 +77,9 @@ const About = () => {
                     </figure>
                     <p className="bouton bouton_bgBlanc">Computer</p>
                     <p className="bouton bouton_bgBlanc">Computer</p>
+                    <figure className="rubber">
+                        <img src={Rubber} alt="Etoile" />
+                    </figure>
                 </div>
                 
                 <div className="sticky_container">

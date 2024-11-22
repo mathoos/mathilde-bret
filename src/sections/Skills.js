@@ -1,5 +1,4 @@
-import { Reveal } from "react-awesome-reveal";
-import { bottomTitleAnimation } from "../functions/keyframes";
+import Etoile from "../img/etoile.svg";
 
 import './Skills.scss';
 
@@ -143,6 +142,15 @@ const Skills = () => {
                     <img src={PastilleTxt} className="txt" alt="Pastille frontend developer"/>
                     <img src={PastilleImg} alt="Pastille frontend developer"/>
                 </figure> */}
+
+                <figure className="etoile">
+                    <img src={Etoile} alt="Etoile" />
+                </figure>
+
+                <figure className="etoile">
+                    <img src={Etoile} alt="Etoile" />
+                </figure>
+
             </div>
         </section> 
     ) 

@@ -38,9 +38,9 @@ const Projects = () => {
                                             <div key={textIndex} className="description_txt-bloc">
                                                 <figure className="arrow">
                                                     <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M2 23.833L23.4752 23.833" stroke-width="4" stroke-linecap="square"/>
-                                                        <path d="M4.14844 4.14746L21.8646 21.8636" stroke-width="4" stroke-linecap="square"/>
-                                                        <path d="M23.4746 2L23.4746 23.4752" stroke-width="4" stroke-linecap="square"/>
+                                                        <path d="M2 23.833L23.4752 23.833" strokeWidth="4" strokeLinecap="square"/>
+                                                        <path d="M4.14844 4.14746L21.8646 21.8636" strokeWidth="4" strokeLinecap="square"/>
+                                                        <path d="M23.4746 2L23.4746 23.4752" strokeWidth="4" strokeLinecap="square"/>
                                                     </svg>
                                                 </figure>
                                                 <p>

@@ -10,7 +10,7 @@ const Skills = () => {
 
             <div className="skills_title">
                 <h2>
-                    Mes quelques compétences
+                    Mes compétences
                 </h2>
                 <p>
                     Diplômée d’une licence en Communication & Médias, et titulaire d’un titre de Webdesigner, 

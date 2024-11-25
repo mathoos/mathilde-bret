@@ -117,4 +117,15 @@
             color : $noir;
         }
     }
+
+    &_bgPrimary{
+        color : $noir;
+        border-color : $noir;
+        background-color: $primary;
+        
+        &:hover{
+            background-color: transparent;
+            color : $noir;
+        }
+    }
 }

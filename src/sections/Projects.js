@@ -1,9 +1,10 @@
 
 import TemplatePlomberie from "../img/projects/plomberie-project.jpg";
 import TemplateEkanim from "../img/projects/ekanim-project.jpg";
-import TemplateSainteecileViolins from "../img/projects/saintececile-project3.jpg";
 import TemplateArgentBank from "../img/projects/ArgentBank-project.jpg";
 import TemplateBulletJournal from "../img/projects/taskManager-project.jpg";
+import TemplateMyCMS from "../img/projects/MyCMS-project.jpg";
+import TemplateMenesens from "../img/projects/menesens-project.jpg";
 import Arrow from "../img/arrow_project.svg";
 
 import './Projects.scss';
@@ -36,7 +37,11 @@ const Projects = () => {
                                         {item.text && item.text.map((text, textIndex) => (
                                             <div key={textIndex} className="description_txt-bloc">
                                                 <figure className="arrow">
-                                                    <img src={Arrow} alt="flèche"/>
+                                                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2 23.833L23.4752 23.833" stroke-width="4" stroke-linecap="square"/>
+                                                        <path d="M4.14844 4.14746L21.8646 21.8636" stroke-width="4" stroke-linecap="square"/>
+                                                        <path d="M23.4746 2L23.4746 23.4752" stroke-width="4" stroke-linecap="square"/>
+                                                    </svg>
                                                 </figure>
                                                 <p>
                                                     {text}
@@ -58,7 +63,7 @@ const Projects = () => {
                                     <a href={item.link} target="_blank" rel="noreferrer" className="mockup">
                                         <img src={item.template} alt="Template de site"/>
                                         <div className="mockup_bouton">
-                                            <p className="bouton">Voir le site</p>
+                                            <p className="bouton bouton_bgBlanc">Voir le site</p>
                                         </div>
                                     </a>
                                 </div>                          
@@ -86,56 +91,70 @@ const data = [
         link: "https://www.ekanim.fr/"
     },
     {
-        title: "Plomberie JB",
+        title: "Plomberie Joan",
         text: [
-            "Intégration du site à partir de la maquette Adobe XD. ", 
-            "Animations codées en Scss et JQuery. ", 
-            "Déploiement du site sur le serveur avec FileZilla.", 
+            "Réalisations de la maquette sur Figma.", 
+            "Intégration du site en React.", 
+            "Déploiement du site sur la plateforme Render.", 
         ],
-        // text: "Réalisation de la maquette sur Figma et intégration avec React. Mise en place d'une API REST avec diverses routes pour permettre au client d'ajouter son propre contenu. Connexion à une base de données MongoDB et ajout d'un système d'authentification pour protéger l'API. Déploiement du site statique et du serveur sur la plateforme Render.",
-        button: ["Figma", "React", "Scss", "Node", "Express", "MongoDB", "Render"],
+        button: ["Figma", "React", "Scss", "Render"],
         annotation: "Site vitrine | stage",
         template: TemplatePlomberie,
         link: "https://www.plomberiejoanbret.fr/"
     },
     {
-        title: "Sainte Cécile",
-        text: [
-            "Intégration du site à partir de la maquette Adobe XD. ", 
-            "Animations codées en Scss et JQuery. ", 
-            "Déploiement du site sur le serveur avec FileZilla.", 
-        ],
-        // text: "Site onepage d'une entreprise de création de violions intégré à partir de la maquette Adobe XD. Utilisation de fichiers JSON pour stocker des données et création de scripts PHP pour afficher le contenu dynamiquement. Déploiement du site avec Docker.",
-        button: ["Html", "Scss", "Php", "JavaScript", "Docker"],
-        annotation: "Site vitrine | melting.k",
-        template: TemplateSainteecileViolins,
-        link: "https://www.sainte-cecile-violins.com/"
-    },
-    {
         title: "Argent Bank",
         text: [
-            "Intégration du site à partir de la maquette Adobe XD. ", 
-            "Animations codées en Scss et JQuery. ", 
-            "Déploiement du site sur le serveur avec FileZilla.", 
+            "Intégration de l'interface utilisateur de l'application bancaire avec React.", 
+            "Utilisation de Redux pour gérer les données et maintenir un état global cohérent.", 
+            "Appels à l'API REST pour connecter le front et le back.", 
+            "Utilisation de Swagger pour documenter les API afin d'assurer la clarté et la maintenabilité de l'interface de programmation. ", 
         ],
-        // text: "Intégration de l'interface utilisateur de l'application bancaire avec React. Utilisation de Redux pour gérer les données et maintenir un état global cohérent. Appels à l'API REST pour connecter le front et le back. Utilisation de Swagger pour documenter les API afin d'assurer la clarté et la maintenabilité de l'interface de programmation. ",
         button: ["React", "Redux", "Css", "API", "Swagger"],
         annotation: "Projet de formation | OpenClassrooms",
         template: TemplateArgentBank,
         link: "https://github.com/mathoos/Project-10-Bank-API"
     },
     {
+        title: "MyCMS",
+        text: [
+            "Intégration de l'interface utilisateur du système de gestion de contenu avec React.", 
+            "Intégration du serveur en Node et Express.", 
+            "Mise en place d'une API REST avec diverses routes pour permettre au client d'ajouter son propre contenu.", 
+            "Stockage des images sur la plateforme Cloudinary.", 
+            "Connexion à une base de données MongoDB et ajout d'un système d'authentification pour protéger l'API.", 
+            "Déploiement du site sur la plateforme Render.", 
+        ],
+        button: ["React", "Scss", "Node", "Express", "MongoDB", "Render", "Cloudinary"],
+        annotation: "Projet de formation | OpenClassrooms",
+        template: TemplateMyCMS,
+        link: "https://cloudinary-client.onrender.com/"
+    },
+    {
         title: "Task manager",
         text: [
-            "Intégration du site à partir de la maquette Adobe XD. ", 
-            "Animations codées en Scss et JQuery. ", 
-            "Déploiement du site sur le serveur avec FileZilla.", 
+            "Création d'un système de gestion de projet avec React.", 
+            "Mise en place d'un slice Redux avec des actions pour ajouter ou supprimer une note.", 
+            "Mise en place d'un reducer qui manipule l'état des notes en fonction des actions.", 
+            "Création d'un store Redux pour gérer l'état global de l'application et stockage des données dans le navigateur avec LocalStorage."
         ],
-        // text: "Création d'un système de gestion de projet avec React. Mise en place d'un slice Redux avec des actions pour ajouter ou supprimer une note, et d'un reducer qui manipule l'état des notes en fonction des actions. Création d'un store Redux pour gérer l'état global de l'application et stockage des données dans le navigateur avec LocalStorage.",
         button: ["React", "Scss", "Redux", "Redux Toolkit", "LocalStorage"],
         annotation: "Projet personnel | en construction",
         template: TemplateBulletJournal,
         link: "https://task-manager-journal.onrender.com/"
+    },
+    {
+        title: "Menesens",
+        text: [
+            "Intégration du site en Next.js.", 
+            "Création des animations avec la librairie Framer Motion.", 
+            "Création de composants et props pour faciliter le développement et la maintenabilité.",
+            "Utilisation de l'API Instagram pour récupérer les derniers posts créés."
+        ],
+        button: ["Next", "Scss", "Framer Motion"],
+        annotation: "Projet personnel | en construction",
+        template: TemplateMenesens,
+        link: "https://www.menesens.fr/"
     }
 ];
 

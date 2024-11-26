@@ -12,6 +12,7 @@
         border-radius : 100px 100px 0 0;
         background-color: $primary;
         border : 4px solid $noir;
+        
         @media screen and (max-width : 990px) {
             padding : 15vh 30px 40vh 30px;
             gap : 20vh;
@@ -67,6 +68,7 @@
                     background-color: $blanc;
                     border : 4px solid $noir;
                     border-radius : 30px;
+                    
                     @media screen and (max-width : 990px) {
                         width : 100%;
                         padding : 10vw;
@@ -108,11 +110,12 @@
                     }
                 }
 
-                .bouton, .etoile{
+                .bouton-parallax, .etoile{
                     position : absolute;
                     @media screen and (max-width : 990px) {
                         position : static;
                     }
+
                     img{
                         width : 100%;
                         height : auto;
@@ -128,24 +131,31 @@
                         }
                     }
 
-                    .bouton{
-                        &:nth-of-type(1){
+                    .bouton-parallax{
+
+                        &:nth-of-type(3){
                             right : 36vw;
                             top : 5vw;
                             transform : rotate(-10deg);
+                            @media screen and (max-width : 990px) {
+                                align-self: flex-start;
+                            }
                         }
 
                         &:nth-of-type(2){
                             right : 5vw;
                             bottom : -20vh;
                             transform : rotate(5deg);
+
                             @media screen and (max-width : 990px) {
-                                align-self: flex-start;
+                                align-self: flex-end;
                             }
                         }
                     }
 
                     .etoile{
+                        animation : scaleAnimation 1s linear infinite alternate;
+
                         &:nth-of-type(1){
                             width : 3.6vw;
                             height : auto; 
@@ -173,25 +183,25 @@
 
                 &:nth-of-type(2){
                     justify-content: flex-end;
-                    .txt{
-                       
-                    }
 
-                    .bouton{
-                        &:nth-of-type(1){
-                            left : 15vw;
+                    .bouton-parallax{
+                        &:nth-of-type(3){
+                            left : 12vw;
                             bottom : 10vw;
                             transform : rotate(5deg);
+
                             @media screen and (max-width : 990px) {
-                                align-self : flex-start;
+                                align-self : flex-end;
                                 transform : rotate(-5deg);
                             }
                         }
 
                         &:nth-of-type(2){
+                            align-self: flex-start;
                             left : 10vw;
                             bottom : 0;
                             transform : rotate(-5deg);
+
                             @media screen and (max-width : 990px) {
                                 transform : rotate(5deg);
                             }
@@ -203,6 +213,7 @@
                         height : auto;
                         left : 5vw;
                         bottom : 5vw;
+                        animation : scaleAnimation 1s linear infinite alternate;
                         @media screen and (max-width : 990px) {
                             width : 8vw;
                             align-self: flex-start;

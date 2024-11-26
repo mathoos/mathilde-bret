@@ -50,15 +50,23 @@ export const scaleInvert = keyframes`
     }
 `;
 
-export const bottomAnimation = keyframes`
+export const bottomAnimationBloc = keyframes`
     from {
-        transform : translateY(50%);
-        opacity : 0;
+        transform : translateY(15vh);
     }
 
     to {
         transform : translateY(0);
-        opacity : 1;
+    }
+`;
+
+export const diagonalBloc = keyframes`
+    from {
+        transform : translate(2.5vw, -2.5vw);
+    }
+
+    to {
+        transform : translate(0, 0);
     }
 `;
 

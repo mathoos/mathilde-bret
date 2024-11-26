@@ -151,7 +151,7 @@ const data = [
             "Création de composants et props pour faciliter le développement et la maintenabilité.",
             "Utilisation de l'API Instagram pour récupérer les derniers posts créés."
         ],
-        button: ["Next", "Scss", "Framer Motion"],
+        button: ["Next.js", "Scss", "Framer Motion"],
         annotation: "Projet personnel | en construction",
         template: TemplateMenesens,
         link: "https://www.menesens.fr/"

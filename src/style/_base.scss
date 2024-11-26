@@ -45,6 +45,20 @@ html{
             }
         }
 
+        .hero_container-arrow{
+            svg{
+                path{
+                    &:nth-last-of-type(2){
+                        animation: drawPath 2s ease 1.5s forwards;
+                    }
+
+                    &:nth-last-of-type(1){
+                        animation: drawPath 2s ease 2.4s forwards;
+                    }
+                }
+            }
+        }
+
         .rs_icon{
             @for $i from 1 through $elements {
                 &:nth-child(#{$i}) {

@@ -118,7 +118,7 @@ const data = [
     {
         title: "MyCMS",
         text: [
-            "Intégration de l'interface utilisateur du système de gestion de contenu avec React.", 
+            "Intégration de l'interface utilisateur avec React.", 
             "Intégration du serveur en Node et Express.", 
             "Mise en place d'une API REST avec diverses routes pour permettre au client d'ajouter son propre contenu.", 
             "Stockage des images sur la plateforme Cloudinary.", 

@@ -84,6 +84,16 @@
     }
 }
 
+@keyframes leftRotation {
+    0%{
+        transform : rotate(20deg)
+    }
+
+    100%{
+        transform : rotate(-5deg)
+    }
+}
+
 
 // Animation scale
 

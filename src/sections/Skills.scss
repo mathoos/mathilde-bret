@@ -271,6 +271,7 @@
 
         .etoile{
             position : absolute;    
+            animation : scaleAnimation 1s linear infinite alternate;
 
             img{
                 width : 100%;

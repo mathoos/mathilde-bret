@@ -1,5 +1,5 @@
 import { Reveal } from "react-awesome-reveal";
-import { bottomAnimationBloc} from "../functions/keyframes";
+import { bottomAnimationBloc , bottomAnimationTxt , diagonaleAnimationTxt , scaleAnimation } from "../functions/keyframes";
 import Etoile from "../img/etoile.svg";
 
 import './Skills.scss';
@@ -12,14 +12,16 @@ const Skills = () => {
             <section className="skills" id="skills">
 
                 <div className="skills_title">
-                    <h2>
-                        Mes compétences
-                    </h2>
-                    <p>
-                        Diplômée d’une licence en Communication & Médias, et titulaire d’un titre de Webdesigner, 
-                        j’ai récemment achevé mon contrat d’alternance en agence de communication en tant que développeuse 
-                        front-end.
-                    </p> 
+                    <Reveal keyframes={bottomAnimationTxt}>
+                        <h2>Mes compétences</h2>
+                    </Reveal>
+                    <Reveal keyframes={bottomAnimationTxt}>
+                        <p>
+                            Diplômée d’une licence en Communication & Médias, et titulaire d’un titre de Webdesigner, 
+                            j’ai récemment achevé mon contrat d’alternance en agence de communication en tant que développeuse 
+                            front-end.
+                        </p> 
+                    </Reveal>
                 </div>
 
                 <div className="skills_domain">

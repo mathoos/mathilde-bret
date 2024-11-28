@@ -60,9 +60,21 @@ export const bottomAnimationBloc = keyframes`
     }
 `;
 
-export const diagonalBloc = keyframes`
+export const bottomAnimationTxt = keyframes`
     from {
-        transform : translate(2.5vw, -2.5vw);
+        transform : translateY(15vh);
+        opacity : .5;
+    }
+
+    to {
+        transform : translateY(0);
+        opacity : 1;
+    }
+`;
+
+export const diagonaleAnimationTxt = keyframes`
+    from {
+        transform : translate(2.5vw, 2.5vw);
     }
 
     to {

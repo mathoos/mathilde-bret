@@ -68,17 +68,14 @@
             left : 25vw;
             @media screen and (max-width : 990px) {
                 top : 15vw;
-                left : 4vw;
+                left : 2.5vw;
             }
 
             img{
-                position : absolute;
-                top : 0;
-                left : 0;
                 width : 8vw;
                 height : auto;
                 @media screen and (max-width : 990px) {
-                    width : 11vw;
+                    width : 18vw;
                 }
             }
         }

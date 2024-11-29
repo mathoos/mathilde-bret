@@ -64,6 +64,9 @@
                     position : relative;
                     width : 44vw;
                     height : auto;
+                    @media screen and (max-width : 990px) {
+                        width : 100%;
+                    } 
                     
 
                     &::after{
@@ -106,7 +109,7 @@
                     overflow : hidden;
                     @media screen and (max-width : 990px) {
                         width : 100%;
-                        height : auto;
+                        height : 80vw;
                     }
 
                     img{

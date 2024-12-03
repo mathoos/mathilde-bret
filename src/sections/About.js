@@ -154,7 +154,6 @@ const About = () => {
                 </div>
             </Reveal>
             
-
         </section>
     ) 
 }

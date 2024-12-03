@@ -6,7 +6,6 @@ import TemplateArgentBank from "../img/projects/ArgentBank-project.jpg";
 import TemplateBulletJournal from "../img/projects/taskManager-project.jpg";
 import TemplateMyCMS from "../img/projects/MyCMS-project.jpg";
 import TemplateMenesens from "../img/projects/menesens-project.jpg";
-import Arrow from "../img/arrow_project.svg";
 
 import './Projects.scss';
 
@@ -14,69 +13,70 @@ const Projects = () => {
 
 
     return (
-        <Reveal keyframes={bottomAnimationBloc}>
-            <section className="projects" id="projects">
-
-                <div className="projects_title">
-                    <h2>
-                        Sélection de quelques projets ...
-                    </h2>
-                </div>
-
+        <section className="projects" id="projects">
+            <Reveal keyframes={bottomAnimationBloc}>
                 <div className="projects_container">
-                    {data.map((item, index) => (
-                        <div className="projects_container-bloc heightJs" key={index}>
-                            <div className="projects_container-bloc--content">
-                                <div className="projects_container-bloc--content-left">
-                                    <div className="title">
-                                        <h3>
-                                            {item.title}
-                                        </h3>
+
+                    <div className="projects_container-title">
+                        <h2>
+                            Sélection de quelques projets ...
+                        </h2>
+                    </div>
+
+                    <div className="projects_container-content">
+                        {data.map((item, index) => (
+                            <div className="bloc heightJs" key={index}>
+                                <div className="bloc_content">
+                                    <div className="bloc_content-left">
+                                        <div className="title">
+                                            <h3>
+                                                {item.title}
+                                            </h3>
+                                        </div>
+                                        <div className="description">
+                                            
+                                            <div className="description_txt">  
+                                                {item.text && item.text.map((text, textIndex) => (
+                                                    <div key={textIndex} className="description_txt-bloc">
+                                                        <figure className="arrow">
+                                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M2 23.833L23.4752 23.833" strokeWidth="4" strokeLinecap="square"/>
+                                                                <path d="M4.14844 4.14746L21.8646 21.8636" strokeWidth="4" strokeLinecap="square"/>
+                                                                <path d="M23.4746 2L23.4746 23.4752" strokeWidth="4" strokeLinecap="square"/>
+                                                            </svg>
+                                                        </figure>
+                                                        <p>
+                                                            {text}
+                                                        </p>
+                                                    </div>
+                                                ))}
+                                            </div> 
+
+                                            <div className="description_perks">
+                                                {item.button && item.button.map((button, buttonIndex) => (
+                                                    <button key={buttonIndex} className="bouton bouton_bgNoir">{button}</button>
+                                                ))}
+                                            </div>  
+                                        </div>                            
                                     </div>
-                                    <div className="description">
-                                        
-                                        <div className="description_txt">  
-                                            {item.text && item.text.map((text, textIndex) => (
-                                                <div key={textIndex} className="description_txt-bloc">
-                                                    <figure className="arrow">
-                                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M2 23.833L23.4752 23.833" strokeWidth="4" strokeLinecap="square"/>
-                                                            <path d="M4.14844 4.14746L21.8646 21.8636" strokeWidth="4" strokeLinecap="square"/>
-                                                            <path d="M23.4746 2L23.4746 23.4752" strokeWidth="4" strokeLinecap="square"/>
-                                                        </svg>
-                                                    </figure>
-                                                    <p>
-                                                        {text}
-                                                    </p>
+
+                                    <div className="bloc_content-right">    
+                                        <div className="bloc_content-right--content">
+                                            <a href={item.link} target="_blank" rel="noreferrer" className="mockup">
+                                                <img src={item.template} alt="Template de site"/>
+                                                <div className="mockup_bouton">
+                                                    <p className="bouton bouton_bgBlanc">Voir le site</p>
                                                 </div>
-                                            ))}
-                                        </div> 
-
-                                        <div className="description_perks">
-                                            {item.button && item.button.map((button, buttonIndex) => (
-                                                <button key={buttonIndex} className="bouton bouton_bgNoir">{button}</button>
-                                            ))}
-                                        </div>  
-                                    </div>                            
-                                </div>
-
-                                <div className="projects_container-bloc--content-right">    
-                                    <div className="bloc">
-                                        <a href={item.link} target="_blank" rel="noreferrer" className="mockup">
-                                            <img src={item.template} alt="Template de site"/>
-                                            <div className="mockup_bouton">
-                                                <p className="bouton bouton_bgBlanc">Voir le site</p>
-                                            </div>
-                                        </a>
-                                    </div>                          
-                                    
+                                            </a>
+                                        </div>                          
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
-            </section>
-        </Reveal>
+            </Reveal>
+        </section>
     ) 
 }
 
@@ -84,8 +84,8 @@ const data = [
     {
         title: "Ekanim",
         text: [
-            "Intégration du site à partir de la maquette Adobe XD. ", 
-            "Animations codées en Scss et JQuery. ", 
+            "Intégration du site à partir de la maquette réalisations sur Adobe XD par les graphistes. ", 
+            "Animations codées en Scss et JQuery.", 
             "Déploiement du site sur le serveur avec FileZilla.", 
         ],
         button: ["Html", "Scss", "Php", "jQuery"],
@@ -96,8 +96,9 @@ const data = [
     {
         title: "Plomberie Joan",
         text: [
-            "Réalisations de la maquette sur Figma.", 
+            "Création de la maquette sur Figma.", 
             "Intégration du site en React.", 
+            "Mise en place d'un système de filtres qui permet à l'utilisateur de chercher des photos par thème.", 
             "Déploiement du site sur la plateforme Render.", 
         ],
         button: ["Figma", "React", "Scss", "Render"],

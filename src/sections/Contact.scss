@@ -5,116 +5,130 @@
     display : flex;
     flex-direction: column;
     justify-content: flex-end;
-    gap : 20vh;
     width : 100%;
     height : 115vh;
-    background-color: $noir;
-    padding : 0 10vw 5vh 10vw;
-    border-radius : 100px 100px 0 0;
+    z-index : 105;
     margin-top : -15vh;
-    overflow : hidden;
-    z-index : 14;
-    @media screen and (max-width : 990px) {
-        justify-content: space-between;
-        gap : 15vh;
-        padding : 10vh 30px 5vh 30px;
-        border-radius : 0;
-        height : 100vh;
-    }
+    background-color: $gris;
+    border : 4px solid $noir;
+    border-top : none;
 
-    &::after {
-        position: absolute;
-        content: "";
-        top: -100%;
-        left: -50%;
-        width: 300%;
-        height: 300%;
-        animation: grain 10s steps(10) infinite;
-        background-image: url("../img/noise-effect2.png");
-        opacity: .1;
-        z-index : 2;
-    }
-
-    &_title{
+    &_container{
         position : relative;
-
-        h2{
-            display : flex;
-            flex-direction: column;
-            
-
-            span{
-                font-size : 7.5vw;
-                color : $blanc;
-                line-height : .9;
-                font-variation-settings:
-                    "wdth" 125,
-                    "wght" $heavy;
-
-                &:nth-of-type(2){
-                    align-self: flex-end;
-                }  
-                
-                @media screen and (max-width : 990px) {
-                    font-size : 10vw;
-                    line-height : 1;
-                }
-            }
-        }
-
-        &-img{
-            position : absolute;
-            top : 80%;
-            left : 25vw;
-            @media screen and (max-width : 990px) {
-                top : 15vw;
-                left : 2.5vw;
-            }
-
-            img{
-                width : 8vw;
-                height : auto;
-                @media screen and (max-width : 990px) {
-                    width : 18vw;
-                }
-            }
-        }
-    }
-
-    &_links{
         display : flex;
-        justify-content: center;
-        gap : 2vw;
-
+        flex-direction: column;
+        justify-content: flex-end;
+        gap : 15vh;
+        width : 100%;
+        height : 94vh;
+        background-color: $noir;
+        padding : 0 10vw 5vh 10vw;
+        border-radius : 100px 100px 0 0;
+        overflow : hidden;
+        
+        
         @media screen and (max-width : 990px) {
-            flex-direction: column;
-            align-items: center;
-            gap : 2.5vh;
+            justify-content: space-between;
+            gap : 15vh;
+            padding : 15vh 30px 5vh 30px;
+            border-radius : 50px 50px 0 0;
+            height : 90vh;
         }
 
-        .bouton{
-            font-size : 1.2vw;
-            z-index : 3;
-            @media screen and (max-width : 990px) {
-                text-align : center;
-                font-size : 5vw;
-                padding : 2.5vw 10vw;
+        &::after {
+            position: absolute;
+            content: "";
+            top: -100%;
+            left: -50%;
+            width: 300%;
+            height: 300%;
+            animation: grain 10s steps(10) infinite;
+            background-image: url("../img/noise-effect2.png");
+            opacity: .1;
+            z-index : 2;
+        }
+
+        &-title{
+            position : relative;
+    
+            h2{
+                display : flex;
+                flex-direction: column;
+                
+    
+                span{
+                    font-size : 7.5vw;
+                    color : $blanc;
+                    line-height : .9;
+                    font-variation-settings:
+                        "wdth" 125,
+                        "wght" $heavy;
+    
+                    &:nth-of-type(2){
+                        align-self: flex-end;
+                    }  
+                    
+                    @media screen and (max-width : 990px) {
+                        font-size : 10vw;
+                        line-height : 1;
+                    }
+                }
+            }
+    
+            &--img{
+                position : absolute;
+                top : 20vh;
+                left : 22vw;
+                @media screen and (max-width : 990px) {
+                    top : 15vw;
+                    left : 2.5vw;
+                }
+    
+                img{
+                    width : 7vw;
+                    height : auto;
+                    @media screen and (max-width : 990px) {
+                        width : 18vw;
+                    }
+                }
             }
         }
-    }
-
-    &_copyright{
-        display : flex;
-        justify-content: space-between;
-
-        p, a{
-            color : $blanc;
-            font-size : .8vw;
-            font-weight : $light;
-            text-transform: uppercase;
+    
+        &-links{
+            display : flex;
+            justify-content: center;
+            gap : 2vw;
+    
             @media screen and (max-width : 990px) {
-                font-size : 2vw !important;
+                flex-direction: column;
+                align-items: center;
+                gap : 2.5vh;
+            }
+    
+            .bouton{
+                font-size : 1.2vw;
+                z-index : 3;
+                @media screen and (max-width : 990px) {
+                    text-align : center;
+                    font-size : 5vw;
+                    padding : 2.5vw 10vw;
+                }
             }
         }
-    }
+    
+        &-copyright{
+            display : flex;
+            justify-content: space-between;
+    
+            p, a{
+                color : $blanc;
+                font-size : .8vw;
+                font-weight : $light;
+                text-transform: uppercase;
+                @media screen and (max-width : 990px) {
+                    font-size : 2vw !important;
+                }
+            }
+        }
+    } 
 }

@@ -1,307 +1,308 @@
 @import "../style.scss";
 
 .skills{
-    position : relative;
-    overflow : hidden;
-    margin-top : -20vh;
-    background-color: $primary;
-    border-radius : 100px 100px 0 0;
-    border : 4px solid $noir;
-    padding : 40vh 10vw 70vh 10vw;
-    z-index : 12;
-    @media screen and (max-width : 990px) {
-        padding : 15vh 30px 50vh 30px;
-        border-radius : 50px 50px 0 0;
-    }
 
-
-
-    &_title{
-        display : flex;
-        flex-direction: column;
-        gap : 1.5vw;
-        margin-bottom : 30vh;
-
-        @media screen and (max-width : 990px) {
-            gap : 5vw;
-            margin-bottom : 20vh;
-        }
-
-        p{
-            font-size : 1.7vw;
-            font-variation-settings:
-                "wdth" 125,
-                "wght" $bold;
-            @media screen and (max-width : 990px) {
-                font-size : 5vw;
-            }
-        }
-    } 
-
-    &_domain{
+    &_container{
         position : relative;
-        display : flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap : 1.5vw;
-        width : 100%;
-        @media screen and (max-width : 990px) {                   
-            display : grid;
-            grid-auto-rows : 1fr;
-            gap : 15vw;     
+        overflow : hidden;
+        margin-top : -20vh;
+        background-color: $primary;
+        border-radius : 100px 100px 0 0;
+        border : 4px solid $noir;
+        padding : 40vh 10vw 70vh 10vw;
+        z-index : 12;
+        @media screen and (max-width : 990px) {
+            padding : 15vh 30px 50vh 30px;
+            border-radius : 50px 50px 0 0;
         }
 
-        .bloc{
-            position : relative;
+        &-title{
             display : flex;
             flex-direction: column;
-            justify-content: space-between;
-            border : 4px solid $noir;
-            background-color: $blanc;
-            border-radius : 30px;
-            padding : 2.5vw;
-            min-width : 18.5vw; 
-            width : 18.5vw;
-            min-height : 45vh;
-
+            gap : 1.5vw;
+            margin-bottom : 30vh;
+    
             @media screen and (max-width : 990px) {
-                gap : 8vh;
-                width : 100%;
-                min-height : 100%;
-                height : 100%;
-                padding : 30px;
+                gap : 5vw;
+                margin-bottom : 20vh;
             }
-
-            &:not(.txt, .projet){
-                // &::after{
-                //     position : absolute;
-                //     content : "";
-                //     bottom : -.8vw;
-                //     left : .8vw;
-                //     width : 100%;
-                //     height : 100%;
-                //     background-color: $secondary;
-                //     border-radius : 30px;
-                //     z-index : -1;
-                //     @media screen and (max-width : 990px) {
-                //         bottom : -5vw;
-                //         left : 5vw;
-                //     }
-                // }
-            }
-
-            &-icon{
-                width : fit-content;
-                height : 3.5vw;
-                overflow : hidden;
+    
+            p{
+                font-size : 1.7vw;
+                font-variation-settings:
+                    "wdth" 125,
+                    "wght" $bold;
                 @media screen and (max-width : 990px) {
-                    height : 20vw;
-                }
-
-                svg{
-                    width : auto;
-                    height : 100%;
-                    object-position: left;
-                    stroke : $secondary;
-                    transition : 0 ease;
+                    font-size : 5vw;
                 }
             }
-
-            &-content{
+        } 
+    
+        &-domain{
+            position : relative;
+            display : flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap : 1.5vw;
+            width : 100%;
+            @media screen and (max-width : 990px) {                   
+                display : grid;
+                grid-auto-rows : 1fr;
+                gap : 15vw;     
+            }
+    
+            .bloc{
+                position : relative;
                 display : flex;
                 flex-direction: column;
-                justify-content: flex-end;
-                height : 100%;
-                overflow : hidden;
-
-                &--title{
-                    h3{
-                        font-size : 1.7vw;
-                        text-transform: uppercase;
-                        font-variation-settings:
-                            "wdth" 125,
-                            "wght" $heavy;
-
-                        @media screen and (max-width : 990px) {
-                            font-size : 8vw;
-                        }
-                    } 
+                justify-content: space-between;
+                border : 4px solid $noir;
+                background-color: $blanc;
+                border-radius : 30px;
+                padding : 2.5vw;
+                min-width : 18.5vw; 
+                width : 18.5vw;
+                min-height : 45vh;
+    
+                @media screen and (max-width : 990px) {
+                    gap : 8vh;
+                    width : 100%;
+                    min-height : 100%;
+                    height : 100%;
+                    padding : 30px;
                 }
-
-                &--list{
-                    div{
-                        //margin-bottom : -100%;
-                        padding-top : 2vh;
-                        transition : 1.2s ease;
-                        @media screen and (max-width : 990px) {
-                            margin-bottom : 0;
-                        }
-
-                        p{
-                            font-size : .9vw;
+    
+                &:not(.txt, .projet){
+                    // &::after{
+                    //     position : absolute;
+                    //     content : "";
+                    //     bottom : -.8vw;
+                    //     left : .8vw;
+                    //     width : 100%;
+                    //     height : 100%;
+                    //     background-color: $secondary;
+                    //     border-radius : 30px;
+                    //     z-index : -1;
+                    //     @media screen and (max-width : 990px) {
+                    //         bottom : -5vw;
+                    //         left : 5vw;
+                    //     }
+                    // }
+                }
+    
+                &-icon{
+                    width : fit-content;
+                    height : 3.5vw;
+                    overflow : hidden;
+                    @media screen and (max-width : 990px) {
+                        height : 20vw;
+                    }
+    
+                    svg{
+                        width : auto;
+                        height : 100%;
+                        object-position: left;
+                        stroke : $secondary;
+                        transition : 0 ease;
+                    }
+                }
+    
+                &-content{
+                    display : flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    height : 100%;
+                    overflow : hidden;
+    
+                    &--title{
+                        h3{
+                            font-size : 1.7vw;
+                            text-transform: uppercase;
+                            font-variation-settings:
+                                "wdth" 125,
+                                "wght" $heavy;
+    
                             @media screen and (max-width : 990px) {
-                                font-size : 4vw;
+                                font-size : 8vw;
+                            }
+                        } 
+                    }
+    
+                    &--list{
+                        div{
+                            //margin-bottom : -100%;
+                            padding-top : 2vh;
+                            transition : 1.2s ease;
+                            @media screen and (max-width : 990px) {
                                 margin-bottom : 0;
                             }
-                        }
-                    }
-                }
-            }
-
-            &.txt{
-                position : relative;
-                width : 38.7vw;           
-                background-color : $noir;
-                border : none;
-                overflow : hidden;
-                @media screen and (max-width : 990px) {
-                    display : none;
-                }
-
-                &::after {
-                    position: absolute;
-                    content: "";
-                    top: -100%;
-                    left: -50%;
-                    width: 300%;
-                    height: 300%;
-                    animation: grain 10s steps(10) infinite;
-                    background-image: url("../img/noise-effect2.png");
-                    opacity: .1;
-                    z-index : 2;
-                }
-
-                .bloc-content{
-                    justify-content: space-between;
-                    flex : 1;
-
-                    &--title{
-                        z-index : 5;
-                        h3{
-                            color : $blanc;
-                        }
-                    }
-
-                    &--txt{
-                        z-index : 5;
-                        p{
-                            color : $blanc;
-                        }
-                    }
-
-                    &--btn{
-                        display : flex;
-                        flex-wrap: wrap;
-                        gap : .5vw;
-                        z-index : 5;
-                        
-
-                        .bouton{
-                            padding : 1vh 1.5vw;
-                            font-size : 1vw;
-                            &:hover{
-                                background-color: $blanc;
+    
+                            p{
+                                font-size : .9vw;
+                                @media screen and (max-width : 990px) {
+                                    font-size : 4vw;
+                                    margin-bottom : 0;
+                                }
                             }
                         }
                     }
-                }  
-            }
-
-            &.projet{
-                justify-content: flex-end;
-                border : none;
-                padding : 2.5vw 0;
-                background-color: transparent;
-                @media screen and (max-width : 990px) {
-                    display : none;
                 }
-
-                p{
-                    color : $secondary;
-                    text-transform : uppercase;
-
-                    &:nth-of-type(1){
-                        font-size : 7.5vw; 
-                        line-height : .7; 
-                        font-variation-settings:
-                            "wdth" 125,
-                            "wght" $heavy; 
-                        @media screen and (max-width : 990px) {
-                            font-size : 22vw;
-                        }
-                    }
-                    &:nth-of-type(2){
-                        font-size : 2.7vw;  
-                        line-height : 1; 
-                        font-variation-settings:
-                            "wdth" 125,
-                            "wght" $heavy; 
-                        @media screen and (max-width : 990px) {
-                            font-size : 8vw;
-                        }
-                    }
-                }
-            }
-
-            &:nth-of-type(7){
-                visibility : hidden;
-                @media screen and (max-width : 990px) {                   
-                    display : none;
-                }
-            }
-        }
-
-        .pastille{
-            position : relative;
-            flex : 1;
-
-            img{
-                position : absolute;
-                top : -6vw;
-                right : -1vw;
-                width : 14vw;
-                height : auto;
-                z-index : 5;
-
+    
                 &.txt{
-                    animation : infiniteRotation 15s linear infinite forwards;
+                    position : relative;
+                    width : 38.7vw;           
+                    background-color : $noir;
+                    border : none;
+                    overflow : hidden;
+                    @media screen and (max-width : 990px) {
+                        display : none;
+                    }
+    
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        top: -100%;
+                        left: -50%;
+                        width: 300%;
+                        height: 300%;
+                        animation: grain 10s steps(10) infinite;
+                        background-image: url("../img/noise-effect2.png");
+                        opacity: .1;
+                        z-index : 2;
+                    }
+    
+                    .bloc-content{
+                        justify-content: space-between;
+                        flex : 1;
+    
+                        &--title{
+                            z-index : 5;
+                            h3{
+                                color : $blanc;
+                            }
+                        }
+    
+                        &--txt{
+                            z-index : 5;
+                            p{
+                                color : $blanc;
+                            }
+                        }
+    
+                        &--btn{
+                            display : flex;
+                            flex-wrap: wrap;
+                            gap : .5vw;
+                            z-index : 5;
+                            
+    
+                            .bouton{
+                                padding : 1vh 1.5vw;
+                                font-size : 1vw;
+                                &:hover{
+                                    background-color: $blanc;
+                                }
+                            }
+                        }
+                    }  
+                }
+    
+                &.projet{
+                    justify-content: flex-end;
+                    border : none;
+                    padding : 2.5vw 0;
+                    background-color: transparent;
+                    @media screen and (max-width : 990px) {
+                        display : none;
+                    }
+    
+                    p{
+                        color : $secondary;
+                        text-transform : uppercase;
+    
+                        &:nth-of-type(1){
+                            font-size : 7.5vw; 
+                            line-height : .7; 
+                            font-variation-settings:
+                                "wdth" 125,
+                                "wght" $heavy; 
+                            @media screen and (max-width : 990px) {
+                                font-size : 22vw;
+                            }
+                        }
+                        &:nth-of-type(2){
+                            font-size : 2.7vw;  
+                            line-height : 1; 
+                            font-variation-settings:
+                                "wdth" 125,
+                                "wght" $heavy; 
+                            @media screen and (max-width : 990px) {
+                                font-size : 8vw;
+                            }
+                        }
+                    }
+                }
+    
+                &:nth-of-type(7){
+                    visibility : hidden;
+                    @media screen and (max-width : 990px) {                   
+                        display : none;
+                    }
                 }
             }
-        }
-
-        .etoile{
-            position : absolute;    
-            animation : scaleAnimation 1s linear infinite alternate;
-
-            img{
-                width : 100%;
-                height : auto;
-            }
-
-            &:nth-of-type(1){
-                width : 4vw;
-                height : auto; 
-                right : 0;
-                bottom : 30vh;
-                @media screen and (max-width : 990px) {                   
-                    width : 10vw;  
-                    bottom : unset;
-                    top : -15vh;
-                    right : 10vw;
+    
+            .pastille{
+                position : relative;
+                flex : 1;
+    
+                img{
+                    position : absolute;
+                    top : -6vw;
+                    right : -1vw;
+                    width : 14vw;
+                    height : auto;
+                    z-index : 5;
+    
+                    &.txt{
+                        animation : infiniteRotation 15s linear infinite forwards;
+                    }
                 }
             }
-
-            &:nth-of-type(2){  
-                width : 3vw;
-                height : auto; 
-                left : 15vw;
-                bottom : -13vh;
-                @media screen and (max-width : 990px) {                   
-                    width : 10vw;  
-                    bottom : -15vh;
-                    left : 5vw;
+    
+            .etoile{
+                position : absolute;    
+                animation : scaleAnimation 1s linear infinite alternate;
+    
+                img{
+                    width : 100%;
+                    height : auto;
                 }
-            }         
-        }
-    }  
+    
+                &:nth-of-type(1){
+                    width : 4vw;
+                    height : auto; 
+                    right : 0;
+                    bottom : 30vh;
+                    @media screen and (max-width : 990px) {                   
+                        width : 10vw;  
+                        bottom : unset;
+                        top : -15vh;
+                        right : 10vw;
+                    }
+                }
+    
+                &:nth-of-type(2){  
+                    width : 3vw;
+                    height : auto; 
+                    left : 15vw;
+                    bottom : -13vh;
+                    @media screen and (max-width : 990px) {                   
+                        width : 10vw;  
+                        bottom : -15vh;
+                        left : 5vw;
+                    }
+                }         
+            }
+        }  
+    }
 }

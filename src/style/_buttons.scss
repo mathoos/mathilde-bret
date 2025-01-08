@@ -36,7 +36,7 @@
     }
 
     &_nav{
-        color : $violet;
+        color : $noir;
         text-transform: uppercase;
         border : none;
         font-variation-settings:
@@ -45,7 +45,7 @@
         transition : .3s ease;     
 
         &.active {
-            background-color: $noir;
+            background-color: $primary;
             color : $blanc;
         }
 

@@ -124,14 +124,13 @@
     
                             
                             &_txt{
-                                display :flex;
+                                display : flex;
                                 flex-direction: column;   
                                 gap : 1.5vh;
     
                                 &-bloc{
                                     display : flex;
-                                    justify-content: flex-start;
-                                    gap : 2.5vw;
+                                    gap : 2vw;
                                     @media screen and (max-width : 990px) {
                                         gap : 3vw;       
                                     }
@@ -158,9 +157,18 @@
                                             }
                                         }  
                                     }
+
+                                    .circle{
+                                        width : 8px;
+                                        height : 8px;
+                                        background-color: $blanc;
+                                        border-radius : 100vmax;
+                                        border : 2px solid $noir;
+                                        margin-top : 5px;
+                                    }
     
                                     p{
-                                        width : 100%;
+                                        width : calc(100% - 8px - 2vw);
                                         font-size : 1vw;
                                         
                                         @media screen and (max-width : 990px) {
@@ -308,6 +316,10 @@
                                         }
                                     }
                                 }
+                                .circle{
+                                    background-color: $noir;
+                                    border-color : $blanc;
+                                }
                                 p{
                                     color : $blanc;
                                 }
@@ -335,21 +347,21 @@
                 }
     
                 &:nth-child(2){
-                    padding-bottom : 5vh;
+                    //padding-bottom : 5vh;
                     @media screen and (max-width : 990px) {
                         padding-bottom : 0;
                         transform : none;
                     }
                 }
                 &:nth-child(3){
-                    padding-bottom : 6vh;
+                    //padding-bottom : 6vh;
                     @media screen and (max-width : 990px) {
                         padding-bottom : 0;
                         transform : none;
                     }
                 }
                 &:nth-child(4){
-                    padding-bottom : 5vh;
+                    //padding-bottom : 5vh;
                     @media screen and (max-width : 990px) {
                         padding-bottom : 0;
                         transform : none;
@@ -357,7 +369,7 @@
                 }
     
                 &:nth-child(5){
-                    padding-bottom : 6vh;
+                    //padding-bottom : 6vh;
                     @media screen and (max-width : 990px) {
                         padding-bottom : 0;
                         transform : none;
@@ -365,7 +377,7 @@
                 }
     
                 &:nth-child(6){
-                    padding-bottom : 5vh;
+                    //padding-bottom : 5vh;
                     @media screen and (max-width : 990px) {
                         padding-bottom : 0;
                         transform : none;

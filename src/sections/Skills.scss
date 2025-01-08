@@ -102,7 +102,7 @@
                         width : auto;
                         height : 100%;
                         object-position: left;
-                        stroke : $secondary;
+                        stroke : $primary;
                         transition : 0 ease;
                     }
                 }
@@ -217,11 +217,11 @@
                     }
     
                     p{
-                        color : $secondary;
+                        color : $gris;
                         text-transform : uppercase;
     
                         &:nth-of-type(1){
-                            font-size : 7.5vw; 
+                            font-size : 7.1vw; 
                             line-height : .7; 
                             font-variation-settings:
                                 "wdth" 125,
@@ -231,7 +231,7 @@
                             }
                         }
                         &:nth-of-type(2){
-                            font-size : 2.7vw;  
+                            font-size : 2.5vw;  
                             line-height : 1; 
                             font-variation-settings:
                                 "wdth" 125,

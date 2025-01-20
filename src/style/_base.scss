@@ -10,14 +10,13 @@
 $elements: 100; 
 
 body{
-    cursor : url(../img/icons/cursor-icon.svg), auto;
+    cursor : url('../img/icons/cursor.svg'), auto;
 }
 
 html, body {
     scroll-behavior: smooth;
     background-color: $blanc;
     width : 100%;
-   
 }
 
 html{

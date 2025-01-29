@@ -73,17 +73,6 @@
         }
     }
 
-    &_violet{
-        color : $primary;
-        border-color : $primary;
-
-        &:hover{
-            background-color: $primary;
-            border-color : transparent;
-            color : $blanc;
-        }
-    } 
-
     &_blanc{
         color : $blanc;
         border-color : $blanc;

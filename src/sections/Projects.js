@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Reveal } from "react-awesome-reveal";
 import { bottomAnimationBloc , bottomAnimationTxt } from "../functions/keyframes";
 import creativiteIcon from "../img/icons/creativite-icon.svg";
@@ -15,6 +16,12 @@ import './Projects.scss';
 
 const Projects = () => {
 
+    const [hovered, setHovered] = useState(false);
+    const [position, setPosition] = useState({ x: 0, y: 0 });
+
+    const handleMouseMove = (e) => {
+        setPosition({ x: e.clientX, y: e.clientY });
+    };
 
     return (
         <section className="projects" id="projects">
@@ -54,13 +61,13 @@ const Projects = () => {
             <div className="projects_container">
 
                 <div className="projects_container-ombre">
-                    <div className="ombre-content"></div>
+                    <div className="ombre-content">
+                    </div>
                 </div>
 
                
                 {data.map((item, index) => (
                     <div className="projects_container-content heightJs" key={index}>
-              
                         <div className="bloc">
                             <div className="bloc_txt">
                                 <div className="title">
@@ -89,13 +96,23 @@ const Projects = () => {
                                 </div>                            
                             </div>
 
-                            <div className="bloc_img">    
+                            <div
+                                className="bloc_img"
+                                onMouseEnter={() => setHovered(true)}
+                                onMouseLeave={() => setHovered(false)}
+                                onMouseMove={handleMouseMove}
+                            >
                                 <a href={item.link} target="_blank" rel="noreferrer" className="bloc_img-link">
-                                    <img src={item.template} alt="Template de site"/>
-                                    {/* <div className="bloc_img-link--btn">
-                                        <p className="bouton bouton_bgBlanc">Voir le site</p>
-                                    </div> */}
-                                </a>                       
+                                    <img src={item.template} alt="Template de site" />
+                                </a>
+                                {hovered && (
+                                    <button
+                                        className="bouton bouton_bgPrimary"
+                                        style={{ left: position.x, top: position.y }}
+                                    >
+                                        Voir le site
+                                    </button>
+                                )}
                             </div>
                         </div>
                     </div>

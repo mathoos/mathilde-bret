@@ -106,6 +106,12 @@
         }
     }
 
+    &_bgGris{
+        color : $noir;
+        border-color : $noir;
+        background-color: $gris;
+    }
+
     &_bgBlanc{
         color : $noir;
         border-color : $noir;

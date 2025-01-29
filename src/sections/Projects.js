@@ -4,12 +4,12 @@ import creativiteIcon from "../img/icons/creativite-icon.svg";
 import professionnelIcon from "../img/icons/professionnel-icon.svg";
 import creationIcon from "../img/icons/creation-icon.svg";
 import handCircledText from "../img/hand-circled-text.svg";
-import TemplatePlomberie from "../img/projects/plomberie-project.jpg";
-import TemplateEkanim from "../img/projects/ekanim-project.jpg";
-import TemplateArgentBank from "../img/projects/ArgentBank-project.jpg";
-import TemplateBulletJournal from "../img/projects/taskManager-project.jpg";
-import TemplateMyCMS from "../img/projects/MyCMS-project.jpg";
-import TemplateMenesens from "../img/projects/menesens-project.jpg";
+import TemplatePlomberie from "../img/projects/plomberie-joan-bret.png";
+import TemplateEkanim from "../img/projects/ekanim.jpg";
+import TemplateArgentBank from "../img/projects/argent-bank.jpg";
+import TemplateBulletJournal from "../img/projects/task-manager.jpg";
+import TemplateMyCMS from "../img/projects/my-cms.jpg";
+import TemplateMenesens from "../img/projects/menesens.jpg";
 
 import './Projects.scss';
 
@@ -53,60 +53,54 @@ const Projects = () => {
 
             <div className="projects_container">
 
+                <div className="projects_container-ombre">
+                    <div className="ombre-content"></div>
+                </div>
 
-
-                <div className="projects_container-content">
-                    {data.map((item, index) => (
-                        <div className="bloc heightJs" key={index}>
-                            <div className="bloc_content">
-                                <div className="bloc_content-left">
-                                    <div className="title">
-                                        <h3>
-                                            {item.title}
-                                        </h3>
-                                    </div>
-                                    <div className="description">
-                                        
-                                        <div className="description_txt">  
-                                            {item.text && item.text.map((text, textIndex) => (
-                                                <div key={textIndex} className="description_txt-bloc">
-                                                    {/* <figure className="arrow">
-                                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M2 23.833L23.4752 23.833" strokeWidth="4" strokeLinecap="square"/>
-                                                            <path d="M4.14844 4.14746L21.8646 21.8636" strokeWidth="4" strokeLinecap="square"/>
-                                                            <path d="M23.4746 2L23.4746 23.4752" strokeWidth="4" strokeLinecap="square"/>
-                                                        </svg>
-                                                    </figure> */}
-                                                    <div className="circle"></div>
-                                                    <p>
-                                                        {text}
-                                                    </p>
-                                                </div>
-                                            ))}
-                                        </div> 
-
-                                        <div className="description_perks">
-                                            {item.button && item.button.map((button, buttonIndex) => (
-                                                <button key={buttonIndex} className="bouton bouton_bgNoir">{button}</button>
-                                            ))}
-                                        </div>  
-                                    </div>                            
+               
+                {data.map((item, index) => (
+                    <div className="projects_container-content heightJs" key={index}>
+              
+                        <div className="bloc">
+                            <div className="bloc_txt">
+                                <div className="title">
+                                    <h3>
+                                        {item.title}
+                                    </h3>
                                 </div>
-
-                                <div className="bloc_content-right">    
-                                    <div className="bloc_content-right--content">
-                                        <a href={item.link} target="_blank" rel="noreferrer" className="mockup">
-                                            <img src={item.template} alt="Template de site"/>
-                                            <div className="mockup_bouton">
-                                                <p className="bouton bouton_bgBlanc">Voir le site</p>
+                                <div className="description">
+                                    
+                                    <div className="description_txt">  
+                                        {item.text && item.text.map((text, textIndex) => (
+                                            <div key={textIndex} className="description_txt-bloc">
+                                                <div className="carre"></div>
+                                                <p>
+                                                    {text}
+                                                </p>
                                             </div>
-                                        </a>
-                                    </div>                          
-                                </div>
+                                        ))}
+                                    </div> 
+
+                                    <div className="description_perks">
+                                        {item.button && item.button.map((button, buttonIndex) => (
+                                            <button key={buttonIndex} className="bouton bouton_bgGris">{button}</button>
+                                        ))}
+                                    </div>  
+                                </div>                            
+                            </div>
+
+                            <div className="bloc_img">    
+                                <a href={item.link} target="_blank" rel="noreferrer" className="bloc_img-link">
+                                    <img src={item.template} alt="Template de site"/>
+                                    {/* <div className="bloc_img-link--btn">
+                                        <p className="bouton bouton_bgBlanc">Voir le site</p>
+                                    </div> */}
+                                </a>                       
                             </div>
                         </div>
-                    ))}
-                </div>
+                    </div>
+                ))}
+               
             </div>
     
         </section>
@@ -117,7 +111,7 @@ const data = [
     {
         title: "Ekanim",
         text: [
-            "Intégration du site à partir de la maquette réalisations sur Adobe XD par les graphistes. ", 
+            "Intégration du site à partir de la maquette Adobe XD. ", 
             "Animations codées en Scss et JQuery.", 
             "Déploiement du site sur le serveur avec FileZilla.", 
         ],

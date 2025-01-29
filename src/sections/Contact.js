@@ -14,7 +14,7 @@ const Contact = () => {
                     <div className="footer_container-title">
                         <h2>
                             <span>Let's get</span>
-                            <span>in touch</span>
+                            <span>in touch !</span>
                         </h2>
                         
                         <figure className="footer_container-title--img">

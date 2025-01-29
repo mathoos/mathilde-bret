@@ -52,17 +52,20 @@
             position : relative;
     
             h2{
+                font-size : 7.5vw;
                 display : flex;
                 flex-direction: column;
                 
     
                 span{
-                    font-size : 7.5vw;
-                    color : $blanc;
                     line-height : .9;
                     font-variation-settings:
                         "wdth" 125,
                         "wght" $heavy;
+
+                    &:nth-of-type(1){
+                        color : $blanc;
+                    } 
     
                     &:nth-of-type(2){
                         align-self: flex-end;
@@ -106,6 +109,7 @@
             }
     
             .bouton{
+                border-width : 3px;
                 font-size : 1.2vw;
                 z-index : 3;
                 @media screen and (max-width : 990px) {

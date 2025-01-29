@@ -1,5 +1,9 @@
 import { Reveal } from "react-awesome-reveal";
-import { bottomAnimationBloc} from "../functions/keyframes";
+import { bottomAnimationBloc , bottomAnimationTxt } from "../functions/keyframes";
+import creativiteIcon from "../img/icons/creativite-icon.svg";
+import professionnelIcon from "../img/icons/professionnel-icon.svg";
+import creationIcon from "../img/icons/creation-icon.svg";
+import handCircledText from "../img/hand-circled-text.svg";
 import TemplatePlomberie from "../img/projects/plomberie-project.jpg";
 import TemplateEkanim from "../img/projects/ekanim-project.jpg";
 import TemplateArgentBank from "../img/projects/ArgentBank-project.jpg";
@@ -14,69 +18,97 @@ const Projects = () => {
 
     return (
         <section className="projects" id="projects">
-            <Reveal keyframes={bottomAnimationBloc}>
-                <div className="projects_container">
 
-                    <div className="projects_container-title">
-                        <h2>
-                            Sélection de quelques projets ...
-                        </h2>
+            <div className="projects_intro">
+                <div className="projects_intro-container">
+                    <div className="projects_intro-container--title">
+                        <Reveal keyframes={bottomAnimationTxt}>
+                            <h2>Sélection <br/> de quelques <br/> <span> projets .</span></h2> 
+                        </Reveal>
                     </div>
+                    <div className="projects_intro-container--subtitle">
+                        <Reveal keyframes={bottomAnimationTxt}>
+                            <p className="subtitle">
+                                Issues de mes expériences professionnelles&nbsp;
+                                <span className="icon">
+                                    <img src={professionnelIcon} alt="Diplôme" />
+                                </span> ou de projets personnels, ces créations&nbsp;
+                                <span className="icon">
+                                    <img src={creationIcon} alt="Contrat d'alternance" />
+                                </span>
+                                &nbsp;reflètent mon parcours en tant que développeuse front-end, mêlant créativité&nbsp;
+                                <span className="icon">
+                                    <img src={creativiteIcon} alt="Agence de communication" />
+                                </span>
+                                &nbsp;et expertise technique .
+                            </p>
+                        </Reveal>     
+                    </div>
+                    <figure className="projects_intro-container--circledText">
+                        <img src={handCircledText} alt="Texte entouré à la main" />
+                    </figure>
+                </div>
+            </div>
 
-                    <div className="projects_container-content">
-                        {data.map((item, index) => (
-                            <div className="bloc heightJs" key={index}>
-                                <div className="bloc_content">
-                                    <div className="bloc_content-left">
-                                        <div className="title">
-                                            <h3>
-                                                {item.title}
-                                            </h3>
-                                        </div>
-                                        <div className="description">
-                                            
-                                            <div className="description_txt">  
-                                                {item.text && item.text.map((text, textIndex) => (
-                                                    <div key={textIndex} className="description_txt-bloc">
-                                                        {/* <figure className="arrow">
-                                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M2 23.833L23.4752 23.833" strokeWidth="4" strokeLinecap="square"/>
-                                                                <path d="M4.14844 4.14746L21.8646 21.8636" strokeWidth="4" strokeLinecap="square"/>
-                                                                <path d="M23.4746 2L23.4746 23.4752" strokeWidth="4" strokeLinecap="square"/>
-                                                            </svg>
-                                                        </figure> */}
-                                                        <div className="circle"></div>
-                                                        <p>
-                                                            {text}
-                                                        </p>
-                                                    </div>
-                                                ))}
-                                            </div> 
 
-                                            <div className="description_perks">
-                                                {item.button && item.button.map((button, buttonIndex) => (
-                                                    <button key={buttonIndex} className="bouton bouton_bgNoir">{button}</button>
-                                                ))}
-                                            </div>  
-                                        </div>                            
+            <div className="projects_container">
+
+
+
+                <div className="projects_container-content">
+                    {data.map((item, index) => (
+                        <div className="bloc heightJs" key={index}>
+                            <div className="bloc_content">
+                                <div className="bloc_content-left">
+                                    <div className="title">
+                                        <h3>
+                                            {item.title}
+                                        </h3>
                                     </div>
-
-                                    <div className="bloc_content-right">    
-                                        <div className="bloc_content-right--content">
-                                            <a href={item.link} target="_blank" rel="noreferrer" className="mockup">
-                                                <img src={item.template} alt="Template de site"/>
-                                                <div className="mockup_bouton">
-                                                    <p className="bouton bouton_bgBlanc">Voir le site</p>
+                                    <div className="description">
+                                        
+                                        <div className="description_txt">  
+                                            {item.text && item.text.map((text, textIndex) => (
+                                                <div key={textIndex} className="description_txt-bloc">
+                                                    {/* <figure className="arrow">
+                                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M2 23.833L23.4752 23.833" strokeWidth="4" strokeLinecap="square"/>
+                                                            <path d="M4.14844 4.14746L21.8646 21.8636" strokeWidth="4" strokeLinecap="square"/>
+                                                            <path d="M23.4746 2L23.4746 23.4752" strokeWidth="4" strokeLinecap="square"/>
+                                                        </svg>
+                                                    </figure> */}
+                                                    <div className="circle"></div>
+                                                    <p>
+                                                        {text}
+                                                    </p>
                                                 </div>
-                                            </a>
-                                        </div>                          
-                                    </div>
+                                            ))}
+                                        </div> 
+
+                                        <div className="description_perks">
+                                            {item.button && item.button.map((button, buttonIndex) => (
+                                                <button key={buttonIndex} className="bouton bouton_bgNoir">{button}</button>
+                                            ))}
+                                        </div>  
+                                    </div>                            
+                                </div>
+
+                                <div className="bloc_content-right">    
+                                    <div className="bloc_content-right--content">
+                                        <a href={item.link} target="_blank" rel="noreferrer" className="mockup">
+                                            <img src={item.template} alt="Template de site"/>
+                                            <div className="mockup_bouton">
+                                                <p className="bouton bouton_bgBlanc">Voir le site</p>
+                                            </div>
+                                        </a>
+                                    </div>                          
                                 </div>
                             </div>
-                        ))}
-                    </div>
+                        </div>
+                    ))}
                 </div>
-            </Reveal>
+            </div>
+    
         </section>
     ) 
 }

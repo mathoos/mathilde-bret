@@ -1,18 +1,44 @@
 @import "../style.scss";
 
 .projects{
+    position : relative;
+    margin-top : -20vh;
+    z-index : 50;
+
+    &_intro{
+        padding : 40vh 10vw 50vh 10vw;
+        border-radius : 100px 100px 0 0;
+        background-color: $noir;
+        
+        &-container{
+            position : relative;
+            display : flex;
+            flex-direction: column;
+            gap : 5vh;
+
+            &--title{
+            }
+    
+            &--subtitle{
+                width : 60vw;
+            }
+    
+            &--circledText{
+                position : absolute;
+                bottom : 1.5vw;
+                right : 0;
+            }
+        } 
+    }
     
 
     &_container{
-        position : relative;
         display : flex;
         flex-direction: column;
         gap : 30vh;
-        border-radius : 100px 100px 0 0;
-        border : 4px solid $noir;
-        padding : 40vh 10vw 30vh 10vw; 
+        padding : 20vh 10vw 30vh 10vw;
         background-color: $gris;
-        z-index : 13;
+        border : 4px solid $noir;
         margin-top : -20vh;
         @media screen and (max-width : 990px) {
             gap : 5vh;

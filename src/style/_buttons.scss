@@ -11,12 +11,16 @@
     transition : .3s ease;
     font-variation-settings:
         "wdth" 125,
-        "wght" $semibold;
+        "wght" $medium;
 
     @media screen and (max-width : 990px) {
         padding : 1vh 5vw;
         font-size : 4vw;
         border-width : 1px;
+    }
+
+    &:hover{
+        cursor : url(../img/icons/cursor-pointer.svg), auto;
     }
 
     &_title{
@@ -58,11 +62,6 @@
         }
     }
 
-
-
-
-
-
     &_noir{
         color : $noir;
         border-color : $noir;
@@ -75,11 +74,11 @@
     }
 
     &_violet{
-        color : $violet;
-        border-color : $violet;
+        color : $primary;
+        border-color : $primary;
 
         &:hover{
-            background-color: $violet;
+            background-color: $primary;
             border-color : transparent;
             color : $blanc;
         }
@@ -112,6 +111,17 @@
         border-color : $noir;
         background-color: $blanc;
         
+        &:hover{
+            background-color: transparent;
+            color : $noir;
+        }
+    }
+
+    &_bgBlancOmbre{
+        color : $noir;
+        border-color : $noir;
+        background-color: $blanc;
+
         &:hover{
             background-color: transparent;
             color : $noir;

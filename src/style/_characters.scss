@@ -43,6 +43,10 @@ h2{
     @media screen and (max-width : 990px) {
         font-size : 8vw;
     }
+
+    span{
+        color : $primary;
+    }
 }
 
 h3{
@@ -74,18 +78,37 @@ h4{
 
 p{
     font-size : 1.5vw;
-    line-height : 1.2;
+    line-height : 1.5;
     color : $noir;
     font-variation-settings:
         "wdth" 125,
         "wght" $medium;
 
         &.title{
-            color : $violet;
+            color : $primary;
             text-transform : uppercase;
             font-variation-settings:
                 "wdth" 125,
                 "wght" $bold;    
+        }
+
+        &.subtitle{
+            font-size : 1.7vw;
+            line-height : 1.8;
+            color : $blanc;
+            font-variation-settings:
+                "wdth" 125,
+                "wght" $bold;
+
+            .icon{
+                display : inline-flex;
+
+                img{
+                    width : 2vw;
+                    height : 2vw;
+                    object-fit: contain;
+                }
+            }
         }
 
     @media screen and (max-width : 990px) {

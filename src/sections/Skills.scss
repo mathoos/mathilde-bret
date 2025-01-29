@@ -1,50 +1,64 @@
 @import "../style.scss";
 
 .skills{
+    position : relative;
+    margin-top : -20vh;
+    z-index : 5;
 
-    &_container{
-        position : relative;
-        overflow : hidden;
-        margin-top : -20vh;
-        background-color: $primary;
+    &_intro{
+        padding : 40vh 10vw 50vh 10vw;
         border-radius : 100px 100px 0 0;
         border : 4px solid $noir;
-        padding : 40vh 10vw 70vh 10vw;
-        z-index : 12;
+        background-color: $gris;
+        
+        &-container{
+            position : relative;
+            display : flex;
+            flex-direction: column;
+            gap : 5vh;
+
+            &--title{
+                h2{
+                    color : $noir;
+                }
+            }
+    
+            &--subtitle{
+                width : 60vw;
+
+                .subtitle{
+                    color : $noir;
+                }
+            }
+    
+            &--circledText{
+                position : absolute;
+                bottom : 1.5vw;
+                right : 0;
+            }
+        } 
+    }
+
+    &_presentation{
+        position : relative;
+        background-color: $primary;
+        border : 4px solid $noir;
+        padding : 40vh 10vw 60vh 10vw;
+        z-index : 10;
         @media screen and (max-width : 990px) {
             padding : 15vh 30px 50vh 30px;
             border-radius : 50px 50px 0 0;
         }
-
-        &-title{
-            display : flex;
-            flex-direction: column;
-            gap : 1.5vw;
-            margin-bottom : 30vh;
     
-            @media screen and (max-width : 990px) {
-                gap : 5vw;
-                margin-bottom : 20vh;
-            }
-    
-            p{
-                font-size : 1.7vw;
-                font-variation-settings:
-                    "wdth" 125,
-                    "wght" $bold;
-                @media screen and (max-width : 990px) {
-                    font-size : 5vw;
-                }
-            }
-        } 
-    
-        &-domain{
+        &-container{
             position : relative;
             display : flex;
             flex-wrap: wrap;
             justify-content: space-between;
             gap : 1.5vw;
             width : 100%;
+            margin-top : -60vh;
+           
             @media screen and (max-width : 990px) {                   
                 display : grid;
                 grid-auto-rows : 1fr;
@@ -62,7 +76,7 @@
                 padding : 2.5vw;
                 min-width : 18.5vw; 
                 width : 18.5vw;
-                min-height : 45vh;
+                min-height : 50vh;
     
                 @media screen and (max-width : 990px) {
                     gap : 8vh;
@@ -73,26 +87,26 @@
                 }
     
                 &:not(.txt, .projet){
-                    // &::after{
-                    //     position : absolute;
-                    //     content : "";
-                    //     bottom : -.8vw;
-                    //     left : .8vw;
-                    //     width : 100%;
-                    //     height : 100%;
-                    //     background-color: $secondary;
-                    //     border-radius : 30px;
-                    //     z-index : -1;
-                    //     @media screen and (max-width : 990px) {
-                    //         bottom : -5vw;
-                    //         left : 5vw;
-                    //     }
-                    // }
+                    &::after{
+                        position : absolute;
+                        content : "";
+                        bottom : -1vw;
+                        left : 1vw;
+                        width : 100%;
+                        height : 100%;
+                        background-color: $noir;
+                        border-radius : 30px;
+                        z-index : -1;
+                        @media screen and (max-width : 990px) {
+                            bottom : -5vw;
+                            left : 5vw;
+                        }
+                    }
                 }
     
                 &-icon{
                     width : fit-content;
-                    height : 3.5vw;
+                    height : 4vw;
                     overflow : hidden;
                     @media screen and (max-width : 990px) {
                         height : 20vw;
@@ -217,7 +231,7 @@
                     }
     
                     p{
-                        color : $gris;
+                        color : $noir;
                         text-transform : uppercase;
     
                         &:nth-of-type(1){

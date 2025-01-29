@@ -4,6 +4,10 @@ import { bottomAnimationBloc , bottomAnimationTxt , diagonaleAnimationTxt , scal
 import { Parallax } from "react-scroll-parallax";
 import MathildeBureau from "../img/moi/coding-noir-blanc.jpg";
 import Etoile from "../img/etoile.svg";
+import computerIcon from "../img/icons/computer-icon.svg";
+import webdesignIntroIcon from "../img/icons/webdesign-intro-icon.svg";
+import devIcon from "../img/icons/dev-icon.svg";
+import handCircledText from "../img/hand-circled-text.svg";
 import Rubber from "../img/rubber_head.svg";
 
 import './About.scss';
@@ -12,104 +16,60 @@ const About = () => {
 
     return (
         <section className="about" id="about">
-            
-            <Reveal keyframes={bottomAnimationBloc}>
-                <div className="about_container">
-                    <div className="title">
+
+            <div className="about_intro">
+                <div className="about_intro-container">
+                    <div className="about_intro-container--title">
                         <Reveal keyframes={bottomAnimationTxt}>
-                            <h2>À la recherche d'une nouvelle opportunité</h2> 
+                            <h2>À la recherche d'une nouvelle <span>opportunité .</span></h2> 
                         </Reveal>
+                    </div>
+                    <div className="about_intro-container--subtitle">
                         <Reveal keyframes={bottomAnimationTxt}>
-                            <p>
-                                Développeuse front-end passionnée, j'associe mes compétences en développement web et en webdesign 
-                                pour créer de jolies interfaces ergonomiques et attractives.
+                            <p className="subtitle">
+                                Développeuse front-end&nbsp;
+                                <span className="icon">
+                                    <img src={computerIcon} alt="Ordinateur" />
+                                </span> passionnée, <br/> 
+                                j'associe mes compétences en développement web&nbsp; 
+                                <span className="icon">
+                                    <img src={devIcon} alt="Développement web" />
+                                </span><br/> 
+                                et en webdesign&nbsp; 
+                                <span className="icon">
+                                    <img src={webdesignIntroIcon} alt="Webdesign" />
+                                </span>
+                                &nbsp;pour créer de jolies interfaces <br/> 
+                                ergonomiques et attractives.
                             </p>
                         </Reveal>     
                     </div>
+                    <figure className="about_intro-container--circledText">
+                        <img src={handCircledText} alt="Texte entouré à la main" />
+                    </figure>
+                </div>
+            </div>
 
-                    <div className="about_container-presentation">
-                        <div className="about_container-presentation--content">
-                            <div className="about_container-presentation--content--bloc">
-                                <Reveal keyframes={diagonaleAnimationTxt} delay={200} triggerOnce={true}>
-                                    <div className="txt">
-                                        <p>
-                                            En agence de communication, j'ai travaillé sur l'intégration et la refactorisation de 
-                                            plusieurs sites web, entourée d'une équipe de graphistes, développeurs, chefs 
-                                            de projets, rédacteurs et commerciaux.
-                                        </p>
-                                    </div>
-                                </Reveal>
-                            </div>
-
-                            <figure className="etoile">
-                                <img src={Etoile} alt="Etoile" />
-                            </figure>
-                            <Parallax 
-                                translateY={['0px', '0px']}
-                                rotate={[10, -10]}
-                                className="bouton-parallax"
-                            >
-                                <p className="bouton bouton_bgNoir">Computer</p>
-                            </Parallax>
-                            <figure className="img">
-                                <Reveal keyframes={scaleAnimation}>
-                                    <img src={MathildeBureau} alt="Développeuse front-end sur ordinateur" />
-                                </Reveal>
-                            </figure>
-                            <figure className="etoile">
-                                <img src={Etoile} alt="Etoile" />
-                            </figure>
-                            <Parallax 
-                                translateY={['0px', '0px']}
-                                rotate={[-10, 0]}
-                                className="bouton-parallax"
-                            >
-                                <p className="bouton bouton_bgNoir">Frontend</p>
-                            </Parallax>
-                        </div>
-                        <div className="about_container-presentation--content">
-                            <div className="about_container-presentation--content--bloc">
-                                <Reveal keyframes={diagonaleAnimationTxt} delay={200} triggerOnce={true}>
-                                    <div className="txt">
-                                        <p>
-                                            Minutieuse, je tente de donner vie à chaque site internet avec l'ambition d'offrir 
-                                            une expérience fluide et immersive, tout en apportant une réelle valeur ajoutée.
-                                        </p>
-                                    </div>
-                                </Reveal>
-                            </div>
-                            <Parallax 
-                                translateY={['0px', '0px']}
-                                rotate={[-10, 0]}
-                                className="bouton-parallax"
-                            >
-                                <p className="bouton bouton_bgNoir">www</p>
-                            </Parallax>
-                            <figure className="etoile">
-                                <img src={Etoile} alt="Etoile" />
-                            </figure>
-                            <Parallax 
-                                translateY={['0px', '0px']}
-                                rotate={[10, 0]}
-                                className="bouton-parallax"
-                            >
-                                <p className="bouton bouton_bgNoir">Tech friendly</p>
-                            </Parallax>
-                        </div>
+            <div className="about_presentation">
+                <div className="about_presentation-container">
+                    <div className="about_presentation-container--text">
+                        <p>
+                            En agence de communication, j'ai travaillé sur l'intégration et la refactorisation de 
+                            plusieurs sites internet, entourée d'une équipe de développeurs, graphistes, et 
+                            chefs de projets.
+                        </p>
+                        <p>
+                            Minutieuse, je tente de donner vie à chaque site internet avec l'ambition d'offrir 
+                            une expérience fluide et immersive, tout en apportant une réelle valeur ajoutée.
+                        </p>
+                        <button className="bouton bouton_bgBlancOmbre">Télécharger mon CV</button>
                     </div>
+                    <figure className="about_presentation-container--img">
+                        <img src={MathildeBureau} alt="Mathilde en train de coder sur son ordinateur" />
+                    </figure>
                 </div>
-            </Reveal>
-
-            <Reveal keyframes={bottomAnimationBloc}  >
-                <div className="about_subtitle">
-                    <p>
-                        Diplômée d’une licence en Communication & Médias, et titulaire d’un titre de Webdesigner, j’ai 
-                        récemment achevé mon contrat d’alternance en agence de communication en tant que 
-                        développeuse front-end.
-                    </p>
-                </div>
-            </Reveal>
-
+            </div>
+           
             <Reveal keyframes={bottomAnimationBloc}>
                 <div className="sticky">
 

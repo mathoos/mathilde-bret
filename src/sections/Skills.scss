@@ -6,7 +6,7 @@
     z-index : 5;
 
     &_intro{
-        padding : 40vh 10vw 50vh 10vw;
+        padding : 30vh 10vw 50vh 10vw;
         border-radius : 100px 100px 0 0;
         border : 4px solid $noir;
         background-color: $gris;
@@ -43,6 +43,7 @@
         position : relative;
         background-color: $primary;
         border : 4px solid $noir;
+        border-top : none;
         padding : 40vh 10vw 60vh 10vw;
         z-index : 10;
         @media screen and (max-width : 990px) {
@@ -199,6 +200,8 @@
                         &--txt{
                             z-index : 5;
                             p{
+                                //font-size : 1.2vw;
+                                line-height : 1.2;
                                 color : $blanc;
                             }
                         }
@@ -235,7 +238,7 @@
                         text-transform : uppercase;
     
                         &:nth-of-type(1){
-                            font-size : 7.1vw; 
+                            font-size : 7.4vw; 
                             line-height : .7; 
                             font-variation-settings:
                                 "wdth" 125,

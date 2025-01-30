@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useEffect, useRef } from "react";
 import { Reveal } from "react-awesome-reveal";
 import { bottomAnimationBloc , bottomAnimationTxt } from "../functions/keyframes";
 import creativiteIcon from "../img/icons/creativite-icon.svg";
@@ -22,6 +23,37 @@ const Projects = () => {
     const handleMouseMove = (e) => {
         setPosition({ x: e.clientX, y: e.clientY });
     };
+
+    const [isOmbreActive, setIsOmbreActive] = useState(false);
+    const firstProjectRef = useRef(null);
+    const ombreRef = useRef(null);
+
+    useEffect(() => {
+        let lastScrollY = window.scrollY; // Stocke la position du scroll précédente
+    
+        const handleScroll = () => {
+            const target = firstProjectRef.current;
+            if (!target) return;
+    
+            const rect = target.getBoundingClientRect();
+            const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
+            const scrollingDown = window.scrollY > lastScrollY; // Vérifie la direction du scroll
+    
+            if (isVisible) {
+                setIsOmbreActive(true); // Ajoute la classe .active quand le premier projet entre dans le viewport
+            } else if (!scrollingDown) {
+                setIsOmbreActive(false); // Retire la classe .active SEULEMENT quand on scrolle vers le haut
+            }
+    
+            lastScrollY = window.scrollY; // Met à jour la position du scroll
+        };
+    
+        window.addEventListener("scroll", handleScroll);
+    
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     return (
         <section className="projects" id="projects">
@@ -60,14 +92,19 @@ const Projects = () => {
 
             <div className="projects_container">
 
-                <div className="projects_container-ombre">
-                    <div className="ombre-content">
+                <div className="projects_container-absolute">
+                    <div className={`projects_container-absolute--ombre ${isOmbreActive ? "active" : ""}`} ref={ombreRef}>
+                        <div className="ombre-content"></div>
                     </div>
                 </div>
 
                
                 {data.map((item, index) => (
-                    <div className="projects_container-content heightJs" key={index}>
+                    <div
+                        className="projects_container-content heightJs"
+                        key={index}
+                        ref={index === 0 ? firstProjectRef : null} // Assigne ref au premier projet uniquement
+                    >
                         <div className="bloc">
                             <div className="bloc_txt">
                                 <div className="title">
@@ -171,7 +208,6 @@ const data = [
             "Mise en place d'une API REST avec diverses routes pour permettre au client d'ajouter son propre contenu.", 
             "Stockage des images sur la plateforme Cloudinary.", 
             "Connexion à une base de données MongoDB et ajout d'un système d'authentification pour protéger l'API.", 
-            "Déploiement du site sur la plateforme Render.", 
         ],
         button: ["React", "Scss", "Node", "Express", "MongoDB", "Render", "Cloudinary"],
         annotation: "Projet de formation | OpenClassrooms",
@@ -181,7 +217,7 @@ const data = [
     {
         title: "Task manager",
         text: [
-            "Création d'un système de gestion de projet avec React.", 
+            "Intégration de l'interface utilisateur avec React.", 
             "Mise en place d'un slice Redux avec des actions pour ajouter ou supprimer une note.", 
             "Mise en place d'un reducer qui manipule l'état des notes en fonction des actions.", 
             "Création d'un store Redux pour gérer l'état global de l'application et stockage des données dans le navigateur avec LocalStorage."

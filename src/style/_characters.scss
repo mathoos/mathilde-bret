@@ -107,7 +107,15 @@ p, button{
                     width : 2vw;
                     height : 2vw;
                     object-fit: contain;
+                    @media screen and (max-width : 990px) {
+                        width : 6vw;
+                        height : 6vw;
+                    }
                 }
+            }
+
+            @media screen and (max-width : 990px) {
+                font-size : 4.5vw;
             }
         }
 

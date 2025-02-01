@@ -30,16 +30,16 @@ const About = () => {
                                 Développeuse front-end&nbsp;
                                 <span className="icon">
                                     <img src={computerIcon} alt="Ordinateur" />
-                                </span> passionnée, <br/> 
+                                </span> passionnée, <br className="hidden-mobile"/> 
                                 j'associe mes compétences en développement web&nbsp; 
                                 <span className="icon">
                                     <img src={devIcon} alt="Développement web" />
-                                </span><br/> 
-                                et en webdesign&nbsp; 
+                                </span><br className="hidden-mobile"/>  
+                                &nbsp;et en webdesign&nbsp; 
                                 <span className="icon">
                                     <img src={webdesignIntroIcon} alt="Webdesign" />
                                 </span>
-                                &nbsp;pour créer de jolies interfaces <br/> 
+                                &nbsp;pour créer de jolies interfaces <br className="hidden-mobile"/> 
                                 ergonomiques et attractives.
                             </p>
                         </Reveal>     

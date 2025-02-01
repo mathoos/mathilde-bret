@@ -120,8 +120,8 @@
                     border-radius : 50px;
                     z-index : -1;
                     @media screen and (max-width : 990px) {
-                        top : 3.5vw;
-                        right : -3.5vw;
+                        top : 5vw;
+                        right : -5vw;
                         border-radius : 30px;
                     } 
                 }
@@ -184,6 +184,7 @@
                     "wdth" 125,
                     "wght" $heavy;
                 @media screen and (max-width : 990px) {
+                    font-size : 15vw;
                     margin-top : 20vh;
                 }
             }
@@ -230,6 +231,7 @@
                     transform : rotate(-10deg);
                    
                     @media screen and (max-width : 990px) {
+                        display : none;
                         top :  26vh;
                         left : 20vw;
                         transform : rotate(-5deg);
@@ -257,6 +259,7 @@
                 height : auto;
                 animation : leftRotation 2s ease-out infinite alternate;
                 @media screen and (max-width : 990px) {
+                    display : none;
                     top : 60vh;
                     right : 13vw;
                     width : 25vw;
@@ -288,7 +291,7 @@
                         justify-content: center;
                         align-items: center;
                         width : 100%;
-                        height : calc(50% - 2.5vh);
+                        height : calc(50% - 1.5vh);
                         padding : 10vw;
                     }
 

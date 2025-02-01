@@ -19,7 +19,7 @@ const Skills = () => {
                 <div className="skills_intro-container">
                     <div className="skills_intro-container--title">
                         <Reveal keyframes={bottomAnimationTxt}>
-                            <h2>Mes <span> compétences .</span></h2> 
+                            <h2>Mes <span> compétences&nbsp;.</span></h2> 
                         </Reveal>
                     </div>
                     <div className="skills_intro-container--subtitle">
@@ -28,8 +28,8 @@ const Skills = () => {
                                 Diplômée&nbsp;
                                 <span className="icon">
                                     <img src={diplomeIcon} alt="Diplôme" />
-                                </span> d'une licence en Communication & Médias <br/> 
-                                et titulaire d'un titre de Webdesigner, j'ai récemment<br/> 
+                                </span> d'une licence en Communication & Médias <br className="hidden-mobile"/> 
+                                et titulaire d'un titre de Webdesigner, j'ai récemment<br className="hidden-mobile"/> 
                                 achevé mon contrat d'alternance&nbsp; 
                                 <span className="icon">
                                     <img src={contratIcon} alt="Contrat d'alternance" />
@@ -171,14 +171,6 @@ const Skills = () => {
                         <img src={PastilleTxt} className="txt" alt="Pastille frontend developer"/>
                         <img src={PastilleImg} alt="Pastille frontend developer"/>
                     </figure> */}
-
-                    <figure className="etoile">
-                        <img src={Etoile} alt="Etoile" />
-                    </figure>
-
-                    <figure className="etoile">
-                        <img src={Etoile} alt="Etoile" />
-                    </figure>
 
                 </div>
             </div>

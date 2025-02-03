@@ -135,14 +135,21 @@
                     width : auto;
                     height : 85vh;
                     border-radius : 0 0 46.5px 0;
-                    z-index : 6;
                     margin : 0 4px 4px 0;
+                    z-index : 5;
                     @media screen and (max-width : 990px) {
                         width : auto;
                         height : 50vh;
                         border-radius : 0 0 26.5px 0;
                         object-fit: contain;
                         object-position: bottom;
+                    }
+
+                    &.fond{
+                        position : absolute;
+                        height : 88vh;
+                        //right : 1vw;
+                        z-index : 2;
                     }
                 }
             }

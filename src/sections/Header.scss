@@ -177,7 +177,7 @@
                     &_container{
                         display : flex;
                         flex-direction: column;
-                        gap : 1vw;
+                        //gap : 1vw;
                         @media screen and (max-width : 990px) {
                             gap : 1.5vw;
                         }
@@ -189,16 +189,16 @@
                                 text-transform: uppercase;
                                 font-variation-settings:
                                     "wdth" 125,
-                                    "wght" $bold;
+                                    "wght" $medium;
                             }
                         }
                         
                         &-content{
                             background-color: $blanc;
                             border : 4px solid $noir;
-                            border-radius : 6px;
+                            border-radius : 10px;
                             width : fit-content;
-                            height : 2.2vw;
+                            height : 2.5vw;
                             padding : .45vw;
                             @media screen and (max-width : 990px) {
                                 height : 7vw;
@@ -217,7 +217,7 @@
                                 
         
                                 .trait{
-                                    width : 1.4vw;
+                                    width : 1.5vw;
                                     height : 100%;
                                     background-color: transparent;
                                     border-radius : 2.5px;

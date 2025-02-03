@@ -58,6 +58,7 @@
         border-bottom : none;
         @media screen and (max-width : 990px) {
             padding : 45vh 30px 40vh 30px;
+            border-width : 3px;
         }
 
         &-container{
@@ -139,6 +140,7 @@
         border-top : none;
         @media screen and (max-width : 990px) {
             margin-top : -15vh;
+            border-width : 3px;
         }
         
         &_container{  

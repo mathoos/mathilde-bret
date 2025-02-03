@@ -54,14 +54,16 @@
         display : flex;
         flex-direction: column;
         gap : 30vh;
-        padding : 20vh 10vw 30vh 10vw;
+        padding : 20vh 10vw 70vh 10vw;
         background-color: $gris;
         border : 4px solid $noir;
+        border-bottom : none;
         margin-top : -20vh;
         
         @media screen and (max-width : 990px) {
-            padding : 20vh 30px 40vh 30px;
+            padding : 10vh 30px 40vh 30px;
             gap : 5vh;
+            border-width : 3px;
         } 
 
         &-absolute{
@@ -112,7 +114,9 @@
             width : 100%;
 
             @media screen and (max-width : 990px) {
-                top : 5vh;
+                top : 0;
+                height : 100vh;
+                padding-bottom : 3vh;
             }
 
             .bloc{
@@ -127,9 +131,11 @@
 
                 @media screen and (max-width : 990px) {
                     flex-direction: column;
-                    height : 85vh;
+                    gap : 2.5vh;
+                    height : 87vh;
                     padding : 20px;
                     border-radius : 30px;
+                    border-width : 3px;
                 }   
 
                 &_txt{
@@ -140,7 +146,7 @@
                     height : 100%;
 
                     @media screen and (max-width : 990px) { 
-                        gap : 2vh;
+                        gap : 2.5vh;
                     }
 
                     .title{
@@ -163,6 +169,8 @@
 
 
                         @media screen and (max-width : 990px) {
+                            justify-content: flex-start;
+                            gap : 2.5vh;
                             height : 100%;                
                         }
 
@@ -184,10 +192,12 @@
                                     height : 8px;
                                     background-color: $noir;
                                     margin-top : 10px;
+                                    background-color: $primary;  
                                     @media screen and (max-width : 990px) {
                                         width : 5px;
                                         height : 5px;
-                                        margin-top : 6px;       
+                                        margin-top : 6px;  
+                                        background-color: $primary;  
                                     }
                                 }
 
@@ -244,31 +254,21 @@
 
                     @media screen and (max-width : 990px) {
                         width : 100%;  
-                        min-height : 25vh;
-                        height : 25vh;
                         margin-left : 0; 
-                        border-radius : 15px;              
+                        border-radius : 15px;    
+                        border-width : 3px;        
                     }
-
-                    
 
                     &-link{
                         position : relative;
-                        display : flex;
-                        justify-content: center;
-                        align-items: center;
                         width : 100%;
                         height : 100%;
-                        z-index : 5;       
-                                    
+                        z-index : 5;                               
 
                         img{
                             width : 100%;
                             height : 100%;
                             object-fit: cover;
-                            @media screen and (max-width : 990px) {
-                                border-radius : 15px;              
-                            }
                         }
 
                         &--btn{

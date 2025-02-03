@@ -6,12 +6,15 @@
     flex-direction: column;
     justify-content: flex-end;
     width : 100%;
-    height : 115vh;
+    height : 100vh;
     z-index : 105;
-    margin-top : -15vh;
-    background-color: $gris;
-    border : 4px solid $noir;
-    border-top : none;
+    margin-top : -30vh;
+    //background-color: $gris;
+    // border : 4px solid $noir;
+    // border-top : none;
+    // @media screen and (max-width : 990px) {
+    //     border-width : 3px;
+    // } 
 
     &_container{
         position : relative;

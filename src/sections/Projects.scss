@@ -9,8 +9,14 @@
         padding : 40vh 10vw 50vh 10vw;
         border-radius : 100px 100px 0 0;
         background-color: $noir;
-        @media screen and (max-width : 990px) {
-            padding : 10vh 30px 40vh 30px;
+
+        @media screen and (min-width : 300px) and (max-width : 749px) {
+            padding : 10vh 30px 20vh 30px;
+            border-radius : 50px 50px 0 0;
+        }
+
+        @media screen and (min-width : 750px) and (max-width : 1000px) {
+            padding : 20vh 60px 30vh 60px;
             border-radius : 50px 50px 0 0;
         }
         
@@ -25,7 +31,7 @@
     
             &--subtitle{
                 width : 60vw;
-                @media screen and (max-width : 990px) {
+                @media screen and (min-width : 300px) and (max-width : 1000px) {
                     width : 100%;
                 }
             }
@@ -34,14 +40,14 @@
                 position : absolute;
                 bottom : 1.5vw;
                 right : 0;
-                @media screen and (max-width : 990px) {
+                @media screen and (min-width : 300px) and (max-width : 1000px) {
                     bottom : -17vw;
                 }
 
                 img{
                     width : 14vw;
                     height : auto;
-                    @media screen and (max-width : 990px) {
+                    @media screen and (min-width : 300px) and (max-width : 1000px) {
                         width : 30vw;
                     }
                 }
@@ -60,24 +66,37 @@
         border-bottom : none;
         margin-top : -20vh;
         
-        @media screen and (max-width : 990px) {
+        @media screen and (min-width : 300px) and (max-width : 749px) {
             padding : 10vh 30px 40vh 30px;
             gap : 5vh;
             border-width : 3px;
+            margin-top : 0;
+        } 
+
+        @media screen and (min-width : 750px) and (max-width : 1000px) {
+            padding : 10vh 60px 40vh 60px;
+            gap : 5vh;
+            border-width : 3px;
+            margin-top : 0;
         } 
 
         &-absolute{
             position : absolute;
             width : calc(100% - 20vw);
             height : 605vh;
-            @media screen and (max-width : 990px) {
+            @media screen and (min-width : 300px) and (max-width : 1000px) {
                 display : none;
+                width : calc(100% - 60px);
+                height : 700vh;
             } 
 
             &--ombre{
                 position : sticky;
                 top : calc(15vh + 2vw);
                 transition: 1s ease;
+                @media screen and (min-width : 300px) and (max-width : 1000px) {
+                    top : 15vh;
+                }
     
                 .ombre-content{
                     display : flex;
@@ -90,6 +109,11 @@
                     border-radius : 50px; 
                     opacity : 0;
                     transition: opacity 1s ease;
+                    @media screen and (min-width : 300px) and (max-width : 1000px) {
+                        border-width : 3px;
+                        border-radius : 30px;
+                        height : 83vh;
+                    }
                 } 
     
                 &.active{
@@ -113,7 +137,7 @@
             align-items: flex-end;
             width : 100%;
 
-            @media screen and (max-width : 990px) {
+            @media screen and (min-width : 300px) and (max-width : 1000px) {
                 top : 0;
                 height : 100vh;
                 padding-bottom : 3vh;
@@ -129,11 +153,20 @@
                 border-radius : 50px; 
                 padding : 2.5vw;
 
-                @media screen and (max-width : 990px) {
+                @media screen and (min-width : 300px) and (max-width : 749px) {
                     flex-direction: column;
                     gap : 2.5vh;
                     height : 87vh;
                     padding : 20px;
+                    border-radius : 30px;
+                    border-width : 3px;
+                }   
+
+                @media screen and (min-width : 750px) and (max-width : 1000px) {
+                    flex-direction: column;
+                    gap : 2.5vh;
+                    height : 87vh;
+                    padding : 60px;
                     border-radius : 30px;
                     border-width : 3px;
                 }   
@@ -145,7 +178,7 @@
                     width : 100%;
                     height : 100%;
 
-                    @media screen and (max-width : 990px) { 
+                    @media screen and (min-width : 300px) and (max-width : 1000px) {
                         gap : 2.5vh;
                     }
 
@@ -155,7 +188,8 @@
 
                         h3{
                             font-size : 3vw;
-                            @media screen and (max-width : 990px) {
+
+                            @media screen and (min-width : 300px) and (max-width : 1000px) {
                                 font-size : 6vw;
                             }
                         }
@@ -168,7 +202,7 @@
                         height : 100%;
 
 
-                        @media screen and (max-width : 990px) {
+                        @media screen and (min-width : 300px) and (max-width : 1000px) {
                             justify-content: flex-start;
                             gap : 2.5vh;
                             height : 100%;                
@@ -183,21 +217,25 @@
                             &-bloc{
                                 display : flex;
                                 gap : 1.5vw;
-                                @media screen and (max-width : 990px) {
+                                @media screen and (min-width : 300px) and (max-width : 1000px) {
                                     gap : 3vw;       
                                 }
 
                                 .carre{
                                     width : 8px;
                                     height : 8px;
-                                    background-color: $noir;
                                     margin-top : 10px;
                                     background-color: $primary;  
-                                    @media screen and (max-width : 990px) {
+                                    @media screen and (min-width : 300px) and (max-width : 749px) {
                                         width : 5px;
                                         height : 5px;
                                         margin-top : 6px;  
-                                        background-color: $primary;  
+                                    }
+
+                                    @media screen and (min-width : 750px) and (max-width : 1000px) {
+                                        width : 10px;
+                                        height : 10px;
+                                        margin-top : 15px; 
                                     }
                                 }
 
@@ -205,8 +243,14 @@
                                     width : calc(100% - 8px - 2vw);
                                     font-size : 1.2vw;
                                     
-                                    @media screen and (max-width : 990px) {
+                                    @media screen and (min-width : 300px) and (max-width : 749px) {
+                                        width : calc(100% - 5px - 2vw);
                                         font-size : 3.3vw !important;
+                                    }
+
+                                    @media screen and (min-width : 760px) and (max-width : 1000px) {
+                                        width : calc(100% - 10px - 2vw);
+                                        font-size : 3vw !important;
                                     }
                                 }
                             }  
@@ -218,10 +262,9 @@
                             column-gap : 1vw;
                             row-gap : .5vw;
 
-                            @media screen and (max-width : 990px) {
+                            @media screen and (min-width : 300px) and (max-width : 1000px) {
                                 column-gap : 1vw;
-                                row-gap : 1vw;
-                                
+                                row-gap : 1vw;  
                             }
 
                             .bouton{ 
@@ -230,7 +273,7 @@
                                 cursor : url(../img/icons/cursor.svg), auto;
                                 font-size : 1vw;
 
-                                @media screen and (max-width : 990px) {
+                                @media screen and (min-width : 300px) and (max-width : 1000px) {
                                     font-size : 2.5vw !important;
                                     flex-grow: 1;
                                     padding : .5vh 5vw;
@@ -252,7 +295,7 @@
                     border-radius : 30px;
                     overflow : hidden;
 
-                    @media screen and (max-width : 990px) {
+                    @media screen and (min-width : 300px) and (max-width : 1000px) {
                         width : 100%;  
                         margin-left : 0; 
                         border-radius : 15px;    
@@ -278,7 +321,7 @@
                             border-radius : 30px 0 0 0;
                             z-index : 10;
                             transition : .5s ease;
-                            @media screen and (max-width : 990px) {
+                            @media screen and (min-width : 300px) and (max-width : 1000px) {
                                 bottom : 2vw;
                                 right : 2vw;
                                 width : fit-content;
@@ -289,7 +332,7 @@
 
                             .bouton{
                                 border : none;
-                                @media screen and (max-width : 990px) {
+                                @media screen and (min-width : 300px) and (max-width : 1000px) {
                                     font-size : 2.5vw;             
                                 }
                             }

@@ -8,13 +8,7 @@
     width : 100%;
     height : 100vh;
     z-index : 105;
-    margin-top : -30vh;
-    //background-color: $gris;
-    // border : 4px solid $noir;
-    // border-top : none;
-    // @media screen and (max-width : 990px) {
-    //     border-width : 3px;
-    // } 
+    margin-top : -30vh; 
 
     &_container{
         position : relative;
@@ -30,10 +24,18 @@
         overflow : hidden;
         
         
-        @media screen and (max-width : 990px) {
+        @media screen and (min-width : 300px) and (max-width : 749px) {
             justify-content: space-between;
             gap : 15vh;
             padding : 15vh 30px 5vh 30px;
+            border-radius : 50px 50px 0 0;
+            height : 90vh;
+        }
+
+        @media screen and (min-width : 750px) and (max-width : 1000px) {
+            justify-content: space-between;
+            gap : 15vh;
+            padding : 15vh 60px 5vh 60px;
             border-radius : 50px 50px 0 0;
             height : 90vh;
         }
@@ -74,7 +76,7 @@
                         align-self: flex-end;
                     }  
                     
-                    @media screen and (max-width : 990px) {
+                    @media screen and (min-width : 300px) and (max-width : 1000px) {
                         font-size : 10vw;
                         line-height : 1;
                     }
@@ -85,7 +87,7 @@
                 position : absolute;
                 top : 20vh;
                 left : 22vw;
-                @media screen and (max-width : 990px) {
+                @media screen and (min-width : 300px) and (max-width : 1000px) {
                     top : 15vw;
                     left : 2.5vw;
                 }
@@ -93,7 +95,7 @@
                 img{
                     width : 7vw;
                     height : auto;
-                    @media screen and (max-width : 990px) {
+                    @media screen and (min-width : 300px) and (max-width : 1000px) {
                         width : 18vw;
                     }
                 }
@@ -105,7 +107,7 @@
             justify-content: center;
             gap : 2vw;
     
-            @media screen and (max-width : 990px) {
+            @media screen and (min-width : 300px) and (max-width : 1000px) {
                 flex-direction: column;
                 align-items: center;
                 gap : 2.5vh;
@@ -115,10 +117,14 @@
                 border-width : 3px;
                 font-size : 1.2vw;
                 z-index : 3;
-                @media screen and (max-width : 990px) {
+                @media screen and (min-width : 300px) and (max-width : 749px) {
                     text-align : center;
                     font-size : 5vw;
                     padding : 2.5vw 10vw;
+                }
+
+                @media screen and (min-width : 750px) and (max-width : 1000px) {
+                    font-size : 4vw;
                 }
             }
         }

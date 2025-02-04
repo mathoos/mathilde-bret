@@ -34,7 +34,7 @@ const Header = ({ progress }) => {
                         
                         <div className="hero_container-subtitle">
                             <div className="bullet"></div>
-                            <p>Basée à Toulouse</p>
+                            <p>From Toulouse</p>
                         </div>
 
                         <figure className="hero_container-arrow">

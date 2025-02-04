@@ -56,7 +56,7 @@
             will-change : transform;
             transition : .5s ease;
 
-            @media screen and (min-width : 750px) and (max-width : 1000px) {
+            @media screen and (min-width : 300px) and (max-width : 1000px) {
                 height : 6px;
                 border-radius : 100vmax;
             }

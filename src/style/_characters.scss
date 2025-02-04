@@ -11,9 +11,13 @@ h1{
     opacity : 0;
     transform : translateX(-100%);
 
-    @media screen and (max-width : 990px) {
+    @media screen and (min-width : 300px) and (max-width : 745px) {
         font-size : 11.5vw;
         line-height : 1.5;
+    }
+
+    @media screen and (min-width : 750px) and (max-width : 1000px) {
+        font-size : 11.5vw;
     }
 
     span{
@@ -25,9 +29,14 @@ h1{
             "wdth" 125,
             "wght" $semibold;
 
-        @media screen and (max-width : 990px) {
+        @media screen and (min-width : 300px) and (max-width : 745px) {
            font-size : 5vw;
            line-height : 1.2;
+        }
+
+        @media screen and (min-width : 750px) and (max-width : 1000px) {
+            font-size : 4vw;
+            line-height : 1.2;
         }
     }
 }

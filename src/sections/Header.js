@@ -67,7 +67,7 @@ const Header = ({ progress }) => {
                     
                     <figure className="hero_img">
                         <img src={Mathilde} alt="Mathilde Bret"/>
-                        <img src={MathildeFond} className="fond" alt="Mathilde Bret"/>
+                        {/* <img src={MathildeFond} className="fond" alt="Mathilde Bret"/> */}
                     </figure>
             
                 </div>

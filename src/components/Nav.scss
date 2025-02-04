@@ -14,12 +14,23 @@
     background-color: $blanc;
     z-index : 111;
 
-    @media screen and (max-width : 990px) {
+    @media screen and (min-width : 300px) and (max-width : 745px) {
         top : 30px;
         transform : translateX(-50%) translateY(calc(-100% + (-40px)));
         justify-content: flex-end;
         width : 100%;
         padding : 0 30px;
+        border-radius : 0;
+        border : none;
+        background-color: transparent;
+    }
+
+    @media screen and (min-width : 750px) and (max-width : 1000px) {
+        top : 60px;
+        transform : translateX(-50%) translateY(calc(-100% + (-40px)));
+        justify-content: flex-end;
+        width : 100%;
+        padding : 0 60px;
         border-radius : 0;
         border : none;
         background-color: transparent;
@@ -31,6 +42,11 @@
         width : 10vw;
         height : 6vw;
 
+        @media screen and (min-width : 750px) and (max-width : 1000px) {
+            width : 70px;
+            height : 40px;
+        }
+
         &-barre{
             position : absolute;
             left : 0;
@@ -39,6 +55,11 @@
             background-color: $noir;
             will-change : transform;
             transition : .5s ease;
+
+            @media screen and (min-width : 750px) and (max-width : 1000px) {
+                height : 6px;
+                border-radius : 100vmax;
+            }
 
             &:nth-child(1){
                 top : 0;

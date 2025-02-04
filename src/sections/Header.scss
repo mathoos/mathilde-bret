@@ -12,10 +12,15 @@
         align-items: flex-end;
         padding : 0 10vw 9vh 10vw;
         height: 100vh;
-        @media screen and (max-width : 990px) {
+
+        @media screen and (min-width : 300px) and (max-width : 745px) {
             padding : 12vh 30px 5vh 30px;
             min-height : var(--heightJs);
             height: var(--heightJs);
+        }
+
+        @media screen and (min-width : 750px) and (max-width : 1000px) {
+            padding : 12vh 60px 5vh 60px;
         }
 
         .hero{
@@ -24,7 +29,7 @@
             justify-content: space-between;
             width : 100%;
     
-            @media screen and (max-width : 990px) {
+            @media screen and (min-width : 300px) and (max-width : 1000px) {
                 flex-direction: column;
                 justify-content: flex-end;
                 min-height : 100%;
@@ -40,7 +45,7 @@
                 padding-top : 6vh;
                 z-index : 5;
     
-                @media screen and (max-width : 990px) {
+                @media screen and (min-width : 300px) and (max-width : 1000px) {
                     width : 100%;
                     height : 100%;
                     padding-top : 4vh;
@@ -57,7 +62,7 @@
                     transform : translateY(100%);
                     opacity : 0;
 
-                    @media screen and (max-width : 990px) {
+                    @media screen and (min-width : 300px) and (max-width : 1000px) {
                         position : absolute;
                         bottom : calc(-100% + (-11.5vh));
                         left : 0;
@@ -70,9 +75,15 @@
                         height : 1vw;
                         background-color: $primary;
                         border-radius : 100vmax;
-                        @media screen and (max-width : 990px) {
+
+                        @media screen and (min-width : 300px) and (max-width : 745px) {
                             width : 5vw;
                             height : 5vw;
+                        }
+
+                        @media screen and (min-width : 750px) and (max-width : 1000px) {
+                            width : 3.5vw;
+                            height : 3.5vw;
                         }
                     }
     
@@ -80,8 +91,13 @@
                         font-variation-settings:
                         "wdth" 125,
                         "wght" $semibold;
-                        @media screen and (max-width : 990px) {
+
+                        @media screen and (min-width : 300px) and (max-width : 745px) {
                             font-size : 4vw;
+                        }
+
+                        @media screen and (min-width : 750px) and (max-width : 1000px) {
+                            font-size : 3.5vw;
                         }
                     }
                 }
@@ -94,10 +110,18 @@
                     height : auto;
                     transform : rotate(-38deg);
 
-                    @media screen and (max-width : 990px) {
+                    @media screen and (min-width : 300px) and (max-width : 745px) {
                         right : unset;
                         left : 5vw;
                         bottom : -5vh;
+                        transform : rotate(5deg);
+                        width : 23vw;
+                    }
+
+                    @media screen and (min-width : 750px) and (max-width : 1000px) {
+                        right : unset;
+                        left : 5vw;
+                        bottom : -13vh;
                         transform : rotate(5deg);
                         width : 23vw;
                     }
@@ -109,7 +133,8 @@
                         path{
                             stroke-dasharray: 1000; 
                             stroke-dashoffset: 1000;
-                            @media screen and (max-width : 990px) {
+
+                            @media screen and (min-width : 300px) and (max-width : 1000px) {
                                 stroke-width : 5px;
                             }
                         }
@@ -125,7 +150,7 @@
                 width : 33vw;
                 height : 63vh;
     
-                @media screen and (max-width : 990px) {
+                @media screen and (min-width : 300px) and (max-width : 1000px) {
                     width : 100%;
                     height : 40vh;
                     margin-bottom : 7vh;
@@ -137,7 +162,8 @@
                     border-radius : 0 0 46.5px 0;
                     margin : 0 4px 4px 0;
                     z-index : 5;
-                    @media screen and (max-width : 990px) {
+
+                    @media screen and (min-width : 300px) and (max-width : 1000px) {
                         width : auto;
                         height : 50vh;
                         border-radius : 0 0 26.5px 0;
@@ -164,7 +190,8 @@
                 width : 100%;
                 height : 73vh;
                 overflow : hidden;
-                @media screen and (max-width : 990px) {
+
+                @media screen and (min-width : 300px) and (max-width : 1000px) {
                     border-radius : 30px;
                     height : calc(100% - 7vh);
                     margin-bottom : 7vh;
@@ -176,7 +203,8 @@
                     padding : 2.5vw;
                     width : 50vw;
                     height : 100%;
-                    @media screen and (max-width : 990px) {
+
+                    @media screen and (min-width : 300px) and (max-width : 1000px) {
                         align-items: flex-start;
                         margin : 5vw;
                     }
@@ -185,12 +213,14 @@
                         display : flex;
                         flex-direction: column;
                         //gap : 1vw;
-                        @media screen and (max-width : 990px) {
+
+                        @media screen and (min-width : 300px) and (max-width : 1000px) {
                             gap : 1.5vw;
                         }
     
                         &-title{
                             padding-left : 2px;
+
                             p{
                                 color : $noir;
                                 text-transform: uppercase;
@@ -207,7 +237,8 @@
                             width : fit-content;
                             height : 2.5vw;
                             padding : .45vw;
-                            @media screen and (max-width : 990px) {
+
+                            @media screen and (min-width : 300px) and (max-width : 1000px) {
                                 height : 7vw;
                                 padding : 1.5vw;
                             }
@@ -218,7 +249,8 @@
                                 width : 100%;
                                 height : 100%;
                                 overflow : hidden;
-                                @media screen and (max-width : 990px) {
+
+                                @media screen and (min-width : 300px) and (max-width : 1000px) {
                                     gap : 1vw;
                                 }
                                 
@@ -229,7 +261,8 @@
                                     background-color: transparent;
                                     border-radius : 2.5px;
                                     transition: .3s ease;
-                                    @media screen and (max-width : 990px) {
+
+                                    @media screen and (min-width : 300px) and (max-width : 1000px) {
                                         width : 5vw;
                                     }
             

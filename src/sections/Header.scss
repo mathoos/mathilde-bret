@@ -13,7 +13,7 @@
         padding : 0 10vw 9vh 10vw;
         height: 100vh;
 
-        @media screen and (min-width : 300px) and (max-width : 745px) {
+        @media screen and (min-width : 300px) and (max-width : 749px) {
             padding : 12vh 30px 5vh 30px;
             min-height : var(--heightJs);
             height: var(--heightJs);
@@ -76,7 +76,7 @@
                         background-color: $primary;
                         border-radius : 100vmax;
 
-                        @media screen and (min-width : 300px) and (max-width : 745px) {
+                        @media screen and (min-width : 300px) and (max-width : 749px) {
                             width : 5vw;
                             height : 5vw;
                         }
@@ -92,7 +92,7 @@
                         "wdth" 125,
                         "wght" $semibold;
 
-                        @media screen and (min-width : 300px) and (max-width : 745px) {
+                        @media screen and (min-width : 300px) and (max-width : 749px) {
                             font-size : 4vw;
                         }
 
@@ -110,7 +110,7 @@
                     height : auto;
                     transform : rotate(-38deg);
 
-                    @media screen and (min-width : 300px) and (max-width : 745px) {
+                    @media screen and (min-width : 300px) and (max-width : 749px) {
                         right : unset;
                         left : 5vw;
                         bottom : -5vh;

@@ -62,7 +62,10 @@ const About = () => {
                             Minutieuse, je tente de donner vie à chaque site internet avec l'ambition d'offrir 
                             une expérience fluide et immersive, tout en apportant une réelle valeur ajoutée.
                         </p>
-                        <button className="bouton bouton_bgBlancOmbre">Télécharger mon CV</button>
+                        <a href="../CV_Mathilde_Bret.pdf" download >
+                            <button className="bouton bouton_bgBlanc">Télécharger mon CV</button>
+                        </a>
+                        
                     </div>
                     <figure className="about_presentation-container--img">
                         <img src={MathildeBureau} alt="Mathilde en train de coder sur son ordinateur" />

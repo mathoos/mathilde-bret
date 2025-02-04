@@ -188,6 +188,7 @@
 
                         h3{
                             font-size : 3vw;
+                            color : $primary;
 
                             @media screen and (min-width : 300px) and (max-width : 1000px) {
                                 font-size : 6vw;
@@ -357,6 +358,7 @@
                         border : none;
                         pointer-events: none;
                         transition : none;
+                        z-index : 100;
                     }
                 }
             }

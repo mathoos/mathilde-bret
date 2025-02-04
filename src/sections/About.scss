@@ -97,6 +97,10 @@
                 }
 
                 .bouton{
+                    &:hover{
+                        background-color: $noir;
+                        color : $blanc;
+                    }
                     @media screen and (min-width : 300px) and (max-width : 1000px) {
                         width : 100%;
                     }

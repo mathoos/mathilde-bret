@@ -10,8 +10,15 @@
         border-radius : 100px 100px 0 0;
         border : 4px solid $noir;
         background-color: $gris;
-        @media screen and (max-width : 990px) {
+
+        @media screen and (min-width : 300px) and (max-width : 749px) {
             padding : 10vh 30px 30vh 30px;
+            border-radius : 50px 50px 0 0;
+            border-width : 3px;
+        }
+
+        @media screen and (min-width : 750px) and (max-width : 1000px) {
+            padding : 20vh 60px 30vh 60px;
             border-radius : 50px 50px 0 0;
             border-width : 3px;
         }
@@ -30,7 +37,7 @@
     
             &--subtitle{
                 width : 60vw;
-                @media screen and (max-width : 990px) {
+                @media screen and (min-width : 300px) and (max-width : 1000px) {
                     width : 100%;
                 }
 
@@ -43,14 +50,14 @@
                 position : absolute;
                 bottom : 1.5vw;
                 right : 0;
-                @media screen and (max-width : 990px) {
+                @media screen and (min-width : 300px) and (max-width : 1000px) {
                     bottom : -17vw;
                 }
 
                 img{
                     width : 14vw;
                     height : auto;
-                    @media screen and (max-width : 990px) {
+                    @media screen and (min-width : 300px) and (max-width : 1000px) {
                         width : 30vw;
                     }
                 }
@@ -65,8 +72,13 @@
         border-top : none;
         padding : 40vh 10vw 60vh 10vw;
         z-index : 10;
-        @media screen and (max-width : 990px) {
+        @media screen and (min-width : 300px) and (max-width : 749px) {
             padding : 45vh 30px 50vh 30px; 
+            border-width : 3px;
+        }
+
+        @media screen and (min-width : 750px) and (max-width : 1000px) {
+            padding : 45vh 60px 50vh 60px; 
             border-width : 3px;
         }
     
@@ -79,10 +91,10 @@
             width : 100%;
             margin-top : -60vh;
            
-            @media screen and (max-width : 990px) {                   
+            @media screen and (min-width : 300px) and (max-width : 1000px) {                   
                 display : grid;
-                grid-auto-rows : 1fr;
-                gap : 15vw;     
+                grid-template-columns: 1fr;
+                gap : 10vh;   
             }
     
             .bloc{
@@ -98,12 +110,22 @@
                 width : 18.5vw;
                 min-height : 50vh;
     
-                @media screen and (max-width : 990px) {
+                @media screen and (min-width : 300px) and (max-width : 749px) {
                     gap : 8vh;
-                    width : 100%;
+                    min-width : calc(100% - 5vw);
+                    width : calc(100% - 5vw);
                     min-height : 100%;
                     height : 100%;
                     padding : 30px;
+                }
+
+                @media screen and (min-width : 750px) and (max-width : 1000px) {
+                    gap : 8vh;
+                    min-width : calc(100% - 5vw);
+                    width : calc(100% - 5vw);
+                    min-height : 100%;
+                    height : 100%;
+                    padding : 60px;
                 }
     
                 &:not(.txt, .projet){
@@ -117,7 +139,7 @@
                         background-color: $noir;
                         border-radius : 30px;
                         z-index : -1;
-                        @media screen and (max-width : 990px) {
+                        @media screen and (min-width : 300px) and (max-width : 1000px) {
                             bottom : -5vw;
                             left : 5vw;
                         }
@@ -128,8 +150,12 @@
                     width : fit-content;
                     height : 4vw;
                     overflow : hidden;
-                    @media screen and (max-width : 990px) {
+                    @media screen and (min-width : 300px) and (max-width : 749px) {
                         height : 20vw;
+                    }
+
+                    @media screen and (min-width : 750px) and (max-width : 1000px) {
+                        height : 15vw;
                     }
     
                     svg{
@@ -156,9 +182,13 @@
                                 "wdth" 125,
                                 "wght" $heavy;
     
-                            @media screen and (max-width : 990px) {
-                                font-size : 8vw;
-                            }
+                                @media screen and (min-width : 300px) and (max-width : 749px) {
+                                    font-size : 8vw;
+                                }
+                                
+                                @media screen and (min-width : 750px) and (max-width : 1000px) {
+                                    font-size : 7vw;
+                                }
                         } 
                     }
     
@@ -167,13 +197,13 @@
                             //margin-bottom : -100%;
                             padding-top : 2vh;
                             transition : 1.2s ease;
-                            @media screen and (max-width : 990px) {
+                            @media screen and (min-width : 300px) and (max-width : 1000px) {
                                 margin-bottom : 0;
                             }
     
                             p{
                                 font-size : .9vw;
-                                @media screen and (max-width : 990px) {
+                                @media screen and (min-width : 300px) and (max-width : 1000px) {
                                     font-size : 4vw;
                                     margin-bottom : 0;
                                 }
@@ -188,7 +218,7 @@
                     background-color : $noir;
                     border : none;
                     overflow : hidden;
-                    @media screen and (max-width : 990px) {
+                    @media screen and (min-width : 300px) and (max-width : 1000px) {
                         display : none;
                     }
     
@@ -248,7 +278,7 @@
                     border : none;
                     padding : 2.5vw 0;
                     background-color: transparent;
-                    @media screen and (max-width : 990px) {
+                    @media screen and (min-width : 300px) and (max-width : 1000px) {
                         display : none;
                     }
     
@@ -262,7 +292,7 @@
                             font-variation-settings:
                                 "wdth" 125,
                                 "wght" $heavy; 
-                            @media screen and (max-width : 990px) {
+                                @media screen and (min-width : 300px) and (max-width : 1000px) {
                                 font-size : 22vw;
                             }
                         }
@@ -272,7 +302,7 @@
                             font-variation-settings:
                                 "wdth" 125,
                                 "wght" $heavy; 
-                            @media screen and (max-width : 990px) {
+                                @media screen and (min-width : 300px) and (max-width : 1000px) {
                                 font-size : 8vw;
                             }
                         }
@@ -281,7 +311,7 @@
     
                 &:nth-of-type(7){
                     visibility : hidden;
-                    @media screen and (max-width : 990px) {                   
+                    @media screen and (min-width : 300px) and (max-width : 1000px) {                 
                         display : none;
                     }
                 }

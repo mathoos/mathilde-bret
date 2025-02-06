@@ -1,7 +1,7 @@
 import { Reveal } from "react-awesome-reveal";
 import { Parallax } from "react-scroll-parallax";
 import { bottomAnimationBloc} from "../functions/keyframes";
-import Rubber from "../img/rubber_head_sunglasses.svg";
+import Rubber from "../img/illustrations/rubber_head_sunglasses.svg";
 import './Contact.scss';
 
 const Contact = () => {

@@ -5,7 +5,7 @@ import { bottomAnimationBloc , bottomAnimationTxt } from "../functions/keyframes
 import creativiteIcon from "../img/icons/creativite-icon.svg";
 import professionnelIcon from "../img/icons/professionnel-icon.svg";
 import creationIcon from "../img/icons/creation-icon.svg";
-import handCircledText from "../img/hand-circled-text.svg";
+import handCircledText from "../img/illustrations/hand-circled-text.svg";
 import TemplatePlomberie from "../img/projects/plomberie-joan-bret.png";
 import TemplateEkanim from "../img/projects/ekanim.jpg";
 import TemplateArgentBank from "../img/projects/argent-bank.jpg";

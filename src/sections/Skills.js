@@ -1,10 +1,9 @@
 import { Reveal } from "react-awesome-reveal";
 import { bottomAnimationBloc , bottomAnimationTxt } from "../functions/keyframes";
-import Etoile from "../img/etoile.svg";
 import diplomeIcon from "../img/icons/diplome-icon.svg";
 import contratIcon from "../img/icons/contrat-icon.svg";
 import communicationIcon from "../img/icons/communication-icon.svg";
-import handCircledText from "../img/hand-circled-text.svg";
+import handCircledText from "../img/illustrations/hand-circled-text.svg";
 
 import './Skills.scss';
 

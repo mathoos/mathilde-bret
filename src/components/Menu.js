@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import PastilleTxt from "../img/pastille-frontend-text-violet.svg";
-import PastilleImg from "../img/pastille-frontend-img-violet.svg";
+import PastilleTxt from "../img/illustrations/pastille-frontend-text-violet.svg";
+import PastilleImg from "../img/illustrations/pastille-frontend-img-violet.svg";
 import './Menu.scss';
 
 const OpenMenu = () => {

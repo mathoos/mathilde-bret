@@ -1,12 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 import { Reveal } from "react-awesome-reveal";
 import { bottomAnimationBloc , bottomAnimationTxt } from "../functions/keyframes";
-import MathildeBureau from "../img/moi/coding_noir-blanc.jpg";
-import Etoile from "../img/etoile.svg";
+import MathildeBureau from "../img/img/coding_noir-blanc.jpg";
+import Etoile from "../img/illustrations/etoile.svg";
+import Rubber from "../img/illustrations/rubber_head.svg";
 import computerIcon from "../img/icons/computer-icon.svg";
 import webdesignIntroIcon from "../img/icons/webdesign-intro-icon.svg";
 import devIcon from "../img/icons/dev-icon.svg";
-import Rubber from "../img/rubber_head.svg";
+
 
 import './About.scss';
 

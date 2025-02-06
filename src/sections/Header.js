@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { add100Vh } from '../functions/add100vh';
 import Nav from '../components/Nav';
 import Menu from '../components/Menu';
-import Mathilde from "../img/moi/mathilde-bret.png";
-import MathildeFond from "../img/moi/mathilde-bret_fond.png";
+import Mathilde from "../img/img/mathilde-bret.png";
+import MathildeFond from "../img/img/mathilde-bret_fond.png";
 import './Header.scss';
 
 const Header = ({ progress }) => {

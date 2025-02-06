@@ -58,37 +58,38 @@ const Projects = () => {
     return (
         <section className="projects" id="projects">
 
-            <div className="projects_intro">
-                <div className="projects_intro-container">
-                    <div className="projects_intro-container--title">
-                        <Reveal keyframes={bottomAnimationTxt}>
-                            <h2>Sélection <br/> de quelques <br/> <span> projets .</span></h2> 
-                        </Reveal>
+            <Reveal keyframes={bottomAnimationBloc}>
+                <div className="projects_intro">
+                    <div className="projects_intro-container">
+                        <div className="projects_intro-container--title">
+                            <Reveal keyframes={bottomAnimationTxt}>
+                                <h2>Sélection <br/> de quelques <br/> <span> projets .</span></h2> 
+                            </Reveal>
+                        </div>
+                        <div className="projects_intro-container--subtitle">
+                            <Reveal keyframes={bottomAnimationTxt}>
+                                <p className="subtitle">
+                                    Issues de mes expériences professionnelles&nbsp;
+                                    <span className="icon">
+                                        <img src={professionnelIcon} alt="Diplôme" />
+                                    </span> ou de projets personnels, ces créations&nbsp;
+                                    <span className="icon">
+                                        <img src={creationIcon} alt="Contrat d'alternance" />
+                                    </span>
+                                    &nbsp;reflètent mon parcours en tant que développeuse front-end, mêlant créativité&nbsp;
+                                    <span className="icon">
+                                        <img src={creativiteIcon} alt="Agence de communication" />
+                                    </span>
+                                    &nbsp;et expertise technique .
+                                </p>
+                            </Reveal>     
+                        </div>
+                        <figure className="projects_intro-container--circledText">
+                            <img src={handCircledText} alt="Texte entouré à la main" />
+                        </figure>
                     </div>
-                    <div className="projects_intro-container--subtitle">
-                        <Reveal keyframes={bottomAnimationTxt}>
-                            <p className="subtitle">
-                                Issues de mes expériences professionnelles&nbsp;
-                                <span className="icon">
-                                    <img src={professionnelIcon} alt="Diplôme" />
-                                </span> ou de projets personnels, ces créations&nbsp;
-                                <span className="icon">
-                                    <img src={creationIcon} alt="Contrat d'alternance" />
-                                </span>
-                                &nbsp;reflètent mon parcours en tant que développeuse front-end, mêlant créativité&nbsp;
-                                <span className="icon">
-                                    <img src={creativiteIcon} alt="Agence de communication" />
-                                </span>
-                                &nbsp;et expertise technique .
-                            </p>
-                        </Reveal>     
-                    </div>
-                    <figure className="projects_intro-container--circledText">
-                        <img src={handCircledText} alt="Texte entouré à la main" />
-                    </figure>
                 </div>
-            </div>
-
+            </Reveal>
 
             <div className="projects_container">
 

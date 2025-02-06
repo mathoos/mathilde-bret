@@ -43,16 +43,27 @@
     
             &--circledText{
                 position : absolute;
-                bottom : 1.5vw;
+                bottom : -5vw;
                 right : 0;
 
                 @media screen and (min-width : 300px) and (max-width : 1000px) {
                     bottom : -17vw;
                 }
 
-                img{
+                img, svg{
                     width : 14vw;
                     height : auto;
+
+                    .path{
+                        stroke-dasharray: 1000; 
+                        stroke-dashoffset: 1000;   
+                        transition : 2s ease; 
+                        // animation: drawPath 2s ease 5s forwards;
+
+                        &.active{
+                            stroke-dashoffset: 0; 
+                        }
+                    }
 
                     @media screen and (min-width : 300px) and (max-width : 1000px) {
                         width : 30vw;

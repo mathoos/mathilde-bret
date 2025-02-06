@@ -28,10 +28,6 @@
             display : flex;
             flex-direction: column;
             gap : 5vh;
-
-            &--title{
-
-            }
     
             &--subtitle{
                 width : 60vw;
@@ -54,7 +50,7 @@
 
                 svg{
                     width : 100%;
-                    height : 100%;
+                    height : auto;
                     object-fit: contain;
 
                     .path{

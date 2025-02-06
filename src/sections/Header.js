@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { add100Vh } from '../functions/add100vh';
 import Nav from '../components/Nav';
 import Menu from '../components/Menu';
-import Mathilde from "../img/moi/moi_13.png";
-import MathildeFond from "../img/moi/moi-fond.png";
+import Mathilde from "../img/moi/mathilde-bret.png";
+import MathildeFond from "../img/moi/mathilde-bret_fond.png";
 import './Header.scss';
 
 const Header = ({ progress }) => {
@@ -67,7 +67,7 @@ const Header = ({ progress }) => {
                     
                     <figure className="hero_img">
                         <img src={Mathilde} alt="Mathilde Bret"/>
-                        {/* <img src={MathildeFond} className="fond" alt="Mathilde Bret"/> */}
+                        <img src={MathildeFond} className="fond" alt="Mathilde Bret"/>
                     </figure>
             
                 </div>

@@ -1,8 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Reveal } from "react-awesome-reveal";
-import { Parallax } from "react-scroll-parallax";
 import { bottomAnimationBloc , bottomAnimationTxt } from "../functions/keyframes";
-import MathildeBureau from "../img/moi/coding-noir-blanc.jpg";
+import MathildeBureau from "../img/moi/coding_noir-blanc.jpg";
 import Etoile from "../img/etoile.svg";
 import computerIcon from "../img/icons/computer-icon.svg";
 import webdesignIntroIcon from "../img/icons/webdesign-intro-icon.svg";

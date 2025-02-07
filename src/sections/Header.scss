@@ -17,8 +17,8 @@
             flex-direction: column;
             gap : 2vh;
             padding : 12vh 30px 5vh 30px;
-            // min-height : var(--heightJs);
-            // height: var(--heightJs);
+            min-height : var(--heightJs);
+            height: var(--heightJs);
         }
 
         @media screen and (min-width : 750px) and (max-width : 1000px) {
@@ -265,18 +265,18 @@
                     }
                 }
     
-                // &::after{
-                //     position: absolute;
-                //     content: "";
-                //     top: -100%;
-                //     left: -50%;
-                //     width: 300%;
-                //     height: 300%;
-                //     animation: grain 10s steps(10) infinite;
-                //     background-image: url("../img/illustrations/noise-effect.png");
-                //     opacity: .25;
-                //     z-index : 2;
-                // }
+                &::after{
+                    position: absolute;
+                    content: "";
+                    top: -100%;
+                    left: -50%;
+                    width: 300%;
+                    height: 300%;
+                    animation: grain 10s steps(10) infinite;
+                    background-image: url("../img/illustrations/noise-effect.png");
+                    opacity: .25;
+                    z-index : 2;
+                }
             }
         }
 

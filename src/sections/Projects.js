@@ -84,9 +84,9 @@ const Projects = () => {
                                 </p>
                             </Reveal>     
                         </div>
-                        <figure className="projects_intro-container--circledText">
+                        {/* <figure className="projects_intro-container--circledText">
                             <img src={handCircledText} alt="Texte entouré à la main" />
-                        </figure>
+                        </figure> */}
                     </div>
                 </div>
             </Reveal>

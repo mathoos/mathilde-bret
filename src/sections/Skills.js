@@ -42,9 +42,9 @@ const Skills = () => {
                                 </p>
                             </Reveal>     
                         </div>
-                        <figure className="skills_intro-container--circledText">
+                        {/* <figure className="skills_intro-container--circledText">
                             <img src={handCircledText} alt="Texte entouré à la main" />
-                        </figure>
+                        </figure> */}
                     </div>
                 </div>
             </Reveal>
@@ -64,12 +64,10 @@ const Skills = () => {
                                     <h3>Web <br/> design</h3>
                                 </div>
                                 <div className="bloc-content--list">
-                                    <div>
-                                        <p>Adobe XD</p>
-                                        <p>Illustrator</p>
-                                        <p>Photoshop</p>
-                                        <p>Figma</p>
-                                    </div>
+                                    <p>Adobe XD</p>
+                                    <p>Illustrator</p>
+                                    <p>Photoshop</p>
+                                    <p>Figma</p>
                                 </div>
                             </div> 
                         </div>
@@ -87,12 +85,10 @@ const Skills = () => {
                                     <h3>Work <br/> flow</h3>
                                 </div>
                                 <div className="bloc-content--list">
-                                    <div>
-                                        <p>Git</p>
-                                        <p>Docker</p>
-                                        <p>FileZilla</p>
-                                        <p>Render</p>
-                                    </div>
+                                    <p>Git</p>
+                                    <p>Docker</p>
+                                    <p>FileZilla</p>
+                                    <p>Render</p>
                                 </div>
                             </div>
                         </div> 
@@ -102,7 +98,7 @@ const Skills = () => {
                         <div className="bloc txt">
                             <div className="bloc-content">
                                 <div className="bloc-content--title">
-                                    <h3>Development</h3>
+                                    <h3>Develop <br className="pc-hidden"/> ment</h3>
                                 </div>
                                 <div className="bloc-content--txt">
                                     <p>
@@ -110,15 +106,6 @@ const Skills = () => {
                                         métier dans sa globalité, je m'initie également au développement full-stack.
                                     </p>
                                 </div>
-                                {/* <div className="bloc-content--btn">
-                                    <p className="bouton bouton_title bouton_bgBlanc">Html</p>
-                                    <p className="bouton bouton_title bouton_bgBlanc">Scss</p>
-                                    <p className="bouton bouton_title bouton_bgBlanc">Javascript</p>
-                                    <p className="bouton bouton_title bouton_bgBlanc">Php</p>
-                                    <p className="bouton bouton_title bouton_bgBlanc">React</p>
-                                    <p className="bouton bouton_title bouton_bgBlanc">MongoDB</p>
-                                    <p className="bouton bouton_title bouton_bgBlanc">Express</p>
-                                </div> */}
                             </div>
                         </div> 
                     </Reveal>    
@@ -142,12 +129,10 @@ const Skills = () => {
                                     <h3>Seo <br/> strategy</h3>
                                 </div>
                                 <div className="bloc-content--list">
-                                    <div>
-                                        <p>Google Analytics</p>
-                                        <p>Google Search Console</p>
-                                        <p>Balises sémantiques</p>
-                                        <p>Meta</p>
-                                    </div>
+                                    <p>Google Analytics</p>
+                                    <p>Google Search Console</p>
+                                    <p>Balises sémantiques</p>
+                                    <p>Meta</p>
                                 </div>
                             </div>
                         </div>
@@ -165,11 +150,10 @@ const Skills = () => {
                                     <h3>Scrum <br/> method</h3>
                                 </div>
                                 <div className="bloc-content--list">
-                                    <div>
-                                        <p>Agile</p>
-                                        <p>Mêlée</p>
-                                        <p>Post-it</p>
-                                    </div>
+                                    <p>Agile</p>
+                                    <p>Mêlée</p>
+                                    <p>Post-it</p>
+                                    <p>Post-it</p>
                                 </div>
                             </div>
                         </div>

@@ -17,6 +17,10 @@ const About = () => {
     const pathRef = useRef(null);
 
     useEffect(() => {
+        const element = circledTextRef.current; // Stocker la valeur actuelle de la ref
+    
+        if (!element) return;
+    
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
@@ -25,17 +29,13 @@ const About = () => {
                     pathRef.current?.classList.remove('active');
                 }
             },
-            { threshold: 1 } 
+            { threshold: 1 }
         );
-
-        if (circledTextRef.current) {
-            observer.observe(circledTextRef.current);
-        }
-
+    
+        observer.observe(element);
+    
         return () => {
-            if (circledTextRef.current) {
-                observer.unobserve(circledTextRef.current);
-            }
+            observer.unobserve(element);
         };
     }, []);
 

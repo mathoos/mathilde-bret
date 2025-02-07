@@ -109,7 +109,7 @@
             @media screen and (min-width : 300px) and (max-width : 1000px) {                   
                 display : grid;
                 grid-template-columns: 1fr;
-                gap : 10vh;   
+                gap : 5vh;   
             }
     
             .bloc{
@@ -124,11 +124,11 @@
                 min-width : 18.5vw; 
                 width : 18.5vw;
                 min-height : 50vh;
-    
+
                 @media screen and (min-width : 300px) and (max-width : 749px) {
                     gap : 8vh;
-                    min-width : calc(100% - 5vw);
                     width : calc(100% - 5vw);
+                    min-width : calc(100% - 5vw);
                     min-height : 100%;
                     height : 100%;
                     padding : 30px;
@@ -136,8 +136,8 @@
 
                 @media screen and (min-width : 750px) and (max-width : 1000px) {
                     gap : 8vh;
-                    min-width : calc(100% - 5vw);
                     width : calc(100% - 5vw);
+                    min-width : calc(100% - 5vw);
                     min-height : 100%;
                     height : 100%;
                     padding : 60px;
@@ -186,6 +186,8 @@
                     display : flex;
                     flex-direction: column;
                     justify-content: flex-end;
+                    gap : 2vh;
+                    width : 100%;
                     height : 100%;
                     overflow : hidden;
     
@@ -208,20 +210,10 @@
                     }
     
                     &--list{
-                        div{
-                            //margin-bottom : -100%;
-                            padding-top : 2vh;
-                            transition : 1.2s ease;
+                        p{
+                            font-size : .9vw;
                             @media screen and (min-width : 300px) and (max-width : 1000px) {
-                                margin-bottom : 0;
-                            }
-    
-                            p{
-                                font-size : .9vw;
-                                @media screen and (min-width : 300px) and (max-width : 1000px) {
-                                    font-size : 4vw;
-                                    margin-bottom : 0;
-                                }
+                                font-size : 4vw;
                             }
                         }
                     }
@@ -233,8 +225,12 @@
                     background-color : $noir;
                     border : none;
                     overflow : hidden;
+
                     @media screen and (min-width : 300px) and (max-width : 1000px) {
-                        display : none;
+                        width : 100%;
+                        min-width : 100%;
+                        min-height : 100%;
+                        height : 100%;
                     }
     
                     &::after {
@@ -253,9 +249,14 @@
                     .bloc-content{
                         justify-content: space-between;
                         flex : 1;
+
+                        @media screen and (min-width : 300px) and (max-width : 749px) {
+                            gap : 8vh;
+                        }
     
                         &--title{
                             z-index : 5;
+
                             h3{
                                 color : $blanc;
                             }
@@ -263,25 +264,13 @@
     
                         &--txt{
                             z-index : 5;
+
                             p{
-                                //font-size : 1.2vw;
                                 line-height : 1.2;
                                 color : $blanc;
-                            }
-                        }
-    
-                        &--btn{
-                            display : flex;
-                            flex-wrap: wrap;
-                            gap : .5vw;
-                            z-index : 5;
-                            
-    
-                            .bouton{
-                                padding : 1vh 1.5vw;
-                                font-size : 1vw;
-                                &:hover{
-                                    background-color: $blanc;
+
+                                @media screen and (min-width : 300x) and (max-width : 1000px) {
+                                    font-size : 4vw;
                                 }
                             }
                         }

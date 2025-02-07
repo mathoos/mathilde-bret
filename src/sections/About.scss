@@ -12,6 +12,7 @@
         padding : 30vh 10vw 50vh 10vw;
         border-radius : 100px 100px 0 0;
         background-color: $noir;
+        overflow : hidden;
 
         @media screen and (min-width : 300px) and (max-width : 749px) {
             padding : 10vh 30px 30vh 30px;
@@ -45,7 +46,8 @@
                 height : auto;
 
                 @media screen and (min-width : 300px) and (max-width : 1000px) {
-                    bottom : -17vw;
+                    bottom : -20vw;
+                    width : 35vw;
                 }
 
                 svg{
@@ -61,10 +63,6 @@
                         &.active{
                             stroke-dashoffset: 0; 
                         }
-                    }
-
-                    @media screen and (min-width : 300px) and (max-width : 1000px) {
-                        width : 30vw;
                     }
                 }
             }

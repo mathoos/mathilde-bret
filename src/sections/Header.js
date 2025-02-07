@@ -13,8 +13,8 @@ const Header = ({ progress }) => {
 
 
     return (
-        <header className="header heightJs">
-            <div className="header_content">
+        <header className="header">
+            <div className="header_content heightJs">
                 <Nav/> 
                 <Menu/>
 

@@ -67,8 +67,12 @@ const Header = ({ progress }) => {
                     <figure className="hero_img">
                         <img src={Mathilde} alt="Mathilde Bret"/>
                     </figure>
-            
                 </div>
+
+                <div className="header_content-subtitle pc-hidden">
+                        <div className="bullet"></div>
+                        <p>From Toulouse</p>
+                    </div>
 
                 <div className="rs">
                     <a href="https://github.com/mathoos" className="rs_icon" target="_blank" rel="noreferrer" aria-label="Profil GitHub">

@@ -6,12 +6,13 @@ import creativiteIcon from "../img/icons/creativite-icon.svg";
 import professionnelIcon from "../img/icons/professionnel-icon.svg";
 import creationIcon from "../img/icons/creation-icon.svg";
 import handCircledText from "../img/illustrations/hand-circled-text.svg";
-import TemplatePlomberie from "../img/projects/plomberie-joan-bret.png";
+import TemplatePlomberie from "../img/projects/plomberie-joan-bret-project.jpg";
 import TemplateEkanim from "../img/projects/ekanim.jpg";
-import TemplateArgentBank from "../img/projects/argent-bank.jpg";
-import TemplateBulletJournal from "../img/projects/task-manager.jpg";
-import TemplateMyCMS from "../img/projects/my-cms.jpg";
-import TemplateMenesens from "../img/projects/menesens.jpg";
+import TemplateArgentBank from "../img/projects/argent-bank-project.jpg";
+import TemplateBulletJournal from "../img/projects/task-manager-project.jpg";
+import TemplateMyCMS from "../img/projects/my-cms-project.jpg";
+import TemplateMenesens from "../img/projects/menesens-project.jpg";
+import TemplateLetsGetMagik from "../img/projects/lets-get-magik.jpg";
 
 import './Projects.scss';
 
@@ -163,18 +164,18 @@ const Projects = () => {
 }
 
 const data = [
-    {
-        title: "Ekanim",
-        text: [
-            "Intégration du site à partir de la maquette Adobe XD. ", 
-            "Animations codées en Scss et JQuery.", 
-            "Déploiement du site sur le serveur avec FileZilla.", 
-        ],
-        button: ["Html", "Scss", "Php", "jQuery"],
-        annotation: "Site vitrine | melting.k",
-        template: TemplateEkanim,
-        link: "https://www.ekanim.fr/"
-    },
+    // {
+    //     title: "Ekanim",
+    //     text: [
+    //         "Intégration du site à partir de la maquette Adobe XD. ", 
+    //         "Animations codées en Scss et JQuery.", 
+    //         "Déploiement du site sur le serveur avec FileZilla.", 
+    //     ],
+    //     button: ["Html", "Scss", "Php", "jQuery"],
+    //     annotation: "Site vitrine | melting.k",
+    //     template: TemplateEkanim,
+    //     link: "https://www.ekanim.fr/"
+    // },
     {
         title: "Plomberie Joan",
         text: [
@@ -187,6 +188,19 @@ const data = [
         annotation: "Site vitrine | stage",
         template: TemplatePlomberie,
         link: "https://www.plomberiejoanbret.fr/"
+    },
+    {
+        title: "Let's get magik !",
+        text: [
+            "Création du webdesign sur Figma.", 
+            "Intégration du site e-commerce en Next.js", 
+            "Création d'une base de données sur Supabase.", 
+            "Utilisation de Stripe pour le système de paiement.",
+        ],
+        button: ["Next.js", "Scss", "TypeScript", "Stripe", "Supabase"],
+        annotation: "Projet personnel test | en construction",
+        template: TemplateLetsGetMagik,
+        link: "https://lets-get-magik.onrender.com/"
     },
     {
         title: "Argent Bank",
@@ -226,7 +240,7 @@ const data = [
         button: ["React", "Scss", "Redux", "Redux Toolkit", "LocalStorage"],
         annotation: "Projet personnel | en construction",
         template: TemplateBulletJournal,
-        link: "https://task-manager-journal.onrender.com/"
+        link: "https://task-manager-nfvq.onrender.com/"
     },
     {
         title: "Menesens",
@@ -240,7 +254,7 @@ const data = [
         annotation: "Projet personnel | en construction",
         template: TemplateMenesens,
         link: "https://www.menesens.fr/"
-    }
+    },
 ];
 
 export default Projects;

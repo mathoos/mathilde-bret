@@ -192,12 +192,12 @@ const data = [
     {
         title: "Let's get magik !",
         text: [
-            "Création du webdesign sur Figma.", 
-            "Intégration du site e-commerce en Next.js", 
-            "Création d'une base de données sur Supabase.", 
-            "Utilisation de Stripe pour le système de paiement.",
+            "Accès à un panel administrateur sécurisé pour la gestion des produits avec Supabase Auth et stockage des images via Supabase Storage.",
+            "Mise en place de RLS pour protéger l'accès aux données.",
+            "Intégration de Stripe Checkout en mode test pour simuler des paiements.", 
+            "Utilisation de Context API pour stocker les produits dans le panier et les persister localement.",
         ],
-        button: ["Next.js", "Scss", "TypeScript", "Stripe", "Supabase"],
+        button: ["Next.js", "Scss", "tailwind CSS", "TypeScript", "Stripe", "Supabase"],
         annotation: "Projet personnel test | en construction",
         template: TemplateLetsGetMagik,
         link: "https://lets-get-magik.onrender.com/"

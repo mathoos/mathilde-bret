@@ -226,7 +226,7 @@
                         &_txt{
                             display : flex;
                             flex-direction: column;   
-                            gap : 1.5vh;
+                            gap : 1vh;
 
                             &-bloc{
                                 display : flex;
@@ -255,7 +255,7 @@
 
                                 p{
                                     width : calc(100% - 8px - 2vw);
-                                    font-size : 1.2vw;
+                                    font-size : 1.05vw;
                                     
                                     @media screen and (min-width : 300px) and (max-width : 749px) {
                                         width : calc(100% - 5px - 2vw);

@@ -2,10 +2,10 @@
 
 .about{
     background-color: $gris;
-    padding-top : 10vh;
+    padding-top : 20vh;
 
     @media screen and (min-width : 300px) and (max-width : 1000px) {
-        padding-top : 0;
+        padding-top : 10vh;
     }
 
     &_intro{

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { ReactLenis, useLenis } from '@studio-freight/react-lenis';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ParallaxProvider } from "react-scroll-parallax";
@@ -22,42 +22,6 @@ function App() {
             lenis.configure(lenisConfig); 
         }
     });
-
-    const [loading, setLoading] = useState(true);
-    const [progress, setProgress] = useState(0);
-
-    useEffect(() => {
-        const updateProgress = () => {
-            setProgress(prevProgress => {
-
-                const randomDelay = Math.random() * 500 + 150; 
-                const nextProgress = prevProgress + 1;
-
-                if (nextProgress >= 7) {
-                    setTimeout(() => {
-                        setLoading(false);
-                    }, randomDelay);
-                    return 7;
-                }
-
-                setTimeout(updateProgress, randomDelay);
-                return nextProgress;
-            });
-        };
-
-        updateProgress();
-        return () => clearTimeout();
-    }, []);
-
-    useEffect(() => {
-        if (loading) {
-            document.documentElement.classList.add('loading');
-        } 
-        else {
-            document.documentElement.classList.remove('loading');
-            document.documentElement.classList.add('loading-done');
-        }
-    }, [loading]);
 
 
     useEffect(() => {
@@ -92,7 +56,7 @@ function App() {
             <ReactLenis root> 
                 <Router>
                     <Routes>      
-                        <Route path="/" element={<Home progress={progress} />}/>
+                        <Route path="/" element={<Home/>}/>
                     </Routes>
                 </Router>
             </ReactLenis> 

@@ -45,23 +45,6 @@ const Header = ({ progress }) => {
                     </div>
 
                     <div className="hero_loading">     
-                        <div className="loading">
-                            <div className="loading_container">
-                                <div className="loading_container-title">
-                                    <p>Loading...</p>
-                                </div>
-                                <div className="loading_container-content">
-                                    <div className="border">
-                                        {[...Array(7)].map((_, index) => ( 
-                                            <div
-                                                key={index}
-                                                className={`trait ${progress > index ? 'loading_done' : ''}`}
-                                            ></div>
-                                        ))}
-                                    </div> 
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     
                     <figure className="hero_img">

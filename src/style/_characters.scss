@@ -10,6 +10,7 @@ h1{
         "wght" $heavy;
     opacity : 0;
     transform : translateX(-100%);
+    animation : slideSide 1.2s ease .7s forwards;
 
     @media screen and (min-width : 300px) and (max-width : 749px) {
         font-size : 11.5vw;

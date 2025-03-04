@@ -52,10 +52,10 @@ const Header = () => {
                 </figure>
             </div>
 
-            <div className="header_subtitle pc-hidden">
+            <div className="header_subtitle hidden-pc">
                     <div className="bullet"></div>
                     <p>From Toulouse</p>
-                </div>
+            </div>
 
             <div className="rs">
                 <a href="https://github.com/mathoos" className="rs_icon" target="_blank" rel="noreferrer" aria-label="Profil GitHub">

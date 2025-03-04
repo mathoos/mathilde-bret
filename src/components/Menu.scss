@@ -5,13 +5,12 @@
     top : 0;
     left : 0;
     display : none;
-    flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    gap : 5vh;
     width : 100%;
+    min-height : 100vh;
     height: var(--heightJs);
-    padding : 15vh 30px 10vh 30px;
+    padding : 10vh 30px;
     transform : translateY(-100%);
     transition : .5s ease;
     background-color: $noir;
@@ -21,109 +20,116 @@
     &_container{
         display : flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap : 2.5vh;
-        border-radius : 50px;
-        width : 100%;
-        height : 100%;
+        gap : 5vh;
 
-        .bouton{
-            font-size : 4vw;
-            padding : 1.5vh 10vw;
-            text-transform : uppercase;
-            font-variation-settings:
-            "wdth" 125,
-            "wght" $semibold;         
-        }
-
-        hr{
-            width : 100%;
-            height : 1px;
-            background-color: $noir;
-            border : none;
-            margin : 0;
-            padding : 0;    
-        }
-    }
-
-    &_pastille{
-        position : relative;
-        width : 50vw;
-        height : 50vw;
-
-        img{
+        &-links{
+            display : flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap : 2.5vh;
             width : 100%;
             height : 100%;
-            object-fit: contain;
-
-            &.txt{
-                animation : infiniteRotation 15s linear infinite forwards;
-            }
-
-            &.img{
-                position : absolute;
-                top : 0;
-                left : 0;
-            }
-        }
-    }
-
-    &_rs{
-        display : flex;
-        flex-direction: column;
-        align-items: center;
-        gap : 2vh;
-
-        p{
-            text-transform : uppercase;
-            font-size : 4vw;
-            color : $blanc;
-            font-variation-settings:
-            "wdth" 125,
-            "wght" $thin; 
-        }
-
-        &-bloc{
-            display : flex;
-            gap : 5vw;
-
-            &--icon{           
-
-                .bulle{
-                    display : flex;
-                    justify-content: center;
-                    align-items: center;
-                    width : 13vw;
-                    height : 13vw;
-                    border-radius : 100vmax;
-                    background-color: $blanc;
-                    transition : transform .5s ease;
-                    will-change : transform;
     
-                    svg{
-                        width : 7vw;
-                        height : auto;
-                        fill : $noir;
-                        transition : transform .5s ease;
-                        will-change: transform;
-                    }
+            .bouton{
+                font-size : 4vw;
+                padding : 1.5vh 10vw;
+                text-transform : uppercase;
+                font-variation-settings:
+                "wdth" 125,
+                "wght" $semibold;         
+            }
+    
+            hr{
+                width : 100%;
+                height : 1px;
+                background-color: $noir;
+                border : none;
+                margin : 0;
+                padding : 0;    
+            }
+        }
+    
+        &-pastille{
+            position : relative;
+            width : 50vw;
+            height : 50vw;
+    
+            img{
+                width : 100%;
+                height : 100%;
+                object-fit: contain;
+    
+                &.txt{
+                    animation : infiniteRotation 15s linear infinite forwards;
                 }
-               
-                &:hover{       
-                    .header_rs-icon--bulle{
-                        background-color: $noir;
-                        border-color : transparent;
-                        transform : scale(1.1);
-                    }     
-                    
-                    svg{         
-                        transform : scale(.85);
-                    }
+    
+                &.img{
+                    position : absolute;
+                    top : 0;
+                    left : 0;
                 }
             }
-        }  
+        }
+    
+        &-rs{
+            display : flex;
+            flex-direction: column;
+            align-items: center;
+            gap : 2vh;
+    
+            p{
+                text-transform : uppercase;
+                font-size : 4vw;
+                color : $blanc;
+                font-variation-settings:
+                "wdth" 125,
+                "wght" $thin; 
+            }
+    
+            &--bloc{
+                display : flex;
+                gap : 5vw;
+    
+                .icon{           
+    
+                    .bulle{
+                        display : flex;
+                        justify-content: center;
+                        align-items: center;
+                        width : 13vw;
+                        height : 13vw;
+                        border-radius : 100vmax;
+                        background-color: $blanc;
+                        transition : transform .5s ease;
+                        will-change : transform;
+        
+                        svg{
+                            width : 7vw;
+                            height : auto;
+                            fill : $noir;
+                            transition : transform .5s ease;
+                            will-change: transform;
+                        }
+                    }
+                   
+                    &:hover{       
+                        .header_rs-icon--bulle{
+                            background-color: $noir;
+                            border-color : transparent;
+                            transform : scale(1.1);
+                        }     
+                        
+                        svg{         
+                            transform : scale(.85);
+                        }
+                    }
+                }
+            }  
+        }
     }
+
+    
 
     &.active{
         transform : translateY(0);

@@ -98,7 +98,7 @@ const Skills = () => {
                         <div className="bloc txt">
                             <div className="bloc-content">
                                 <div className="bloc-content--title">
-                                    <h3>Develop <br className="pc-hidden"/> ment</h3>
+                                    <h3>Develop<br className="hidden-pc"/>ment</h3>
                                 </div>
                                 <div className="bloc-content--txt">
                                     <p>

@@ -122,7 +122,7 @@ const About = () => {
 
                     <div className="sticky_container">
                         <Reveal keyframes={bottomAnimationBloc}>
-                            <p className="woow">We're a match if</p>
+                            <p className="woow">Learn & build</p>
                         </Reveal>
                         <figure className="etoile">
                             <img src={Etoile} alt="Etoile" />

@@ -1,16 +1,10 @@
-import React, { useEffect } from 'react';
-import { add100Vh } from '../functions/add100vh';
+import React from 'react';
 import Nav from '../components/Nav';
 import Menu from '../components/Menu';
 import Mathilde from "../img/img/mathilde-bret.png";
 import './Header.scss';
 
 const Header = () => {
-
-    useEffect(() => {
-        add100Vh();
-    }, []);
-
 
     return (
         <header className="header">

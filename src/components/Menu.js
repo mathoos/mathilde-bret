@@ -34,7 +34,7 @@ const OpenMenu = () => {
     };
 
     return (
-        <section className={`menu heightJs ${menuOpen ? 'active' : ''}`}>
+        <section className={`menu ${menuOpen ? 'active' : ''}`}>
 
             <div className="menu_container">
 

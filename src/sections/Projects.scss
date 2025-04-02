@@ -196,6 +196,9 @@
                     }
 
                     .title{
+                        display : flex;
+                        flex-direction: column;
+                        gap : 1vh;
                         width : 100%;
 
 
@@ -205,6 +208,25 @@
 
                             @media screen and (min-width : 300px) and (max-width : 1000px) {
                                 font-size : 6vw;
+                            }
+                        }
+
+                        p{
+                            font-size : 1.05vw;
+                            line-height : 1.1;
+                            text-transform : uppercase;
+                            padding-right : 5vw;
+
+                            @media screen and (min-width : 300px) and (max-width : 749px) {
+                                padding-right : 0;
+                                text-transform : none;
+                                font-size : 3.3vw !important;
+                            }
+
+                            @media screen and (min-width : 760px) and (max-width : 1000px) {
+                                padding-right : 0;
+                                text-transform : none;
+                                font-size : 3vw !important;
                             }
                         }
                     }

@@ -113,6 +113,7 @@ const Projects = () => {
                                     <h3>
                                         {item.title}
                                     </h3>
+                                    <p>{item.subtitle}</p>
                                 </div>
                                 <div className="description">
                                     
@@ -178,10 +179,12 @@ const data = [
     // },
     {
         title: "Plomberie Joan",
+        subtitle : "Site vitrine moderne et fonctionnel pour une entreprise de plomberie.",
         text: [
             "Création de la maquette sur Figma.", 
             "Intégration du site en React.", 
             "Mise en place d'un système de filtres qui permet à l'utilisateur de chercher des photos par thème.", 
+            "Intégration d'un slider dans une lightbox pour faire défiler les photos en grand format.", 
             "Déploiement du site sur la plateforme Render.", 
         ],
         button: ["Figma", "React", "Scss", "Render"],
@@ -190,9 +193,10 @@ const data = [
         link: "https://www.plomberiejoanbret.fr/"
     },
     {
-        title: "Let's get magik !",
+        title: "Let's make magik !",
+        subtitle : "Site e-commerce fictif construit avec Next.js, Stripe, et Supabase.",
         text: [
-            "Accès à un panel administrateur sécurisé pour la gestion des produits avec Supabase Auth et stockage des images via Supabase Storage.",
+            "Gestion des produits avec Supabase Auth et stockage des images via Supabase Storage.",
             "Mise en place de RLS pour protéger l'accès aux données.",
             "Intégration de Stripe Checkout en mode test pour simuler des paiements.", 
             "Utilisation de Context API pour stocker les produits dans le panier et les persister localement.",
@@ -202,23 +206,23 @@ const data = [
         template: TemplateLetsGetMagik,
         link: "https://lets-get-magik.onrender.com/"
     },
+    // {
+    //     title: "Argent Bank",
+    //     text: [
+    //         "Intégration de l'interface utilisateur de l'application bancaire avec React.", 
+    //         "Utilisation de Redux pour gérer les données et maintenir un état global cohérent.", 
+    //         "Appels à l'API REST pour connecter le front et le back.", 
+    //         "Utilisation de Swagger pour documenter les API afin d'assurer la clarté et la maintenabilité de l'interface de programmation. ", 
+    //     ],
+    //     button: ["React", "Redux", "Css", "API", "Swagger"],
+    //     annotation: "Projet de formation | OpenClassrooms",
+    //     template: TemplateArgentBank,
+    //     link: "https://github.com/mathoos/Project-10-Bank-API"
+    // },
     {
-        title: "Argent Bank",
+        title: "The Drop",
+        subtitle : "Système de gestion de contenu qui permet à l'utilisateur connecté d'ajouter des articles sur son site.",
         text: [
-            "Intégration de l'interface utilisateur de l'application bancaire avec React.", 
-            "Utilisation de Redux pour gérer les données et maintenir un état global cohérent.", 
-            "Appels à l'API REST pour connecter le front et le back.", 
-            "Utilisation de Swagger pour documenter les API afin d'assurer la clarté et la maintenabilité de l'interface de programmation. ", 
-        ],
-        button: ["React", "Redux", "Css", "API", "Swagger"],
-        annotation: "Projet de formation | OpenClassrooms",
-        template: TemplateArgentBank,
-        link: "https://github.com/mathoos/Project-10-Bank-API"
-    },
-    {
-        title: "MyCMS",
-        text: [
-            "Intégration de l'interface utilisateur avec React.", 
             "Intégration du serveur en Node et Express.", 
             "Mise en place d'une API REST avec diverses routes pour permettre au client d'ajouter son propre contenu.", 
             "Stockage des images sur la plateforme Cloudinary.", 
@@ -227,12 +231,12 @@ const data = [
         button: ["React", "Scss", "Node", "Express", "MongoDB", "Render", "Cloudinary"],
         annotation: "Projet de formation | OpenClassrooms",
         template: TemplateMyCMS,
-        link: "https://cloudinary-client.onrender.com/"
+        link: "https://the-drop-1ul6.onrender.com/"
     },
     {
         title: "Task manager",
+        subtitle : "Application de gestion de projets qui permet à l'utilisateur de créer, modifier, dupliquer ou supprimer des tâches.",
         text: [
-            "Intégration de l'interface utilisateur avec React.", 
             "Mise en place d'un slice Redux avec des actions pour ajouter ou supprimer une note.", 
             "Mise en place d'un reducer qui manipule l'état des notes en fonction des actions.", 
             "Création d'un store Redux pour gérer l'état global de l'application et stockage des données dans le navigateur avec LocalStorage."
@@ -241,6 +245,19 @@ const data = [
         annotation: "Projet personnel | en construction",
         template: TemplateBulletJournal,
         link: "https://task-manager-nfvq.onrender.com/"
+    },
+    {
+        title: "Bookmarks Mini",
+        subtitle : "Extension Chrome qui affiche les favoris sous forme de miniatures grâce à des captures d'écran automatiques des sites web.",
+        text: [   
+            "Utilisation de l'API Screenshot Machine pour générer automatiquement des captures d'écran des sites web.", 
+            "Récupération et affichage dynamique des favoris en utilisant l'API Chrome Bookmarks.", 
+            "Gestion du cache pour optimiser le chargement des miniatures."
+        ],
+        button: ["Html", "Scss", "JavaScript", "Chrome API", "Screenshot Machine"],
+        annotation: "Projet personnel | Extension chrome",
+        template: TemplateBulletJournal,
+        link: "https://github.com/mathoos/extension-bookmarks"
     },
     {
         title: "Menesens",

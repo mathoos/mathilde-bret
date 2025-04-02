@@ -248,7 +248,7 @@ const data = [
         button: ["Html", "Scss", "JavaScript", "Chrome API", "Screenshot Machine"],
         annotation: "Projet personnel | Extension chrome",
         template: TemplateBulletJournal,
-        link: "https://github.com/mathoos/extension-bookmarks"
+        link: "https://github.com/mathoos/bookmarks-miniatures"
     },
     {
         title: "Menesens",

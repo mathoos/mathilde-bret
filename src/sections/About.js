@@ -53,19 +53,9 @@ const About = () => {
                         <div className="about_intro-container--subtitle">
                             <Reveal keyframes={bottomAnimationTxt}>
                                 <p className="subtitle">
-                                    Développeuse front-end&nbsp;
-                                    <span className="icon">
-                                        <img src={computerIcon} alt="Ordinateur" />
-                                    </span> passionnée, <br className="hidden-mobile"/> 
-                                    j'associe mes compétences en développement web&nbsp; 
-                                    <span className="icon">
-                                        <img src={devIcon} alt="Développement web" />
-                                    </span><br className="hidden-mobile"/>  
-                                    &nbsp;et en webdesign&nbsp; 
-                                    <span className="icon">
-                                        <img src={webdesignIntroIcon} alt="Webdesign" />
-                                    </span>
-                                    &nbsp;pour créer de jolies interfaces <br className="hidden-mobile"/> 
+                                    Développeuse front-end passionnée, <br className="hidden-mobile"/> 
+                                    j'associe mes compétences en développement web <br className="hidden-mobile"/>  
+                                    et en webdesign pour créer de jolies interfaces <br className="hidden-mobile"/> 
                                     ergonomiques et attractives.
                                 </p>
                             </Reveal>     

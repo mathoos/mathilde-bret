@@ -70,18 +70,9 @@ const Projects = () => {
                         <div className="projects_intro-container--subtitle">
                             <Reveal keyframes={bottomAnimationTxt}>
                                 <p className="subtitle">
-                                    Issues de mes expériences professionnelles&nbsp;
-                                    <span className="icon">
-                                        <img src={professionnelIcon} alt="Diplôme" />
-                                    </span> ou de projets personnels, ces créations&nbsp;
-                                    <span className="icon">
-                                        <img src={creationIcon} alt="Contrat d'alternance" />
-                                    </span>
-                                    &nbsp;reflètent mon parcours en tant que développeuse front-end, mêlant créativité&nbsp;
-                                    <span className="icon">
-                                        <img src={creativiteIcon} alt="Agence de communication" />
-                                    </span>
-                                    &nbsp;et expertise technique .
+                                    Issues de mes expériences professionnelles ou de projets personnels, 
+                                    ces créations reflètent mon parcours en tant que développeuse front-end, 
+                                    mêlant créativité et expertise technique.
                                 </p>
                             </Reveal>     
                         </div>
@@ -147,7 +138,7 @@ const Projects = () => {
                                 </a>
                                 {hovered && (
                                     <button
-                                        className="bouton bouton_bgPrimary"
+                                        className="bouton bouton_bgNoir"
                                         style={{ left: position.x, top: position.y }}
                                     >
                                         Voir le site

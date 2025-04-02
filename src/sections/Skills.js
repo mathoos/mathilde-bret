@@ -25,20 +25,10 @@ const Skills = () => {
                         <div className="skills_intro-container--subtitle">
                             <Reveal keyframes={bottomAnimationTxt}>
                                 <p className="subtitle">
-                                    Diplômée&nbsp;
-                                    <span className="icon">
-                                        <img src={diplomeIcon} alt="Diplôme" />
-                                    </span> d'une licence en Communication & Médias <br className="hidden-mobile"/> 
+                                    Diplômée d'une licence en Communication & Médias <br className="hidden-mobile"/> 
                                     et titulaire d'un titre de Webdesigner, j'ai récemment<br className="hidden-mobile"/> 
-                                    achevé mon contrat d'alternance&nbsp; 
-                                    <span className="icon">
-                                        <img src={contratIcon} alt="Contrat d'alternance" />
-                                    </span>
-                                    &nbsp;en agence de communication&nbsp; 
-                                    <span className="icon">
-                                        <img src={communicationIcon} alt="Agence de communication" />
-                                    </span>
-                                    &nbsp;en tant que développeuse front-end.
+                                    achevé mon contrat d'alternance en agence de communication
+                                    en tant que développeuse front-end.
                                 </p>
                             </Reveal>     
                         </div>

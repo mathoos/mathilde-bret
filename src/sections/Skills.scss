@@ -96,6 +96,28 @@
             padding : 45vh 60px 50vh 60px; 
             border-width : 3px;
         }
+
+        &-absolute{
+            position : absolute;
+            top : 0;
+            left : 0;
+            width : 100%;
+            height : 100%;
+            overflow : hidden;
+
+            &::after {
+                position: absolute;
+                content: "";
+                top: -100%;
+                left: -50%;
+                width: 300%;
+                height: 300%;
+                animation: grain 10s steps(10) infinite;
+                background-image: url("../img/illustrations/noise-effect.png");
+                opacity: .15;
+                z-index : -2;
+            }
+        }
     
         &-container{
             position : relative;
@@ -138,7 +160,7 @@
                     width : fit-content;
                     height : 4vw;
                     overflow : hidden;
-                    
+
                     @media screen and (min-width : 300px) and (max-width : 749px) {
                         height : 20vw;
                     }
@@ -288,6 +310,6 @@
                     }
                 }
             }
-        }  
+        }    
     }
 }

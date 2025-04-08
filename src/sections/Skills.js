@@ -40,9 +40,9 @@ const Skills = () => {
             </Reveal>
 
             <div className="skills_presentation">
+                <div className="skills_presentation-absolute"></div>
                 <div className="skills_presentation-container">
-
-                  
+                    
                     <div className="bloc">
                         <figure className="bloc-icon">
                             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -141,6 +141,8 @@ const Skills = () => {
                     </div>
 
                 </div>
+
+                
             </div>
   
         </section> 

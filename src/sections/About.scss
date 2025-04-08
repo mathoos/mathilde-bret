@@ -9,18 +9,18 @@
     }
 
     &_intro{
-        padding : 30vh 10vw 50vh 10vw;
+        padding : 30vh 10vw 30vh 10vw;
         border-radius : 100px 100px 0 0;
         background-color: $noir;
         overflow : hidden;
 
         @media screen and (min-width : 300px) and (max-width : 749px) {
-            padding : 10vh 30px 30vh 30px;
+            padding : 20vh 30px 20vh 30px;
             border-radius : 50px 50px 0 0;
         }
 
         @media screen and (min-width : 750px) and (max-width : 1000px) {
-            padding : 20vh 60px 30vh 60px;
+            padding : 20vh 60px 20vh 60px;
             border-radius : 50px 50px 0 0;
         }
 
@@ -46,7 +46,7 @@
                 height : auto;
 
                 @media screen and (min-width : 300px) and (max-width : 1000px) {
-                    bottom : -20vw;
+                    bottom : -27vw;
                     width : 35vw;
                 }
 
@@ -75,12 +75,12 @@
         border-bottom : none;
 
         @media screen and (min-width : 300px) and (max-width : 749px) {
-            padding : 45vh 30px 40vh 30px;
+            padding : 20vh 30px 40vh 30px;
             border-width : 3px;
         }
 
         @media screen and (min-width : 750px) and (max-width : 1000px) {
-            padding : 45vh 60px 40vh 60px;
+            padding : 20vh 60px 40vh 60px;
             border-width : 3px;
         }
 
@@ -117,14 +117,15 @@
             &--img{
                 position : relative;
                 width : calc(35vw - 2vw);
-                height : 85vh;
+                height : auto;
                 margin-right : 2vw;
-                margin-top : -60vh;
+                margin-top : 15vh;
                 z-index : 2;
                 @media screen and (min-width : 300px) and (max-width : 1000px) {
                     width : calc(100% - 5vw);
                     height : auto;
                     margin-right : 5vw;
+                    margin-top : 0;
                 }
 
                 img{

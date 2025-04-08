@@ -13,6 +13,7 @@ import TemplateBulletJournal from "../img/projects/task-manager-project.jpg";
 import TemplateMyCMS from "../img/projects/my-cms-project.jpg";
 import TemplateMenesens from "../img/projects/menesens-project.jpg";
 import TemplateLetsGetMagik from "../img/projects/lets-get-magik.jpg";
+import TemplateBookmarks from "../img/projects/bookmarks-project.jpg";
 
 import './Projects.scss';
 
@@ -226,13 +227,14 @@ const data = [
     },
     {
         title: "Task manager",
-        subtitle : "Application de gestion de projets qui permet à l'utilisateur de créer, modifier, dupliquer ou supprimer des tâches.",
+        subtitle : "Application de gestion de projets qui permet d'organiser ses tâches.",
         text: [
-            "Mise en place d'un slice Redux avec des actions pour ajouter ou supprimer une note.", 
-            "Mise en place d'un reducer qui manipule l'état des notes en fonction des actions.", 
-            "Création d'un store Redux pour gérer l'état global de l'application et stockage des données dans le navigateur avec LocalStorage."
+            "Gestion d'état global avec Redux Toolkit : configuration du store, création d'un slice, actions & reducers pour manipuler les tâches.", 
+            "Persistance des données avec localStorage pour conserver l'état de l'application même après un rechargement du navigateur.", 
+            "Intégration d'un calendrier pour afficher les tâches par date.",
+            "Fonctionnalité de drag & drop pour déplacer les tâches selon leur état d'avancement."
         ],
-        button: ["React", "Scss", "Redux", "Redux Toolkit", "LocalStorage"],
+        button: ["React", "Scss", "Redux", "LocalStorage", "react-calendar"],
         annotation: "Projet personnel | en construction",
         template: TemplateBulletJournal,
         link: "https://task-manager-nfvq.onrender.com/"
@@ -247,7 +249,7 @@ const data = [
         ],
         button: ["Html", "Scss", "JavaScript", "Chrome API", "Screenshot Machine"],
         annotation: "Projet personnel | Extension chrome",
-        template: TemplateBulletJournal,
+        template: TemplateBookmarks,
         link: "https://github.com/mathoos/bookmarks-miniatures"
     },
     {

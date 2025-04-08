@@ -96,7 +96,7 @@ const About = () => {
                         </Reveal>
                         <Reveal keyframes={bottomAnimationTxt}>
                             <a href="../CV_Mathilde_Bret.pdf" target="_blank">
-                                <button className="bouton bouton_bgBlanc">Télécharger mon CV</button>
+                                <button className="bouton bouton_bgNoir">Télécharger mon CV</button>
                             </a>
                         </Reveal>
                         

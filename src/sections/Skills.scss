@@ -99,16 +99,16 @@
     
         &-container{
             position : relative;
-            display : flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap : 1.5vw;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+            grid-template-rows: repeat(2, 1fr); 
+            gap : 3vw;
             width : 100%;
             margin-top : -60vh;
            
             @media screen and (min-width : 300px) and (max-width : 1000px) {                   
-                display : grid;
                 grid-template-columns: 1fr;
+                grid-template-rows: repeat(5, 1fr);
                 gap : 5vh;   
             }
     
@@ -117,54 +117,28 @@
                 display : flex;
                 flex-direction: column;
                 justify-content: space-between;
+                gap : 2vh;
                 border : 4px solid $noir;
                 background-color: $blanc;
                 border-radius : 30px;
                 padding : 2.5vw;
-                min-width : 18.5vw; 
-                width : 18.5vw;
-                min-height : 50vh;
 
                 @media screen and (min-width : 300px) and (max-width : 749px) {
                     gap : 8vh;
-                    width : calc(100% - 5vw);
-                    min-width : calc(100% - 5vw);
-                    min-height : 100%;
-                    height : 100%;
                     padding : 30px;
                 }
 
                 @media screen and (min-width : 750px) and (max-width : 1000px) {
                     gap : 8vh;
-                    width : calc(100% - 5vw);
-                    min-width : calc(100% - 5vw);
-                    min-height : 100%;
-                    height : 100%;
                     padding : 60px;
                 }
-    
-                &:not(.txt, .projet){
-                    &::after{
-                        position : absolute;
-                        content : "";
-                        bottom : -1vw;
-                        left : 1vw;
-                        width : 100%;
-                        height : 100%;
-                        background-color: $noir;
-                        border-radius : 30px;
-                        z-index : -1;
-                        @media screen and (min-width : 300px) and (max-width : 1000px) {
-                            bottom : -5vw;
-                            left : 5vw;
-                        }
-                    }
-                }
+
     
                 &-icon{
                     width : fit-content;
                     height : 4vw;
                     overflow : hidden;
+                    
                     @media screen and (min-width : 300px) and (max-width : 749px) {
                         height : 20vw;
                     }
@@ -185,13 +159,14 @@
                 &-content{
                     display : flex;
                     flex-direction: column;
-                    justify-content: flex-end;
+                    justify-content: space-between;
                     gap : 2vh;
                     width : 100%;
                     height : 100%;
                     overflow : hidden;
     
                     &--title{
+                        
                         h3{
                             font-size : 1.7vw;
                             text-transform: uppercase;
@@ -210,6 +185,7 @@
                     }
     
                     &--list{
+
                         p{
                             font-size : .9vw;
                             @media screen and (min-width : 300px) and (max-width : 1000px) {
@@ -221,16 +197,13 @@
     
                 &.txt{
                     position : relative;
-                    width : 38.7vw;           
+                    grid-column: span 2;     
                     background-color : $noir;
                     border : none;
                     overflow : hidden;
 
                     @media screen and (min-width : 300px) and (max-width : 1000px) {
-                        width : 100%;
-                        min-width : 100%;
-                        min-height : 100%;
-                        height : 100%;
+                        grid-column: span 1;
                     }
     
                     &::after {
@@ -248,7 +221,6 @@
     
                     .bloc-content{
                         justify-content: space-between;
-                        flex : 1;
 
                         @media screen and (min-width : 300px) and (max-width : 749px) {
                             gap : 8vh;
@@ -266,10 +238,12 @@
                             z-index : 5;
 
                             p{
+                                font-size : 1.3vw;
                                 line-height : 1.2;
                                 color : $blanc;
 
-                                @media screen and (min-width : 300x) and (max-width : 1000px) {
+                                @media screen and (min-width : 300px) and (max-width : 1000px) {
+                                    line-height : 1.5;
                                     font-size : 4vw;
                                 }
                             }
@@ -282,6 +256,7 @@
                     border : none;
                     padding : 2.5vw 0;
                     background-color: transparent;
+
                     @media screen and (min-width : 300px) and (max-width : 1000px) {
                         display : none;
                     }
@@ -310,31 +285,6 @@
                                 font-size : 8vw;
                             }
                         }
-                    }
-                }
-    
-                &:nth-of-type(7){
-                    visibility : hidden;
-                    @media screen and (min-width : 300px) and (max-width : 1000px) {                 
-                        display : none;
-                    }
-                }
-            }
-    
-            .pastille{
-                position : relative;
-                flex : 1;
-    
-                img{
-                    position : absolute;
-                    top : -6vw;
-                    right : -1vw;
-                    width : 14vw;
-                    height : auto;
-                    z-index : 5;
-    
-                    &.txt{
-                        animation : infiniteRotation 15s linear infinite forwards;
                     }
                 }
             }

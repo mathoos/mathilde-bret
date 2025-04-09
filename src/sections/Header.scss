@@ -249,11 +249,13 @@
         top : 50%;
         transform : translateY(-50%);
         z-index : 100;
+
         @media screen and (max-width : 990px) {
             display : none;
         }
 
-        &_icon{           
+        &_icon{     
+            position : relative;      
             opacity : 0;
             transform : translateX(100%);
 
@@ -277,6 +279,24 @@
                     will-change: transform;
                 }
             }
+
+            .tooltiptext{
+                position : absolute;
+                top : -10px;
+                right : calc(100% - 10px);
+                text-wrap: nowrap;
+                opacity : 0;
+                background-color: $blanc;
+                border : 2px solid $noir;
+                border-radius : 100vmax;
+                padding : 5px 15px;
+                font-size : 1vw;
+                user-select: text;  
+                //pointer-events: auto;
+                cursor : url(../img/icons/cursor.svg), auto;
+                transform : translate(5px, 5px);
+                transition : .3s ease;
+            }
             
             &:hover{       
                 cursor : url(../img/icons/cursor-pointer.svg), auto;
@@ -290,6 +310,11 @@
                     fill : $blanc;
                     transform : scale(.85);
                 }
+                
+                .tooltiptext{
+                    opacity : 1;
+                    transform : translate(0);
+                }   
             }
 
             @for $i from 1 through $elements {
